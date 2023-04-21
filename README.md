@@ -3,11 +3,11 @@
 23/04/21 첫 업로드
 
 ##Pycahram 사용
-첫 실행시 
+첫 실행시 필요
 1. msytnth
 2. synthesis_module
 3. tools/miasm
-폴더 sources로 project structure에 포함 
+폴더 sources로 project structure에 포함시켜야 함 
 
 
 ##이전 PLASynth에서 수정한 것
