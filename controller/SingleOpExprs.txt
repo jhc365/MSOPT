@@ -1,12 +1,162 @@
+trace14_0:ExprOp('==', ExprMem(ExprInt(0xFEA024, 32), 32), ExprInt(0xBB40E64E, 32))
+    SE:@32[0xFEA024] == 0xBB40E64E
+
+trace17_0:ExprOp('&', ExprMem(ExprInt(0xFEA024, 32), 32), ExprInt(0xFFFF0000, 32))
+    SE:@32[0xFEA024] & 0xFFFF0000
+
 trace50_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x8, 32)), 32)
     SE:@32[EBP + 0x8]
+
 trace123_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xFFFFFFD4, 32)), 8)
     SE:@8[EBP + 0xFFFFFFD4]
+
+trace180_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprInt(0x200, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFE0] & 0x200
+
+trace188_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x100000, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFF0] & 0x100000
+
+trace197_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x8000000, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFF0] & 0x8000000
+
+trace202_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x10000000, 32))
+    SE:@32[EAX + EBP + 0xFFFFFFF0] & 0x10000000
+
+trace224_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xFFFFFFF8, 32)), 32), ExprInt(0x20, 32))
+    SE:@32[EBP + 0xFFFFFFF8] & 0x20
+
 trace282_0:ExprMem(ExprInt(0xFEA030, 32), 32)
     SE:@32[0xFEA030]
+
 trace306_0:ExprMem(ExprInt(0xFEA15C, 32), 32)
     SE:@32[0xFEA15C]
+
+trace313_0:ExprOp('==', ExprMem(ExprInt(0xFEA158, 32), 32), ExprInt(0x1, 32))
+    SE:@32[0xFEA158] == 0x1
+
 trace315_0:ExprMem(ExprInt(0xFEA158, 32), 32)
     SE:@32[0xFEA158]
+
+trace370_0:ExprOp('==', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x8, 32)), 32), ExprInt(0x1, 32))
+    SE:@32[EBP + 0x8] == 0x1
+
 trace460_0:ExprMem(ExprId('ESI', 32), 32)
     SE:@32[ESI]
+
+trace868_0:ExprMem(ExprInt(0xFEA138, 32), 8)
+    SE:@8[0xFEA138]
+
+trace1385_0:ExprMem(ExprInt(0xFEA01C, 32), 32)
+    SE:@32[0xFEA01C]
+
+trace1680_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x8, 32)), 8)
+    SE:@8[EBP + 0x8]
+
+trace1697_0:ExprMem(ExprId('EDX', 32), 32)
+    SE:@32[EDX]
+
+trace1708_0:ExprMem(ExprInt(0xFEA598, 32), 32)
+    SE:@32[0xFEA598]
+
+trace2314_0:ExprId('nf', 1)
+    SE:nf
+
+trace2831_0:ExprMem(ExprOp('+', ExprMem(ExprId('ESP', 32), 32), ExprOp('<<', ExprOp('+', ExprOp('-', ExprMem(ExprOp('+', ExprId('ESP', 32), ExprInt(0x4, 32)), 32)), ExprInt(0xEDACA03B, 32)), ExprInt(0x5, 32)), ExprInt(0xD4FE33D8, 32)), 32)
+    SE:@32[@32[ESP] + ((-@32[ESP + 0x4] + 0xEDACA03B) << 0x5) + 0xD4FE33D8]
+
+trace3242_0:ExprOp('==', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprMem(ExprOp('+', ExprId('ESP', 32), ExprInt(0x4, 32)), 32)), 32), ExprId('EAX', 32))
+    SE:@32[EBP + @32[ESP + 0x4]] == EAX
+
+trace3311_0:ExprMem(ExprId('ESP', 32), 32)
+    SE:@32[ESP]
+
+trace3394_0:ExprOp('==', ExprId('EBX', 32), ExprInt(0x1, 32))
+    SE:EBX == 0x1
+
+trace31526_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x2, 32))
+    SE:@32[EBP + 0xA4] & 0x2
+
+trace31703_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x2, 32))
+    SE:@32[EBP + 0xC] & @32[EBP + 0xA4] & 0x2
+
+trace32390_0:ExprMem(ExprId('EBX', 32), 8)
+    SE:@8[EBX]
+
+trace32802_0:ExprMem(ExprId('ESI', 32), 8)
+    SE:@8[ESI]
+
+trace32991_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0x82, 8))
+    SE:@8[ECX] == 0x82
+
+trace32993_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0x6E, 8))
+    SE:@8[ECX] == 0x6E
+
+trace32995_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0xDF, 8))
+    SE:@8[ECX] == 0xDF
+
+trace32998_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0x71, 8))
+    SE:@8[ECX] == 0x71
+
+trace34109_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0x82, 8))
+    SE:@8[ESI] == 0x82
+
+trace34111_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0x6E, 8))
+    SE:@8[ESI] == 0x6E
+
+trace34113_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0xDF, 8))
+    SE:@8[ESI] == 0xDF
+
+trace34165_0:ExprMem(ExprId('EAX', 32), 8)
+    SE:@8[EAX]
+
+trace34364_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0x82, 8))
+    SE:@8[EAX] == 0x82
+
+trace34366_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0x6E, 8))
+    SE:@8[EAX] == 0x6E
+
+trace34368_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0xDF, 8))
+    SE:@8[EAX] == 0xDF
+
+trace34371_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0x71, 8))
+    SE:@8[EAX] == 0x71
+
+trace35335_0:ExprOp('&', ExprMem(ExprId('EAX', 32), 32), ExprInt(0x2, 32))
+    SE:@32[EAX] & 0x2
+
+trace35618_0:ExprMem(ExprId('EDI', 32), 8)
+    SE:@8[EDI]
+
+trace35790_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0x82, 8))
+    SE:@8[EDI] == 0x82
+
+trace35792_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0x6E, 8))
+    SE:@8[EDI] == 0x6E
+
+trace35794_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0xDF, 8))
+    SE:@8[EDI] == 0xDF
+
+trace35817_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0x71, 8))
+    SE:@8[EDI] == 0x71
+
+trace38301_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0x82, 8))
+    SE:@8[EDX] == 0x82
+
+trace38303_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0x6E, 8))
+    SE:@8[EDX] == 0x6E
+
+trace38305_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0xDF, 8))
+    SE:@8[EDX] == 0xDF
+
+trace41632_0:ExprMem(ExprOp('+', ExprId('ECX', 32), ExprOp('&', ExprId('EDX', 32), ExprInt(0xFFFF, 32))), 8)
+    SE:@8[ECX + (EDX & 0xFFFF)]
+
+trace42041_0:ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x69, 32)), 32), ExprOp('&', ExprOp('^', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32)), ExprCompose(ExprMem(ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x90, 32)), 32), 16), ExprInt(0x0, 16)), ExprInt(0x2CA266B, 32)), ExprInt(0xFFFF, 32))), 8)
+    SE:@8[@32[EBP + 0x69] + (((@32[EBP + 0xC] & @32[EBP + 0xA4]) ^ {@16[@32[EBP + 0x90]] 0 16, 0x0 16 32} ^ 0x2CA266B) & 0xFFFF)]
+
+trace42720_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0x71, 8))
+    SE:@8[ESI] == 0x71
+
+trace43631_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xCC, 32)), 8)
+    SE:@8[EBP + 0xCC]
+
