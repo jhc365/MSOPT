@@ -1,0 +1,7 @@
+expression: ((1 & (v0<32> & (v3<32> - v3<32>))) - (1 + ((v0<32> - 1) | (v4<32> - (1 + v0<32>)))))
+simplified: not (((v0<32> - 1) | (v4<32> - (1 + v0<32>))))
+smtlib: (bvnot (bvor (bvsub v0<32> #x00000001) (bvsub v4<32> (bvadd #x00000001 v0<32>))))
+output: eax<32>
+success: yes
+synthesis time: 0.565209
+simplification time: 0.000047

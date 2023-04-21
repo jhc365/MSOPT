@@ -1,0 +1,42 @@
+[
+{
+  "module": "msynth-simp",
+  "obf_expr": "@32[0xFEA024] == 0xBB40E64E",
+  "obf_leng": 3,
+  "obf_var": 1,
+  "result_expr": "@32[0xFEA024] == 0xBB40E64E",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.06,
+  "id": "14_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "@32[0xFEA024] & 0xFFFF0000",
+  "obf_leng": 3,
+  "obf_var": 1,
+  "result_expr": "@32[0xFEA024] & 0xFFFF0000",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.05,
+  "id": "17_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "@32[0xFEA158] == 0x1",
+  "obf_leng": 3,
+  "obf_var": 1,
+  "result_expr": "@32[0xFEA158] == 0x1",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.06,
+  "id": "313_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "@32[EBP + 0x8] == 0x1",
+  "obf_leng": 3,
+  "obf_var": 2,
+  "result_expr": "@32[EBP + 0x8] == 0x1",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 0.08,
+  "id": "370_0"
+}

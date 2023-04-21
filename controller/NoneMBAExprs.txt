@@ -1,0 +1,8 @@
+trace14_0:ExprOp('==', ExprMem(ExprInt(0xFEA024, 32), 32), ExprInt(0xBB40E64E, 32))
+    SE:@32[0xFEA024] == 0xBB40E64E
+trace17_0:ExprOp('&', ExprMem(ExprInt(0xFEA024, 32), 32), ExprInt(0xFFFF0000, 32))
+    SE:@32[0xFEA024] & 0xFFFF0000
+trace313_0:ExprOp('==', ExprMem(ExprInt(0xFEA158, 32), 32), ExprInt(0x1, 32))
+    SE:@32[0xFEA158] == 0x1
+trace370_0:ExprOp('==', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x8, 32)), 32), ExprInt(0x1, 32))
+    SE:@32[EBP + 0x8] == 0x1

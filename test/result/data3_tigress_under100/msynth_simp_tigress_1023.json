@@ -1,0 +1,2910 @@
+[
+{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & ((b + -e + -((b | (e ^ 0xFFFFFFFF)) + (b | (e ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF)) + b + -e + -((b | (e ^ 0xFFFFFFFF)) + (b | (e ^ 0xFFFFFFFF))) + -0x2",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "(e * e) | (b ^ e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.07,
+  "id": 0
+},{
+  "obf_expr": "d + -((((a ^ 0xFFFFFFFF) + 0x1) | 0x1) + (((a ^ 0xFFFFFFFF) + 0x1) & 0x1)) + -((d | (((((a ^ 0xFFFFFFFF) + 0x1) | 0x1) + (((a ^ 0xFFFFFFFF) + 0x1) & 0x1)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 44,
+  "obf_var": 2,
+  "result_expr": "d ^ (-a + 0x1)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.2,
+  "id": 1
+},{
+  "obf_expr": "((d | (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(d ^ (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "d + -(e * e)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.2,
+  "id": 2
+},{
+  "obf_expr": "(d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "d * e + 0x2",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.06,
+  "id": 3
+},{
+  "obf_expr": "(a & (((((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) ^ 0xFFFFFFFF)) + (((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)",
+  "obf_leng": 43,
+  "obf_var": 2,
+  "result_expr": "a | (-c + 0x2)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 4
+},{
+  "obf_expr": "(((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) & (((d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF)) + (d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "(d * e) | (d * 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.06,
+  "id": 5
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -(((e | 0x2) + -(e & 0x2)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 34,
+  "obf_var": 2,
+  "result_expr": "d * d + (e ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 6
+},{
+  "obf_expr": "(e & 0xFFFFFFFC) * (e | 0xFFFFFFFC) + (e & (0xFFFFFFFC ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0xFFFFFFFC)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "(-e) << 0x2",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 1.02,
+  "id": 7
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -(((c + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1 + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 40,
+  "obf_var": 2,
+  "result_expr": "d * d + -c + 0xFFFFFFFE",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 8
+},{
+  "obf_expr": "((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) | ((((d ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + ((((d ^ 0xFFFFFFFF) + 0x1) & 0x2) << 0x1))) + (d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 1,
+  "result_expr": "(d * d) & (-d + 0x2)",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.11,
+  "id": 9
+},{
+  "obf_expr": "(((((d + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) | ((a & (d ^ 0xFFFFFFFF)) + d)) + -(((((d + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) & ((a & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "(-d + 0x2) ^ (a | d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 10
+},{
+  "obf_expr": "((a + -(b ^ 0xFFFFFFFF) + -0x1) | (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF)) + ((a + -(b ^ 0xFFFFFFFF) + -0x1) & (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 69,
+  "obf_var": 2,
+  "result_expr": "a + b + -(a * a)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 11
+},{
+  "obf_expr": "(a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 40,
+  "obf_var": 2,
+  "result_expr": "a * b + -a + 0x2",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 12
+},{
+  "obf_expr": "(((b + -(c ^ 0xFFFFFFFF) + -0x1) | (a + b + 0x1 + ((-a + -0x1) | (-b + -0x1)))) << 0x1) + -((b + -(c ^ 0xFFFFFFFF) + -0x1) ^ (a + b + 0x1 + ((-a + -0x1) | (-b + -0x1))))",
+  "obf_leng": 58,
+  "obf_var": 3,
+  "result_expr": "b + c + (a | b)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 1.04,
+  "id": 13
+},{
+  "obf_expr": "b + -(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF) + -0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 35,
+  "obf_var": 2,
+  "result_expr": "b + (a ^ 0xFFFFFFFF) * 0xFFFFFFFE",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.66,
+  "id": 14
+},{
+  "obf_expr": "b + -(((d & 0xFFFFFFFD) * (d | 0xFFFFFFFD) + (d & (0xFFFFFFFD ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0xFFFFFFFD)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "b + d * 0xFFFFFFFD",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 15
+},{
+  "obf_expr": "(((((a + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((a + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) & (0x3 ^ 0xFFFFFFFF)) + 0x3",
+  "obf_leng": 25,
+  "obf_var": 1,
+  "result_expr": "(-a + 0x2) | 0x3",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 16
+},{
+  "obf_expr": "(((d ^ 0xFFFFFFFF) + 0x1) ^ 0x5) + (((d ^ 0xFFFFFFFF) + 0x1) & 0x5) + (((d ^ 0xFFFFFFFF) + 0x1) & 0x5)",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "-d + 0x5",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 17
+},{
+  "obf_expr": "(b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d) + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "b * d + 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 18
+},{
+  "obf_expr": "b + -(((d ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1 + -((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 44,
+  "obf_var": 2,
+  "result_expr": "b + d * (d ^ 0xFFFFFFFF)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 19
+},{
+  "obf_expr": "(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) ^ (((b & (d ^ 0xFFFFFFFF)) + d) ^ 0xFFFFFFFF)) + ((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((b & (d ^ 0xFFFFFFFF)) + d)) << 0x1) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "b * d + (b | d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 20
+},{
+  "obf_expr": "(((((a + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + (((a + -0x1) ^ 0xFFFFFFFF) & 0x2) + (((a + -0x1) ^ 0xFFFFFFFF) & 0x2)) & (((b | 0x2) + -(b & 0x2)) ^ 0xFFFFFFFF)) + (b | 0x2) + -(b & 0x2)",
+  "obf_leng": 46,
+  "obf_var": 2,
+  "result_expr": "(-a + 0x2) | (b ^ 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 21
+},{
+  "obf_expr": "(a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -(((a & 0x6) * (a | 0x6) + (a & (0x6 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x6)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 45,
+  "obf_var": 1,
+  "result_expr": "a * a + a * 0x6",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.28,
+  "id": 22
+},{
+  "obf_expr": "((b + d + 0x1 + ((-b + -0x1) | (-d + -0x1))) & ((((((b ^ 0xFFFFFFFF) + 0x1) | 0x2) << 0x1) + -(((b ^ 0xFFFFFFFF) + 0x1) ^ 0x2)) ^ 0xFFFFFFFF)) + ((((b ^ 0xFFFFFFFF) + 0x1) | 0x2) << 0x1) + -(((b ^ 0xFFFFFFFF) + 0x1) ^ 0x2)",
+  "obf_leng": 57,
+  "obf_var": 2,
+  "result_expr": "b | d | (-b + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.18,
+  "id": 23
+},{
+  "obf_expr": "((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF) | ((a ^ (b ^ 0xFFFFFFFF)) + ((a | b) << 0x1) + 0x1)) + -(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF)",
+  "obf_leng": 58,
+  "obf_var": 2,
+  "result_expr": "(a * a) & (a + b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.19,
+  "id": 24
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) & (0x2 ^ 0xFFFFFFFF)) + 0x2",
+  "obf_leng": 25,
+  "obf_var": 2,
+  "result_expr": "(a * b) | 0x2",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 25
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "-(e * e)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.44,
+  "id": 26
+},{
+  "obf_expr": "(((c | 0x2) + -(c & 0x2)) & 0x4) * (((c | 0x2) + -(c & 0x2)) | 0x4) + (((c | 0x2) + -(c & 0x2)) & (0x4 ^ 0xFFFFFFFF)) * ((((c | 0x2) + -(c & 0x2)) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 47,
+  "obf_var": 1,
+  "result_expr": "(c ^ 0x2) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 27
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | b) + a + 0x1 + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 17,
+  "obf_var": 2,
+  "result_expr": "(a & b) + 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 28
+},{
+  "obf_expr": "(((b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)) & (((e ^ 0x2) + (e & 0x2) + (e & 0x2)) ^ 0xFFFFFFFF)) + (e ^ 0x2) + (e & 0x2) + (e & 0x2)",
+  "obf_leng": 45,
+  "obf_var": 2,
+  "result_expr": "(b * e) | (e + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 29
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0x4) + (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & 0x4) + (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & 0x4)",
+  "obf_leng": 65,
+  "obf_var": 1,
+  "result_expr": "d * d + 0x4",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 30
+},{
+  "obf_expr": "(((d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) << 0x1) + -0x2 + -0x1) ^ 0xFFFFFFFF) | 0x1) + (((d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) << 0x1) + -0x2 + -0x1) ^ 0xFFFFFFFF) & 0x1)",
+  "obf_leng": 47,
+  "obf_var": 1,
+  "result_expr": "-(d ^ 0x2) + 0x1",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 31
+},{
+  "obf_expr": "(((((a + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((a + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) | ((a & (d ^ 0xFFFFFFFF)) + d)) + -(((((a + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((a + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) & ((a & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "(-a + 0x2) ^ (a | d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 32
+},{
+  "obf_expr": "((b + -0x1) ^ 0xFFFFFFFF) + -(((c ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 18,
+  "obf_var": 2,
+  "result_expr": "-b + -c",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.11,
+  "id": 33
+},{
+  "obf_expr": "(a | ((d ^ 0xFFFFFFFF) + 0x1)) + (a & ((d ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 15,
+  "obf_var": 2,
+  "result_expr": "a + -d",
+  "result_leng": 4,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 34
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) | ((b | 0x2) + (b & 0x2))) + -(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) & ((b | 0x2) + (b & 0x2)))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "(a * b) ^ (b + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 35
+},{
+  "obf_expr": "(b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 1,
+  "result_expr": "b * 0x2 + 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 36
+},{
+  "obf_expr": "((b + d + 0x1 + ((-b + -0x1) | (-d + -0x1))) & (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF)) + (d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "b | d | (d * d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.28,
+  "id": 37
+},{
+  "obf_expr": "(c & 0x8) * (c | 0x8) + (c & (0x8 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x8)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "c * 0x8",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 38
+},{
+  "obf_expr": "(((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) | (((a + -0x1) ^ 0xFFFFFFFF) + -(0x1 ^ 0xFFFFFFFF) + -0x1)) + -(((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) & (((a + -0x1) ^ 0xFFFFFFFF) + -(0x1 ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 70,
+  "obf_var": 2,
+  "result_expr": "(a * e) ^ (-a + 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 39
+},{
+  "obf_expr": "(((a + -(0x1 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) | ((((b ^ 0xFFFFFFFF) + 0x1) | 0x1) + (((b ^ 0xFFFFFFFF) + 0x1) & 0x1))) + a + -(0x1 ^ 0xFFFFFFFF) + -0x1 + 0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "(a + 0x1) & (-b + 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 40
+},{
+  "obf_expr": "((((((d ^ 0xFFFFFFFF) + 0x1) | 0x1) << 0x1) + -(((d ^ 0xFFFFFFFF) + 0x1) ^ 0x1)) | ((b & (d ^ 0xFFFFFFFF)) + d)) + -((((((d ^ 0xFFFFFFFF) + 0x1) | 0x1) << 0x1) + -(((d ^ 0xFFFFFFFF) + 0x1) ^ 0x1)) & ((b & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "(-d + 0x1) ^ (b | d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 41
+},{
+  "obf_expr": "((((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) ^ 0xFFFFFFFF) | (((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF)) + (a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3) + 0x1",
+  "obf_leng": 68,
+  "obf_var": 2,
+  "result_expr": "(a * 0x3) & (-(b * b))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.48,
+  "id": 42
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF) + -(((a | b) + -(a & b)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "-(a * a) + (a ^ b)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.64,
+  "id": 43
+},{
+  "obf_expr": "((a + -d + -((a | (d ^ 0xFFFFFFFF)) + (a | (d ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF) + 0x1 + -((a + -0x1 + -((a | (0x1 ^ 0xFFFFFFFF)) << 0x1) + -0x2) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 47,
+  "obf_var": 2,
+  "result_expr": "-(a ^ d) + (a ^ 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 44
+},{
+  "obf_expr": "((((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | 0xFFFFFFFE) << 0x1) + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFE)",
+  "obf_leng": 46,
+  "obf_var": 1,
+  "result_expr": "e * e + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 45
+},{
+  "obf_expr": "(e ^ 0xFFFFFFFF) + 0x1 + -0x4 + -((((e ^ 0xFFFFFFFF) + 0x1) | (0x4 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 24,
+  "obf_var": 1,
+  "result_expr": "(-e) ^ 0x4",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 46
+},{
+  "obf_expr": "(c & 0x6) * (c | 0x6) + (c & (0x6 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x6)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "c * 0x6",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.31,
+  "id": 47
+},{
+  "obf_expr": "(((a ^ 0xFFFFFFFF) + 0x1) ^ ((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) + ((((a ^ 0xFFFFFFFF) + 0x1) & ((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "-a + -(a & b) + 0x2",
+  "result_leng": 9,
+  "result_var": 2,
+  "time": 0.07,
+  "id": 48
+},{
+  "obf_expr": "a + -(((a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1)) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 30,
+  "obf_var": 1,
+  "result_expr": "-((a ^ 0xFFFFFFFF) & 0x1)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 49
+},{
+  "obf_expr": "(((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) << 0x1) + -((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) ^ ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)))",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "(a & 0x2) + d * d",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.11,
+  "id": 50
+},{
+  "obf_expr": "(((a | b) + -(a & b)) | ((a & (d ^ 0xFFFFFFFF)) + d)) + (((a | b) + -(a & b)) & ((a & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 33,
+  "obf_var": 3,
+  "result_expr": "(a ^ b) + (a | d)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.05,
+  "id": 51
+},{
+  "obf_expr": "(((e ^ 0xFFFFFFFF) + 0x1) ^ (0x1 ^ 0xFFFFFFFF)) + ((((e ^ 0xFFFFFFFF) + 0x1) | 0x1) << 0x1) + 0x1",
+  "obf_leng": 21,
+  "obf_var": 1,
+  "result_expr": "-e + 0x1",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 52
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF)) ^ (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF)) + (((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF)) | ((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a))) << 0x1) + 0x1",
+  "obf_leng": 67,
+  "obf_var": 2,
+  "result_expr": "(a & b) + a * a",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.33,
+  "id": 53
+},{
+  "obf_expr": "((a & (0x1 ^ 0xFFFFFFFF)) + 0x1 + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 12,
+  "obf_var": 1,
+  "result_expr": "-(a | 0x1)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 54
+},{
+  "obf_expr": "((a + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + -0x1) | 0x2) + ((a + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + -0x1) & 0x2)",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "a + ((e * e) | 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.14,
+  "id": 55
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | ((a | d) + (a & d))) + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & ((a | d) + (a & d)))",
+  "obf_leng": 56,
+  "obf_var": 3,
+  "result_expr": "(e * e) ^ (a + d)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.18,
+  "id": 56
+},{
+  "obf_expr": "(((e & ((e | 0x2) + -(e & 0x2))) * (e | ((e | 0x2) + -(e & 0x2))) + (e & (((e | 0x2) + -(e & 0x2)) ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & ((e | 0x2) + -(e & 0x2)))) ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 51,
+  "obf_var": 1,
+  "result_expr": "-(e * (e ^ 0x2))",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 1.03,
+  "id": 57
+},{
+  "obf_expr": "((d | ((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) + 0x1)) << 0x1) + -(d ^ ((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 54,
+  "obf_var": 1,
+  "result_expr": "d + -(d * d)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 1.04,
+  "id": 58
+},{
+  "obf_expr": "((((b + -0x1) ^ 0xFFFFFFFF) | 0x1) << 0x1) + -(((b + -0x1) ^ 0xFFFFFFFF) ^ 0x1)",
+  "obf_leng": 20,
+  "obf_var": 1,
+  "result_expr": "-b + 0x1",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 59
+},{
+  "obf_expr": "((((c | e) << 0x1) + -(c ^ e)) | ((e ^ 0x2) + ((e & 0x2) << 0x1))) + -((((c | e) << 0x1) + -(c ^ e)) & ((e ^ 0x2) + ((e & 0x2) << 0x1)))",
+  "obf_leng": 42,
+  "obf_var": 2,
+  "result_expr": "(c + e) ^ (e + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.13,
+  "id": 60
+},{
+  "obf_expr": "(((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) | ((a + -0x1) ^ 0xFFFFFFFF)) + -(((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) & ((a + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 54,
+  "obf_var": 1,
+  "result_expr": "a ^ (a * 0xFFFFFFFD)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.8,
+  "id": 61
+},{
+  "obf_expr": "c",
+  "obf_leng": 1,
+  "obf_var": 1,
+  "result_expr": "c",
+  "result_leng": 1,
+  "result_var": 1,
+  "time": 0.0,
+  "id": 62
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | ((a + -0x1) ^ 0xFFFFFFFF)) + -(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & ((a + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 54,
+  "obf_var": 1,
+  "result_expr": "(a * 0x2) ^ (-a)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 63
+},{
+  "obf_expr": "(b | (((a + -0x1) ^ 0xFFFFFFFF) + -(0x1 ^ 0xFFFFFFFF) + -0x1)) + -(b & (((a + -0x1) ^ 0xFFFFFFFF) + -(0x1 ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 34,
+  "obf_var": 2,
+  "result_expr": "b ^ (-a + 0x1)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 64
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & (((((b + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((b + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) ^ 0xFFFFFFFF)) + (((b + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((b + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "(a * 0x2) | (-b + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 65
+},{
+  "obf_expr": "(b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)",
+  "obf_leng": 19,
+  "obf_var": 2,
+  "result_expr": "b * e",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 66
+},{
+  "obf_expr": "(((a ^ 0xFFFFFFFF) + 0x1) | ((d + -0x1) ^ 0xFFFFFFFF)) + (((a ^ 0xFFFFFFFF) + 0x1) & ((d + -0x1) ^ 0xFFFFFFFF)) + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 33,
+  "obf_var": 2,
+  "result_expr": "-a + -d + 0x4",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 67
+},{
+  "obf_expr": "((d + -(0x1 ^ 0xFFFFFFFF) + -0x1) & 0x4) * ((d + -(0x1 ^ 0xFFFFFFFF) + -0x1) | 0x4) + ((d + -(0x1 ^ 0xFFFFFFFF) + -0x1) & (0x4 ^ 0xFFFFFFFF)) * (((d + -(0x1 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 51,
+  "obf_var": 1,
+  "result_expr": "-((d ^ 0xFFFFFFFF) << 0x2)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 68
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | 0x1) + (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & 0x1)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "e * e + 0x1",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 69
+},{
+  "obf_expr": "(((e ^ 0xFFFFFFFF) + 0x1) ^ (((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF)) + ((((e ^ 0xFFFFFFFF) + 0x1) | ((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1)) << 0x1) + 0x1",
+  "obf_leng": 65,
+  "obf_var": 2,
+  "result_expr": "-e + -(c * c)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.2,
+  "id": 70
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) ^ ((a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1))) ^ 0xFFFFFFFF)) + (((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) | (a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1)))) << 0x1) + 0x1",
+  "obf_leng": 63,
+  "obf_var": 1,
+  "result_expr": "(a + (a & 0x2)) | 0x1",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 71
+},{
+  "obf_expr": "(a ^ (((((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF)) + ((a | ((((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1)) << 0x1) + 0x1",
+  "obf_leng": 57,
+  "obf_var": 2,
+  "result_expr": "a + -(e * e)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.19,
+  "id": 72
+},{
+  "obf_expr": "(c ^ 0xFFFFFFFF) + 0x1 + -((((c & (0x1 ^ 0xFFFFFFFF)) + 0x1 + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 24,
+  "obf_var": 1,
+  "result_expr": "-c + -(c | 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 73
+},{
+  "obf_expr": "(((b | 0x2) + (b & 0x2)) | 0xFFFFFFFE) + -(((b | 0x2) + (b & 0x2)) & 0xFFFFFFFE)",
+  "obf_leng": 20,
+  "obf_var": 1,
+  "result_expr": "(b ^ 0xFFFFFFFE) + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 74
+},{
+  "obf_expr": "(a ^ ((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b))) + ((a & ((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b))) << 0x1) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "a + b * b + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.16,
+  "id": 75
+},{
+  "obf_expr": "(e ^ (0xFFFFFFFF ^ 0xFFFFFFFF)) + (e | 0xFFFFFFFF) + (e | 0xFFFFFFFF) + 0x1",
+  "obf_leng": 15,
+  "obf_var": 1,
+  "result_expr": "(-e) ^ 0xFFFFFFFF",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 76
+},{
+  "obf_expr": "(a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2) + -((c ^ 0xFFFFFFFF) + 0x1) + -((((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | (((c ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 60,
+  "obf_var": 2,
+  "result_expr": "(-c) ^ (a << 0x1)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.16,
+  "id": 77
+},{
+  "obf_expr": "(((b | 0x2) + (b & 0x2)) & 0x4) * (((b | 0x2) + (b & 0x2)) | 0x4) + (((b | 0x2) + (b & 0x2)) & (0x4 ^ 0xFFFFFFFF)) * ((((b | 0x2) + (b & 0x2)) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(b + 0x2) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 78
+},{
+  "obf_expr": "(a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)",
+  "obf_leng": 19,
+  "obf_var": 2,
+  "result_expr": "a * b",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 79
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -((c + d + 0x1 + ((-c + -0x1) | (-d + -0x1))) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 43,
+  "obf_var": 2,
+  "result_expr": "d * d + (c | d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.11,
+  "id": 80
+},{
+  "obf_expr": "(a | ((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2))) + (a & ((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2))) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "a + b * 0x2 + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 81
+},{
+  "obf_expr": "(((a | 0x1) + (a & 0x1)) | (a + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + -(((a | 0x1) + (a & 0x1)) & (a + -(0x2 ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 36,
+  "obf_var": 1,
+  "result_expr": "(a + 0x2) ^ (-(a ^ 0xFFFFFFFF))",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 82
+},{
+  "obf_expr": "((e + (b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e) + 0x1 + ((-e + -0x1) | (-((b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)) + -0x1))) & (0x1 ^ 0xFFFFFFFF)) + 0x1",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "e | (b * e) | 0x1",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 83
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | ((a + -0x1) ^ 0xFFFFFFFF)) + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & ((a + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "(e * e) ^ (-a)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.07,
+  "id": 84
+},{
+  "obf_expr": "e + -((b + -e + -((b | (e ^ 0xFFFFFFFF)) + (b | (e ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF) + -0x1 + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 36,
+  "obf_var": 2,
+  "result_expr": "e + (b ^ e) + 0xFFFFFFFE",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.17,
+  "id": 85
+},{
+  "obf_expr": "(((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) & (((a ^ (0x1 ^ 0xFFFFFFFF)) + ((a | 0x1) << 0x1) + 0x1) ^ 0xFFFFFFFF)) + (a ^ (0x1 ^ 0xFFFFFFFF)) + ((a | 0x1) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "(c * c) | (a + 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.08,
+  "id": 86
+},{
+  "obf_expr": "((((((b ^ 0xFFFFFFFF) | 0x2) + -(b ^ 0xFFFFFFFF)) ^ 0xFFFFFFFF) + 0x1) ^ ((a | 0x2) + -(a & 0x2))) + (((((((b ^ 0xFFFFFFFF) | 0x2) + -(b ^ 0xFFFFFFFF)) ^ 0xFFFFFFFF) + 0x1) & ((a | 0x2) + -(a & 0x2))) << 0x1)",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "-(b & 0x2) + (a ^ 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 87
+},{
+  "obf_expr": "(((a | 0x2) + (a & 0x2)) | ((a & (b ^ 0xFFFFFFFF)) + b)) + -(((a | 0x2) + (a & 0x2)) & ((a & (b ^ 0xFFFFFFFF)) + b))",
+  "obf_leng": 32,
+  "obf_var": 2,
+  "result_expr": "(a + 0x2) ^ (a | b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 88
+},{
+  "obf_expr": "(((a | b) + (a & b)) | 0x1) + -(((a | b) + (a & b)) & 0x1)",
+  "obf_leng": 20,
+  "obf_var": 2,
+  "result_expr": "(a + b) ^ 0x1",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 89
+},{
+  "obf_expr": "(d & (((((b ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + (((b ^ 0xFFFFFFFF) + 0x1) & 0x2) + (((b ^ 0xFFFFFFFF) + 0x1) & 0x2)) ^ 0xFFFFFFFF)) + (((b ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + (((b ^ 0xFFFFFFFF) + 0x1) & 0x2) + (((b ^ 0xFFFFFFFF) + 0x1) & 0x2)",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "d | (-b + 0x2)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 90
+},{
+  "obf_expr": "(a ^ 0xFFFFFFFF) + 0x1 + -(0x1 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 13,
+  "obf_var": 1,
+  "result_expr": "-a + 0x1",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 91
+},{
+  "obf_expr": "(a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e) + -0x4 + -((((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) | (0x4 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 2,
+  "result_expr": "(a * e) ^ 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 92
+},{
+  "obf_expr": "(d ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1 + -0x2 + -((((d ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1) | (0x2 ^ 0xFFFFFFFF)) + (((d ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1) | (0x2 ^ 0xFFFFFFFF))) + -0x2",
+  "obf_leng": 56,
+  "obf_var": 1,
+  "result_expr": "(-d + 0x2) ^ 0x2",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 93
+},{
+  "obf_expr": "(a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0xFFFFFFFF + -((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) | (0xFFFFFFFF ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 1,
+  "result_expr": "(a * a) ^ 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.07,
+  "id": 94
+},{
+  "obf_expr": "(e & 0xFFFFFFFE) * (e | 0xFFFFFFFE) + (e & (0xFFFFFFFE ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0xFFFFFFFE) + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 1,
+  "result_expr": "(-e + 0x2) * 0x2",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 1.03,
+  "id": 95
+},{
+  "obf_expr": "(a ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 5,
+  "obf_var": 1,
+  "result_expr": "-a",
+  "result_leng": 2,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 96
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -((c + -0x1) ^ 0xFFFFFFFF) + -((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | (((c + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "(d * d) ^ (-c)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.23,
+  "id": 97
+},{
+  "obf_expr": "(((d + -0x1) ^ 0xFFFFFFFF) ^ ((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | (((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + 0x1",
+  "obf_leng": 69,
+  "obf_var": 2,
+  "result_expr": "-d + -(c * c)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.2,
+  "id": 98
+},{
+  "obf_expr": "(b & 0x8) * (b | 0x8) + (b & (0x8 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x8)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "b * 0x8",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 99
+},{
+  "obf_expr": "((((e + -0x2 + -((e | (0x2 ^ 0xFFFFFFFF)) + (e | (0x2 ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF) + 0x1) ^ (0x1 ^ 0xFFFFFFFF)) + (((((e + -0x2 + -((e | (0x2 ^ 0xFFFFFFFF)) + (e | (0x2 ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF) + 0x1) | 0x1) << 0x1) + 0x1",
+  "obf_leng": 59,
+  "obf_var": 1,
+  "result_expr": "-(e ^ 0x2) + 0x1",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.05,
+  "id": 100
+},{
+  "obf_expr": "(d ^ (0x2 ^ 0xFFFFFFFF)) + ((d | 0x2) << 0x1) + 0x1",
+  "obf_leng": 13,
+  "obf_var": 1,
+  "result_expr": "d + 0x2",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 101
+},{
+  "obf_expr": "(c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2) + -(((a | 0x2) + -(a & 0x2)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 34,
+  "obf_var": 2,
+  "result_expr": "c * 0x2 + (a ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 102
+},{
+  "obf_expr": "((d | 0x1) << 0x1) + -(d ^ 0x1)",
+  "obf_leng": 10,
+  "obf_var": 1,
+  "result_expr": "-(d ^ 0xFFFFFFFF)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 103
+},{
+  "obf_expr": "(c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -(((a ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 31,
+  "obf_var": 2,
+  "result_expr": "c * c + -a",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 104
+},{
+  "obf_expr": "((a | ((c ^ 0xFFFFFFFF) + 0x1)) << 0x1) + -(a ^ ((c ^ 0xFFFFFFFF) + 0x1)) + 0x4 + 0x1 + ((-(((a | ((c ^ 0xFFFFFFFF) + 0x1)) << 0x1) + -(a ^ ((c ^ 0xFFFFFFFF) + 0x1))) + -0x1) | (-0x4 + -0x1))",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "(a + -c) | 0x4",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.22,
+  "id": 105
+},{
+  "obf_expr": "(e ^ (0x1 ^ 0xFFFFFFFF)) + ((e | 0x1) << 0x1) + 0x1 + -0x4 + -((((e ^ (0x1 ^ 0xFFFFFFFF)) + ((e | 0x1) << 0x1) + 0x1) | (0x4 ^ 0xFFFFFFFF)) + (((e ^ (0x1 ^ 0xFFFFFFFF)) + ((e | 0x1) << 0x1) + 0x1) | (0x4 ^ 0xFFFFFFFF))) + -0x2",
+  "obf_leng": 56,
+  "obf_var": 1,
+  "result_expr": "(-(e ^ 0xFFFFFFFF)) ^ 0x4",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 106
+},{
+  "obf_expr": "((((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | (e + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + -(((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "(a * e) & (e + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 107
+},{
+  "obf_expr": "((a | 0x1) + -(a & 0x1) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 13,
+  "obf_var": 1,
+  "result_expr": "-(a ^ 0x1)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 108
+},{
+  "obf_expr": "(((b ^ 0xFFFFFFFF) + 0x1) | 0x3) + (((b ^ 0xFFFFFFFF) + 0x1) | 0x3) + -(((b ^ 0xFFFFFFFF) + 0x1) ^ 0x3)",
+  "obf_leng": 24,
+  "obf_var": 1,
+  "result_expr": "-b + 0x3",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 109
+},{
+  "obf_expr": "a + -(((e + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 14,
+  "obf_var": 2,
+  "result_expr": "a + -e",
+  "result_leng": 4,
+  "result_var": 2,
+  "time": 0.11,
+  "id": 110
+},{
+  "obf_expr": "(a & 0x8) * (a | 0x8) + (a & (0x8 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x8)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "a * 0x8",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 111
+},{
+  "obf_expr": "((e & (d + -(e ^ 0xFFFFFFFF) + -0x1)) * (e | (d + -(e ^ 0xFFFFFFFF) + -0x1)) + (e & ((d + -(e ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & (d + -(e ^ 0xFFFFFFFF) + -0x1)) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "e * (-d + -e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.06,
+  "id": 112
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | (d + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + -(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & (d + -(0x2 ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 60,
+  "obf_var": 2,
+  "result_expr": "(a * 0x2) ^ (d + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 113
+},{
+  "obf_expr": "(e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2) + -(((((a & (0x1 ^ 0xFFFFFFFF)) + 0x1) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 37,
+  "obf_var": 2,
+  "result_expr": "e * 0x2 + -(a | 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 114
+},{
+  "obf_expr": "(a | (a + -(((((a & c) * (a | c) + (a & (c ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1)) + -(a & (a + -(((((a & c) * (a | c) + (a & (c ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 68,
+  "obf_var": 2,
+  "result_expr": "a ^ (a + -(a * c))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.06,
+  "id": 115
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & (((b ^ (0x2 ^ 0xFFFFFFFF)) + (b | 0x2) + (b | 0x2) + 0x1) ^ 0xFFFFFFFF)) + (b ^ (0x2 ^ 0xFFFFFFFF)) + (b | 0x2) + (b | 0x2) + 0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "(d * d) | (b + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.08,
+  "id": 116
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) | ((a | 0x1) + (a & 0x1))) + -(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) & ((a | 0x1) + (a & 0x1)))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "(a * b) ^ (-(a ^ 0xFFFFFFFF))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 117
+},{
+  "obf_expr": "(((a & (b ^ 0xFFFFFFFF)) + b) & (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)) + (e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)",
+  "obf_leng": 49,
+  "obf_var": 3,
+  "result_expr": "a | b | (e * e)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.07,
+  "id": 118
+},{
+  "obf_expr": "(d | (d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) + (d | (0x2 ^ 0xFFFFFFFF))) + -0x2)) + (d & (d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) + (d | (0x2 ^ 0xFFFFFFFF))) + -0x2)) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 1,
+  "result_expr": "d + (d ^ 0x2) + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 119
+},{
+  "obf_expr": "(d ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 5,
+  "obf_var": 1,
+  "result_expr": "-d",
+  "result_leng": 2,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 120
+},{
+  "obf_expr": "(((a + -0x1) ^ 0xFFFFFFFF) | ((b ^ 0xFFFFFFFF) + 0x1)) + (((a + -0x1) ^ 0xFFFFFFFF) & ((b ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 25,
+  "obf_var": 2,
+  "result_expr": "-a + -b",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 121
+},{
+  "obf_expr": "(((a ^ 0xFFFFFFFF) + 0x1) | 0xFFFFFFFE) + (((a ^ 0xFFFFFFFF) + 0x1) & 0xFFFFFFFE)",
+  "obf_leng": 15,
+  "obf_var": 1,
+  "result_expr": "-a + 0xFFFFFFFE",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 122
+},{
+  "obf_expr": "(b ^ ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + ((b & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) << 0x1) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "b + d * d + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 123
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | ((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a))) + a + 0x1 + -(((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 1,
+  "result_expr": "(a & (a * a)) + a * 0x2 + -(a ^ 0xFFFFFFFF) + 0xFFFFFFFF",
+  "result_leng": 16,
+  "result_var": 1,
+  "time": 0.55,
+  "id": 124
+},{
+  "obf_expr": "((((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) | 0x1) << 0x1) + -(((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) ^ 0x1)",
+  "obf_leng": 46,
+  "obf_var": 2,
+  "result_expr": "a * e + 0x1",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 125
+},{
+  "obf_expr": "a + -((c ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1) + -((a | (((c ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 40,
+  "obf_var": 2,
+  "result_expr": "a ^ (-c + 0x2)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.22,
+  "id": 126
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ (0x1 ^ 0xFFFFFFFF)) + ((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | 0x1) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 1,
+  "result_expr": "d * d + 0x1",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.2,
+  "id": 127
+},{
+  "obf_expr": "(d & 0xFFFFFFFC) * (d | 0xFFFFFFFC) + (d & (0xFFFFFFFC ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0xFFFFFFFC)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "(-d) << 0x2",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 1.01,
+  "id": 128
+},{
+  "obf_expr": "((((a + -0x2 + -((a | (0x2 ^ 0xFFFFFFFF)) + (a | (0x2 ^ 0xFFFFFFFF))) + -0x2 + -0x1) ^ 0xFFFFFFFF) | 0x3) << 0x1) + -(((a + -0x2 + -((a | (0x2 ^ 0xFFFFFFFF)) + (a | (0x2 ^ 0xFFFFFFFF))) + -0x2 + -0x1) ^ 0xFFFFFFFF) ^ 0x3)",
+  "obf_leng": 58,
+  "obf_var": 1,
+  "result_expr": "-((-(a ^ 0x2) + 0x2) ^ 0xFFFFFFFF)",
+  "result_leng": 9,
+  "result_var": 1,
+  "time": 0.05,
+  "id": 129
+},{
+  "obf_expr": "(c ^ ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c))) + ((c & ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c))) << 0x1) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 53,
+  "obf_var": 1,
+  "result_expr": "-(c * (c ^ 0xFFFFFFFF)) + 0x2",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 1.03,
+  "id": 130
+},{
+  "obf_expr": "((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 24,
+  "obf_var": 1,
+  "result_expr": "-(a * a)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 131
+},{
+  "obf_expr": "(((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) | 0x3) + (((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) & 0x3)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "-((c * 0x2) ^ 0xFFFFFFFF) + 0x2",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 132
+},{
+  "obf_expr": "a + -((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) + -((a | (((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 3,
+  "result_expr": "a ^ (b * c)",
+  "result_leng": 5,
+  "result_var": 3,
+  "time": 1.06,
+  "id": 133
+},{
+  "obf_expr": "(((a + -(d ^ 0xFFFFFFFF) + -0x1) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) << 0x1) + -((a + -(d ^ 0xFFFFFFFF) + -0x1) ^ ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)))",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "a + -(d * (d ^ 0xFFFFFFFF))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 134
+},{
+  "obf_expr": "(((a | 0x2) + (a & 0x2)) | ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) + -(((a | 0x2) + (a & 0x2)) & ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1))",
+  "obf_leng": 32,
+  "obf_var": 1,
+  "result_expr": "a ^ ((a + 0x2) | 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 135
+},{
+  "obf_expr": "((((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2)) | ((e | 0x2) + -(e & 0x2))) << 0x1) + -(((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2)) ^ ((e | 0x2) + -(e & 0x2)))",
+  "obf_leng": 60,
+  "obf_var": 1,
+  "result_expr": "(e << 0x1) + (e ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 136
+},{
+  "obf_expr": "((d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) + (d | (0x2 ^ 0xFFFFFFFF))) + -0x2) | ((c & (d ^ 0xFFFFFFFF)) + d)) + ((d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) + (d | (0x2 ^ 0xFFFFFFFF))) + -0x2) & ((c & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 57,
+  "obf_var": 2,
+  "result_expr": "(d ^ 0x2) + (c | d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 137
+},{
+  "obf_expr": "((b + -e + -((b | (e ^ 0xFFFFFFFF)) << 0x1) + -0x2) | 0x1) + ((b + -e + -((b | (e ^ 0xFFFFFFFF)) << 0x1) + -0x2) & 0x1)",
+  "obf_leng": 37,
+  "obf_var": 2,
+  "result_expr": "-(b ^ e ^ 0xFFFFFFFF)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.31,
+  "id": 138
+},{
+  "obf_expr": "((((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) | ((b ^ 0xFFFFFFFF) + 0x1)) << 0x1) + -(((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) ^ ((b ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "a * 0x3 + -b",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 139
+},{
+  "obf_expr": "(((e ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFC) + (((e ^ 0xFFFFFFFF) + 0x1) & 0xFFFFFFFC) + (((e ^ 0xFFFFFFFF) + 0x1) & 0xFFFFFFFC)",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "(-(e ^ 0xFFFFFFFF) + 0x2) ^ 0xFFFFFFFF",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 140
+},{
+  "obf_expr": "(((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2)) ^ ((b | 0x2) + -(b & 0x2))) + ((((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2)) & ((b | 0x2) + -(b & 0x2))) << 0x1)",
+  "obf_leng": 59,
+  "obf_var": 1,
+  "result_expr": "(b << 0x1) + (b ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 141
+},{
+  "obf_expr": "(c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e) + 0x1 + 0x1 + ((-((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) + -0x1) | (-0x1 + -0x1))",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "(c * e) | 0x1",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 142
+},{
+  "obf_expr": "(((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) ^ ((c & (0x1 ^ 0xFFFFFFFF)) + 0x1)) + ((((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) & ((c & (0x1 ^ 0xFFFFFFFF)) + 0x1)) << 0x1)",
+  "obf_leng": 57,
+  "obf_var": 1,
+  "result_expr": "(c << 0x1) + (c | 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 143
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | (a + -(e ^ 0xFFFFFFFF) + -0x1)) + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & (a + -(e ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 60,
+  "obf_var": 2,
+  "result_expr": "(e * e) ^ (a + e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.33,
+  "id": 144
+},{
+  "obf_expr": "(((e ^ (0x2 ^ 0xFFFFFFFF)) + (e | 0x2) + (e | 0x2) + 0x1) | 0xFFFFFFFF) + -(((e ^ (0x2 ^ 0xFFFFFFFF)) + (e | 0x2) + (e | 0x2) + 0x1) & 0xFFFFFFFF)",
+  "obf_leng": 36,
+  "obf_var": 1,
+  "result_expr": "(e + 0x2) ^ 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 145
+},{
+  "obf_expr": "((((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) | ((c ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + -(((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF)",
+  "obf_leng": 58,
+  "obf_var": 2,
+  "result_expr": "(b * c) & (-c + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 146
+},{
+  "obf_expr": "(((a & (d ^ 0xFFFFFFFF)) + d) & (((((a ^ 0xFFFFFFFF) + 0x1) ^ (0x2 ^ 0xFFFFFFFF)) + ((((a ^ 0xFFFFFFFF) + 0x1) | 0x2) << 0x1) + 0x1) ^ 0xFFFFFFFF)) + (((a ^ 0xFFFFFFFF) + 0x1) ^ (0x2 ^ 0xFFFFFFFF)) + ((((a ^ 0xFFFFFFFF) + 0x1) | 0x2) << 0x1) + 0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "a | d | (-a + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 147
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF)) | ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c))) + -((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF)) & ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)))",
+  "obf_leng": 62,
+  "obf_var": 3,
+  "result_expr": "(a & b) ^ (c * c)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.13,
+  "id": 148
+},{
+  "obf_expr": "(a | ((a ^ (0xFFFFFFFF ^ 0xFFFFFFFF)) + ((a | 0xFFFFFFFF) << 0x1) + 0x1)) + -(a & ((a ^ (0xFFFFFFFF ^ 0xFFFFFFFF)) + ((a | 0xFFFFFFFF) << 0x1) + 0x1))",
+  "obf_leng": 32,
+  "obf_var": 1,
+  "result_expr": "a ^ (a + 0xFFFFFFFF)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 149
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) | ((b ^ 0xFFFFFFFF) + 0x1)) + -(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) & ((b ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 52,
+  "obf_var": 2,
+  "result_expr": "(a * b) ^ (-b)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 150
+},{
+  "obf_expr": "(((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) | ((e + -0x1) ^ 0xFFFFFFFF)) + (((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) & ((e + -0x1) ^ 0xFFFFFFFF)) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "e * ((-c) ^ 0xFFFFFFFF) + 0x2",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 151
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF) + -(((a | d) + -(a & d)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "-(a * a) + (a ^ d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 152
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "-(b * b)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.05,
+  "id": 153
+},{
+  "obf_expr": "((a + -(c ^ 0xFFFFFFFF) + -0x1) | ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c))) + ((a + -(c ^ 0xFFFFFFFF) + -0x1) & ((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)))",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "a + -(c * (c ^ 0xFFFFFFFF))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 154
+},{
+  "obf_expr": "(d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e) + -(((d ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1 + -(0x1 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "d * e + -d + 0x1",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 155
+},{
+  "obf_expr": "(a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + 0x3 + 0x1 + ((-((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) + -0x1) | (-0x3 + -0x1))",
+  "obf_leng": 53,
+  "obf_var": 1,
+  "result_expr": "((a * a) | 0x1) + 0x2",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 156
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) & ((a + -0x1 + -((a | (0x1 ^ 0xFFFFFFFF)) << 0x1) + -0x2) ^ 0xFFFFFFFF)) + a + -0x1 + -((a | (0x1 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 55,
+  "obf_var": 2,
+  "result_expr": "(b * b) | (a ^ 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.13,
+  "id": 157
+},{
+  "obf_expr": "(c ^ (0x3 ^ 0xFFFFFFFF)) + ((c | 0x3) << 0x1) + 0x1",
+  "obf_leng": 13,
+  "obf_var": 1,
+  "result_expr": "-(c ^ 0xFFFFFFFF) + 0x2",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 158
+},{
+  "obf_expr": "(c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e) + -0x4 + -((((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) | (0x4 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 2,
+  "result_expr": "(c * e) ^ 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 159
+},{
+  "obf_expr": "(d ^ (((e & 0x3) * (e | 0x3) + (e & (0x3 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x3)) ^ 0xFFFFFFFF)) + ((d | ((e & 0x3) * (e | 0x3) + (e & (0x3 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x3))) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "d + e * 0x3",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 160
+},{
+  "obf_expr": "a + -(((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 31,
+  "obf_var": 2,
+  "result_expr": "a + -(c * c)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 161
+},{
+  "obf_expr": "(((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2)) | 0x4) + (((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2)) & 0x4)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(e + 0x2) * 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 162
+},{
+  "obf_expr": "(c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -((a + b + 0x1 + ((-a + -0x1) | (-b + -0x1))) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 43,
+  "obf_var": 3,
+  "result_expr": "c * c + (a | b)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.1,
+  "id": 163
+},{
+  "obf_expr": "((((((d ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + ((((d ^ 0xFFFFFFFF) + 0x1) & 0x2) << 0x1)) ^ 0xFFFFFFFF) | ((a & (d ^ 0xFFFFFFFF)) + d)) + -(((((d ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + ((((d ^ 0xFFFFFFFF) + 0x1) & 0x2) << 0x1)) ^ 0xFFFFFFFF)",
+  "obf_leng": 48,
+  "obf_var": 2,
+  "result_expr": "(-d + 0x2) & (a | d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 164
+},{
+  "obf_expr": "(a ^ 0x6) + ((a & 0x6) << 0x1)",
+  "obf_leng": 9,
+  "obf_var": 1,
+  "result_expr": "a + 0x6",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 165
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) + 0x1) | (((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(((a ^ 0xFFFFFFFF) + 0x1) ^ (((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "-a + -(b * b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.2,
+  "id": 166
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) | ((a ^ 0xFFFFFFFF) + 0x1)) + -(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) & ((a ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 52,
+  "obf_var": 1,
+  "result_expr": "(a * a) ^ (-a)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.08,
+  "id": 167
+},{
+  "obf_expr": "c + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 9,
+  "obf_var": 1,
+  "result_expr": "c + 0x2",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 168
+},{
+  "obf_expr": "((((a ^ 0x2) + (a & 0x2) + (a & 0x2)) ^ 0xFFFFFFFF) | ((((b + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + (((b + -0x1) ^ 0xFFFFFFFF) | 0x2) + (((b + -0x1) ^ 0xFFFFFFFF) | 0x2) + 0x1)) + (a ^ 0x2) + (a & 0x2) + (a & 0x2) + 0x1",
+  "obf_leng": 58,
+  "obf_var": 2,
+  "result_expr": "(a + 0x2) & (-b + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 169
+},{
+  "obf_expr": "(((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2)) & (((b ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) + (b ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 49,
+  "obf_var": 1,
+  "result_expr": "(-b + 0x2) | (b << 0x1)",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 170
+},{
+  "obf_expr": "b + -((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) + -((b | (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 2,
+  "result_expr": "b ^ (e * e)",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.47,
+  "id": 171
+},{
+  "obf_expr": "(b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2) + -((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 50,
+  "obf_var": 2,
+  "result_expr": "b * 0x2 + -(d * d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.02,
+  "id": 172
+},{
+  "obf_expr": "((d & ((d | 0x2) + (d & 0x2))) * (d | ((d | 0x2) + (d & 0x2))) + (d & (((d | 0x2) + (d & 0x2)) ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & ((d | 0x2) + (d & 0x2))) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 48,
+  "obf_var": 1,
+  "result_expr": "d * (d ^ 0xFFFFFFFF) + -d",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 1.03,
+  "id": 173
+},{
+  "obf_expr": "((a & ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) * (a | ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) + (a & (((a & (0x1 ^ 0xFFFFFFFF)) + 0x1) ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 48,
+  "obf_var": 1,
+  "result_expr": "-(a * (a | 0x1))",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.06,
+  "id": 174
+},{
+  "obf_expr": "((e + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1) & (((((e + -0x1) ^ 0xFFFFFFFF) | 0x2) + (((e + -0x1) ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF)) + (((e + -0x1) ^ 0xFFFFFFFF) | 0x2) + (((e + -0x1) ^ 0xFFFFFFFF) & 0x2)",
+  "obf_leng": 47,
+  "obf_var": 1,
+  "result_expr": "(-e + 0x2) | ((-e) ^ 0xFFFFFFFF)",
+  "result_leng": 9,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 175
+},{
+  "obf_expr": "(c + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 6,
+  "obf_var": 1,
+  "result_expr": "-c",
+  "result_leng": 2,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 176
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) | b) + a + 0x1) | ((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c))) + -((((a ^ 0xFFFFFFFF) | b) + a + 0x1) & ((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)))",
+  "obf_leng": 60,
+  "obf_var": 3,
+  "result_expr": "(a & b) ^ (b * c)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 1.05,
+  "id": 177
+},{
+  "obf_expr": "((((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) | ((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2))) + (b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c) + 0x1",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "(b * c) & (c << 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 178
+},{
+  "obf_expr": "(((d ^ (e ^ 0xFFFFFFFF)) + (d | e) + (d | e) + 0x1) ^ 0x4) + ((((d ^ (e ^ 0xFFFFFFFF)) + (d | e) + (d | e) + 0x1) & 0x4) << 0x1)",
+  "obf_leng": 37,
+  "obf_var": 2,
+  "result_expr": "e + -(d ^ 0xFFFFFFFF) + 0x3",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.07,
+  "id": 179
+},{
+  "obf_expr": "(a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2) + -0xFFFFFFFE + -((((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | (0xFFFFFFFE ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 1,
+  "result_expr": "(a ^ 0xFFFFFFFF) << 0x1",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 180
+},{
+  "obf_expr": "((b + -(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) + -0x1) | 0x1) + ((b + -(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) + -0x1) & 0x1)",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "-(b * (a ^ 0xFFFFFFFF)) + 0x1",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 181
+},{
+  "obf_expr": "(((d + -0x1) ^ 0xFFFFFFFF) ^ (0xFFFFFFFE ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | 0xFFFFFFFE) << 0x1) + 0x1",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "-d + 0xFFFFFFFE",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 182
+},{
+  "obf_expr": "((((((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) ^ 0xFFFFFFFF) | (c + d + 0x1 + ((-c + -0x1) | (-d + -0x1)))) + -(((((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) ^ 0xFFFFFFFF)",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "(-c + 0x2) & (c | d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.12,
+  "id": 183
+},{
+  "obf_expr": "((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) | ((a + -0x1) ^ 0xFFFFFFFF)) + -(((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF)",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "(c * c) & (-a)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 184
+},{
+  "obf_expr": "(((a | b) + (a & b)) ^ (0xFFFFFFFF ^ 0xFFFFFFFF)) + ((((a | b) + (a & b)) | 0xFFFFFFFF) << 0x1) + 0x1",
+  "obf_leng": 25,
+  "obf_var": 2,
+  "result_expr": "a + b + 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 185
+},{
+  "obf_expr": "((e + -(0x1 ^ 0xFFFFFFFF) + -0x1) & 0x4) * ((e + -(0x1 ^ 0xFFFFFFFF) + -0x1) | 0x4) + ((e + -(0x1 ^ 0xFFFFFFFF) + -0x1) & (0x4 ^ 0xFFFFFFFF)) * (((e + -(0x1 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 51,
+  "obf_var": 1,
+  "result_expr": "-((e ^ 0xFFFFFFFF) << 0x2)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 186
+},{
+  "obf_expr": "(a ^ ((a | 0x1) + -(a & 0x1))) + (a & ((a | 0x1) + -(a & 0x1))) + (a & ((a | 0x1) + -(a & 0x1)))",
+  "obf_leng": 32,
+  "obf_var": 1,
+  "result_expr": "a + (a ^ 0x1)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 187
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) + 0x1 + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 31,
+  "obf_var": 2,
+  "result_expr": "-(a * b) + 0x4",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 188
+},{
+  "obf_expr": "((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) | ((b ^ 0xFFFFFFFF) + 0x1)) + ((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) | ((b ^ 0xFFFFFFFF) + 0x1)) + -((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) ^ ((b ^ 0xFFFFFFFF) + 0x1)) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 59,
+  "obf_var": 2,
+  "result_expr": "(a & 0x2) + -b + 0x2",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 189
+},{
+  "obf_expr": "(((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) | 0xFFFFFFFE) + -(((c & 0x2) * (c | 0x2) + (c & (0x2 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x2)) & 0xFFFFFFFE)",
+  "obf_leng": 44,
+  "obf_var": 1,
+  "result_expr": "(c ^ 0xFFFFFFFF) << 0x1",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 190
+},{
+  "obf_expr": "(((c ^ 0xFFFFFFFF) + 0x1) ^ (((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF)) + ((((c ^ 0xFFFFFFFF) + 0x1) & (((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF)) << 0x1)",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "-c + -(b * b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.27,
+  "id": 191
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & ((b + -0x2 + -((b | (0x2 ^ 0xFFFFFFFF)) << 0x1) + -0x2) ^ 0xFFFFFFFF)) + b + -0x2 + -((b | (0x2 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 55,
+  "obf_var": 2,
+  "result_expr": "(d * d) | (b ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.09,
+  "id": 192
+},{
+  "obf_expr": "(d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)",
+  "obf_leng": 19,
+  "obf_var": 2,
+  "result_expr": "d * e",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 193
+},{
+  "obf_expr": "(e | ((((b + -0x1) ^ 0xFFFFFFFF) ^ 0x1) + (((b + -0x1) ^ 0xFFFFFFFF) & 0x1) + (((b + -0x1) ^ 0xFFFFFFFF) & 0x1))) + -(e & ((((b + -0x1) ^ 0xFFFFFFFF) ^ 0x1) + (((b + -0x1) ^ 0xFFFFFFFF) & 0x1) + (((b + -0x1) ^ 0xFFFFFFFF) & 0x1)))",
+  "obf_leng": 58,
+  "obf_var": 2,
+  "result_expr": "e ^ (-b + 0x1)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 194
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | 0xFFFFFFFC) + (((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & 0xFFFFFFFC)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(a + 0xFFFFFFFE) << 0x1",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 195
+},{
+  "obf_expr": "((((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | ((((c ^ 0xFFFFFFFF) + 0x1) ^ (0x1 ^ 0xFFFFFFFF)) + ((((c ^ 0xFFFFFFFF) + 0x1) | 0x1) << 0x1) + 0x1)) + -(((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)",
+  "obf_leng": 66,
+  "obf_var": 2,
+  "result_expr": "(c * e) & (-c + 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 196
+},{
+  "obf_expr": "(((e & 0x3) * (e | 0x3) + (e & (0x3 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x3)) | 0xFFFFFFFF) + (((e & 0x3) * (e | 0x3) + (e & (0x3 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x3)) & 0xFFFFFFFF)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(e * 0xFFFFFFFD) ^ 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.65,
+  "id": 197
+},{
+  "obf_expr": "(b ^ ((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c))) + (b & ((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c))) + (b & ((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)))",
+  "obf_leng": 65,
+  "obf_var": 2,
+  "result_expr": "b + b * c",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 198
+},{
+  "obf_expr": "(c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -((((a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1))) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 47,
+  "obf_var": 2,
+  "result_expr": "c * c + -(a | 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 199
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) | 0xFFFFFFFF) + -(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) & 0xFFFFFFFF)",
+  "obf_leng": 44,
+  "obf_var": 1,
+  "result_expr": "(b * b) ^ 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 200
+},{
+  "obf_expr": "((b + -(((a & (b ^ 0xFFFFFFFF)) + b) ^ 0xFFFFFFFF) + -0x1) ^ (0x2 ^ 0xFFFFFFFF)) + ((b + -(((a & (b ^ 0xFFFFFFFF)) + b) ^ 0xFFFFFFFF) + -0x1) | 0x2) + ((b + -(((a & (b ^ 0xFFFFFFFF)) + b) ^ 0xFFFFFFFF) + -0x1) | 0x2) + 0x1",
+  "obf_leng": 57,
+  "obf_var": 2,
+  "result_expr": "b + (a | b) + 0x2",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 201
+},{
+  "obf_expr": "(a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)",
+  "obf_leng": 19,
+  "obf_var": 2,
+  "result_expr": "a * e",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 1.01,
+  "id": 202
+},{
+  "obf_expr": "a + -(0x2 ^ 0xFFFFFFFF) + -0x1 + -(a + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1) + -(((a + -(0x2 ^ 0xFFFFFFFF) + -0x1) | ((a + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 48,
+  "obf_var": 1,
+  "result_expr": "(a + 0x2) ^ (-a) ^ 0xFFFFFFFF",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 203
+},{
+  "obf_expr": "(a & (b ^ 0xFFFFFFFF)) + b + (c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + 0x1 + ((-((a & (b ^ 0xFFFFFFFF)) + b) + -0x1) | (-((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) + -0x1))",
+  "obf_leng": 65,
+  "obf_var": 3,
+  "result_expr": "a | b | (c * c)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.36,
+  "id": 204
+},{
+  "obf_expr": "(e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "e * e",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 205
+},{
+  "obf_expr": "((c + -d + -((c | (d ^ 0xFFFFFFFF)) << 0x1) + -0x2) ^ ((d | 0x2) + -(d & 0x2))) + (((c + -d + -((c | (d ^ 0xFFFFFFFF)) << 0x1) + -0x2) & ((d | 0x2) + -(d & 0x2))) << 0x1)",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "(c ^ d) + (d ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.49,
+  "id": 206
+},{
+  "obf_expr": "(c ^ 0x5) + (c & 0x5) + (c & 0x5)",
+  "obf_leng": 11,
+  "obf_var": 1,
+  "result_expr": "c + 0x5",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 207
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | 0x2) + a + 0x1 + -(((((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "(a & 0x2) + -(b * b)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.14,
+  "id": 208
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | 0x4) + -(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & 0x4)",
+  "obf_leng": 44,
+  "obf_var": 1,
+  "result_expr": "(a ^ 0x2) * 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 209
+},{
+  "obf_expr": "(a | (((a + -0x1) ^ 0xFFFFFFFF) + -(((b ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1)) + -(a & (((a + -0x1) ^ 0xFFFFFFFF) + -(((b ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 42,
+  "obf_var": 2,
+  "result_expr": "a ^ (-a + -b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.17,
+  "id": 210
+},{
+  "obf_expr": "c + -(((d & 0x3) * (d | 0x3) + (d & (0x3 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x3)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "c + d * 0x3",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.82,
+  "id": 211
+},{
+  "obf_expr": "((((b | e) << 0x1) + -(b ^ e)) | 0x4) + ((((b | e) << 0x1) + -(b ^ e)) & 0x4)",
+  "obf_leng": 25,
+  "obf_var": 2,
+  "result_expr": "e + -(b ^ 0xFFFFFFFF) + 0x3",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.08,
+  "id": 212
+},{
+  "obf_expr": "(d ^ (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) + ((d & (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "(e * e + -d) ^ 0xFFFFFFFF",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.16,
+  "id": 213
+},{
+  "obf_expr": "(((a + -0x1) ^ 0xFFFFFFFF) | 0x2) + (((a + -0x1) ^ 0xFFFFFFFF) & 0x2)",
+  "obf_leng": 17,
+  "obf_var": 1,
+  "result_expr": "-a + 0x2",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 214
+},{
+  "obf_expr": "((a + b + 0x1 + ((-a + -0x1) | (-b + -0x1))) & ((((((a + -0x1) ^ 0xFFFFFFFF) | 0x1) << 0x1) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0x1)) ^ 0xFFFFFFFF)) + ((((a + -0x1) ^ 0xFFFFFFFF) | 0x1) << 0x1) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0x1)",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "a | b | (-a + 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.19,
+  "id": 215
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF) + -((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) + -(((((a ^ 0xFFFFFFFF) | b) + -(a ^ 0xFFFFFFFF)) | (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 70,
+  "obf_var": 3,
+  "result_expr": "(a & b) ^ (e * e)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 0.31,
+  "id": 216
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ (0xFFFFFFFE ^ 0xFFFFFFFF)) + ((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) | 0xFFFFFFFE) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 1,
+  "result_expr": "a * a + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 217
+},{
+  "obf_expr": "((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF) | ((a ^ 0xFFFFFFFF) + 0x1)) + -(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF)",
+  "obf_leng": 50,
+  "obf_var": 1,
+  "result_expr": "(a * a) & (-a)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.12,
+  "id": 218
+},{
+  "obf_expr": "(((((((a ^ 0xFFFFFFFF) | b) + a + 0x1) ^ 0xFFFFFFFF) | ((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a))) + ((a ^ 0xFFFFFFFF) | b) + a + 0x1 + 0x1) ^ 0xFFFFFFFF) + 0x1",
+  "obf_leng": 47,
+  "obf_var": 2,
+  "result_expr": "-(a & b & (a * a))",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.16,
+  "id": 219
+},{
+  "obf_expr": "(((a ^ (b ^ 0xFFFFFFFF)) + ((a | b) << 0x1) + 0x1) ^ 0xFFFFFFFC) + ((((a ^ (b ^ 0xFFFFFFFF)) + ((a | b) << 0x1) + 0x1) & 0xFFFFFFFC) << 0x1)",
+  "obf_leng": 33,
+  "obf_var": 2,
+  "result_expr": "a + b + 0xFFFFFFFC",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.15,
+  "id": 220
+},{
+  "obf_expr": "((((d ^ 0xFFFFFFFF) | 0x2) + -(d ^ 0xFFFFFFFF)) | ((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e))) + ((((d ^ 0xFFFFFFFF) | 0x2) + -(d ^ 0xFFFFFFFF)) & ((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)))",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "(d & 0x2) + d * e",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 221
+},{
+  "obf_expr": "(((a + -0x1) ^ 0xFFFFFFFF) | ((c + -0x1) ^ 0xFFFFFFFF)) + (((a + -0x1) ^ 0xFFFFFFFF) | ((c + -0x1) ^ 0xFFFFFFFF)) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ ((c + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 42,
+  "obf_var": 2,
+  "result_expr": "-a + -c",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 222
+},{
+  "obf_expr": "(((((a & c) * (a | c) + (a & (c ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) | ((a & (b ^ 0xFFFFFFFF)) + b)) + -(((a & c) * (a | c) + (a & (c ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 57,
+  "obf_var": 3,
+  "result_expr": "-((a * c) & (a | b))",
+  "result_leng": 8,
+  "result_var": 3,
+  "time": 1.09,
+  "id": 223
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ (((a & (0x1 ^ 0xFFFFFFFF)) + 0x1) ^ 0xFFFFFFFF)) + ((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) << 0x1) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "d * d + (a | 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.18,
+  "id": 224
+},{
+  "obf_expr": "(((c + -0x1) ^ 0xFFFFFFFF) | (((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c) + -0x1) ^ 0xFFFFFFFF)) + (((c + -0x1) ^ 0xFFFFFFFF) & (((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "c * (b ^ 0xFFFFFFFF)",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 225
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) | ((a | 0x1) + (a & 0x1))) + -(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) & ((a | 0x1) + (a & 0x1)))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "(b * b) ^ (a + 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 226
+},{
+  "obf_expr": "a + -c + -((a | (c ^ 0xFFFFFFFF)) + (a | (c ^ 0xFFFFFFFF))) + -0x2 + -(((a | 0x2) + -(a & 0x2)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 35,
+  "obf_var": 2,
+  "result_expr": "(a ^ c) + (a ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.88,
+  "id": 227
+},{
+  "obf_expr": "((a | ((d ^ 0xFFFFFFFF) + 0x1)) << 0x1) + -(a ^ ((d ^ 0xFFFFFFFF) + 0x1)) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 26,
+  "obf_var": 2,
+  "result_expr": "a + (d ^ 0xFFFFFFFF)",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.13,
+  "id": 228
+},{
+  "obf_expr": "d + 0x2 + 0x1 + ((-d + -0x1) | (-0x2 + -0x1)) + -(0xFFFFFFFD ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 25,
+  "obf_var": 1,
+  "result_expr": "((d & 0x2) + -d) ^ 0xFFFFFFFF",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 229
+},{
+  "obf_expr": "(e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -(((b + e + 0x1 + ((-b + -0x1) | (-e + -0x1)) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 48,
+  "obf_var": 2,
+  "result_expr": "e * e + -(b | e)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.13,
+  "id": 230
+},{
+  "obf_expr": "(((d & (0x2 ^ 0xFFFFFFFF)) + 0x2) & 0x4) * (((d & (0x2 ^ 0xFFFFFFFF)) + 0x2) | 0x4) + (((d & (0x2 ^ 0xFFFFFFFF)) + 0x2) & (0x4 ^ 0xFFFFFFFF)) * ((((d & (0x2 ^ 0xFFFFFFFF)) + 0x2) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(d | 0x2) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 231
+},{
+  "obf_expr": "((((e | 0x2) << 0x1) + -(e ^ 0x2)) & 0x3) * ((((e | 0x2) << 0x1) + -(e ^ 0x2)) | 0x3) + ((((e | 0x2) << 0x1) + -(e ^ 0x2)) & (0x3 ^ 0xFFFFFFFF)) * (((((e | 0x2) << 0x1) + -(e ^ 0x2)) ^ 0xFFFFFFFF) & 0x3)",
+  "obf_leng": 55,
+  "obf_var": 1,
+  "result_expr": "(e + 0x2) * 0x3",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 1.01,
+  "id": 232
+},{
+  "obf_expr": "((a + -0x1) ^ 0xFFFFFFFF) + -(((c ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1 + -(((a | b) + -(a & b)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 33,
+  "obf_var": 3,
+  "result_expr": "-a + -c + (a ^ b)",
+  "result_leng": 9,
+  "result_var": 3,
+  "time": 1.03,
+  "id": 233
+},{
+  "obf_expr": "(a & (0x1 ^ 0xFFFFFFFF)) + 0x1 + -(0xFFFFFFFC ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 15,
+  "obf_var": 1,
+  "result_expr": "(-(a & 0xFFFFFFFE) + 0x2) ^ 0xFFFFFFFF",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 234
+},{
+  "obf_expr": "(((d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)) | (b + -(d ^ 0xFFFFFFFF) + -0x1)) + -(((d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)) & (b + -(d ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 60,
+  "obf_var": 2,
+  "result_expr": "(d * 0x2) ^ (b + d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.21,
+  "id": 235
+},{
+  "obf_expr": "(a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3) + -((b + -0x1) ^ 0xFFFFFFFF) + -((((a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3)) | (((b + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "b + a * 0x3 + ((a * 0x3) | ((-b) ^ 0xFFFFFFFF)) * 0xFFFFFFFE + 0xFFFFFFFE",
+  "result_leng": 18,
+  "result_var": 2,
+  "time": 1.5,
+  "id": 236
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ (((a & (0x1 ^ 0xFFFFFFFF)) + 0x1) ^ 0xFFFFFFFF)) + ((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) | ((a & (0x1 ^ 0xFFFFFFFF)) + 0x1)) << 0x1) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 1,
+  "result_expr": "a + ((a * a) | 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.35,
+  "id": 237
+},{
+  "obf_expr": "(((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF) | ((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2))) + (a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + 0x1 + -0x1) ^ 0xFFFFFFFF",
+  "obf_leng": 68,
+  "obf_var": 1,
+  "result_expr": "-((a * a) & (a * 0x2))",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.1,
+  "id": 238
+},{
+  "obf_expr": "(((((c + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((c + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) & (0x3 ^ 0xFFFFFFFF)) + 0x3",
+  "obf_leng": 29,
+  "obf_var": 1,
+  "result_expr": "(-c + 0x2) | 0x3",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 239
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) | ((b | 0x1) + (b & 0x1))) + -(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b)) & ((b | 0x1) + (b & 0x1)))",
+  "obf_leng": 56,
+  "obf_var": 1,
+  "result_expr": "(b * b) ^ (b + 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.17,
+  "id": 240
+},{
+  "obf_expr": "a + (e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + 0x1 + ((-a + -0x1) | (-((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) + -0x1))",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "a | (e * e)",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.21,
+  "id": 241
+},{
+  "obf_expr": "a + -(b ^ 0xFFFFFFFF) + -0x1 + -((a ^ (0x2 ^ 0xFFFFFFFF)) + ((a | 0x2) << 0x1) + 0x1) + -(((a + -(b ^ 0xFFFFFFFF) + -0x1) | (((a ^ (0x2 ^ 0xFFFFFFFF)) + ((a | 0x2) << 0x1) + 0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "(a + b) ^ (a + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 242
+},{
+  "obf_expr": "((((a + -0x1) ^ 0xFFFFFFFF) | 0x3) << 0x1) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0x3)",
+  "obf_leng": 20,
+  "obf_var": 1,
+  "result_expr": "-a + 0x3",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 243
+},{
+  "obf_expr": "(a & c) * (a | c) + (a & (c ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & c)",
+  "obf_leng": 19,
+  "obf_var": 2,
+  "result_expr": "a * c",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 244
+},{
+  "obf_expr": "(((d + -0x1) ^ 0xFFFFFFFF) | ((a & (d ^ 0xFFFFFFFF)) + d)) + -(((d + -0x1) ^ 0xFFFFFFFF) & ((a & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 30,
+  "obf_var": 2,
+  "result_expr": "(-d) ^ (a | d)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 245
+},{
+  "obf_expr": "(((e | 0x2) + -(e & 0x2)) ^ (0xFFFFFFFE ^ 0xFFFFFFFF)) + (((e | 0x2) + -(e & 0x2)) | 0xFFFFFFFE) + (((e | 0x2) + -(e & 0x2)) | 0xFFFFFFFE) + 0x1",
+  "obf_leng": 36,
+  "obf_var": 1,
+  "result_expr": "(e ^ 0x2) + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 246
+},{
+  "obf_expr": "(((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2)) & ((((((a + -0x1) ^ 0xFFFFFFFF) | 0x1) << 0x1) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0x1)) ^ 0xFFFFFFFF)) + ((((a + -0x1) ^ 0xFFFFFFFF) | 0x1) << 0x1) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0x1)",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "(e * 0x2) | (-a + 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 247
+},{
+  "obf_expr": "(a & (0x1 ^ 0xFFFFFFFF)) + 0x1",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "a | 0x1",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 248
+},{
+  "obf_expr": "(((a + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) | ((((e ^ 0xFFFFFFFF) + 0x1) | 0x2) + (((e ^ 0xFFFFFFFF) + 0x1) & 0x2))) + a + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1 + 0x1",
+  "obf_leng": 39,
+  "obf_var": 2,
+  "result_expr": "(a + 0xFFFFFFFE) & (-e + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 249
+},{
+  "obf_expr": "(c | 0xFFFFFFFD) + (c & 0xFFFFFFFD)",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "(c & 0xFFFFFFFD) + (c | 0xFFFFFFFD)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 250
+},{
+  "obf_expr": "((a + -(b ^ 0xFFFFFFFF) + -0x1) ^ 0x4) + (((a + -(b ^ 0xFFFFFFFF) + -0x1) & 0x4) << 0x1)",
+  "obf_leng": 25,
+  "obf_var": 2,
+  "result_expr": "b + -(a ^ 0xFFFFFFFF) + 0x3",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 251
+},{
+  "obf_expr": "(a & 0x6) * (a | 0x6) + (a & (0x6 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x6) + -(((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 45,
+  "obf_var": 3,
+  "result_expr": "a * 0x6 + b * c",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 1.4,
+  "id": 252
+},{
+  "obf_expr": "(e ^ 0xFFFFFFFF) + 0x1 + -(((b + -e + -((b | (e ^ 0xFFFFFFFF)) << 0x1) + -0x2 + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 33,
+  "obf_var": 2,
+  "result_expr": "-e + -(b ^ e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 253
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | ((b + -0x1) ^ 0xFFFFFFFF)) + (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & ((b + -0x1) ^ 0xFFFFFFFF)) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "d * d + -b + 0x2",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 254
+},{
+  "obf_expr": "(((a & (d ^ 0xFFFFFFFF)) + d) ^ (0x4 ^ 0xFFFFFFFF)) + (((a & (d ^ 0xFFFFFFFF)) + d) | 0x4) + (((a & (d ^ 0xFFFFFFFF)) + d) | 0x4) + 0x1",
+  "obf_leng": 33,
+  "obf_var": 2,
+  "result_expr": "(a | d) + 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 255
+},{
+  "obf_expr": "d + -((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) + -((d | (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 1,
+  "result_expr": "d ^ (d * d)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 1.04,
+  "id": 256
+},{
+  "obf_expr": "(a ^ ((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e))) + ((a & ((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e))) << 0x1)",
+  "obf_leng": 45,
+  "obf_var": 2,
+  "result_expr": "a + e * e",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.09,
+  "id": 257
+},{
+  "obf_expr": "((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF) | ((((a ^ 0xFFFFFFFF) + 0x1) | 0x2) + (((a ^ 0xFFFFFFFF) + 0x1) & 0x2))) + -(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ 0xFFFFFFFF)",
+  "obf_leng": 60,
+  "obf_var": 1,
+  "result_expr": "(a * a) & (-a + 0x2)",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.07,
+  "id": 258
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) ^ ((e + -0x1) ^ 0xFFFFFFFF)) + ((((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) & ((e + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "a * a + -e + 0xFFFFFFFE",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.17,
+  "id": 259
+},{
+  "obf_expr": "(b | e) + (b & e) + -((((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 38,
+  "obf_var": 2,
+  "result_expr": "b + e + -(e * e)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 260
+},{
+  "obf_expr": "((((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF) | ((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2))) + (a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b) + 0x1",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "(a * b) & (a * 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 261
+},{
+  "obf_expr": "(((a | 0x1) + -(a & 0x1)) & 0x4) * (((a | 0x1) + -(a & 0x1)) | 0x4) + (((a | 0x1) + -(a & 0x1)) & (0x4 ^ 0xFFFFFFFF)) * ((((a | 0x1) + -(a & 0x1)) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 47,
+  "obf_var": 1,
+  "result_expr": "(a ^ 0x1) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 262
+},{
+  "obf_expr": "((a + -(((c + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1) | ((a ^ 0x2) + (a & 0x2) + (a & 0x2))) + -((a + -(((c + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1) & ((a ^ 0x2) + (a & 0x2) + (a & 0x2)))",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "(a + -c) ^ (a + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 263
+},{
+  "obf_expr": "(((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ (0xFFFFFFFE ^ 0xFFFFFFFF)) + ((((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) | 0xFFFFFFFE) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "a * b + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 264
+},{
+  "obf_expr": "(e ^ 0xFFFFFFFD) + ((e & 0xFFFFFFFD) << 0x1)",
+  "obf_leng": 9,
+  "obf_var": 1,
+  "result_expr": "(-e + 0x2) ^ 0xFFFFFFFF",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 265
+},{
+  "obf_expr": "(c | 0x1) + (c | 0x1) + -(c ^ 0x1) + -((c ^ 0xFFFFFFFF) + 0x1 + -(0x1 ^ 0xFFFFFFFF) + -0x1) + -((((c | 0x1) + (c | 0x1) + -(c ^ 0x1)) | (((c ^ 0xFFFFFFFF) + 0x1 + -(0x1 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 62,
+  "obf_var": 1,
+  "result_expr": "(-c + 0x1) ^ (-(c ^ 0xFFFFFFFF))",
+  "result_leng": 9,
+  "result_var": 1,
+  "time": 0.1,
+  "id": 266
+},{
+  "obf_expr": "((((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | (b + -(e ^ 0xFFFFFFFF) + -0x1)) + (c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e) + 0x1",
+  "obf_leng": 53,
+  "obf_var": 3,
+  "result_expr": "(c * e) & (b + e)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 1.03,
+  "id": 267
+},{
+  "obf_expr": "(c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c) + -((c ^ 0xFFFFFFFF) + 0x1) + -((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) | (((c ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 60,
+  "obf_var": 1,
+  "result_expr": "(c * c) ^ (-c)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.4,
+  "id": 268
+},{
+  "obf_expr": "(b ^ (d ^ 0xFFFFFFFF)) + ((b | d) << 0x1) + 0x1 + -(((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 43,
+  "obf_var": 2,
+  "result_expr": "b + d + -(d * d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.04,
+  "id": 269
+},{
+  "obf_expr": "(a | 0x2) + (a & 0x2) + -0xFFFFFFFF + -((((a | 0x2) + (a & 0x2)) | (0xFFFFFFFF ^ 0xFFFFFFFF)) + (((a | 0x2) + (a & 0x2)) | (0xFFFFFFFF ^ 0xFFFFFFFF))) + -0x2",
+  "obf_leng": 38,
+  "obf_var": 1,
+  "result_expr": "(a + 0x2) ^ 0xFFFFFFFF",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.03,
+  "id": 270
+},{
+  "obf_expr": "(a ^ 0xFFFFFFFF) + 0x1 + -0x4 + -((((a ^ 0xFFFFFFFF) + 0x1) | (0x4 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 24,
+  "obf_var": 1,
+  "result_expr": "(-a) ^ 0x4",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 271
+},{
+  "obf_expr": "(((c & d) * (c | d) + (c & (d ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & d)) | ((((c | 0x1) + -(c & 0x1)) ^ 0xFFFFFFFF) + 0x1)) + (((c & d) * (c | d) + (c & (d ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & d)) & ((((c | 0x1) + -(c & 0x1)) ^ 0xFFFFFFFF) + 0x1))",
+  "obf_leng": 65,
+  "obf_var": 2,
+  "result_expr": "c * d + -(c ^ 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.03,
+  "id": 272
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & (((d ^ (0x1 ^ 0xFFFFFFFF)) + ((d | 0x1) << 0x1) + 0x1) ^ 0xFFFFFFFF)) + (d ^ (0x1 ^ 0xFFFFFFFF)) + ((d | 0x1) << 0x1) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 1,
+  "result_expr": "(d * d) | (-(d ^ 0xFFFFFFFF))",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 0.06,
+  "id": 273
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) & ((((c | 0x2) << 0x1) + -(c ^ 0x2)) ^ 0xFFFFFFFF)) + ((c | 0x2) << 0x1) + -(c ^ 0x2)",
+  "obf_leng": 43,
+  "obf_var": 2,
+  "result_expr": "(d * d) | (c + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 274
+},{
+  "obf_expr": "d + 0x2 + 0x1 + ((-d + -0x1) | (-0x2 + -0x1)) + -(0xFFFFFFFC ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 25,
+  "obf_var": 1,
+  "result_expr": "(d & 0xFFFFFFFD) + 0xFFFFFFFE",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 275
+},{
+  "obf_expr": "(((b & b) * (b | b) + (b & (b ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & b) + -0x1) ^ 0xFFFFFFFF) + -((a + -0x1 + -((a | (0x1 ^ 0xFFFFFFFF)) + (a | (0x1 ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "-(b * b) + (a ^ 0x1)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.34,
+  "id": 276
+},{
+  "obf_expr": "(a & 0xFFFFFFFC) * (a | 0xFFFFFFFC) + (a & (0xFFFFFFFC ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0xFFFFFFFC)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "(-a) << 0x2",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 1.01,
+  "id": 277
+},{
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) | ((d | e) + (d & e))) + -(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & ((d | e) + (d & e)))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "(e * e) ^ (d + e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.22,
+  "id": 278
+},{
+  "obf_expr": "a + (a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + 0x1 + ((-a + -0x1) | (-((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) + -0x1))",
+  "obf_leng": 53,
+  "obf_var": 1,
+  "result_expr": "a | (a * a)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 1.04,
+  "id": 279
+},{
+  "obf_expr": "(e | 0x2) + (e & 0x2)",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "e + 0x2",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 280
+},{
+  "obf_expr": "(d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2) + -((d + -0x1) ^ 0xFFFFFFFF) + -((((d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)) | (((d + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 62,
+  "obf_var": 1,
+  "result_expr": "(d * 0x2) ^ (-d)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.08,
+  "id": 281
+},{
+  "obf_expr": "(d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e) + -(((c ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 31,
+  "obf_var": 3,
+  "result_expr": "d * e + -c",
+  "result_leng": 6,
+  "result_var": 3,
+  "time": 1.05,
+  "id": 282
+},{
+  "obf_expr": "(((e & (0x2 ^ 0xFFFFFFFF)) + 0x2) & 0x4) * (((e & (0x2 ^ 0xFFFFFFFF)) + 0x2) | 0x4) + (((e & (0x2 ^ 0xFFFFFFFF)) + 0x2) & (0x4 ^ 0xFFFFFFFF)) * ((((e & (0x2 ^ 0xFFFFFFFF)) + 0x2) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(e | 0x2) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.01,
+  "id": 283
+},{
+  "obf_expr": "(((a + -0x1) ^ 0xFFFFFFFF) ^ (((a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1))) ^ 0xFFFFFFFF) + 0x1)) + ((((a + -0x1) ^ 0xFFFFFFFF) & (((a + 0x1 + 0x1 + ((-a + -0x1) | (-0x1 + -0x1))) ^ 0xFFFFFFFF) + 0x1)) << 0x1)",
+  "obf_leng": 59,
+  "obf_var": 1,
+  "result_expr": "-a + -(a | 0x1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.04,
+  "id": 284
+},{
+  "obf_expr": "(a & 0x3) * (a | 0x3) + (a & (0x3 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x3) + -(((c & 0x5) * (c | 0x5) + (c & (0x5 ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & 0x5)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 45,
+  "obf_var": 2,
+  "result_expr": "-(c ^ 0xFFFFFFFF) + (c << 0x2) + ((a * 0xFFFFFFFD) ^ 0xFFFFFFFF)",
+  "result_leng": 14,
+  "result_var": 2,
+  "time": 1.34,
+  "id": 285
+},{
+  "obf_expr": "(((a | b) + (a & b)) | 0x2) + (((a | b) + (a & b)) | 0x2) + -(((a | b) + (a & b)) ^ 0x2)",
+  "obf_leng": 30,
+  "obf_var": 2,
+  "result_expr": "a + b + 0x2",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 286
+},{
+  "obf_expr": "(((((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1) | 0x4) + (((((a & e) * (a | e) + (a & (e ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1) & 0x4)",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "-(a * e) + 0x4",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 287
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF) + -(((d + -0x2 + -((d | (0x2 ^ 0xFFFFFFFF)) + (d | (0x2 ^ 0xFFFFFFFF))) + -0x2 + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 42,
+  "obf_var": 2,
+  "result_expr": "(a & 0x2) + -(d ^ 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.09,
+  "id": 288
+},{
+  "obf_expr": "((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) | ((a ^ ((b ^ 0xFFFFFFFF) + 0x1)) + ((a & ((b ^ 0xFFFFFFFF) + 0x1)) << 0x1))) + (d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 3,
+  "result_expr": "(d * d) & (a + -b)",
+  "result_leng": 8,
+  "result_var": 3,
+  "time": 0.13,
+  "id": 289
+},{
+  "obf_expr": "(((e + -(((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + -0x1) | 0x2) << 0x1) + -((e + -(((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + -0x1) ^ 0x2)",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "-(e * (d ^ 0xFFFFFFFF)) + 0x2",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 290
+},{
+  "obf_expr": "((((b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | ((e & 0x2) * (e | 0x2) + (e & (0x2 ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0x2))) + -(((b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF)",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "(b * e) & (e << 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 291
+},{
+  "obf_expr": "(((c | ((a & (c ^ 0xFFFFFFFF)) + c)) + (c & ((a & (c ^ 0xFFFFFFFF)) + c))) ^ 0xFFFFFFFF) + ((((c | ((a & (c ^ 0xFFFFFFFF)) + c)) + (c & ((a & (c ^ 0xFFFFFFFF)) + c))) & 0xFFFFFFFF) << 0x1)",
+  "obf_leng": 45,
+  "obf_var": 2,
+  "result_expr": "c + (a | c) + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 292
+},{
+  "obf_expr": "(((d | 0x2) + (d & 0x2)) & 0x4) * (((d | 0x2) + (d & 0x2)) | 0x4) + (((d | 0x2) + (d & 0x2)) & (0x4 ^ 0xFFFFFFFF)) * ((((d | 0x2) + (d & 0x2)) ^ 0xFFFFFFFF) & 0x4)",
+  "obf_leng": 43,
+  "obf_var": 1,
+  "result_expr": "(d + 0x2) << 0x2",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 293
+},{
+  "obf_expr": "(((e + -0x1) ^ 0xFFFFFFFF) ^ 0x3) + (((e + -0x1) ^ 0xFFFFFFFF) & 0x3) + (((e + -0x1) ^ 0xFFFFFFFF) & 0x3)",
+  "obf_leng": 26,
+  "obf_var": 1,
+  "result_expr": "-e + 0x3",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 294
+},{
+  "obf_expr": "((((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF) | (b + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + (a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2) + 0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "(a * 0x2) & (b + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 295
+},{
+  "obf_expr": "(b & (e ^ 0xFFFFFFFF)) + e",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "b | e",
+  "result_leng": 3,
+  "result_var": 2,
+  "time": 0.01,
+  "id": 296
+},{
+  "obf_expr": "(((b | d) + -(b & d)) | 0x4) + (((b | d) + -(b & d)) & 0x4)",
+  "obf_leng": 21,
+  "obf_var": 2,
+  "result_expr": "(b ^ d) + 0x4",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 297
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -((c | 0x2) + (c & 0x2)) + -((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | (((c | 0x2) + (c & 0x2)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "(d * d) ^ (c + 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.4,
+  "id": 298
+},{
+  "obf_expr": "(((a ^ 0xFFFFFFFF) + 0x1) ^ (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) + ((((a ^ 0xFFFFFFFF) + 0x1) & (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) << 0x1)",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "-a + -(e * e)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.11,
+  "id": 299
+},{
+  "obf_expr": "((((b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | ((b ^ 0xFFFFFFFF) + 0x1)) + (b & e) * (b | e) + (b & (e ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & e) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "(b * e) & (-b)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.02,
+  "id": 300
+},{
+  "obf_expr": "(c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e) + -0x2 + -((((c & e) * (c | e) + (c & (e ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & e)) | (0x2 ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 2,
+  "result_expr": "(c * e) ^ 0x2",
+  "result_leng": 5,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 301
+},{
+  "obf_expr": "((((((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1) | 0x4) << 0x1) + -(((((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) + 0x1) ^ 0x4)",
+  "obf_leng": 54,
+  "obf_var": 2,
+  "result_expr": "-(d * e) + 0x4",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 302
+},{
+  "obf_expr": "((a ^ 0xFFFFFFFF) | b) + a + 0x1 + -(((a | 0x1) << 0x1) + -(a ^ 0x1)) + -(((((a ^ 0xFFFFFFFF) | b) + a + 0x1) | ((((a | 0x1) << 0x1) + -(a ^ 0x1)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 50,
+  "obf_var": 2,
+  "result_expr": "(a & b) ^ (a + 0x1)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 303
+},{
+  "obf_expr": "(((((e ^ 0xFFFFFFFF) | 0x2) + -(e ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) ^ ((b | e) + -(b & e))) + ((((((e ^ 0xFFFFFFFF) | 0x2) + -(e ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) & ((b | e) + -(b & e))) << 0x1)",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "-(e & 0x2) + (b ^ e)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.07,
+  "id": 304
+},{
+  "obf_expr": "(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & (((b ^ d) + (b & d) + (b & d)) ^ 0xFFFFFFFF)) + (b ^ d) + (b & d) + (b & d)",
+  "obf_leng": 45,
+  "obf_var": 2,
+  "result_expr": "(b * d) | (b + d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 1.05,
+  "id": 305
+},{
+  "obf_expr": "((d + -(0x2 ^ 0xFFFFFFFF) + -0x1) & 0x3) * ((d + -(0x2 ^ 0xFFFFFFFF) + -0x1) | 0x3) + ((d + -(0x2 ^ 0xFFFFFFFF) + -0x1) & (0x3 ^ 0xFFFFFFFF)) * (((d + -(0x2 ^ 0xFFFFFFFF) + -0x1) ^ 0xFFFFFFFF) & 0x3)",
+  "obf_leng": 51,
+  "obf_var": 1,
+  "result_expr": "(d + 0x2) * 0x3",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.39,
+  "id": 306
+},{
+  "obf_expr": "((b + -d + -((b | (d ^ 0xFFFFFFFF)) << 0x1) + -0x2) | ((d ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1)) + -((b + -d + -((b | (d ^ 0xFFFFFFFF)) << 0x1) + -0x2) & ((d ^ 0xFFFFFFFF) + 0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1))",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "b ^ d ^ (-d + 0x2)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.23,
+  "id": 307
+},{
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -((e + -0x1) ^ 0xFFFFFFFF) + -((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | (((e + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 62,
+  "obf_var": 2,
+  "result_expr": "(d * d) ^ (-e)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.55,
+  "id": 308
+},{
+  "obf_expr": "(((b & 0x2) * (b | 0x2) + (b & (0x2 ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & 0x2)) & (((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF)) + (d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "(b * 0x2) | (d * d)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.12,
+  "id": 309
+},{
+  "obf_expr": "a + -((a & 0x4) * (a | 0x4) + (a & (0x4 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x4)) + -((a | (((a & 0x4) * (a | 0x4) + (a & (0x4 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x4)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 52,
+  "obf_var": 1,
+  "result_expr": "a ^ (a << 0x2)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.13,
+  "id": 310
+},{
+  "obf_expr": "((((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) ^ 0xFFFFFFFF) | ((a ^ 0xFFFFFFFF) + 0x1)) + (e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + 0x1",
+  "obf_leng": 49,
+  "obf_var": 2,
+  "result_expr": "(e * e) & (-a)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 0.05,
+  "id": 311
+},{
+  "obf_expr": "((((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) | ((b & (d ^ 0xFFFFFFFF)) + d)) + (b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c) + 0x1",
+  "obf_leng": 51,
+  "obf_var": 3,
+  "result_expr": "(b * c) & (b | d)",
+  "result_leng": 7,
+  "result_var": 3,
+  "time": 1.05,
+  "id": 312
+},{
+  "obf_expr": "((((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) ^ 0xFFFFFFFF) + 0x1) ^ (((a | d) + -(a & d)) ^ 0xFFFFFFFF)) + (((((((a ^ 0xFFFFFFFF) | 0x2) + -(a ^ 0xFFFFFFFF)) ^ 0xFFFFFFFF) + 0x1) | ((a | d) + -(a & d))) << 0x1) + 0x1",
+  "obf_leng": 53,
+  "obf_var": 2,
+  "result_expr": "-(a & 0x2) + (a ^ d)",
+  "result_leng": 8,
+  "result_var": 2,
+  "time": 0.09,
+  "id": 313
+},{
+  "obf_expr": "((a | b) << 0x1) + -(a ^ b) + -(((a & (b ^ 0xFFFFFFFF)) + b) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 24,
+  "obf_var": 2,
+  "result_expr": "a + b + (a | b)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.21,
+  "id": 314
+},{
+  "obf_expr": "(a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -((((b & c) * (b | c) + (b & (c ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & c) + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 50,
+  "obf_var": 3,
+  "result_expr": "a * a + -(b * c)",
+  "result_leng": 8,
+  "result_var": 3,
+  "time": 1.05,
+  "id": 315
+},{
+  "obf_expr": "(a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + (a ^ 0xFFFFFFFF) + 0x1 + 0x1 + ((-((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) + -0x1) | (-((a ^ 0xFFFFFFFF) + 0x1) + -0x1))",
+  "obf_leng": 61,
+  "obf_var": 1,
+  "result_expr": "(a * a) | (-a)",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 0.33,
+  "id": 316
+},{
+  "obf_expr": "(((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) | ((a + -0x1) ^ 0xFFFFFFFF)) + (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a)) & ((a + -0x1) ^ 0xFFFFFFFF)) + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 61,
+  "obf_var": 1,
+  "result_expr": "(-a + 0x2) * (a ^ 0xFFFFFFFF)",
+  "result_leng": 8,
+  "result_var": 1,
+  "time": 1.04,
+  "id": 317
+},{
+  "obf_expr": "(a & 0x4) * (a | 0x4) + (a & (0x4 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x4) + -(((((c & c) * (c | c) + (c & (c ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & c)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1 + -(((((a | b) + -(a & b)) ^ 0xFFFFFFFF) + 0x1) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 68,
+  "obf_var": 3,
+  "result_expr": "-(c * c) + -(a ^ b) + (a << 0x2)",
+  "result_leng": 13,
+  "result_var": 3,
+  "time": 0.24,
+  "id": 318
+},{
+  "obf_expr": "(a | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + (a & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(0xFFFFFFFF ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 51,
+  "obf_var": 2,
+  "result_expr": "a + d * d + 0xFFFFFFFF",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.31,
+  "id": 319
+},{
+  "obf_expr": "(a | 0xFFFFFFFB) + (a | 0xFFFFFFFB) + -(a ^ 0xFFFFFFFB)",
+  "obf_leng": 12,
+  "obf_var": 1,
+  "result_expr": "a + 0xFFFFFFFB",
+  "result_leng": 3,
+  "result_var": 1,
+  "time": 0.02,
+  "id": 320
+},{
+  "obf_expr": "(((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ (((d + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF)) + ((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) | ((d + -0x1) ^ 0xFFFFFFFF)) << 0x1) + 0x1",
+  "obf_leng": 59,
+  "obf_var": 1,
+  "result_expr": "d * d + -d",
+  "result_leng": 6,
+  "result_var": 1,
+  "time": 1.04,
+  "id": 321
+},{
+  "obf_expr": "(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) | ((b | 0x2) + -(b & 0x2))) + (((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) & ((b | 0x2) + -(b & 0x2)))",
+  "obf_leng": 57,
+  "obf_var": 2,
+  "result_expr": "a * 0x2 + (b ^ 0x2)",
+  "result_leng": 7,
+  "result_var": 2,
+  "time": 0.03,
+  "id": 322
+}
+]

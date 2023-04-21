@@ -1,0 +1,193 @@
+[
+{
+  "module": "xyntia",
+  "obf_expr": "(a ^ (a + 0xFFFFFFF9)) & (a ^ 0x7)",
+  "obf_leng": 9,
+  "obf_var": 1,
+  "result_expr": "(((not (v0) & (v0 + 1)) ^ (6 - v0)) & (1 + v0))",
+  "result_leng": 16,
+  "result_var": 1,
+  "time": 11.45,
+  "id": 0
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x38) ^ (a + 0xFF0175B4)) & ((a + 0x38) ^ 0xFE8A84)) ^ (a + 0x38)) ^ (a + 0xFF0175B4)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.38,
+  "id": 1
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x24) ^ (a + 0xFF0175A0)) & ((a + 0x24) ^ 0xFE8A84)) ^ (a + 0x24)) ^ (a + 0xFF0175A0)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.39,
+  "id": 2
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x28) ^ (a + 0xFF0175A4)) & ((a + 0x28) ^ 0xFE8A84)) ^ (a + 0x28)) ^ (a + 0xFF0175A4)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.39,
+  "id": 3
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x2C) ^ (a + 0xFF0175A8)) & ((a + 0x2C) ^ 0xFE8A84)) ^ (a + 0x2C)) ^ (a + 0xFF0175A8)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.38,
+  "id": 4
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x30) ^ (a + 0xFF0175AC)) & ((a + 0x30) ^ 0xFE8A84)) ^ (a + 0x30)) ^ (a + 0xFF0175AC)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.38,
+  "id": 5
+},{
+  "module": "xyntia",
+  "obf_expr": "(((((a + 0x34) ^ (a + 0xFF0175B0)) & ((a + 0x34) ^ 0xFE8A84)) ^ (a + 0x34)) ^ (a + 0xFF0175B0)) ^ 0xFE8A84",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.37,
+  "id": 6
+},{
+  "module": "xyntia",
+  "obf_expr": "(a + 0xA4) ^ (((a + 0xA4) | ((b ^ c) ^ 0x2)) + 0x1)",
+  "obf_leng": 15,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.44,
+  "id": 7
+},{
+  "module": "xyntia",
+  "obf_expr": "((a + b) ^ 0x7E51AA86) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "(((1 + v1) - not (- (v1))) & - (not ((v1 + (v0 + 1)))))",
+  "result_leng": 18,
+  "result_var": 2,
+  "time": 0.13,
+  "id": 8
+},{
+  "module": "xyntia",
+  "obf_expr": "((a ^ 0x6CB3127D) + 0x85B72BFE) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "((v0 + 2) & 2)",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.13,
+  "id": 9
+},{
+  "module": "xyntia",
+  "obf_expr": "((a ^ 0x6CB3127D) + 0x85B72BFE) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "((-3 & (v0 | 1)) + (1 - (v0 ^ (v0 & 1))))",
+  "result_leng": 15,
+  "result_var": 1,
+  "time": 0.09,
+  "id": 10
+},{
+  "module": "xyntia",
+  "obf_expr": "(a + -(((b | a) | 0x6BEDB123) & 0x25AF0713)) & 0x2",
+  "obf_leng": 12,
+  "obf_var": 2,
+  "result_expr": "(((v0 | 1) ^ v0) ^ (((2 & (1 + v0)) + 1) ^ (1 & (v1 + (v1 - v0)))))",
+  "result_leng": 22,
+  "result_var": 2,
+  "time": 0.19,
+  "id": 11
+},{
+  "module": "xyntia",
+  "obf_expr": "((a + b + 0xF4ACDB35) ^ 0x7E51AA86) & 0x2",
+  "obf_leng": 9,
+  "obf_var": 2,
+  "result_expr": "(((1 + v0) + (1 - v0)) & ((v0 + v1) - 1))",
+  "result_leng": 15,
+  "result_var": 2,
+  "time": 0.1,
+  "id": 12
+},{
+  "module": "xyntia",
+  "obf_expr": "((a | 0x6896D451) + 0xBF980DCE) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "(2 & not (v0))",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.09,
+  "id": 13
+},{
+  "module": "xyntia",
+  "obf_expr": "a + (b & 0xFFFF)",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.96,
+  "id": 14
+},{
+  "module": "xyntia",
+  "obf_expr": "((a & 0x195AE237) + 0xAF0E7D0D) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "(- (v0) & 2)",
+  "result_leng": 4,
+  "result_var": 1,
+  "time": 0.06,
+  "id": 15
+},{
+  "module": "xyntia",
+  "obf_expr": "((((a & 0x195AE237) + 0xAF0E7D0D) & 0x32F39683) + 0x80501659) & 0x2",
+  "obf_leng": 11,
+  "obf_var": 1,
+  "result_expr": "(2 & not (v0))",
+  "result_leng": 5,
+  "result_var": 1,
+  "time": 0.05,
+  "id": 16
+},{
+  "module": "xyntia",
+  "obf_expr": "(a + (b | 0x40DC33EA)) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "(2 & (not ((v0 + v1)) ^ v1))",
+  "result_leng": 9,
+  "result_var": 2,
+  "time": 0.06,
+  "id": 17
+},{
+  "module": "xyntia",
+  "obf_expr": "(((a ^ 0x1) & (b | 0x800)) ^ (c + 0xFFFFF800)) & (((a ^ 0x1) & (b | 0x800)) | 0x400)",
+  "obf_leng": 21,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.82,
+  "id": 18
+}
+]

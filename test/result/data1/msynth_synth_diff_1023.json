@@ -1,0 +1,30 @@
+[
+{
+  "obf_expr": "(a | b) + b + -((a ^ 0xFFFFFFFF) & b)",
+  "obf_leng": 12,
+  "result_expr": "a + b",
+  "result_leng": 3,
+  "obf_var": 2,
+  "result_var": 2,
+  "time": 0.04,
+  "id": 0
+},{
+  "obf_expr": "(((c & ((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b))) * (c | ((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b))) + (c & (((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)) ^ 0xFFFFFFFF)) * ((c ^ 0xFFFFFFFF) & ((a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b)))) ^ 0xFFFFFFFF) + 0x1 + -0x1",
+  "obf_leng": 98,
+  "result_expr": "(a * b * c) ^ 0xFFFFFFFF",
+  "result_leng": 7,
+  "obf_var": 3,
+  "result_var": 3,
+  "time": 7.14,
+  "id": 1
+},{
+  "obf_expr": "(((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ b) + -(((((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ 0xFFFFFFFF) & b) + ((((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ 0xFFFFFFFF) & b))",
+  "obf_leng": 262,
+  "result_expr": "(((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ b) + -(((((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ 0xFFFFFFFF) & b) + ((((((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) & ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -(((b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d)) | ((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d))) + -0x1) ^ 0xFFFFFFFF) & b))",
+  "result_leng": 262,
+  "obf_var": 2,
+  "result_var": 2,
+  "time": 60.01,
+  "id": 2
+}
+]

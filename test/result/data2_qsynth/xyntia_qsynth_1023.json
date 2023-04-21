@@ -1,0 +1,5003 @@
+[
+{
+  "obf_expr": "((- ((v2 - v3)) ^ (v2 & v3)) ^ v2)",
+  "obf_leng": 11,
+  "result_expr": "((- ((v2 - v3)) ^ (v2 & v3)) ^ v2)",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.9,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 0
+},{
+  "obf_expr": "((v0 & (v3 + v0)) ^ (v0 + v2))",
+  "obf_leng": 9,
+  "result_expr": "((v0 & (v3 + v0)) ^ (v0 + v2))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.93,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 1
+},{
+  "obf_expr": "(((1 * (v2 * v1)) | (- ((v2 ^ v1)) + (v1 ^ v1))) & (- (1) | v1))",
+  "obf_leng": 19,
+  "result_expr": "((v2 * v1) | - ((v2 ^ v1)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 2.39,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 2
+},{
+  "obf_expr": "(((v2 + v3) ^ (not ((1 ^ 1)) ^ (v3 | v3))) + (((((v2 ^ v2) ++ v2) / v2) & 1) + (- (1) - (v2 ^ (v1 * v3)))))",
+  "obf_leng": 33,
+  "result_expr": "(((v2 + v3) ^ not (v3)) + ((((0 ++ v2) / v2) & 1) - (1 + (v2 ^ (v1 * v3)))))",
+  "result_leng": 24,
+  "success": "yes",
+  "time": 1.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 3
+},{
+  "obf_expr": "(v4 + v2)",
+  "obf_leng": 3,
+  "result_expr": "(v4 + v2)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 4
+},{
+  "obf_expr": "(v1 - - (1))",
+  "obf_leng": 5,
+  "result_expr": "(v1 + 1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 5
+},{
+  "obf_expr": "(((v4 * 1) & (v4 * v4)) + (1 * - (v3)))",
+  "obf_leng": 12,
+  "result_expr": "((v4 & (v4 * v4)) - v3)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 58.95,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 6
+},{
+  "obf_expr": "(((v0 - (v4 | v0)) - (v4 & v0)) - (v2 * v4))",
+  "obf_leng": 16,
+  "result_expr": "(((v0 - (v4 | v0)) - (v4 & v0)) - (v2 * v4))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 7
+},{
+  "obf_expr": "((((v3 & v0) ^ v0) - v0) & not (v3))",
+  "obf_leng": 12,
+  "result_expr": "((((v3 & v0) ^ v0) - v0) & not (v3))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 8
+},{
+  "obf_expr": "(((1 * v3) * (- (v1) * - (v3))) + (((- (v3) * (v1 | v3)) | (v3 ^ v3)) - (not ((v1 & v1)) & v1)))",
+  "obf_leng": 29,
+  "result_expr": "((v3 * (v1 * v3)) - (v3 * (v1 | v3)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.72,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 9
+},{
+  "obf_expr": "- (- ((((v1 * v1) | (v3 & v1)) + ((v3 ^ v3) | - (v3)))))",
+  "obf_leng": 16,
+  "result_expr": "(((v1 * v1) | (v3 & v1)) - v3)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 10
+},{
+  "obf_expr": "- (v3)",
+  "obf_leng": 2,
+  "result_expr": "- (v3)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 11
+},{
+  "obf_expr": "(((((v1 ^ 1) + v1) + ((v1 - 1) | (v1 + v0))) * ((((v0 ++ 1) / 1) & ((1 ++ v1) / v0)) - (not (1) | not (v0)))) ^ (((v0 * v1) & ((1 + v1) | (v1 + v1))) + (v1 * ((v1 * v1) & (v1 - 1)))))",
+  "obf_leng": 58,
+  "result_expr": "(((((v1 ^ 1) + v1) + ((v1 - 1) | (v1 + v0))) * ((1 & ((1 ++ v1) / v0)) - (-2 | not (v0)))) ^ (((v0 * v1) & ((1 + v1) | (2 * v1))) + (v1 * ((v1 * v1) & (v1 - 1)))))",
+  "result_leng": 53,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 12
+},{
+  "obf_expr": "(v3 + (1 * ((v3 + (v3 * 1)) ^ v0)))",
+  "obf_leng": 11,
+  "result_expr": "(v3 + ((2 * v3) ^ v0))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 13
+},{
+  "obf_expr": "((v1 | v4) - - (v1))",
+  "obf_leng": 7,
+  "result_expr": "((v1 | v4) + v1)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 14
+},{
+  "obf_expr": "(- ((((v0 * v4) ^ (v3 + 1)) | (((1 ++ v4) / 1) * (v0 + v3)))) - ((v4 + (((v3 | v4) ++ ((v1 ++ v2) /s v2)) / v4)) & v4))",
+  "obf_leng": 35,
+  "result_expr": "- (((((v0 * v4) ^ (v3 + 1)) | (v4 * (v0 + v3))) + ((v4 + (((v3 | v4) ++ ((v1 ++ v2) /s v2)) / v4)) & v4)))",
+  "result_leng": 30,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 15
+},{
+  "obf_expr": "(v3 & (not ((v2 - (v3 | v4))) & v4))",
+  "obf_leng": 12,
+  "result_expr": "(v3 & (not ((v2 - (v3 | v4))) & v4))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.48,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 16
+},{
+  "obf_expr": "((((1 ++ ((v0 & v3) | v1)) / 1) - - ((1 + (v0 | v3)))) + ((v3 | (v0 - v0)) | (v0 & v1)))",
+  "obf_leng": 28,
+  "result_expr": "((((v0 & v3) | v1) + (1 + (v0 | v3))) + (v3 | (v0 & v1)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.54,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 17
+},{
+  "obf_expr": "(1 * ((((v1 ^ v3) - v1) | v1) | ((v1 * v1) - (v2 - v2))))",
+  "obf_leng": 20,
+  "result_expr": "((((v1 ^ v3) - v1) | v1) | (v1 * v1))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.24,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 18
+},{
+  "obf_expr": "not ((not (v0) ^ (((v1 - v4) * v4) * 1)))",
+  "obf_leng": 14,
+  "result_expr": "not ((not (v0) ^ ((v1 - v4) * v4)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.49,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 19
+},{
+  "obf_expr": "(((((v0 | v2) ^ v0) - v2) * 1) ^ v0)",
+  "obf_leng": 12,
+  "result_expr": "((((v0 | v2) ^ v0) - v2) ^ v0)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 20
+},{
+  "obf_expr": "(((v2 + ((1 * v2) | v2)) + (v3 * 1)) ^ ((- (1) + (v0 * v2)) - (((v0 ++ v3) /s 1) & v2)))",
+  "obf_leng": 27,
+  "result_expr": "(((2 * v2) + v3) ^ (((v0 * v2) - 1) - (v3 & v2)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.66,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 21
+},{
+  "obf_expr": "((- ((v4 - (v2 ^ v4))) | v0) ^ ((v0 + (v2 | v4)) & ((v3 | 1) | not (1))))",
+  "obf_leng": 23,
+  "result_expr": "((- ((v4 - (v2 ^ v4))) | v0) ^ (v0 + (v2 | v4)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 5.29,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 22
+},{
+  "obf_expr": "(((v3 & v3) ^ ((v2 & v2) | (((1 ++ v1) / v1) & (v2 & 1)))) + (((not (v2) ^ (1 & v2)) & ((1 ^ 1) ^ - (v0))) | v2))",
+  "obf_leng": 34,
+  "result_expr": "((v3 ^ (v2 | (((1 ++ v1) / v1) & (v2 & 1)))) + (((not (v2) ^ (1 & v2)) & - (v0)) | v2))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 1.96,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 23
+},{
+  "obf_expr": "((((v2 + v2) | (v3 | (1 - 1))) + (v3 & v3)) | ((1 - (v2 | v3)) + not (1)))",
+  "obf_leng": 25,
+  "result_expr": "((((2 * v2) | v3) + v3) | (-1 - (v2 | v3)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 15.84,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 24
+},{
+  "obf_expr": "(- ((- (1) & ((v0 * v3) * (v3 + v0)))) - ((((v0 - v2) + v3) - (v2 + 1)) + ((v3 - v0) ^ v3)))",
+  "obf_leng": 31,
+  "result_expr": "- ((((v0 * v3) * (v3 + v0)) + ((((v0 - v2) + v3) - (v2 + 1)) + ((v3 - v0) ^ v3))))",
+  "result_leng": 27,
+  "success": "yes",
+  "time": 2.42,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 25
+},{
+  "obf_expr": "((v2 ++ ((1 + ((v3 - 1) + (v4 * v3))) - ((v3 * v3) & (not (1) | v3)))) / 1)",
+  "obf_leng": 25,
+  "result_expr": "((1 + ((v3 - 1) + (v4 * v3))) - ((v3 * v3) & (-2 | v3)))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.29,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 26
+},{
+  "obf_expr": "(not (v1) + ((v0 * v4) + not (v1)))",
+  "obf_leng": 11,
+  "result_expr": "(not (v1) + ((v0 * v4) + not (v1)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.25,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 27
+},{
+  "obf_expr": "((v4 - (((v1 ^ 1) + v1) & 1)) - (((v0 ++ (v4 | v4)) / 1) | (v1 - ((v2 + v1) + v3))))",
+  "obf_leng": 28,
+  "result_expr": "((v4 - (((v1 ^ 1) + v1) & 1)) - (v4 | (v1 - ((v2 + v1) + v3))))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 0.62,
+  "obf_var": 5,
+  "result_var": 4,
+  "id": 28
+},{
+  "obf_expr": "(((((v0 ++ (v2 - v2)) / v3) & (v0 & not (v0))) - v0) * v3)",
+  "obf_leng": 19,
+  "result_expr": "- ((v0 * v3))",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 29
+},{
+  "obf_expr": "(((v1 ^ v1) - (((v2 | 1) & 1) - ((1 * v0) * v2))) ^ (v1 | ((v1 & (v2 * v2)) ^ v2)))",
+  "obf_leng": 27,
+  "result_expr": "(- ((((v2 | 1) & 1) - (v0 * v2))) ^ (v1 | ((v1 & (v2 * v2)) ^ v2)))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 0.47,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 30
+},{
+  "obf_expr": "((v3 | ((v3 * v0) | v0)) | v3)",
+  "obf_leng": 9,
+  "result_expr": "(v3 | ((v3 * v0) | v0))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 31
+},{
+  "obf_expr": "((v3 | (v2 + 1)) ^ v2)",
+  "obf_leng": 7,
+  "result_expr": "((v3 | (v2 + 1)) ^ v2)",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 32
+},{
+  "obf_expr": "((((v0 + (v0 - 1)) ^ (not (v1) * (v0 + v0))) ^ (((v0 ^ v1) - 1) * ((v3 - v0) * (1 ^ v0)))) * ((((v1 - 1) - v3) ^ ((1 + 1) | v1)) ^ ((v0 + 1) ^ 1)))",
+  "obf_leng": 50,
+  "result_expr": "((((v0 + (v0 - 1)) ^ (not (v1) * (2 * v0))) ^ (((v0 ^ v1) - 1) * ((v3 - v0) * (1 ^ v0)))) * ((((v1 - 1) - v3) ^ (2 | v1)) ^ ((v0 + 1) ^ 1)))",
+  "result_leng": 48,
+  "success": "no",
+  "time": 60.1,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 33
+},{
+  "obf_expr": "- (v3)",
+  "obf_leng": 2,
+  "result_expr": "- (v3)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 34
+},{
+  "obf_expr": "((v0 + 1) ^ v1)",
+  "obf_leng": 5,
+  "result_expr": "((v0 + 1) ^ v1)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 35
+},{
+  "obf_expr": "(not (v0) + ((v3 * not (v0)) * v4))",
+  "obf_leng": 11,
+  "result_expr": "(not (v0) + ((v3 * not (v0)) * v4))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.28,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 36
+},{
+  "obf_expr": "((v3 - - (v0)) | (- ((v0 & v3)) ^ ((v3 ^ v3) + (v0 * v0))))",
+  "obf_leng": 18,
+  "result_expr": "((v3 + v0) | (- ((v0 & v3)) ^ (v0 * v0)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 2.29,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 37
+},{
+  "obf_expr": "((v3 * - (v2)) - (1 - (v2 + 1)))",
+  "obf_leng": 12,
+  "result_expr": "- (((v3 * v2) - v2))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 38
+},{
+  "obf_expr": "(((((v2 * 1) & (v0 + v0)) * - (v2)) + 1) + ((v0 | v2) - (v0 + 1)))",
+  "obf_leng": 21,
+  "result_expr": "((1 - ((v2 & (2 * v0)) * v2)) + ((v0 | v2) - (v0 + 1)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.9,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 39
+},{
+  "obf_expr": "(((((v3 - v4) ^ 1) | v2) & (v3 | - (v2))) + (- (v2) & - (((1 + v3) ^ (v2 * v3)))))",
+  "obf_leng": 25,
+  "result_expr": "(((((v3 - v4) ^ 1) | v2) & (v3 | - (v2))) + (- (v2) & - (((1 + v3) ^ (v2 * v3)))))",
+  "result_leng": 25,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 40
+},{
+  "obf_expr": "((v0 | (v0 - 1)) + 1)",
+  "obf_leng": 8,
+  "result_expr": "((v0 | (v0 - 1)) + 1)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 41
+},{
+  "obf_expr": "- (((not (v3) * v2) * (- (1) & ((v2 & 1) | (v2 * v2)))))",
+  "obf_leng": 17,
+  "result_expr": "- (((not (v3) * v2) * ((v2 & 1) | (v2 * v2))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.55,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 42
+},{
+  "obf_expr": "v2",
+  "obf_leng": 1,
+  "result_expr": "v2",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 43
+},{
+  "obf_expr": "(((not (v1) & v0) * - (1)) - (v4 | v1))",
+  "obf_leng": 13,
+  "result_expr": "- (((not (v1) & v0) + (v4 | v1)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.86,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 44
+},{
+  "obf_expr": "(1 * ((v3 * - (v4)) + v3))",
+  "obf_leng": 8,
+  "result_expr": "(v3 - (v3 * v4))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 45
+},{
+  "obf_expr": "((1 * ((v3 + v1) * v3)) & (- (((v1 | v3) | v1)) - ((1 & (v0 + v0)) ^ ((v0 - v0) | (v2 | v1)))))",
+  "obf_leng": 30,
+  "result_expr": "(((v3 + v1) * v3) & - (((v1 | v3) + (v2 | v1))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 6.0,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 46
+},{
+  "obf_expr": "(((- (v0) + v3) & v3) | - ((not (- (1)) + (v0 * v4))))",
+  "obf_leng": 16,
+  "result_expr": "(((v3 - v0) & v3) | - ((v0 * v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.67,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 47
+},{
+  "obf_expr": "((not (((v3 - v4) | (v3 ^ v2))) * (((v4 - 1) & (1 | v4)) - ((v3 ^ 1) ^ (1 + v2)))) & - ((((v1 ^ v4) | (v4 + v0)) & ((v4 & v2) - (v4 - v2)))))",
+  "obf_leng": 47,
+  "result_expr": "((not (((v3 - v4) | (v3 ^ v2))) * (((v4 - 1) & (1 | v4)) - ((v3 ^ 1) ^ (1 + v2)))) & - ((((v1 ^ v4) | (v4 + v0)) & ((v4 & v2) - (v4 - v2)))))",
+  "result_leng": 47,
+  "success": "no",
+  "time": 60.07,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 48
+},{
+  "obf_expr": "(- (((v3 ^ v2) & v2)) - ((v1 + 1) + ((((1 ++ v1) /s 1) + - (v3)) * 1)))",
+  "obf_leng": 22,
+  "result_expr": "- ((((v3 ^ v2) & v2) + ((v1 + 1) + (v1 - v3))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.25,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 49
+},{
+  "obf_expr": "(((v3 * ((v0 ^ v2) | v0)) + not (v3)) + v0)",
+  "obf_leng": 13,
+  "result_expr": "(((v3 * (v0 | v2)) + not (v3)) + v0)",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 50
+},{
+  "obf_expr": "(((((1 * v2) + v1) * 1) ^ (v1 - v2)) ^ v2)",
+  "obf_leng": 14,
+  "result_expr": "(((v2 + v1) ^ (v1 - v2)) ^ v2)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 2.12,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 51
+},{
+  "obf_expr": "(((((v2 ++ not (1)) /s (v2 + 1)) ^ ((v2 * v2) & (1 & 1))) & (- (1) ^ (((v0 | v1) ++ not (1)) /s ((v0 ++ 1) / v0)))) & (((v1 - 1) + ((1 & v0) + (v1 | v2))) * v1))",
+  "obf_leng": 49,
+  "result_expr": "(((((v2 ++ -2) /s (v2 + 1)) ^ ((v2 * v2) & 1)) & not ((((v0 | v1) ++ -2) /s ((v0 ++ 1) / v0)))) & (((v1 - 1) + ((1 & v0) + (v1 | v2))) * v1))",
+  "result_leng": 44,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 52
+},{
+  "obf_expr": "(((v0 | (v4 - (1 & v2))) - (v3 | (((v4 ++ v2) / v0) & (v0 + v0)))) ^ v3)",
+  "obf_leng": 23,
+  "result_expr": "(((v0 | (v4 - (1 & v2))) - (v3 | (((v4 ++ v2) / v0) & (2 * v0)))) ^ v3)",
+  "result_leng": 23,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 53
+},{
+  "obf_expr": "(((((1 - v1) | (v0 ^ v4)) - (v4 & v1)) + (((v1 & (v2 - v4)) ++ (v2 - v1)) /s (v3 - v3))) + (1 & (((not (v2) & not (v1)) ++ v1) / (v0 & v4))))",
+  "obf_leng": 46,
+  "result_expr": "(((((1 - v1) | (v0 ^ v4)) - (v4 & v1)) + (((v1 & (v2 - v4)) ++ (v2 - v1)) /s 0)) + (1 & (((not (v2) & not (v1)) ++ v1) / (v0 & v4))))",
+  "result_leng": 43,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 5,
+  "result_var": 4,
+  "id": 54
+},{
+  "obf_expr": "((((v0 * (v0 | 1)) + v0) | (((v3 ^ v0) - (v2 * v0)) - ((v0 + v3) + (v3 + v0)))) & ((((v0 ^ v4) & (v4 | v2)) | ((v4 - 1) + (v4 & v3))) & (((v0 + v0) + not (v4)) | ((v2 - 1) ^ (v4 & v0)))))",
+  "obf_leng": 59,
+  "result_expr": "((((v0 * (v0 | 1)) + v0) | (((v3 ^ v0) - (v2 * v0)) - ((v0 + v3) + (v3 + v0)))) & ((((v0 ^ v4) & (v4 | v2)) | ((v4 - 1) + (v4 & v3))) & (((2 * v0) + not (v4)) | ((v2 - 1) ^ (v4 & v0)))))",
+  "result_leng": 59,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 55
+},{
+  "obf_expr": "(((1 - (v3 | v1)) - (v1 | v3)) + (v1 * (v3 & v1)))",
+  "obf_leng": 17,
+  "result_expr": "(((1 - (v3 | v1)) - (v1 | v3)) + (v1 * (v3 & v1)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.58,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 56
+},{
+  "obf_expr": "((v0 + v0) - (- ((v4 | (1 * 1))) & (((1 & 1) + v2) + v2)))",
+  "obf_leng": 19,
+  "result_expr": "((2 * v0) - (- ((v4 | 1)) & ((1 + v2) + v2)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.74,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 57
+},{
+  "obf_expr": "(((v3 & v3) - v3) + (v1 ^ (((v0 ++ v3) / 1) ^ (v3 + v3))))",
+  "obf_leng": 18,
+  "result_expr": "(v1 ^ (v3 ^ (2 * v3)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 1.04,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 58
+},{
+  "obf_expr": "((v2 * v2) + (not (v1) - (((v0 * v0) - (v1 | v1)) * 1)))",
+  "obf_leng": 19,
+  "result_expr": "((v2 * v2) + (not (v1) - ((v0 * v0) - v1)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.24,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 59
+},{
+  "obf_expr": "(- (- ((v0 + v4))) | ((((v0 * 1) & (v0 & v4)) * v4) | v2))",
+  "obf_leng": 17,
+  "result_expr": "((v0 + v4) | (((v0 & v4) * v4) | v2))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 60
+},{
+  "obf_expr": "((- ((v0 * v2)) ^ v2) + ((v0 - (v4 | (1 & v1))) ^ (((((v2 ++ 1) / v2) ++ (1 ^ v0)) / v0) | not (v2))))",
+  "obf_leng": 31,
+  "result_expr": "((- ((v0 * v2)) ^ v2) + ((v0 - (v4 | (1 & v1))) ^ (((((v2 ++ 1) / v2) ++ (1 ^ v0)) / v0) | not (v2))))",
+  "result_leng": 31,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 61
+},{
+  "obf_expr": "((((v3 + v3) + - ((v1 | v3))) & v1) & (v1 | v3))",
+  "obf_leng": 14,
+  "result_expr": "((((2 * v3) - (v1 | v3)) & v1) & (v1 | v3))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.29,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 62
+},{
+  "obf_expr": "((- ((v2 & (1 * v4))) + - (v2)) + (1 + (v4 * v4)))",
+  "obf_leng": 15,
+  "result_expr": "((1 + (v4 * v4)) - (v2 + (v2 & v4)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.3,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 63
+},{
+  "obf_expr": "((((v1 - 1) + v2) + (1 * (v0 | v1))) + ((v1 * v2) ^ v2))",
+  "obf_leng": 18,
+  "result_expr": "((((v1 - 1) + v2) + (v0 | v1)) + ((v1 * v2) ^ v2))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.64,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 64
+},{
+  "obf_expr": "((v1 * ((v1 & (v2 ^ v1)) + (v2 * ((1 ++ v2) / v2)))) & ((((v1 - v0) & (v1 + 1)) & ((v0 + v2) * (v1 | v2))) | ((v0 ++ (1 ^ v2)) / 1)))",
+  "obf_leng": 40,
+  "result_expr": "((v1 * ((v1 & (v2 ^ v1)) + (v2 * ((1 ++ v2) / v2)))) & ((((v1 - v0) & (v1 + 1)) & ((v0 + v2) * (v1 | v2))) | (1 ^ v2)))",
+  "result_leng": 36,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 65
+},{
+  "obf_expr": "(((((1 & 1) * v3) * (v4 * v4)) * 1) + ((not (v4) - v0) ^ ((v0 - v2) & ((v0 & v2) & (v3 & 1)))))",
+  "obf_leng": 31,
+  "result_expr": "((v3 * (v4 * v4)) + ((not (v4) - v0) ^ ((v0 - v2) & ((v0 & v2) & (v3 & 1)))))",
+  "result_leng": 25,
+  "success": "yes",
+  "time": 0.33,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 66
+},{
+  "obf_expr": "((not (1) | (not (v3) - v3)) + ((v0 + 1) & v3))",
+  "obf_leng": 16,
+  "result_expr": "((-2 | (not (v3) - v3)) + ((v0 + 1) & v3))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.43,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 67
+},{
+  "obf_expr": "(v2 + v1)",
+  "obf_leng": 3,
+  "result_expr": "(v2 + v1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 68
+},{
+  "obf_expr": "not (((v1 + ((v1 - 1) ^ v1)) + (((v2 - v2) & v1) & 1)))",
+  "obf_leng": 19,
+  "result_expr": "not ((v1 + ((v1 - 1) ^ v1)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 2.59,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 69
+},{
+  "obf_expr": "(1 * (((v2 & (1 ^ 1)) + (v1 * (v1 & v3))) * (v3 * not (v1))))",
+  "obf_leng": 19,
+  "result_expr": "((v1 * (v1 & v3)) * (v3 * not (v1)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 1.6,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 70
+},{
+  "obf_expr": "(v0 - v2)",
+  "obf_leng": 4,
+  "result_expr": "(v0 - v2)",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 71
+},{
+  "obf_expr": "(((v2 | v2) - (((v2 + v2) & 1) - v2)) + 1)",
+  "obf_leng": 15,
+  "result_expr": "((2 * v2) + 1)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 72
+},{
+  "obf_expr": "((v2 & v3) * 1)",
+  "obf_leng": 5,
+  "result_expr": "(v2 & v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 73
+},{
+  "obf_expr": "((v4 | v3) & ((v4 ^ v3) * 1))",
+  "obf_leng": 9,
+  "result_expr": "((v4 | v3) & (v4 ^ v3))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 74
+},{
+  "obf_expr": "not ((1 * v3))",
+  "obf_leng": 5,
+  "result_expr": "not (v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 75
+},{
+  "obf_expr": "(((((v1 + v1) | (v0 - v2)) & 1) ^ ((v0 & 1) | not ((v2 | v0)))) + ((v2 + (v2 | 1)) & (((v2 * v2) | (1 & 1)) | ((v2 * 1) + v0))))",
+  "obf_leng": 40,
+  "result_expr": "(((((2 * v1) | (v0 - v2)) & 1) ^ ((v0 & 1) | not ((v2 | v0)))) + ((v2 + (v2 | 1)) & (((v2 * v2) | 1) | (v2 + v0))))",
+  "result_leng": 36,
+  "success": "yes",
+  "time": 25.83,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 76
+},{
+  "obf_expr": "((v3 + (v4 & (v0 | (1 + v0)))) | - ((v3 | ((v4 | v3) + v4))))",
+  "obf_leng": 18,
+  "result_expr": "((v3 + (v4 & (v0 | (1 + v0)))) | - ((v3 | ((v4 | v3) + v4))))",
+  "result_leng": 18,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 77
+},{
+  "obf_expr": "(v2 & v1)",
+  "obf_leng": 3,
+  "result_expr": "(v2 & v1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 78
+},{
+  "obf_expr": "(((v4 | v4) + v4) * v1)",
+  "obf_leng": 7,
+  "result_expr": "((2 * v4) * v1)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 79
+},{
+  "obf_expr": "(((v0 ++ - (v3)) /s 1) + (- (v2) - v2))",
+  "obf_leng": 12,
+  "result_expr": "- (((2 * v2) + v3))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 80
+},{
+  "obf_expr": "((v2 + (v1 * v1)) - 1)",
+  "obf_leng": 8,
+  "result_expr": "((v2 + (v1 * v1)) - 1)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 81
+},{
+  "obf_expr": "(- ((v2 + ((v2 & v3) ^ v2))) - v2)",
+  "obf_leng": 11,
+  "result_expr": "- (((v2 + ((v2 & v3) ^ v2)) + v2))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 82
+},{
+  "obf_expr": "(- (((v1 + (v4 & v1)) & (1 + not (v4)))) - (1 ^ 1))",
+  "obf_leng": 17,
+  "result_expr": "- (((v1 + (v4 & v1)) & - (v4)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 8.97,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 83
+},{
+  "obf_expr": "((((v0 ++ v2) / (v2 ^ v2)) | v0) & (v0 * (v4 & v0)))",
+  "obf_leng": 15,
+  "result_expr": "(v0 * (v4 & v0))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 84
+},{
+  "obf_expr": "((1 - (((v4 * v4) - v0) + v0)) - 1)",
+  "obf_leng": 14,
+  "result_expr": "- ((v4 * v4))",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 85
+},{
+  "obf_expr": "(((((v2 ^ 1) & (v2 & v1)) * ((1 + v1) * (v2 - 1))) - ((not (v2) * ((v2 ++ v2) / v4)) & ((v4 + 1) & (v1 | v2)))) | (((v2 - (v1 + 1)) & v4) - v4))",
+  "obf_leng": 47,
+  "result_expr": "(((((v2 ^ 1) & (v2 & v1)) * ((1 + v1) * (v2 - 1))) - ((not (v2) * ((v2 ++ v2) / v4)) & ((v4 + 1) & (v1 | v2)))) | (((v2 - (v1 + 1)) & v4) - v4))",
+  "result_leng": 47,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 86
+},{
+  "obf_expr": "(((v2 | ((v0 ^ v2) + v0)) & not (v0)) | (v0 & v1))",
+  "obf_leng": 15,
+  "result_expr": "(((v2 | ((v0 ^ v2) + v0)) & not (v0)) | (v0 & v1))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.48,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 87
+},{
+  "obf_expr": "((((v0 | - (v0)) - 1) & ((not (v0) & (v0 | v1)) ^ ((v0 & v1) ^ (v1 - 1)))) ^ ((1 & v0) | (v0 | v0)))",
+  "obf_leng": 32,
+  "result_expr": "((((v0 | - (v0)) - 1) & ((not (v0) & (v0 | v1)) ^ ((v0 & v1) ^ (v1 - 1)))) ^ v0)",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 16.4,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 88
+},{
+  "obf_expr": "(((v4 * v0) ^ v4) - 1)",
+  "obf_leng": 8,
+  "result_expr": "(((v4 * v0) ^ v4) - 1)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.38,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 89
+},{
+  "obf_expr": "((v0 * (v1 & v0)) | (- (v1) - v0))",
+  "obf_leng": 11,
+  "result_expr": "((v0 * (v1 & v0)) | - ((v1 + v0)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 17.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 90
+},{
+  "obf_expr": "((- (v0) - 1) - (((- (v0) | v0) | (v1 ^ (v0 ^ v1))) & ((v3 & v0) ^ v2)))",
+  "obf_leng": 23,
+  "result_expr": "(not (v0) - ((- (v0) | v0) & ((v3 & v0) ^ v2)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.28,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 91
+},{
+  "obf_expr": "(((v4 - v2) | - (not (- (1)))) * v4)",
+  "obf_leng": 12,
+  "result_expr": "((v4 - v2) * v4)",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.18,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 92
+},{
+  "obf_expr": "((((((v3 ++ v1) /s v3) & ((v1 ++ v3) /s v3)) | (v1 - ((v1 ++ v3) / v2))) & ((1 & v1) + ((v2 | 1) | (v0 & v3)))) & (((((v2 | v2) ++ (v1 & v2)) / - (v2)) - v2) * v2))",
+  "obf_leng": 48,
+  "result_expr": "((((((v3 ++ v1) /s v3) & ((v1 ++ v3) /s v3)) | (v1 - ((v1 ++ v3) / v2))) & ((1 & v1) + ((v2 | 1) | (v0 & v3)))) & ((((v2 ++ (v1 & v2)) / - (v2)) - v2) * v2))",
+  "result_leng": 46,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 93
+},{
+  "obf_expr": "- (((((1 & v1) * ((v0 ++ v1) / v0)) | (v1 + (v1 + v1))) & ((v0 - (1 & v1)) ^ (1 & v1))))",
+  "obf_leng": 27,
+  "result_expr": "- (((((1 & v1) * ((v0 ++ v1) / v0)) | (v1 + (2 * v1))) & ((v0 - (1 & v1)) ^ (1 & v1))))",
+  "result_leng": 27,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 94
+},{
+  "obf_expr": "((v2 + ((v3 * 1) + ((v2 ^ v1) & v2))) - (not ((v1 * 1)) ^ not (v2)))",
+  "obf_leng": 22,
+  "result_expr": "((v2 + (v3 + ((v2 ^ v1) & v2))) - (not (v1) ^ not (v2)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 95
+},{
+  "obf_expr": "not ((v4 + not (v0)))",
+  "obf_leng": 7,
+  "result_expr": "not ((v4 + not (v0)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 96
+},{
+  "obf_expr": "(v0 * ((((v4 - 1) + (v0 + v4)) & ((v1 - 1) | 1)) * - (v0)))",
+  "obf_leng": 20,
+  "result_expr": "- ((v0 * ((((v4 - 1) + (v0 + v4)) & ((v1 - 1) | 1)) * v0)))",
+  "result_leng": 20,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 97
+},{
+  "obf_expr": "(((v2 | v2) + v0) + (((- (v1) & v1) & v2) * 1))",
+  "obf_leng": 14,
+  "result_expr": "((v2 + v0) + ((- (v1) & v1) & v2))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 98
+},{
+  "obf_expr": "(not (v2) - (((1 * not (v0)) - v0) & v3))",
+  "obf_leng": 15,
+  "result_expr": "(not (v2) - ((not (v0) - v0) & v3))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 99
+},{
+  "obf_expr": "(((1 - (1 * 1)) ++ ((((v0 - v1) | ((v0 ++ v0) / v1)) | ((1 + v1) ^ ((1 ++ v1) / v1))) - ((v1 * (v1 * v1)) | v0))) /s (((1 ++ ((not (v1) ++ (1 + v1)) / v1)) / v1) | (((((v0 ++ 1) / 1) ++ 1) / (v0 * v1)) - 1)))",
+  "obf_leng": 65,
+  "result_expr": "((0 ++ ((((v0 - v1) | ((v0 ++ v0) / v1)) | ((1 + v1) ^ ((1 ++ v1) / v1))) - ((v1 * (v1 * v1)) | v0))) /s (((1 ++ ((not (v1) ++ (1 + v1)) / v1)) / v1) | (((1 ++ 1) / (v0 * v1)) - 1)))",
+  "result_leng": 56,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 100
+},{
+  "obf_expr": "((((v1 & (v1 ^ v3)) + (1 & (v1 | v1))) - (1 + ((1 ++ 1) / 1))) & (1 * v1))",
+  "obf_leng": 24,
+  "result_expr": "((((v1 & (v1 ^ v3)) + (1 & v1)) - 2) & v1)",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 101
+},{
+  "obf_expr": "- (v1)",
+  "obf_leng": 2,
+  "result_expr": "- (v1)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 102
+},{
+  "obf_expr": "(((((1 * v1) * v3) - (v1 | (v0 | v0))) + (v0 | v1)) + - (v1))",
+  "obf_leng": 19,
+  "result_expr": "((v1 * v3) - v1)",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 103
+},{
+  "obf_expr": "((not ((v3 * v2)) + (((v4 + 1) - 1) - (not (v4) | (v3 + v2)))) ^ (v4 + v3))",
+  "obf_leng": 25,
+  "result_expr": "((not ((v3 * v2)) + (v4 - (not (v4) | (v3 + v2)))) ^ (v4 + v3))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 15.61,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 104
+},{
+  "obf_expr": "((((not (v4) & (v0 * v3)) + ((v4 - v3) * (v3 * v4))) & v4) - (((v3 * v4) + ((1 ^ v4) & ((1 ++ v1) / v4))) | (v4 - (v3 & v3))))",
+  "obf_leng": 40,
+  "result_expr": "((((not (v4) & (v0 * v3)) + ((v4 - v3) * (v3 * v4))) & v4) - (((v3 * v4) + ((1 ^ v4) & ((1 ++ v1) / v4))) | (v4 - v3)))",
+  "result_leng": 38,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 105
+},{
+  "obf_expr": "((((v1 ++ (v3 * v1)) / 1) + ((- (v1) + (v3 * v3)) + (- (v3) + (v1 * v3)))) + v3)",
+  "obf_leng": 23,
+  "result_expr": "(((v3 * v1) + (((v3 * v3) - v1) + ((v1 * v3) - v3))) + v3)",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 106
+},{
+  "obf_expr": "((((v3 * v2) & (v2 + v2)) + (not (v2) + v2)) ^ (v3 - 1))",
+  "obf_leng": 18,
+  "result_expr": "((((v3 * v2) & (2 * v2)) - 1) ^ (v3 - 1))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 5.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 107
+},{
+  "obf_expr": "((v4 | v3) - - (v3))",
+  "obf_leng": 7,
+  "result_expr": "((v4 | v3) + v3)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 108
+},{
+  "obf_expr": "((v0 - v3) & (- ((v3 + (1 * v0))) + (1 * v3)))",
+  "obf_leng": 15,
+  "result_expr": "((v0 - v3) & (v3 - (v3 + v0)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 109
+},{
+  "obf_expr": "((((v1 + (v4 + v0)) & ((v2 ^ 1) | (v2 - v0))) | (((v4 + v4) * (v4 - v3)) & (not (v3) - v4))) ^ - ((v3 | (- (v4) & (v3 * v3)))))",
+  "obf_leng": 40,
+  "result_expr": "((((v1 + (v4 + v0)) & ((v2 ^ 1) | (v2 - v0))) | (((2 * v4) * (v4 - v3)) & (not (v3) - v4))) ^ - ((v3 | (- (v4) & (v3 * v3)))))",
+  "result_leng": 40,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 110
+},{
+  "obf_expr": "((((v4 - v0) + 1) | (((v3 & v0) & (v2 ^ v2)) & 1)) + (v3 | v0))",
+  "obf_leng": 20,
+  "result_expr": "(((v4 - v0) + 1) + (v3 | v0))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.3,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 111
+},{
+  "obf_expr": "(((v1 + (1 ^ (v1 ^ 1))) | ((v4 & (v1 | v1)) - 1)) + 1)",
+  "obf_leng": 18,
+  "result_expr": "(((2 * v1) | ((v4 & v1) - 1)) + 1)",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 1.72,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 112
+},{
+  "obf_expr": "((not (1) | v4) & (((v4 - v4) | (v1 - (v1 | v4))) & (1 + (v4 ^ (v1 - 1)))))",
+  "obf_leng": 26,
+  "result_expr": "((-2 | v4) & ((v1 - (v1 | v4)) & (1 + (v4 ^ (v1 - 1)))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 8.96,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 113
+},{
+  "obf_expr": "(- ((v1 | (v4 | (v4 + v1)))) * (1 + ((v4 ^ (v1 - 1)) | ((v4 * v1) & (v1 & 1)))))",
+  "obf_leng": 25,
+  "result_expr": "- (((v1 | (v4 | (v4 + v1))) * (1 + ((v4 ^ (v1 - 1)) | ((v4 * v1) & (v1 & 1))))))",
+  "result_leng": 25,
+  "success": "yes",
+  "time": 30.74,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 114
+},{
+  "obf_expr": "((v1 & (v0 | v1)) + not (1))",
+  "obf_leng": 9,
+  "result_expr": "((v1 & (v0 | v1)) + -2)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 115
+},{
+  "obf_expr": "(((1 - 1) | (not ((v2 | v1)) | (not (v2) - v2))) + 1)",
+  "obf_leng": 19,
+  "result_expr": "((not ((v2 | v1)) | (not (v2) - v2)) + 1)",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.79,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 116
+},{
+  "obf_expr": "(((((v0 ^ 1) | (v2 + v0)) & ((v2 * v4) - (1 & v0))) - (v4 * (v2 + (v4 | v4)))) ^ (not ((1 * v0)) - (((v3 & v2) & (v4 + v3)) & ((v0 & v1) & (v0 - v1)))))",
+  "obf_leng": 49,
+  "result_expr": "(((((v0 ^ 1) | (v2 + v0)) & ((v2 * v4) - (1 & v0))) - (v4 * (v2 + v4))) ^ (not (v0) - (((v3 & v2) & (v4 + v3)) & ((v0 & v1) & (v0 - v1)))))",
+  "result_leng": 45,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 117
+},{
+  "obf_expr": "((- (1) * (- ((v0 | v0)) & (v0 & v0))) - (v0 * (v4 + 1)))",
+  "obf_leng": 18,
+  "result_expr": "- (((- (v0) & v0) + (v0 * (v4 + 1))))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 2.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 118
+},{
+  "obf_expr": "((not ((v3 - (v2 + v0))) | (v3 | (- (v3) | ((v2 ++ v2) / 1)))) - (((v0 + v2) - 1) * 1))",
+  "obf_leng": 29,
+  "result_expr": "((not ((v3 - (v2 + v0))) | (v3 | (- (v3) | v2))) - ((v0 + v2) - 1))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 20.35,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 119
+},{
+  "obf_expr": "((v1 * v1) & (v1 | v2))",
+  "obf_leng": 7,
+  "result_expr": "((v1 * v1) & (v1 | v2))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 120
+},{
+  "obf_expr": "(((- ((v0 * v0)) - (1 & 1)) ^ (((v0 ^ v3) & (v3 * 1)) & ((v3 ++ v3) / 1))) + (v3 - v3))",
+  "obf_leng": 28,
+  "result_expr": "(not ((v0 * v0)) ^ ((v0 ^ v3) & v3))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.45,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 121
+},{
+  "obf_expr": "(((v2 + v2) & 1) ^ v4)",
+  "obf_leng": 7,
+  "result_expr": "v4",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 122
+},{
+  "obf_expr": "(((v4 - (1 & v3)) ^ (- ((v3 | v0)) + (v4 & (v3 ^ 1)))) | ((v0 & (v4 & v3)) + ((not (v0) * (v3 & v3)) + (- (v0) | (v3 - 1)))))",
+  "obf_leng": 39,
+  "result_expr": "(((v4 - (1 & v3)) ^ ((v4 & (v3 ^ 1)) - (v3 | v0))) | ((v0 & (v4 & v3)) + ((not (v0) * v3) + (- (v0) | (v3 - 1)))))",
+  "result_leng": 37,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 123
+},{
+  "obf_expr": "(((1 & ((v1 | v2) | ((v3 ++ v3) / v2))) ^ ((v3 * v3) & ((v2 - v4) ^ 1))) | not (((1 & not (v3)) - v2)))",
+  "obf_leng": 33,
+  "result_expr": "(((1 & ((v1 | v2) | ((v3 ++ v3) / v2))) ^ ((v3 * v3) & ((v2 - v4) ^ 1))) | not (((1 & not (v3)) - v2)))",
+  "result_leng": 33,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 124
+},{
+  "obf_expr": "(not ((v4 ^ (v2 - ((v0 ++ 1) / 1)))) + ((not (v4) - - (1)) ^ v4))",
+  "obf_leng": 22,
+  "result_expr": "(not ((v4 ^ (v2 - 1))) + (- (v4) ^ v4))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 6.58,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 125
+},{
+  "obf_expr": "(((((v1 * v4) | v1) - v1) | v4) - (v4 + (1 + v1)))",
+  "obf_leng": 17,
+  "result_expr": "(((((v1 * v4) | v1) - v1) | v4) - (v4 + (1 + v1)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 1.22,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 126
+},{
+  "obf_expr": "(((((v1 & v1) * v1) | v1) - (v1 * (v1 | v1))) | (1 * 1))",
+  "obf_leng": 18,
+  "result_expr": "((((v1 * v1) | v1) - (v1 * v1)) | 1)",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 127
+},{
+  "obf_expr": "(v3 & (((v1 & not (v3)) & v2) | (v3 & ((v2 | v2) - (v3 + 1)))))",
+  "obf_leng": 20,
+  "result_expr": "(v3 & (((v1 & not (v3)) & v2) | (v3 & (v2 - (v3 + 1)))))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 128
+},{
+  "obf_expr": "((v0 - v4) | (((v4 - v4) | (v4 & - (v2))) - (1 & (1 ^ (v4 & v2)))))",
+  "obf_leng": 23,
+  "result_expr": "((v0 - v4) | ((v4 & - (v2)) - (1 & (1 ^ (v4 & v2)))))",
+  "result_leng": 18,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 129
+},{
+  "obf_expr": "((v3 - v3) - ((v2 ^ v3) * (((v2 | v3) + 1) + (v3 ^ v2))))",
+  "obf_leng": 19,
+  "result_expr": "- (((v2 ^ v3) * (((v2 | v3) + 1) + (v3 ^ v2))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 1.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 130
+},{
+  "obf_expr": "(- (v0) ^ ((v4 - 1) & (v0 ^ not (v4))))",
+  "obf_leng": 13,
+  "result_expr": "(- (v0) ^ ((v4 - 1) & (v0 ^ not (v4))))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 5.93,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 131
+},{
+  "obf_expr": "(((v1 - 1) | not (v3)) | (v1 - 1))",
+  "obf_leng": 13,
+  "result_expr": "((v1 - 1) | not (v3))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 132
+},{
+  "obf_expr": "(- ((((1 ^ v2) + (1 | v4)) | ((v2 & v4) ^ (1 & v2)))) | (((v4 * v4) + 1) + (v4 & (v4 + v2))))",
+  "obf_leng": 28,
+  "result_expr": "(- ((((1 ^ v2) + (1 | v4)) | ((v2 & v4) ^ (1 & v2)))) | (((v4 * v4) + 1) + (v4 & (v4 + v2))))",
+  "result_leng": 28,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 133
+},{
+  "obf_expr": "((((v4 & v2) & - ((v2 * 1))) | ((v2 & v4) - (v2 | ((v1 ++ v4) /s 1)))) | (v2 ^ v4))",
+  "obf_leng": 25,
+  "result_expr": "((((v4 & v2) & - (v2)) | ((v2 & v4) - (v2 | v4))) | (v2 ^ v4))",
+  "result_leng": 19,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 134
+},{
+  "obf_expr": "(1 * (not ((v2 & v2)) + (v2 & ((v1 + v2) * v2))))",
+  "obf_leng": 15,
+  "result_expr": "(not (v2) + (v2 & ((v1 + v2) * v2)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 135
+},{
+  "obf_expr": "(((1 ++ (v3 ^ v3)) /s 1) | (((v4 ^ v4) | ((v3 + v4) | (v4 * v3))) | ((v3 & v0) + (not (v3) + 1))))",
+  "obf_leng": 29,
+  "result_expr": "(((v3 + v4) | (v4 * v3)) | ((v3 & v0) - v3))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 11.67,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 136
+},{
+  "obf_expr": "((v1 & v0) | (v0 * v1))",
+  "obf_leng": 7,
+  "result_expr": "((v1 & v0) | (v0 * v1))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 137
+},{
+  "obf_expr": "(((((v1 | 1) & v2) ^ ((v2 + v1) ^ (v2 | v0))) + (((v0 * v2) & 1) ^ 1)) ^ (v2 - ((v2 ++ ((v1 ^ v0) & ((v0 ++ 1) /s v0))) / v2)))",
+  "obf_leng": 38,
+  "result_expr": "(((((v1 | 1) & v2) ^ ((v2 + v1) ^ (v2 | v0))) + (((v0 * v2) & 1) ^ 1)) ^ (v2 - ((v2 ++ ((v1 ^ v0) & ((v0 ++ 1) /s v0))) / v2)))",
+  "result_leng": 38,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 138
+},{
+  "obf_expr": "(((1 - 1) - (v2 * (v2 ^ v0))) - (not (v0) + (v0 * v0)))",
+  "obf_leng": 20,
+  "result_expr": "- (((v2 * (v2 ^ v0)) + (not (v0) + (v0 * v0))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.99,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 139
+},{
+  "obf_expr": "(not (v0) ^ ((v1 + ((v3 * v1) ^ (v3 * v3))) ^ v0))",
+  "obf_leng": 15,
+  "result_expr": "(not (v0) ^ ((v1 + ((v3 * v1) ^ (v3 * v3))) ^ v0))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 8.85,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 140
+},{
+  "obf_expr": "(not ((v1 & ((v2 - v1) ^ v1))) | v4)",
+  "obf_leng": 12,
+  "result_expr": "(not ((v1 & ((v2 - v1) ^ v1))) | v4)",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 141
+},{
+  "obf_expr": "(((v4 - v0) & v4) * (v0 + (v2 + v0)))",
+  "obf_leng": 12,
+  "result_expr": "(((v4 - v0) & v4) * (v0 + (v2 + v0)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 142
+},{
+  "obf_expr": "(1 + ((not (1) + v0) ^ (v0 + v0)))",
+  "obf_leng": 11,
+  "result_expr": "(1 + ((-2 + v0) ^ (2 * v0)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 1.68,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 143
+},{
+  "obf_expr": "((not (v0) * v0) - (v4 - not (v4)))",
+  "obf_leng": 13,
+  "result_expr": "((not (v0) * v0) - (v4 - not (v4)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.34,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 144
+},{
+  "obf_expr": "((((v1 | - (1)) | v3) ^ v1) & (v3 - (1 * v1)))",
+  "obf_leng": 15,
+  "result_expr": "(not (v1) & (v3 - v1))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 145
+},{
+  "obf_expr": "(((v0 | (v2 * v2)) - (((v2 | 1) ^ v1) & (not (1) & 1))) | ((- ((v2 * v2)) + v0) ^ (1 & (1 + 1))))",
+  "obf_leng": 31,
+  "result_expr": "((v0 | (v2 * v2)) | (v0 - (v2 * v2)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 27.24,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 146
+},{
+  "obf_expr": "((not (((v3 & v3) ^ (v3 ^ v4))) | (((v3 & 1) | v0) + (v4 - 1))) + (1 + (1 & v3)))",
+  "obf_leng": 26,
+  "result_expr": "((not (v4) | (((v3 & 1) | v0) + (v4 - 1))) + (1 + (1 & v3)))",
+  "result_leng": 20,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 147
+},{
+  "obf_expr": "(1 * (not ((v1 | (v1 * v1))) ^ (((v0 ^ v0) - (v4 * v1)) ^ (not (v4) + - (v1)))))",
+  "obf_leng": 25,
+  "result_expr": "(not ((v1 | (v1 * v1))) ^ (- ((v4 * v1)) ^ (not (v4) - v1)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 27.31,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 148
+},{
+  "obf_expr": "((- ((v4 * 1)) - v2) + (v2 * v4))",
+  "obf_leng": 11,
+  "result_expr": "((v2 * v4) - (v4 + v2))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 149
+},{
+  "obf_expr": "(((((v4 & 1) | - (v4)) ^ (v4 | (v4 * v4))) - ((1 ^ v4) ^ v4)) ^ ((((v0 ^ v0) - v1) - (1 + v4)) * 1))",
+  "obf_leng": 33,
+  "result_expr": "(((((v4 & 1) | - (v4)) ^ (v4 | (v4 * v4))) - 1) ^ - ((v1 + (1 + v4))))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 20.06,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 150
+},{
+  "obf_expr": "((v0 + 1) - not (v4))",
+  "obf_leng": 8,
+  "result_expr": "((v0 + 1) - not (v4))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 151
+},{
+  "obf_expr": "((((v2 | v2) + ((v2 + v2) & v2)) - ((((v0 - v1) ++ not (1)) /s 1) * (1 * v2))) ^ ((v2 ++ (((1 ^ v0) - (1 & v0)) | ((v0 + 1) * (v2 * v2)))) / ((v2 ++ v2) / v2)))",
+  "obf_leng": 50,
+  "result_expr": "(((v2 + ((2 * v2) & v2)) - (-2 * v2)) ^ ((v2 ++ (((1 ^ v0) - (1 & v0)) | ((v0 + 1) * (v2 * v2)))) / ((v2 ++ v2) / v2)))",
+  "result_leng": 38,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 152
+},{
+  "obf_expr": "(((((v4 * v0) * (1 + v2)) & ((v3 ^ v2) + (v4 * v0))) ^ (((v2 - v4) + (1 | v2)) & ((v3 ^ v1) + (v4 | v0)))) & ((((v2 ^ 1) * (v0 ^ v4)) * (v0 + (v0 | 1))) | ((((v0 ++ v3) / v0) | v2) | (v2 * (v4 * v4)))))",
+  "obf_leng": 60,
+  "result_expr": "(((((v4 * v0) * (1 + v2)) & ((v3 ^ v2) + (v4 * v0))) ^ (((v2 - v4) + (1 | v2)) & ((v3 ^ v1) + (v4 | v0)))) & ((((v2 ^ 1) * (v0 ^ v4)) * (v0 + (v0 | 1))) | ((((v0 ++ v3) / v0) | v2) | (v2 * (v4 * v4)))))",
+  "result_leng": 60,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 153
+},{
+  "obf_expr": "(v1 ^ not (v4))",
+  "obf_leng": 5,
+  "result_expr": "(v1 ^ not (v4))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 154
+},{
+  "obf_expr": "((1 ^ ((1 & - (1)) ^ ((v2 - v3) * v3))) + ((1 * ((v3 & v3) & - (v2))) * (v3 + ((v3 & 1) | v3))))",
+  "obf_leng": 30,
+  "result_expr": "(((v2 - v3) * v3) + ((v3 & - (v2)) * (2 * v3)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 22.74,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 155
+},{
+  "obf_expr": "not (((v2 - (1 & 1)) | (((v2 - 1) + (v3 * v3)) | ((v2 | v2) - - (v2)))))",
+  "obf_leng": 25,
+  "result_expr": "not (((v2 - 1) | (((v2 - 1) + (v3 * v3)) | (2 * v2))))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 4.95,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 156
+},{
+  "obf_expr": "(v3 & (not (v4) & - (v4)))",
+  "obf_leng": 8,
+  "result_expr": "(v3 & (not (v4) & - (v4)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 157
+},{
+  "obf_expr": "((- (1) | ((v2 ++ 1) / v2)) - ((v1 - 1) ^ (v0 + (v2 ^ v1))))",
+  "obf_leng": 20,
+  "result_expr": "not (((v1 - 1) ^ (v0 + (v2 ^ v1))))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 1.3,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 158
+},{
+  "obf_expr": "not ((((not (v1) + v0) & v1) & not (v4)))",
+  "obf_leng": 13,
+  "result_expr": "not ((((not (v1) + v0) & v1) & not (v4)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.45,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 159
+},{
+  "obf_expr": "((v3 * (v0 * (1 * v3))) * ((- (v0) + 1) - 1))",
+  "obf_leng": 15,
+  "result_expr": "- (((v3 * (v0 * v3)) * v0))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.23,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 160
+},{
+  "obf_expr": "((1 - (v3 | v4)) + (not (v4) - (v4 + 1)))",
+  "obf_leng": 15,
+  "result_expr": "((1 - (v3 | v4)) + (not (v4) - (v4 + 1)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 161
+},{
+  "obf_expr": "(1 & (v4 ^ v4))",
+  "obf_leng": 5,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 162
+},{
+  "obf_expr": "((((((v0 ++ 1) / v0) | v1) ^ ((v0 ++ 1) /s (v1 & 1))) & ((((1 & v1) ++ ((v0 ++ v0) / v1)) / (v0 ^ 1)) | (not (v0) - (v0 + v0)))) | (v0 * (((((v1 | v0) ++ not (v0)) / v0) ++ (v0 + v0)) / (((v0 + 1) ++ v0) /s (v1 - v1)))))",
+  "obf_leng": 65,
+  "result_expr": "((((((v0 ++ 1) / v0) | v1) ^ ((v0 ++ 1) /s (v1 & 1))) & ((((1 & v1) ++ ((v0 ++ v0) / v1)) / (v0 ^ 1)) | (not (v0) - (2 * v0)))) | (v0 * (((((v1 | v0) ++ not (v0)) / v0) ++ (2 * v0)) / (((v0 + 1) ++ v0) /s 0))))",
+  "result_leng": 62,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 163
+},{
+  "obf_expr": "((((v0 & (v0 * 1)) | v1) ^ ((- (1) + (v1 * v1)) & (v0 - 1))) + (1 & 1))",
+  "obf_leng": 23,
+  "result_expr": "(((v0 | v1) ^ (((v1 * v1) - 1) & (v0 - 1))) + 1)",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 18.26,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 164
+},{
+  "obf_expr": "((v0 + (v0 | v1)) ^ v1)",
+  "obf_leng": 7,
+  "result_expr": "((v0 + (v0 | v1)) ^ v1)",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 165
+},{
+  "obf_expr": "not ((v1 * (v0 * v2)))",
+  "obf_leng": 7,
+  "result_expr": "not ((v1 * (v0 * v2)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 166
+},{
+  "obf_expr": "((v3 ^ (v3 + (v3 * v2))) + v3)",
+  "obf_leng": 9,
+  "result_expr": "((v3 ^ (v3 + (v3 * v2))) + v3)",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.8,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 167
+},{
+  "obf_expr": "((1 * (v0 - v4)) - (1 + ((v0 ^ v4) + (v2 + v4))))",
+  "obf_leng": 17,
+  "result_expr": "((v0 - v4) - (1 + ((v0 ^ v4) + (v2 + v4))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 168
+},{
+  "obf_expr": "(not ((v2 | v4)) - (1 + v4))",
+  "obf_leng": 10,
+  "result_expr": "(not ((v2 | v4)) - (1 + v4))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 169
+},{
+  "obf_expr": "((v0 - v0) + ((v1 - ((v0 + v0) | v0)) + ((v0 & v1) | v0)))",
+  "obf_leng": 19,
+  "result_expr": "((v1 - ((2 * v0) | v0)) + v0)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.26,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 170
+},{
+  "obf_expr": "(v0 - v0)",
+  "obf_leng": 4,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 171
+},{
+  "obf_expr": "((- (v4) ^ (v1 ^ v4)) | (v4 - v1))",
+  "obf_leng": 11,
+  "result_expr": "((- (v4) ^ (v1 ^ v4)) | (v4 - v1))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 2.51,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 172
+},{
+  "obf_expr": "(((((1 | v0) + (1 & v2)) & (not (1) ^ (v2 * v4))) & (((1 + v2) | ((1 ++ v4) / v0)) | (((v0 | v4) ++ ((v3 ++ v2) / v4)) / - (v2)))) ^ not (v0))",
+  "obf_leng": 42,
+  "result_expr": "(((((1 | v0) + (1 & v2)) & (-2 ^ (v2 * v4))) & (((1 + v2) | ((1 ++ v4) / v0)) | (((v0 | v4) ++ ((v3 ++ v2) / v4)) / - (v2)))) ^ not (v0))",
+  "result_leng": 41,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 173
+},{
+  "obf_expr": "(v0 ^ v0)",
+  "obf_leng": 3,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 174
+},{
+  "obf_expr": "((((v2 ++ v4) / 1) & 1) | ((v1 * ((v3 - v3) - (v2 & v1))) ^ (((v1 & v2) + (v3 - v4)) - v3)))",
+  "obf_leng": 31,
+  "result_expr": "((v4 & 1) | (- ((v1 * (v2 & v1))) ^ (((v1 & v2) + (v3 - v4)) - v3)))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 0.3,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 175
+},{
+  "obf_expr": "(((v2 & v4) & (((v2 * v2) + ((1 ++ v2) / 1)) - ((v2 - v4) - v4))) + (v2 - - (1)))",
+  "obf_leng": 28,
+  "result_expr": "(((v2 & v4) & (((v2 * v2) + v2) - ((v2 - v4) - v4))) + (v2 + 1))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 1.19,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 176
+},{
+  "obf_expr": "(((v0 - v0) - 1) - (v2 ^ v4))",
+  "obf_leng": 12,
+  "result_expr": "(-1 - (v2 ^ v4))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.38,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 177
+},{
+  "obf_expr": "(((v2 - v3) + (v2 ^ ((v3 ++ not (v4)) / 1))) + (1 + v2))",
+  "obf_leng": 18,
+  "result_expr": "(((v2 - v3) + (v2 ^ not (v4))) + (1 + v2))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 178
+},{
+  "obf_expr": "(not ((((v4 - 1) ^ v2) & (v4 - 1))) * - ((v4 * v2)))",
+  "obf_leng": 18,
+  "result_expr": "- ((not ((((v4 - 1) ^ v2) & (v4 - 1))) * (v4 * v2)))",
+  "result_leng": 18,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 179
+},{
+  "obf_expr": "((v4 | v1) - (- ((v4 | (v1 | v1))) - v4))",
+  "obf_leng": 14,
+  "result_expr": "((v4 | v1) + ((v4 | v1) + v4))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 180
+},{
+  "obf_expr": "not ((((1 ++ not (v1)) / 1) & (v0 + v1)))",
+  "obf_leng": 13,
+  "result_expr": "not ((not (v1) & (v0 + v1)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 181
+},{
+  "obf_expr": "(1 * (((v0 + - (v4)) & (v3 ^ v0)) | (((v0 * v3) + v4) - (v1 - v1))))",
+  "obf_leng": 22,
+  "result_expr": "(((v0 - v4) & (v3 ^ v0)) | ((v0 * v3) + v4))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 182
+},{
+  "obf_expr": "((v4 - ((- (1) & v2) | v4)) - (1 + v2))",
+  "obf_leng": 14,
+  "result_expr": "((v4 - (v2 | v4)) - (1 + v2))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 183
+},{
+  "obf_expr": "(((v2 + (not (v2) | (v4 * v4))) ^ ((- (v4) | v2) ^ (- (1) ^ v4))) - ((v2 | (- (v4) ^ v4)) | (v4 ^ v4)))",
+  "obf_leng": 31,
+  "result_expr": "(((v2 + (not (v2) | (v4 * v4))) ^ ((- (v4) | v2) ^ not (v4))) - (v2 | (- (v4) ^ v4)))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 40.35,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 184
+},{
+  "obf_expr": "((- (v3) - (((v3 * v1) - - (v3)) ^ (- (v1) - (v4 - v4)))) * v4)",
+  "obf_leng": 22,
+  "result_expr": "- (((v3 + (((v3 * v1) + v3) ^ - (v1))) * v4))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 29.53,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 185
+},{
+  "obf_expr": "(v4 * ((v2 & (((v3 ++ v4) / 1) & (1 & v3))) | v4))",
+  "obf_leng": 15,
+  "result_expr": "(v4 * ((v2 & (v4 & (1 & v3))) | v4))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 186
+},{
+  "obf_expr": "(not (v1) + (((v1 ^ v0) - ((v0 * v3) + v0)) + ((v0 | (v1 - v0)) | v0)))",
+  "obf_leng": 23,
+  "result_expr": "(not (v1) + (((v1 ^ v0) - ((v0 * v3) + v0)) + (v0 | (v1 - v0))))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 187
+},{
+  "obf_expr": "not (((v2 * v2) ^ (v1 & ((v1 - v4) | v2))))",
+  "obf_leng": 14,
+  "result_expr": "not (((v2 * v2) ^ (v1 & ((v1 - v4) | v2))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 1.01,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 188
+},{
+  "obf_expr": "((- (v1) - ((v1 | v1) * v1)) + v1)",
+  "obf_leng": 11,
+  "result_expr": "(v1 - (v1 + (v1 * v1)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 189
+},{
+  "obf_expr": "(v0 + (not (v0) | (v4 * v0)))",
+  "obf_leng": 9,
+  "result_expr": "(v0 + (not (v0) | (v4 * v0)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 1.8,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 190
+},{
+  "obf_expr": "(v3 ^ v3)",
+  "obf_leng": 3,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 191
+},{
+  "obf_expr": "not (((1 ^ ((v4 & v0) + (v0 & v4))) * ((v0 & v4) + (not (1) | 1))))",
+  "obf_leng": 21,
+  "result_expr": "not (((1 ^ ((v4 & v0) + (v0 & v4))) * ((v0 & v4) - 1)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 1.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 192
+},{
+  "obf_expr": "(not ((v1 * v4)) + ((v1 * (v2 ^ v4)) * 1))",
+  "obf_leng": 13,
+  "result_expr": "(not ((v1 * v4)) + (v1 * (v2 ^ v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 3.92,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 193
+},{
+  "obf_expr": "((((v0 & v3) * v1) & - (1)) & (((v0 * 1) ^ v3) & ((- (v0) + v3) ^ v3)))",
+  "obf_leng": 21,
+  "result_expr": "(((v0 & v3) * v1) & ((v0 ^ v3) & ((v3 - v0) ^ v3)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 39.7,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 194
+},{
+  "obf_expr": "(((((v2 + v2) & not (v2)) & ((v0 - v1) + v1)) * 1) + (v2 - (v0 * ((v2 | 1) & v2))))",
+  "obf_leng": 27,
+  "result_expr": "((((2 * v2) & not (v2)) & v0) + (v2 - (v0 * ((v2 | 1) & v2))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.45,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 195
+},{
+  "obf_expr": "((((not (v0) + not (v3)) * (- (v1) + (v3 * v1))) - v1) - (((1 * (v2 ^ v2)) - ((v1 * v0) * (v3 + v3))) + v1))",
+  "obf_leng": 35,
+  "result_expr": "((((not (v0) + not (v3)) * ((v3 * v1) - v1)) - v1) - (v1 - ((v1 * v0) * (2 * v3))))",
+  "result_leng": 29,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 196
+},{
+  "obf_expr": "(1 * ((((1 * v0) | (v1 + v1)) * 1) & (((v4 * 1) | v0) + ((1 & 1) | 1))))",
+  "obf_leng": 23,
+  "result_expr": "((v0 | (2 * v1)) & ((v4 | v0) + 1))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 2.54,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 197
+},{
+  "obf_expr": "((v2 ++ - ((((v3 - 1) + (v3 + v3)) - ((v3 | v0) ^ (v3 ^ 1))))) / (1 * ((v1 ++ v1) / v1)))",
+  "obf_leng": 28,
+  "result_expr": "((v2 ++ - ((((v3 - 1) + (2 * v3)) - ((v3 | v0) ^ (v3 ^ 1))))) / ((v1 ++ v1) / v1))",
+  "result_leng": 26,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 198
+},{
+  "obf_expr": "((v0 * v3) | ((v3 & ((1 ++ v0) / 1)) - (v0 | v3)))",
+  "obf_leng": 16,
+  "result_expr": "((v0 * v3) | ((v3 & v0) - (v0 | v3)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.35,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 199
+},{
+  "obf_expr": "(((((v1 & v2) ^ v4) & ((v3 | 1) | ((v4 ++ 1) /s v2))) & ((v0 - v2) ^ v4)) & (((- ((v4 - v2)) ++ ((v2 * v1) + (v0 ^ v1))) /s ((v2 | v3) - v3)) & not (v2)))",
+  "obf_leng": 47,
+  "result_expr": "(((((v1 & v2) ^ v4) & ((v3 | 1) | ((v4 ++ 1) /s v2))) & ((v0 - v2) ^ v4)) & (((- ((v4 - v2)) ++ ((v2 * v1) + (v0 ^ v1))) /s ((v2 | v3) - v3)) & not (v2)))",
+  "result_leng": 47,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 200
+},{
+  "obf_expr": "not (((not ((v0 & v3)) - (v3 * (v3 + v0))) - v3))",
+  "obf_leng": 17,
+  "result_expr": "not (((not ((v0 & v3)) - (v3 * (v3 + v0))) - v3))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 201
+},{
+  "obf_expr": "((((1 - (v1 & v4)) - (1 & 1)) - (v2 * (v4 & v1))) | (v1 - (v2 & v2)))",
+  "obf_leng": 25,
+  "result_expr": "(- (((v1 & v4) + (v2 * (v4 & v1)))) | (v1 - v2))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.52,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 202
+},{
+  "obf_expr": "((1 + (v0 | (v4 | v4))) + (v4 + (v4 * v2)))",
+  "obf_leng": 13,
+  "result_expr": "((1 + (v0 | v4)) + (v4 + (v4 * v2)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 203
+},{
+  "obf_expr": "(((- (1) - ((v1 - v0) | (v1 ^ v1))) & (((v1 - v0) + v1) & (- (v0) ^ 1))) | (((v1 * 1) & - (v1)) & - (v0)))",
+  "obf_leng": 34,
+  "result_expr": "((not ((v1 - v0)) & (((v1 - v0) + v1) & (- (v0) ^ 1))) | ((v1 & - (v1)) & - (v0)))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 16.74,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 204
+},{
+  "obf_expr": "(((v0 | 1) - (1 + 1)) + ((1 & (v0 * 1)) - ((- (v1) - (v0 * v1)) ^ (v0 & (v1 * 1)))))",
+  "obf_leng": 29,
+  "result_expr": "(((v0 | 1) - 2) + ((1 & v0) - (- ((v1 + (v0 * v1))) ^ (v0 & v1))))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 1.58,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 205
+},{
+  "obf_expr": "((- (((v1 & v1) & (v1 + v4))) - (v1 & v4)) - - ((v1 | v4)))",
+  "obf_leng": 19,
+  "result_expr": "((v1 | v4) - ((v1 & (v1 + v4)) + (v1 & v4)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 1.92,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 206
+},{
+  "obf_expr": "(((v0 * v0) + 1) - (v0 - ((v0 ^ (v0 - v1)) ^ not (v0))))",
+  "obf_leng": 20,
+  "result_expr": "(((v0 * v0) + 1) - (v0 - ((v0 ^ (v0 - v1)) ^ not (v0))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.28,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 207
+},{
+  "obf_expr": "((v0 ^ (v3 ^ ((v2 - v3) ^ v0))) | (((v0 * v3) ++ not ((v2 * v2))) /s 1))",
+  "obf_leng": 22,
+  "result_expr": "((v0 ^ (v3 ^ ((v2 - v3) ^ v0))) | not ((v2 * v2)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 59.52,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 208
+},{
+  "obf_expr": "((((v2 + - (v3)) * (v3 * 1)) & (v2 & ((v3 - v2) ^ (v3 + v3)))) & (v2 | v0))",
+  "obf_leng": 23,
+  "result_expr": "((((v2 - v3) * v3) & (v2 & ((v3 - v2) ^ (2 * v3)))) & (v2 | v0))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 15.8,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 209
+},{
+  "obf_expr": "((((((v0 ++ v1) /s 1) ^ (v2 ^ v1)) - (v2 * (v1 - v2))) * (1 - ((1 * 1) - (v1 * v2)))) & ((((v0 | v2) + (1 * v0)) - (v0 | v0)) & (1 + (v1 & v2))))",
+  "obf_leng": 48,
+  "result_expr": "(((v2 - (v2 * (v1 - v2))) * (v1 * v2)) & ((((v0 | v2) + v0) - v0) & (1 + (v1 & v2))))",
+  "result_leng": 28,
+  "success": "yes",
+  "time": 8.8,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 210
+},{
+  "obf_expr": "(((v4 & (v2 ^ v4)) ^ - (1)) + (v4 ^ (v0 & v2)))",
+  "obf_leng": 14,
+  "result_expr": "(not ((v4 & (v2 ^ v4))) + (v4 ^ (v0 & v2)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 4.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 211
+},{
+  "obf_expr": "- (((((v2 * v1) - (v1 + 1)) | ((v1 - 1) | (v2 - v3))) - (v2 - - (not (v3)))))",
+  "obf_leng": 28,
+  "result_expr": "- (((((v2 * v1) - (v1 + 1)) | ((v1 - 1) | (v2 - v3))) - (v2 + not (v3))))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 8.52,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 212
+},{
+  "obf_expr": "(1 & ((v1 & v2) & (v0 - v0)))",
+  "obf_leng": 10,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 3,
+  "result_var": 0,
+  "id": 213
+},{
+  "obf_expr": "((((v3 - (v2 + 1)) * ((v1 * v3) & (v2 | v2))) + 1) - ((1 ^ v3) ^ 1))",
+  "obf_leng": 23,
+  "result_expr": "((((v3 - (v2 + 1)) * ((v1 * v3) & v2)) + 1) - v3)",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 5.35,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 214
+},{
+  "obf_expr": "not (((- ((v3 | v1)) - 1) + (((1 + v1) * v2) * v1)))",
+  "obf_leng": 17,
+  "result_expr": "not ((not ((v3 | v1)) + (((1 + v1) * v2) * v1)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 215
+},{
+  "obf_expr": "((- (v0) * (v2 | v0)) * (((v2 + v2) | (v3 - (1 + v2))) + - (((v0 ++ (v3 - v3)) / v0))))",
+  "obf_leng": 27,
+  "result_expr": "- (((v0 * (v2 | v0)) * (((2 * v2) | (v3 - (1 + v2))) - ((v0 ++ 0) / v0))))",
+  "result_leng": 24,
+  "success": "yes",
+  "time": 1.9,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 216
+},{
+  "obf_expr": "(((not (v1) | 1) | ((v2 ++ v0) / 1)) & ((1 | v1) | (((v0 ^ v1) ^ v4) - v4)))",
+  "obf_leng": 24,
+  "result_expr": "(((not (v1) | 1) | v0) & ((1 | v1) | (((v0 ^ v1) ^ v4) - v4)))",
+  "result_leng": 20,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 217
+},{
+  "obf_expr": "(((- ((v3 & v0)) + v3) ^ v3) & (((v3 | (v0 & v0)) ^ (v0 - (v3 | v3))) + ((v0 + (v3 - v0)) + (v0 + 1))))",
+  "obf_leng": 32,
+  "result_expr": "(((v3 - (v3 & v0)) ^ v3) & (((v3 | v0) ^ (v0 - v3)) + (v3 + (v0 + 1))))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 1.63,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 218
+},{
+  "obf_expr": "((v1 ^ (v1 + v1)) + (((not (v4) + not (v4)) | ((v4 + v4) - 1)) + - ((v4 ^ v1))))",
+  "obf_leng": 25,
+  "result_expr": "((v1 ^ (2 * v1)) + (((not (v4) + not (v4)) | ((2 * v4) - 1)) - (v4 ^ v1)))",
+  "result_leng": 25,
+  "success": "yes",
+  "time": 17.88,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 219
+},{
+  "obf_expr": "((((v0 & v0) ^ v1) | (v4 + v0)) | (1 & ((v4 ^ v0) * v0)))",
+  "obf_leng": 17,
+  "result_expr": "(((v0 ^ v1) | (v4 + v0)) | (1 & ((v4 ^ v0) * v0)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.22,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 220
+},{
+  "obf_expr": "(((((1 & v1) & ((v0 ++ 1) / v2)) & ((1 ++ ((1 ++ 1) /s v1)) /s (v2 | v1))) + (- (v1) + ((v2 ++ 1) / v2))) * ((((v1 - v2) * (v2 | v1)) - ((v2 + 1) - v1)) ^ (v1 | ((v2 & 1) ^ v2))))",
+  "obf_leng": 55,
+  "result_expr": "(((((1 & v1) & ((v0 ++ 1) / v2)) & ((1 ++ ((1 ++ 1) /s v1)) /s (v2 | v1))) + (((v2 ++ 1) / v2) - v1)) * ((((v1 - v2) * (v2 | v1)) - ((v2 + 1) - v1)) ^ (v1 | ((v2 & 1) ^ v2))))",
+  "result_leng": 55,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 221
+},{
+  "obf_expr": "- ((((v1 + v1) ^ v1) + (v1 - ((v3 | v1) | (v1 - 1)))))",
+  "obf_leng": 18,
+  "result_expr": "- ((((2 * v1) ^ v1) + (v1 - ((v3 | v1) | (v1 - 1)))))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 1.32,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 222
+},{
+  "obf_expr": "((v4 ^ ((v3 | - (1)) + not (not (v0)))) | not (v0))",
+  "obf_leng": 16,
+  "result_expr": "((v4 ^ (v0 - 1)) | not (v0))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.29,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 223
+},{
+  "obf_expr": "- (v0)",
+  "obf_leng": 2,
+  "result_expr": "- (v0)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 224
+},{
+  "obf_expr": "not ((((v3 * v3) - 1) + v3))",
+  "obf_leng": 10,
+  "result_expr": "not ((((v3 * v3) - 1) + v3))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 225
+},{
+  "obf_expr": "(- ((v0 & v3)) - (v3 | ((v2 ++ v3) /s (1 & 1))))",
+  "obf_leng": 15,
+  "result_expr": "- (((v0 & v3) + v3))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 226
+},{
+  "obf_expr": "(1 + ((v3 + ((1 & v3) & (v0 + v0))) ^ ((v3 * v2) & v2)))",
+  "obf_leng": 17,
+  "result_expr": "(1 + ((v3 + ((1 & v3) & (2 * v0))) ^ ((v3 * v2) & v2)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.92,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 227
+},{
+  "obf_expr": "(((v0 * ((- (1) ++ (v0 * v0)) / 1)) - (v0 + 1)) + ((((1 | 1) + (v0 * v0)) - 1) * (v0 * ((v0 - 1) - 1))))",
+  "obf_leng": 36,
+  "result_expr": "(((v0 * (v0 * v0)) - (v0 + 1)) + ((v0 * v0) * (v0 * (v0 - 2))))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 0.32,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 228
+},{
+  "obf_expr": "(v3 & v4)",
+  "obf_leng": 3,
+  "result_expr": "(v3 & v4)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 229
+},{
+  "obf_expr": "(((((v3 + v1) | (v2 - v0)) & (v2 * (v3 + v0))) & (((v1 & v2) ^ (v0 - 1)) | ((v2 - v3) ^ - (v3)))) & (((((v3 ++ v0) / - (v1)) & not ((v1 & v1))) ++ (not ((v1 ^ 1)) - (((v0 + v0) ++ v2) / (v1 + v1)))) / (((v3 ^ v3) ++ (v3 & ((1 ++ 1) / v1))) /s ((1 ++ ((v3 ++ 1) / v3)) / (v3 & v0)))))",
+  "obf_leng": 85,
+  "result_expr": "(((((v3 + v1) | (v2 - v0)) & (v2 * (v3 + v0))) & (((v1 & v2) ^ (v0 - 1)) | ((v2 - v3) ^ - (v3)))) & (((((v3 ++ v0) / - (v1)) & not (v1)) ++ (not ((v1 ^ 1)) - (((2 * v0) ++ v2) / (2 * v1)))) / ((0 ++ (v3 & ((1 ++ 1) / v1))) /s ((1 ++ ((v3 ++ 1) / v3)) / (v3 & v0)))))",
+  "result_leng": 81,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 230
+},{
+  "obf_expr": "(1 * (((v4 * 1) - (v0 + (v1 ^ v1))) | (v4 | v2)))",
+  "obf_leng": 16,
+  "result_expr": "((v4 - v0) | (v4 | v2))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 231
+},{
+  "obf_expr": "- (((- (v3) + ((v3 & v4) * (v3 | v4))) - ((v4 & v3) * (v3 & v4))))",
+  "obf_leng": 20,
+  "result_expr": "- (((((v3 & v4) * (v3 | v4)) - v3) - ((v4 & v3) * (v3 & v4))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 1.39,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 232
+},{
+  "obf_expr": "(((((1 + v3) & (v2 + v2)) | ((1 + v2) ^ (1 - v3))) & (not ((1 + 1)) + (not (1) ^ (v3 * v2)))) * ((1 + not (v2)) | not (v3)))",
+  "obf_leng": 40,
+  "result_expr": "(((((1 + v3) & (2 * v2)) | ((1 + v2) ^ (1 - v3))) & (-3 + (-2 ^ (v3 * v2)))) * (- (v2) | not (v3)))",
+  "result_leng": 33,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 233
+},{
+  "obf_expr": "((((v3 - v2) | v2) + (v3 * 1)) - (1 + (v3 + ((v2 * v3) ^ not (v2)))))",
+  "obf_leng": 23,
+  "result_expr": "((((v3 - v2) | v2) + v3) - (1 + (v3 + ((v2 * v3) ^ not (v2)))))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 1.86,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 234
+},{
+  "obf_expr": "((v1 * v1) * v1)",
+  "obf_leng": 5,
+  "result_expr": "((v1 * v1) * v1)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 235
+},{
+  "obf_expr": "(v1 + (v2 * v2))",
+  "obf_leng": 5,
+  "result_expr": "(v1 + (v2 * v2))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 236
+},{
+  "obf_expr": "((v0 * (v0 + (v0 | v0))) ^ ((((v2 | 1) & not (v2)) & v2) + (v0 & v3)))",
+  "obf_leng": 21,
+  "result_expr": "((v0 * (2 * v0)) ^ ((((v2 | 1) & not (v2)) & v2) + (v0 & v3)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.76,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 237
+},{
+  "obf_expr": "((((v0 ++ v0) / 1) ^ (v0 - 1)) - ((v0 ++ v0) / 1))",
+  "obf_leng": 17,
+  "result_expr": "((v0 ^ (v0 - 1)) - v0)",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.29,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 238
+},{
+  "obf_expr": "((((v4 | v4) - - (v4)) + (- ((v0 | v4)) * v4)) * ((((v0 * v4) & 1) | (v4 & (1 * v0))) + (1 | 1)))",
+  "obf_leng": 30,
+  "result_expr": "(((2 * v4) - ((v0 | v4) * v4)) * ((((v0 * v4) & 1) | (v4 & v0)) + 1))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 18.18,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 239
+},{
+  "obf_expr": "(- (v1) | (((((v0 ++ v0) / 1) | (1 & v0)) * (- (v0) - v0)) | ((1 - 1) | v0)))",
+  "obf_leng": 25,
+  "result_expr": "(- (v1) | (- ((v0 * (2 * v0))) | v0))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 240
+},{
+  "obf_expr": "(((1 * v1) & (((v2 & v1) - (v2 * v1)) * 1)) - (1 + v1))",
+  "obf_leng": 19,
+  "result_expr": "((v1 & ((v2 & v1) - (v2 * v1))) - (1 + v1))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.58,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 241
+},{
+  "obf_expr": "((((1 * (v3 + v3)) - ((1 - v3) + v3)) ^ ((1 - 1) ^ (not (v0) - (v1 & v3)))) + ((1 + v3) + (v3 ^ (v1 - 1))))",
+  "obf_leng": 38,
+  "result_expr": "((((2 * v3) - 1) ^ (not (v0) - (v1 & v3))) + ((1 + v3) + (v3 ^ (v1 - 1))))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 26.99,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 242
+},{
+  "obf_expr": "(((((v2 - v4) + 1) + v2) - ((v4 | v2) ^ - (v4))) - (v4 + 1))",
+  "obf_leng": 21,
+  "result_expr": "(((((v2 - v4) + 1) + v2) - ((v4 | v2) ^ - (v4))) - (v4 + 1))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 34.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 243
+},{
+  "obf_expr": "- ((not ((v2 - 1)) & ((v2 & v0) * v0)))",
+  "obf_leng": 13,
+  "result_expr": "- ((not ((v2 - 1)) & ((v2 & v0) * v0)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.19,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 244
+},{
+  "obf_expr": "((((v4 + v1) * 1) - (v1 - not (v3))) ^ (((v4 - (v4 * v0)) + (v2 - v2)) - (v4 + 1)))",
+  "obf_leng": 30,
+  "result_expr": "(((v4 + v1) - (v1 - not (v3))) ^ ((v4 - (v4 * v0)) - (v4 + 1)))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 1.04,
+  "obf_var": 5,
+  "result_var": 4,
+  "id": 245
+},{
+  "obf_expr": "not ((not (v3) ^ ((v3 | v3) | (v2 | v2))))",
+  "obf_leng": 13,
+  "result_expr": "not ((not (v3) ^ (v3 | v2)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 246
+},{
+  "obf_expr": "(not (v0) & (- ((v0 | v3)) | v1))",
+  "obf_leng": 10,
+  "result_expr": "(not (v0) & (- ((v0 | v3)) | v1))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.24,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 247
+},{
+  "obf_expr": "(- (((((v1 ++ v1) / 1) + (v1 * v0)) - (1 & v0))) ^ ((v1 ^ 1) ^ ((1 | v0) ^ ((1 * v1) + v0))))",
+  "obf_leng": 29,
+  "result_expr": "(- (((v1 + (v1 * v0)) - (1 & v0))) ^ ((v1 ^ 1) ^ ((1 | v0) ^ (v1 + v0))))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 3.78,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 248
+},{
+  "obf_expr": "((1 ++ ((not (v2) - v1) - (v1 + v2))) / 1)",
+  "obf_leng": 15,
+  "result_expr": "((not (v2) - v1) - (v1 + v2))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 249
+},{
+  "obf_expr": "- (v3)",
+  "obf_leng": 2,
+  "result_expr": "- (v3)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 250
+},{
+  "obf_expr": "(((v1 ^ v0) & (v4 & v0)) | - (v1))",
+  "obf_leng": 10,
+  "result_expr": "(((v1 ^ v0) & (v4 & v0)) | - (v1))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.24,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 251
+},{
+  "obf_expr": "(- ((v1 | (v0 & v4))) + (v0 & v1))",
+  "obf_leng": 10,
+  "result_expr": "((v0 & v1) - (v1 | (v0 & v4)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.63,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 252
+},{
+  "obf_expr": "- (((v0 + ((v0 & v0) - - (v1))) ^ v0))",
+  "obf_leng": 12,
+  "result_expr": "- (((v0 + (v0 + v1)) ^ v0))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 253
+},{
+  "obf_expr": "(((((v2 | v1) * v1) & (v0 | not (v0))) + (v2 | v1)) + (v4 + ((not (v2) * v4) * 1)))",
+  "obf_leng": 25,
+  "result_expr": "((((v2 | v1) * v1) + (v2 | v1)) + (v4 + (not (v2) * v4)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 254
+},{
+  "obf_expr": "(((((v3 ^ 1) & 1) ^ v1) + (not (1) | (((v0 ++ v0) /s v0) * (v3 + 1)))) + (v1 * v1))",
+  "obf_leng": 25,
+  "result_expr": "(((((v3 ^ 1) & 1) ^ v1) + (-2 | (((v0 ++ v0) /s v0) * (v3 + 1)))) + (v1 * v1))",
+  "result_leng": 24,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 255
+},{
+  "obf_expr": "((((v0 ++ 1) / v0) * v0) & (((1 ++ (v2 * v1)) /s v2) ^ v0))",
+  "obf_leng": 17,
+  "result_expr": "((((v0 ++ 1) / v0) * v0) & (((1 ++ (v2 * v1)) /s v2) ^ v0))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 256
+},{
+  "obf_expr": "- ((((v3 & v1) & not (v4)) - ((v3 - (1 * v4)) ^ v1)))",
+  "obf_leng": 18,
+  "result_expr": "- ((((v3 & v1) & not (v4)) - ((v3 - v4) ^ v1)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.31,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 257
+},{
+  "obf_expr": "((v2 | v1) | (v4 | (v4 * v2)))",
+  "obf_leng": 9,
+  "result_expr": "((v2 | v1) | (v4 | (v4 * v2)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 258
+},{
+  "obf_expr": "(((v0 * (v4 + v4)) + (- (1) + 1)) | (((- (v0) | v4) - v3) | v0))",
+  "obf_leng": 20,
+  "result_expr": "((v0 * (2 * v4)) | (((- (v0) | v4) - v3) | v0))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 34.53,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 259
+},{
+  "obf_expr": "1",
+  "obf_leng": 1,
+  "result_expr": "1",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 0,
+  "result_var": 0,
+  "id": 260
+},{
+  "obf_expr": "(((v1 ^ ((v1 * v2) & (1 + v1))) + ((1 - 1) & (v2 ^ v0))) * 1)",
+  "obf_leng": 20,
+  "result_expr": "(v1 ^ ((v1 * v2) & (1 + v1)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.85,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 261
+},{
+  "obf_expr": "(((((v2 * v2) - (v0 + 1)) ^ v4) ^ (((v2 + v0) * v2) + (v0 * v2))) + ((1 - v3) ^ (1 + - (v3))))",
+  "obf_leng": 30,
+  "result_expr": "((((v2 * v2) - (v0 + 1)) ^ v4) ^ (((v2 + v0) * v2) + (v0 * v2)))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 25.14,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 262
+},{
+  "obf_expr": "(((((v1 + v2) & (1 - 1)) | (v3 - 1)) - (((v1 ^ v1) & 1) | (v3 ^ v0))) | ((not (v3) + (v0 | (v3 & v0))) * 1))",
+  "obf_leng": 36,
+  "result_expr": "(((v3 - 1) - (v3 ^ v0)) | (not (v3) + v0))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 2.03,
+  "obf_var": 4,
+  "result_var": 2,
+  "id": 263
+},{
+  "obf_expr": "((v0 | v2) + ((v0 & ((v2 + v2) - v0)) + (1 + 1)))",
+  "obf_leng": 16,
+  "result_expr": "((v0 | v2) + ((v0 & ((2 * v2) - v0)) + 2))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.74,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 264
+},{
+  "obf_expr": "(v0 ^ v0)",
+  "obf_leng": 3,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 265
+},{
+  "obf_expr": "((- (((v1 + v0) * (v0 + v4))) * (v1 ^ v0)) - 1)",
+  "obf_leng": 15,
+  "result_expr": "not ((((v1 + v0) * (v0 + v4)) * (v1 ^ v0)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 13.4,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 266
+},{
+  "obf_expr": "(((v1 * v3) & - (1)) ^ (((1 * (v1 | v1)) + ((v0 ^ v0) + (v3 * v3))) * 1))",
+  "obf_leng": 22,
+  "result_expr": "((v1 * v3) ^ (v1 + (v3 * v3)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 1.13,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 267
+},{
+  "obf_expr": "(((not (v2) ^ v0) + 1) & - (1))",
+  "obf_leng": 10,
+  "result_expr": "((not (v2) ^ v0) + 1)",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 268
+},{
+  "obf_expr": "(v2 & (1 + ((not (v1) - v2) ^ - ((v1 * v2)))))",
+  "obf_leng": 15,
+  "result_expr": "(v2 & (1 + ((not (v1) - v2) ^ - ((v1 * v2)))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 36.78,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 269
+},{
+  "obf_expr": "((v1 | ((v2 - v1) | (v2 * v3))) + (v3 & v2))",
+  "obf_leng": 14,
+  "result_expr": "((v1 | ((v2 - v1) | (v2 * v3))) + (v3 & v2))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.19,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 270
+},{
+  "obf_expr": "(((v4 * v2) * v2) | (((v0 + (v0 * v0)) & v4) & ((v2 & v2) | (v2 | (v2 * v0)))))",
+  "obf_leng": 23,
+  "result_expr": "(((v4 * v2) * v2) | (((v0 + (v0 * v0)) & v4) & (v2 | (v2 * v0))))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 1.4,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 271
+},{
+  "obf_expr": "(not (v3) ^ (v1 ^ v1))",
+  "obf_leng": 7,
+  "result_expr": "not (v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 272
+},{
+  "obf_expr": "(((((v3 + 1) * v3) - 1) - (not ((1 ^ v1)) & (1 ^ v1))) | (v4 * (1 * (v4 & (v3 & v3)))))",
+  "obf_leng": 29,
+  "result_expr": "((((v3 + 1) * v3) - 1) | (v4 * (v4 & v3)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 4.17,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 273
+},{
+  "obf_expr": "((not (((v0 & 1) ^ (1 ^ v2))) - (((v2 - 1) & v4) & ((v2 + v3) + (v3 & v3)))) | ((v4 ^ 1) - ((((v3 ++ v0) /s v0) & - (v2)) & ((((v0 ++ v0) / v4) ++ (v3 ^ v2)) / (v0 ^ 1)))))",
+  "obf_leng": 53,
+  "result_expr": "((not (((v0 & 1) ^ (1 ^ v2))) - (((v2 - 1) & v4) & ((v2 + v3) + v3))) | ((v4 ^ 1) - ((((v3 ++ v0) /s v0) & - (v2)) & ((((v0 ++ v0) / v4) ++ (v3 ^ v2)) / (v0 ^ 1)))))",
+  "result_leng": 51,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 274
+},{
+  "obf_expr": "(((1 * ((v4 * v1) & - (1))) ^ v1) ^ (v2 * (((v4 | v2) | ((v4 ++ v4) /s v4)) & (v1 * v1))))",
+  "obf_leng": 26,
+  "result_expr": "(((v4 * v1) ^ v1) ^ (v2 * (((v4 | v2) | ((v4 ++ v4) /s v4)) & (v1 * v1))))",
+  "result_leng": 21,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 275
+},{
+  "obf_expr": "((v2 | v0) | (- (((v2 * v0) ^ v0)) * - (v2)))",
+  "obf_leng": 13,
+  "result_expr": "((v2 | v0) | (((v2 * v0) ^ v0) * v2))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 276
+},{
+  "obf_expr": "((v1 ++ ((- (v1) - - ((v0 | v1))) ^ ((v0 + (v0 & v0)) * v0))) / 1)",
+  "obf_leng": 20,
+  "result_expr": "(((v0 | v1) - v1) ^ ((2 * v0) * v0))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 277
+},{
+  "obf_expr": "((v3 - 1) - ((- (1) ^ (v3 * v3)) + v3))",
+  "obf_leng": 14,
+  "result_expr": "((v3 - 1) - (not ((v3 * v3)) + v3))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 278
+},{
+  "obf_expr": "((v0 * v4) ^ (((((v1 ++ v4) /s 1) & v4) * v0) - (v0 * (1 - (1 + v4)))))",
+  "obf_leng": 23,
+  "result_expr": "((v0 * v4) ^ ((v4 * v0) + (v0 * v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 1.0,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 279
+},{
+  "obf_expr": "(v2 | ((v2 ^ v2) | v4))",
+  "obf_leng": 7,
+  "result_expr": "(v2 | v4)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 280
+},{
+  "obf_expr": "(((v4 | 1) * (- (v4) | v4)) & v4)",
+  "obf_leng": 10,
+  "result_expr": "(((v4 | 1) * (- (v4) | v4)) & v4)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 10.71,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 281
+},{
+  "obf_expr": "(((((v0 + v0) + (v0 + v0)) - ((v3 * v3) ^ not (v0))) * (((v0 * v3) - (1 + v0)) - (v1 - (v3 * v0)))) + ((((v3 + v3) * (v0 * v0)) ^ (v1 & (v0 - v3))) + (((v2 ^ v1) - (v1 - v3)) * ((v3 * v0) + (v3 * v0)))))",
+  "obf_leng": 66,
+  "result_expr": "(((((2 * v0) + (2 * v0)) - ((v3 * v3) ^ not (v0))) * (((v0 * v3) - (1 + v0)) - (v1 - (v3 * v0)))) + ((((2 * v3) * (v0 * v0)) ^ (v1 & (v0 - v3))) + (((v2 ^ v1) - (v1 - v3)) * ((v3 * v0) + (v3 * v0)))))",
+  "result_leng": 66,
+  "success": "no",
+  "time": 60.13,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 282
+},{
+  "obf_expr": "(((v2 + (v0 | (v0 & v1))) | ((v2 ^ v2) | v0)) * not (((v0 | v2) ^ (- (v2) - 1))))",
+  "obf_leng": 25,
+  "result_expr": "(((v2 + v0) | v0) * not (((v0 | v2) ^ not (v2))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 6.68,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 283
+},{
+  "obf_expr": "(not (v2) ^ (v0 & (((v3 ^ v3) + not (v3)) & not ((v3 - v3)))))",
+  "obf_leng": 20,
+  "result_expr": "(not (v2) ^ (v0 & not (v3)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 284
+},{
+  "obf_expr": "(((v2 + ((1 & v3) + v2)) & (1 ^ v3)) + (v3 | (v3 ^ v2)))",
+  "obf_leng": 17,
+  "result_expr": "(((v2 + ((1 & v3) + v2)) & (1 ^ v3)) + (v3 | v2))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 285
+},{
+  "obf_expr": "((v2 + v0) + v2)",
+  "obf_leng": 5,
+  "result_expr": "((v2 + v0) + v2)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 286
+},{
+  "obf_expr": "(v1 + - (v1))",
+  "obf_leng": 4,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 287
+},{
+  "obf_expr": "((- (v1) ^ - (v4)) * (v4 ^ (- (v1) ^ v1)))",
+  "obf_leng": 12,
+  "result_expr": "((- (v1) ^ - (v4)) * (v4 ^ (- (v1) ^ v1)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 27.9,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 288
+},{
+  "obf_expr": "(not ((v0 - v1)) ^ (((1 ^ 1) | (v1 & (v1 | 1))) ^ v0))",
+  "obf_leng": 18,
+  "result_expr": "(not ((v0 - v1)) ^ ((v1 & (v1 | 1)) ^ v0))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 289
+},{
+  "obf_expr": "(v2 & v0)",
+  "obf_leng": 3,
+  "result_expr": "(v2 & v0)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 290
+},{
+  "obf_expr": "not ((- (v1) + ((not (v0) ^ v0) + ((v3 * v1) | v3))))",
+  "obf_leng": 16,
+  "result_expr": "not (((((v3 * v1) | v3) - 1) - v1))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.23,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 291
+},{
+  "obf_expr": "- (((v4 * v1) * not (v1)))",
+  "obf_leng": 8,
+  "result_expr": "- (((v4 * v1) * not (v1)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 292
+},{
+  "obf_expr": "(((- (((v1 ++ v2) /s 1)) | v2) * (((v2 - v2) & (v0 | v2)) ^ (v1 + v1))) & not (((v2 * ((v1 ++ v2) / 1)) - - ((1 * v1)))))",
+  "obf_leng": 37,
+  "result_expr": "(((- (v2) | v2) * (2 * v1)) & not (((v2 * v2) + v1)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 3.25,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 293
+},{
+  "obf_expr": "((((v0 * v3) & (v2 | - (1))) | (((v0 ++ v3) / 1) ^ v0)) + ((v0 + v0) ^ (v0 * 1)))",
+  "obf_leng": 24,
+  "result_expr": "(((v0 * v3) | (v3 ^ v0)) + ((2 * v0) ^ v0))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.32,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 294
+},{
+  "obf_expr": "(((((v3 * 1) * (v1 ^ v3)) * 1) ^ ((v1 - 1) - (v1 | v1))) - (not (v1) - v1))",
+  "obf_leng": 27,
+  "result_expr": "(((v3 * (v1 ^ v3)) ^ ((v1 - 1) - v1)) - (not (v1) - v1))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 0.86,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 295
+},{
+  "obf_expr": "(((v3 - (v3 * 1)) & 1) | (1 + not (((v1 - 1) ^ (v1 + v1)))))",
+  "obf_leng": 21,
+  "result_expr": "- (((v1 - 1) ^ (2 * v1)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.23,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 296
+},{
+  "obf_expr": "(((((v1 + v1) | (v0 * v1)) + 1) * (1 * v0)) + ((v1 ++ ((v1 ^ v1) - ((v1 + v0) * v0))) / (- (1) & 1)))",
+  "obf_leng": 31,
+  "result_expr": "(((((2 * v1) | (v0 * v1)) + 1) * v0) - ((v1 + v0) * v0))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 5.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 297
+},{
+  "obf_expr": "((((v0 * 1) & v0) ^ (not ((v0 ^ v0)) & (v3 - ((v0 ++ v0) /s 1)))) ^ v3)",
+  "obf_leng": 22,
+  "result_expr": "((v0 ^ (v3 - v0)) ^ v3)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.28,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 298
+},{
+  "obf_expr": "((((v4 + (v4 - v3)) - v3) & ((1 | not (v4)) & not ((v3 | 1)))) | 1)",
+  "obf_leng": 23,
+  "result_expr": "((((v4 + (v4 - v3)) - v3) & ((1 | not (v4)) & not ((v3 | 1)))) | 1)",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 8.65,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 299
+},{
+  "obf_expr": "((1 ^ 1) | (v0 ^ (- ((v2 - v0)) & v2)))",
+  "obf_leng": 13,
+  "result_expr": "(v0 ^ (- ((v2 - v0)) & v2))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 300
+},{
+  "obf_expr": "(not ((v3 & v0)) | (((1 & 1) ^ v0) & (- (v0) + v3)))",
+  "obf_leng": 16,
+  "result_expr": "(not ((v3 & v0)) | ((1 ^ v0) & (v3 - v0)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 301
+},{
+  "obf_expr": "(1 + (((v4 & v2) | v4) + ((v4 * 1) * (v2 * v2))))",
+  "obf_leng": 15,
+  "result_expr": "(1 + (v4 + (v4 * (v2 * v2))))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.18,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 302
+},{
+  "obf_expr": "((((v1 * (v4 * v4)) - 1) - (- (v2) + v2)) + v1)",
+  "obf_leng": 16,
+  "result_expr": "(((v1 * (v4 * v4)) - 1) + v1)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.32,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 303
+},{
+  "obf_expr": "((v1 | (not (v1) | v0)) & ((v1 * (v4 & (v4 * v0))) + (1 + ((v4 ^ v0) ^ v1))))",
+  "obf_leng": 23,
+  "result_expr": "((v1 | (not (v1) | v0)) & ((v1 * (v4 & (v4 * v0))) + (1 + ((v4 ^ v0) ^ v1))))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 6.4,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 304
+},{
+  "obf_expr": "(not ((((v4 & v1) * (v4 - 1)) & ((v1 * v4) | ((v1 ++ v1) / v4)))) + ((((v4 - 1) & (v4 + v1)) | (((v4 ++ v1) /s v4) & (v4 + 1))) ^ (v1 * v1)))",
+  "obf_leng": 43,
+  "result_expr": "(not ((((v4 & v1) * (v4 - 1)) & ((v1 * v4) | ((v1 ++ v1) / v4)))) + ((((v4 - 1) & (v4 + v1)) | (((v4 ++ v1) /s v4) & (v4 + 1))) ^ (v1 * v1)))",
+  "result_leng": 43,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 305
+},{
+  "obf_expr": "((1 - (1 + v0)) ^ ((((1 ++ (v0 | v0)) / ((v0 ++ v0) / v0)) + (v0 - v0)) * v0))",
+  "obf_leng": 25,
+  "result_expr": "(- (v0) ^ (((1 ++ v0) / ((v0 ++ v0) / v0)) * v0))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 306
+},{
+  "obf_expr": "((v4 + (- (1) & not (v0))) - v0)",
+  "obf_leng": 11,
+  "result_expr": "((v4 + not (v0)) - v0)",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 307
+},{
+  "obf_expr": "(((not (not (v0)) ^ - (v4)) ^ v0) | (((v2 + 1) & ((v4 - 1) | (v4 | 1))) | (v3 - v4)))",
+  "obf_leng": 28,
+  "result_expr": "(- (v4) | (((v2 + 1) & ((v4 - 1) | (v4 | 1))) | (v3 - v4)))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.52,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 308
+},{
+  "obf_expr": "not ((v4 - v1))",
+  "obf_leng": 6,
+  "result_expr": "not ((v4 - v1))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 309
+},{
+  "obf_expr": "((not (v2) + 1) ^ (v0 + (v0 ^ not ((v2 | v2)))))",
+  "obf_leng": 15,
+  "result_expr": "(- (v2) ^ (v0 + (v0 ^ not (v2))))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 1.86,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 310
+},{
+  "obf_expr": "((1 * (v0 * v0)) & (((not (1) ^ (v3 & v0)) - (v3 * v3)) + 1))",
+  "obf_leng": 20,
+  "result_expr": "((v0 * v0) & (((-2 ^ (v3 & v0)) - (v3 * v3)) + 1))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 4.64,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 311
+},{
+  "obf_expr": "(((1 - (v4 + 1)) - v1) * v1)",
+  "obf_leng": 11,
+  "result_expr": "- (((v4 + v1) * v1))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 312
+},{
+  "obf_expr": "not ((((v1 * (v2 & v1)) + ((v1 * v2) * v2)) + (((1 ^ 1) ^ v2) - v1)))",
+  "obf_leng": 22,
+  "result_expr": "not ((((v1 * (v2 & v1)) + ((v1 * v2) * v2)) + (v2 - v1)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 8.92,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 313
+},{
+  "obf_expr": "((not ((1 * v2)) - 1) - (((v2 - 1) & ((v0 | v1) ^ (v2 - v0))) | (v0 ^ (not (1) | (1 | v2)))))",
+  "obf_leng": 33,
+  "result_expr": "((not (v2) - 1) - (((v2 - 1) & ((v0 | v1) ^ (v2 - v0))) | not (v0)))",
+  "result_leng": 25,
+  "success": "yes",
+  "time": 5.4,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 314
+},{
+  "obf_expr": "((((- (v0) + (v0 * v0)) + v3) + (not (v3) + (v0 * (v0 * v0)))) | (1 ^ 1))",
+  "obf_leng": 22,
+  "result_expr": "((((v0 * v0) - v0) + v3) + (not (v3) + (v0 * (v0 * v0))))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 315
+},{
+  "obf_expr": "(((v0 + v0) & v0) - (((v2 ^ v2) + v0) - (((v2 - v0) * 1) | v0)))",
+  "obf_leng": 22,
+  "result_expr": "(((2 * v0) & v0) - (v0 - ((v2 - v0) | v0)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 1.34,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 316
+},{
+  "obf_expr": "- (((((1 - v4) + (v4 * v0)) - 1) - (v0 & ((v4 * 1) * 1))))",
+  "obf_leng": 21,
+  "result_expr": "- (((((1 - v4) + (v4 * v0)) - 1) - (v0 & v4)))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.18,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 317
+},{
+  "obf_expr": "(v0 - 1)",
+  "obf_leng": 4,
+  "result_expr": "(v0 - 1)",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 318
+},{
+  "obf_expr": "((((((1 ^ 1) ++ (v3 + v2)) / ((v0 ++ v2) /s v1)) | (v3 | ((v2 ++ v2) / v2))) & (v3 - (1 - v0))) & ((((v0 + not (v3)) ++ (- (v3) - ((v0 ++ v3) /s v2))) / (v3 | (v0 | v3))) | ((1 ^ v0) + ((v3 | v1) & (1 + v0)))))",
+  "obf_leng": 63,
+  "result_expr": "(((((0 ++ (v3 + v2)) / ((v0 ++ v2) /s v1)) | (v3 | ((v2 ++ v2) / v2))) & (v3 - (1 - v0))) & ((((v0 + not (v3)) ++ - ((v3 + ((v0 ++ v3) /s v2)))) / (v0 | v3)) | ((1 ^ v0) + ((v3 | v1) & (1 + v0)))))",
+  "result_leng": 58,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 319
+},{
+  "obf_expr": "not (v1)",
+  "obf_leng": 3,
+  "result_expr": "not (v1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 320
+},{
+  "obf_expr": "(not (1) * (v0 * - (v2)))",
+  "obf_leng": 8,
+  "result_expr": "- ((-2 * (v0 * v2)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 321
+},{
+  "obf_expr": "(- ((v0 & v1)) + (v0 + (((v0 | v0) + v1) + v1)))",
+  "obf_leng": 14,
+  "result_expr": "((v0 + ((v0 + v1) + v1)) - (v0 & v1))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 322
+},{
+  "obf_expr": "(v3 ^ (((v2 ++ 1) /s 1) * - (((v3 & v3) & (1 + v4)))))",
+  "obf_leng": 16,
+  "result_expr": "(v3 ^ - ((v3 & (1 + v4))))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 1.22,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 323
+},{
+  "obf_expr": "(((v1 ^ v1) | v0) & (v0 - - (v1)))",
+  "obf_leng": 11,
+  "result_expr": "(v0 & (v0 + v1))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 324
+},{
+  "obf_expr": "(((v2 | (v1 - v1)) ^ (v3 | v2)) ^ ((((v2 ^ v2) - v3) * v3) + (v0 - (1 + 1))))",
+  "obf_leng": 26,
+  "result_expr": "((v2 ^ (v3 | v2)) ^ ((v0 - 2) - (v3 * v3)))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 3.59,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 325
+},{
+  "obf_expr": "not (((v0 ^ (v3 * (v0 + v2))) - (v2 * v2)))",
+  "obf_leng": 14,
+  "result_expr": "not (((v0 ^ (v3 * (v0 + v2))) - (v2 * v2)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 1.37,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 326
+},{
+  "obf_expr": "(((not ((1 + v1)) ^ ((v4 | v1) | (1 & v0))) | ((v1 ^ 1) & (((v1 ++ 1) /s v3) * (v2 & v4)))) & ((v4 | (1 | v4)) | (v1 + not (v0))))",
+  "obf_leng": 39,
+  "result_expr": "(((not ((1 + v1)) ^ ((v4 | v1) | (1 & v0))) | ((v1 ^ 1) & (((v1 ++ 1) /s v3) * (v2 & v4)))) & ((1 | v4) | (v1 + not (v0))))",
+  "result_leng": 37,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 327
+},{
+  "obf_expr": "((((v0 * (v0 ^ v0)) ^ 1) - (((v2 | v2) ^ v2) | ((1 & 1) + 1))) & (((v1 * v0) * (v1 & v2)) + v0))",
+  "obf_leng": 30,
+  "result_expr": "(((v1 * v0) * (v1 & v2)) + v0)",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.54,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 328
+},{
+  "obf_expr": "((v3 | ((((v1 ++ v2) / v2) | (v4 - v2)) & ((- (v3) ++ (v2 + v1)) / not (v3)))) | (v4 * ((((1 ++ v0) / v2) & 1) + ((v3 | v4) - v0))))",
+  "obf_leng": 40,
+  "result_expr": "((v3 | ((((v1 ++ v2) / v2) | (v4 - v2)) & ((- (v3) ++ (v2 + v1)) / not (v3)))) | (v4 * ((((1 ++ v0) / v2) & 1) + ((v3 | v4) - v0))))",
+  "result_leng": 40,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 329
+},{
+  "obf_expr": "((1 - (((v2 * v3) & v3) * v3)) - 1)",
+  "obf_leng": 13,
+  "result_expr": "- ((((v2 * v3) & v3) * v3))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.6,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 330
+},{
+  "obf_expr": "(not ((1 - v3)) - ((- (v4) ^ not (v3)) + (v4 ^ (v4 * (v3 | v3)))))",
+  "obf_leng": 22,
+  "result_expr": "(not ((1 - v3)) - ((- (v4) ^ not (v3)) + (v4 ^ (v4 * v3))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 18.12,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 331
+},{
+  "obf_expr": "((v2 | v3) - v3)",
+  "obf_leng": 6,
+  "result_expr": "((v2 | v3) - v3)",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 332
+},{
+  "obf_expr": "(((v3 & (v4 - v4)) + (v3 * v3)) * (v3 | v3))",
+  "obf_leng": 14,
+  "result_expr": "((v3 * v3) * v3)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 333
+},{
+  "obf_expr": "v4",
+  "obf_leng": 1,
+  "result_expr": "v4",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 334
+},{
+  "obf_expr": "((1 & (((v0 | v1) | not (v1)) + 1)) | (v4 ^ ((not (v4) - v0) ^ (v4 ^ (v4 - 1)))))",
+  "obf_leng": 27,
+  "result_expr": "(v4 ^ ((not (v4) - v0) ^ (v4 ^ (v4 - 1))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.48,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 335
+},{
+  "obf_expr": "((1 + v1) * ((((v1 & v2) - (1 & 1)) & (v1 - 1)) + 1))",
+  "obf_leng": 19,
+  "result_expr": "((1 + v1) * ((((v1 & v2) - 1) & (v1 - 1)) + 1))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 8.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 336
+},{
+  "obf_expr": "(v0 & v3)",
+  "obf_leng": 3,
+  "result_expr": "(v0 & v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 337
+},{
+  "obf_expr": "((v3 + ((v0 | v3) * ((v0 * 1) & (v1 & v0)))) + - (v3))",
+  "obf_leng": 16,
+  "result_expr": "((v3 + ((v0 | v3) * (v1 & v0))) - v3)",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 338
+},{
+  "obf_expr": "(- ((v2 & v1)) | (((v4 ++ v2) /s 1) | v4))",
+  "obf_leng": 12,
+  "result_expr": "(- ((v2 & v1)) | (v2 | v4))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 339
+},{
+  "obf_expr": "((not (v1) ^ v3) | not (((v2 & v1) ^ (1 + (v3 + v2)))))",
+  "obf_leng": 17,
+  "result_expr": "((not (v1) ^ v3) | not (((v2 & v1) ^ (1 + (v3 + v2)))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 9.21,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 340
+},{
+  "obf_expr": "not ((((v0 & v4) - ((v4 | v4) + 1)) + (v0 & v0)))",
+  "obf_leng": 16,
+  "result_expr": "not ((((v0 & v4) - (v4 + 1)) + v0))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 341
+},{
+  "obf_expr": "((((v3 - v1) & ((v0 & v3) ^ - (1))) | v1) - v3)",
+  "obf_leng": 16,
+  "result_expr": "((((v3 - v1) & not ((v0 & v3))) | v1) - v3)",
+  "result_leng": 15,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 342
+},{
+  "obf_expr": "- (v1)",
+  "obf_leng": 2,
+  "result_expr": "- (v1)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 343
+},{
+  "obf_expr": "((not (v3) & - (v1)) & not (- (v4)))",
+  "obf_leng": 11,
+  "result_expr": "((not (v3) & - (v1)) & not (- (v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 344
+},{
+  "obf_expr": "(v1 * (((((v1 & 1) ++ (v1 * v3)) / v1) & ((v3 - 1) - (v0 ^ 1))) ^ (- ((v3 - v1)) ^ v1)))",
+  "obf_leng": 29,
+  "result_expr": "(v1 * (((((v1 & 1) ++ (v1 * v3)) / v1) & ((v3 - 1) - (v0 ^ 1))) ^ (- ((v3 - v1)) ^ v1)))",
+  "result_leng": 29,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 345
+},{
+  "obf_expr": "((((v1 - 1) + (v4 - - (1))) + v1) * 1)",
+  "obf_leng": 14,
+  "result_expr": "(((v1 - 1) + (v4 + 1)) + v1)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.09,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 346
+},{
+  "obf_expr": "((v4 * v3) | v4)",
+  "obf_leng": 5,
+  "result_expr": "((v4 * v3) | v4)",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 347
+},{
+  "obf_expr": "(- ((((v0 | v0) * (v1 ^ v4)) & - (v4))) + v1)",
+  "obf_leng": 13,
+  "result_expr": "(v1 - ((v0 * (v1 ^ v4)) & - (v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 20.18,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 348
+},{
+  "obf_expr": "(((v2 - v2) - v3) - (((v3 ^ (v0 + v0)) ^ (v0 - 1)) + (- ((v0 * 1)) + ((1 * v3) & - (v3)))))",
+  "obf_leng": 31,
+  "result_expr": "- ((v3 + (((v3 ^ (2 * v0)) ^ (v0 - 1)) + ((v3 & - (v3)) - v0))))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 47.08,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 349
+},{
+  "obf_expr": "((((v2 | (v1 + v1)) + (- (v1) * (1 * 1))) ^ (((not (v2) ++ 1) /s not (v2)) * (((v0 - v1) ++ v0) / (1 + v0)))) * ((v1 & v1) - v2))",
+  "obf_leng": 40,
+  "result_expr": "((((v2 | (2 * v1)) - v1) ^ (((not (v2) ++ 1) /s not (v2)) * (((v0 - v1) ++ v0) / (1 + v0)))) * (v1 - v2))",
+  "result_leng": 34,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 350
+},{
+  "obf_expr": "- ((((- (v3) + (v1 * v3)) - (v0 & not (v0))) + ((v1 - v3) * v3)))",
+  "obf_leng": 21,
+  "result_expr": "- ((((v1 * v3) - v3) + ((v1 - v3) * v3)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 351
+},{
+  "obf_expr": "(- (1) & not ((((v0 - v3) * v0) & v3)))",
+  "obf_leng": 13,
+  "result_expr": "not ((((v0 - v3) * v0) & v3))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.77,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 352
+},{
+  "obf_expr": "(((((v1 - v3) * (v1 - 1)) & ((v3 + v0) ^ not (v3))) - (((v2 + v3) * - (v2)) * - ((v3 - v1)))) & not ((v1 & ((v1 | v0) + (v1 - 1)))))",
+  "obf_leng": 44,
+  "result_expr": "(((((v1 - v3) * (v1 - 1)) & ((v3 + v0) ^ not (v3))) - (((v2 + v3) * v2) * (v3 - v1))) & not ((v1 & ((v1 | v0) + (v1 - 1)))))",
+  "result_leng": 42,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 353
+},{
+  "obf_expr": "- (((v4 & v3) - 1))",
+  "obf_leng": 7,
+  "result_expr": "- (((v4 & v3) - 1))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 354
+},{
+  "obf_expr": "(((((v3 ^ v2) * v3) + (((v0 - v0) ++ (v1 + v1)) / ((v3 ++ v0) /s v0))) * (((v2 - v1) ^ v3) * (v3 + 1))) - ((- (v3) * v3) - ((v2 * - (v2)) * not ((v2 - v1)))))",
+  "obf_leng": 50,
+  "result_expr": "(((((v3 ^ v2) * v3) + ((0 ++ (2 * v1)) / ((v3 ++ v0) /s v0))) * (((v2 - v1) ^ v3) * (v3 + 1))) + ((v3 * v3) - ((v2 * v2) * not ((v2 - v1)))))",
+  "result_leng": 44,
+  "success": "no",
+  "time": 60.08,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 355
+},{
+  "obf_expr": "((v3 - v3) - ((- (v1) ^ v3) - (((v1 ^ v0) & ((1 ++ v1) /s 1)) | v0)))",
+  "obf_leng": 23,
+  "result_expr": "- (((- (v1) ^ v3) - (((v1 ^ v0) & v1) | v0)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.38,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 356
+},{
+  "obf_expr": "(v1 * (v1 - (v1 ^ v2)))",
+  "obf_leng": 8,
+  "result_expr": "(v1 * (v1 - (v1 ^ v2)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 357
+},{
+  "obf_expr": "- (((- (((v0 ++ v3) / 1)) & (v3 + v2)) * v2))",
+  "obf_leng": 13,
+  "result_expr": "- (((- (v3) & (v3 + v2)) * v2))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 3.48,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 358
+},{
+  "obf_expr": "((1 & (v3 - v3)) | (((v1 + (v3 - v3)) - not (v4)) & (((v0 ^ v0) - 1) * (v4 + (v1 + 1)))))",
+  "obf_leng": 31,
+  "result_expr": "((v1 - not (v4)) & - ((v4 + (v1 + 1))))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 24.38,
+  "obf_var": 4,
+  "result_var": 2,
+  "id": 359
+},{
+  "obf_expr": "(not (v3) - v4)",
+  "obf_leng": 6,
+  "result_expr": "(not (v3) - v4)",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 360
+},{
+  "obf_expr": "((1 + v2) + ((v1 | (not (v1) | (v0 | v2))) & (v0 ^ ((v2 ^ v0) - (v2 + 1)))))",
+  "obf_leng": 24,
+  "result_expr": "((1 + v2) + ((v1 | (not (v1) | (v0 | v2))) & (v0 ^ ((v2 ^ v0) - (v2 + 1)))))",
+  "result_leng": 24,
+  "success": "yes",
+  "time": 2.86,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 361
+},{
+  "obf_expr": "(not ((1 * v1)) + - (((v3 + (v1 | v3)) * 1)))",
+  "obf_leng": 14,
+  "result_expr": "(not (v1) - (v3 + (v1 | v3)))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 362
+},{
+  "obf_expr": "((((v0 - v0) + (not (v3) | 1)) | (((v0 - v0) & 1) - v3)) - v3)",
+  "obf_leng": 23,
+  "result_expr": "(((not (v3) | 1) | - (v3)) - v3)",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 363
+},{
+  "obf_expr": "(((v4 & v2) & v0) * (((v2 & v0) * ((v2 | v2) + (v0 + v4))) - (((v2 | v0) * - (v4)) | (1 & (v4 & v0)))))",
+  "obf_leng": 31,
+  "result_expr": "(((v4 & v2) & v0) * (((v2 & v0) * (v2 + (v0 + v4))) - (- (((v2 | v0) * v4)) | (1 & (v4 & v0)))))",
+  "result_leng": 29,
+  "success": "yes",
+  "time": 2.93,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 364
+},{
+  "obf_expr": "(v1 | (v1 - v4))",
+  "obf_leng": 6,
+  "result_expr": "(v1 | (v1 - v4))",
+  "result_leng": 6,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 365
+},{
+  "obf_expr": "((v3 + v3) ^ (not (v1) - (v1 - - (v1))))",
+  "obf_leng": 14,
+  "result_expr": "((2 * v3) ^ (not (v1) - (2 * v1)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 1.6,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 366
+},{
+  "obf_expr": "((v1 - v2) | (not ((v2 | (v2 * v2))) | ((1 ^ v2) ^ 1)))",
+  "obf_leng": 18,
+  "result_expr": "((v1 - v2) | (not ((v2 | (v2 * v2))) | v2))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 13.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 367
+},{
+  "obf_expr": "((((v2 - 1) - ((1 + 1) - not (1))) - (not ((v3 & v2)) | (v0 + (v2 ^ v3)))) - ((((v2 + v3) * (v3 | v2)) & (((v2 ++ v2) /s v2) + (v3 * v2))) | - (((1 + v3) | 1))))",
+  "obf_leng": 53,
+  "result_expr": "(((v2 - 5) - (not ((v3 & v2)) | (v0 + (v2 ^ v3)))) - ((((v2 + v3) * (v3 | v2)) & (((v2 ++ v2) /s v2) + (v3 * v2))) | - (((1 + v3) | 1))))",
+  "result_leng": 43,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 368
+},{
+  "obf_expr": "((1 * ((v2 | v0) - ((v1 | 1) & 1))) | ((v0 * v2) + ((v2 + - (1)) & (- (v0) | v0))))",
+  "obf_leng": 26,
+  "result_expr": "(((v2 | v0) - ((v1 | 1) & 1)) | ((v0 * v2) + ((v2 - 1) & (- (v0) | v0))))",
+  "result_leng": 24,
+  "success": "yes",
+  "time": 15.35,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 369
+},{
+  "obf_expr": "(- ((not ((v2 * v2)) ^ ((v1 * v2) - 1))) + ((1 ++ (v2 ^ (v2 - 1))) / 1))",
+  "obf_leng": 24,
+  "result_expr": "((v2 ^ (v2 - 1)) - (not ((v2 * v2)) ^ ((v1 * v2) - 1)))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 51.02,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 370
+},{
+  "obf_expr": "((v1 | v4) & ((1 * v4) + v4))",
+  "obf_leng": 9,
+  "result_expr": "((v1 | v4) & (2 * v4))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.14,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 371
+},{
+  "obf_expr": "(v1 - ((((v1 * 1) + (v2 * v1)) - 1) + (1 + ((v0 ^ v0) | (v4 | v2)))))",
+  "obf_leng": 23,
+  "result_expr": "(v1 - (((v1 + (v2 * v1)) - 1) + (1 + (v4 | v2))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 372
+},{
+  "obf_expr": "((v0 * - (v0)) | ((((v2 | v0) | ((v2 ++ v2) / v1)) | not (v2)) & (((1 & 1) + (v2 * v0)) * ((1 ^ v2) ^ 1))))",
+  "obf_leng": 32,
+  "result_expr": "(- ((v0 * v0)) | ((((v2 | v0) | ((v2 ++ v2) / v1)) | not (v2)) & ((1 + (v2 * v0)) * v2)))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 0.57,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 373
+},{
+  "obf_expr": "((not (v0) & (v0 & ((v1 ++ 1) / v1))) + (((v0 + ((v1 ++ v1) /s 1)) * v1) ^ ((1 ^ (1 & 1)) + v1)))",
+  "obf_leng": 29,
+  "result_expr": "(((v0 + v1) * v1) ^ v1)",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 374
+},{
+  "obf_expr": "((v4 * (v4 ^ v3)) - (((v2 - v2) | ((v0 ++ not (1)) / ((v0 ++ 1) / 1))) | (((v1 + v0) * (v2 ^ v2)) * v0)))",
+  "obf_leng": 33,
+  "result_expr": "((v4 * (v4 ^ v3)) - -2)",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.15,
+  "obf_var": 5,
+  "result_var": 2,
+  "id": 375
+},{
+  "obf_expr": "((((v4 * not (v1)) & v1) | (- (v1) | (v1 & v0))) * 1)",
+  "obf_leng": 16,
+  "result_expr": "(((v4 * not (v1)) & v1) | (- (v1) | (v1 & v0)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 2.59,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 376
+},{
+  "obf_expr": "- ((v4 + (not (v1) ^ v3)))",
+  "obf_leng": 8,
+  "result_expr": "- ((v4 + (not (v1) ^ v3)))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 377
+},{
+  "obf_expr": "((((not (v3) + v3) | v1) & ((v3 | v3) + v3)) & ((1 ^ not (v4)) ^ (((v4 | v4) * v3) | (v1 * v3))))",
+  "obf_leng": 29,
+  "result_expr": "((2 * v3) & ((1 ^ not (v4)) ^ ((v4 * v3) | (v1 * v3))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 40.2,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 378
+},{
+  "obf_expr": "(v3 * ((v4 | (v4 + (v4 & v4))) + ((v4 | v3) * v4)))",
+  "obf_leng": 15,
+  "result_expr": "(v3 * ((v4 | (2 * v4)) + ((v4 | v3) * v4)))",
+  "result_leng": 13,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 379
+},{
+  "obf_expr": "((not (v0) + (v4 ^ v0)) + v4)",
+  "obf_leng": 9,
+  "result_expr": "((not (v0) + (v4 ^ v0)) + v4)",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.31,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 380
+},{
+  "obf_expr": "(((((v2 | v0) | (v2 * v0)) * (((v1 ++ v0) / 1) * (v0 + v2))) & ((v0 - 1) & (- (v2) * (v2 - 1)))) - ((((v0 + v2) ^ (v0 | 1)) * ((v2 | v0) * (v2 * v0))) | (((v2 | v0) * (v2 * v0)) | ((1 ^ v0) - (1 - v0)))))",
+  "obf_leng": 65,
+  "result_expr": "(((((v2 | v0) | (v2 * v0)) * (v0 * (v0 + v2))) & ((v0 - 1) & - ((v2 * (v2 - 1))))) - ((((v0 + v2) ^ (v0 | 1)) * ((v2 | v0) * (v2 * v0))) | (((v2 | v0) * (v2 * v0)) | ((1 ^ v0) - (1 - v0)))))",
+  "result_leng": 61,
+  "success": "no",
+  "time": 60.07,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 381
+},{
+  "obf_expr": "((not (((v4 - v1) | v4)) * ((v1 | (v4 - 1)) + 1)) | (((v4 ++ (v1 ^ v1)) / 1) & (v4 - 1)))",
+  "obf_leng": 30,
+  "result_expr": "(not (((v4 - v1) | v4)) * ((v1 | (v4 - 1)) + 1))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 7.46,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 382
+},{
+  "obf_expr": "((- (1) & not ((v3 - not (v3)))) & ((not (v3) - v4) ^ not (v3)))",
+  "obf_leng": 22,
+  "result_expr": "(not ((v3 - not (v3))) & ((not (v3) - v4) ^ not (v3)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 3.23,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 383
+},{
+  "obf_expr": "((- (v2) - 1) & ((v1 * v1) ^ (v1 | v2)))",
+  "obf_leng": 13,
+  "result_expr": "(not (v2) & ((v1 * v1) ^ (v1 | v2)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 384
+},{
+  "obf_expr": "(((v2 ^ v1) - v4) * ((((v1 & 1) & (v3 ^ v0)) + v1) + v1))",
+  "obf_leng": 18,
+  "result_expr": "(((v2 ^ v1) - v4) * ((((v1 & 1) & (v3 ^ v0)) + v1) + v1))",
+  "result_leng": 18,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 385
+},{
+  "obf_expr": "(((((v1 + v4) & v1) - v3) - v3) * (- ((v3 - v4)) + 1))",
+  "obf_leng": 19,
+  "result_expr": "(((((v1 + v4) & v1) - v3) - v3) * (1 - (v3 - v4)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 2.52,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 386
+},{
+  "obf_expr": "((1 ++ ((v3 ^ (v4 - (v1 ^ v1))) | ((v3 ^ (v4 ^ v3)) & (v3 * v3)))) /s 1)",
+  "obf_leng": 22,
+  "result_expr": "((v3 ^ v4) | (v4 & (v3 * v3)))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 1.16,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 387
+},{
+  "obf_expr": "(- (v0) ^ ((- (v0) & (v4 ^ v0)) | (v4 & v0)))",
+  "obf_leng": 13,
+  "result_expr": "(- (v0) ^ ((- (v0) & (v4 ^ v0)) | (v4 & v0)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 1.85,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 388
+},{
+  "obf_expr": "(- (1) + (((v2 & v2) + - (1)) | ((not (v4) - v2) ^ (v4 * 1))))",
+  "obf_leng": 20,
+  "result_expr": "(((v2 - 1) | ((not (v4) - v2) ^ v4)) - 1)",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 6.44,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 389
+},{
+  "obf_expr": "(((1 * (v0 - v4)) * (v4 ^ v0)) ^ ((v0 | ((v0 | v4) * (v4 * v4))) ^ - (1)))",
+  "obf_leng": 23,
+  "result_expr": "(((v0 - v4) * (v4 ^ v0)) ^ not ((v0 | ((v0 | v4) * (v4 * v4)))))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 33.52,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 390
+},{
+  "obf_expr": "(((v0 ^ v0) | ((v3 + v4) | v3)) | (v4 + v4))",
+  "obf_leng": 13,
+  "result_expr": "(((v3 + v4) | v3) | (2 * v4))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 391
+},{
+  "obf_expr": "(v2 ^ v2)",
+  "obf_leng": 3,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 392
+},{
+  "obf_expr": "(- (((v4 * v4) | (v4 + (v3 * 1)))) - (((v4 + 1) + (not (v4) * v4)) + (v4 * v3)))",
+  "obf_leng": 25,
+  "result_expr": "- ((((v4 * v4) | (v4 + v3)) + (((v4 + 1) + (not (v4) * v4)) + (v4 * v3))))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 2.34,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 393
+},{
+  "obf_expr": "((not (v1) - (v1 ^ v1)) - (v1 * v1))",
+  "obf_leng": 13,
+  "result_expr": "(not (v1) - (v1 * v1))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 394
+},{
+  "obf_expr": "((((not (v1) & v1) + (not (v4) * (v4 - v1))) - v4) + - (v1))",
+  "obf_leng": 20,
+  "result_expr": "(((not (v4) * (v4 - v1)) - v4) - v1)",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 395
+},{
+  "obf_expr": "((v4 - 1) + (v0 ^ ((v4 * v4) - 1)))",
+  "obf_leng": 13,
+  "result_expr": "((v4 - 1) + (v0 ^ ((v4 * v4) - 1)))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 1.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 396
+},{
+  "obf_expr": "((1 - (v2 + 1)) * v3)",
+  "obf_leng": 8,
+  "result_expr": "- ((v2 * v3))",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 397
+},{
+  "obf_expr": "((- (((v1 * v0) | (v0 * v1))) ^ (v1 + v1)) - (not (v3) - ((v3 + v1) | v3)))",
+  "obf_leng": 24,
+  "result_expr": "((- ((v1 * v0)) ^ (2 * v1)) - (not (v3) - ((v3 + v1) | v3)))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 30.97,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 398
+},{
+  "obf_expr": "(v3 | v2)",
+  "obf_leng": 3,
+  "result_expr": "(v3 | v2)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 399
+},{
+  "obf_expr": "(v0 + ((v0 * (v3 + v2)) + 1))",
+  "obf_leng": 9,
+  "result_expr": "(v0 + ((v0 * (v3 + v2)) + 1))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 400
+},{
+  "obf_expr": "(1 & ((v0 - (v0 | v1)) * v0))",
+  "obf_leng": 10,
+  "result_expr": "(1 & ((v0 - (v0 | v1)) * v0))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 401
+},{
+  "obf_expr": "- (v2)",
+  "obf_leng": 2,
+  "result_expr": "- (v2)",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 402
+},{
+  "obf_expr": "((((v2 & v4) & ((v1 | v1) & (v4 | 1))) + - (((v2 * v4) + 1))) & ((v4 + (- (v1) & - (1))) * (v1 ^ v4)))",
+  "obf_leng": 30,
+  "result_expr": "((((v2 & v4) & (v1 & (v4 | 1))) - ((v2 * v4) + 1)) & ((v4 - v1) * (v1 ^ v4)))",
+  "result_leng": 25,
+  "success": "yes",
+  "time": 29.52,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 403
+},{
+  "obf_expr": "((v0 * ((v3 | ((v3 ++ 1) / v2)) & (v0 & v3))) ^ (v3 + v0))",
+  "obf_leng": 17,
+  "result_expr": "((v0 * ((v3 | ((v3 ++ 1) / v2)) & (v0 & v3))) ^ (v3 + v0))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.49,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 404
+},{
+  "obf_expr": "(not (((v3 - v4) ^ v2)) - (((1 * (v3 ^ v4)) | not (v3)) & v4))",
+  "obf_leng": 21,
+  "result_expr": "(not (((v3 - v4) ^ v2)) - (((v3 ^ v4) | not (v3)) & v4))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.57,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 405
+},{
+  "obf_expr": "not ((((v0 & v4) + ((v0 | v0) | - (v0))) + not (((v0 ^ v4) | v0))))",
+  "obf_leng": 20,
+  "result_expr": "not ((((v0 & v4) + (v0 | - (v0))) + not ((v0 | v4))))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 2.4,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 406
+},{
+  "obf_expr": "((- (v4) - - (- (v4))) + (v3 + ((v0 | v3) | v0)))",
+  "obf_leng": 15,
+  "result_expr": "((v3 + (v0 | v3)) - (2 * v4))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 407
+},{
+  "obf_expr": "(((v2 & 1) ^ v2) - (v2 | 1))",
+  "obf_leng": 10,
+  "result_expr": "(((v2 & 1) ^ v2) - (v2 | 1))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 408
+},{
+  "obf_expr": "((((v0 & v3) | v1) - ((not (v3) | v0) & v1)) + ((v3 - v1) & ((v3 | v3) | (v2 & (v3 & v3)))))",
+  "obf_leng": 29,
+  "result_expr": "((((v0 & v3) | v1) - ((not (v3) | v0) & v1)) + ((v3 - v1) & v3))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 7.56,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 409
+},{
+  "obf_expr": "(v2 | (v1 | (v4 | (v4 * (v2 & v2)))))",
+  "obf_leng": 11,
+  "result_expr": "(v2 | (v1 | (v4 | (v4 * v2))))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 410
+},{
+  "obf_expr": "((1 - v4) - (v4 | (v3 * v4)))",
+  "obf_leng": 11,
+  "result_expr": "((1 - v4) - (v4 | (v3 * v4)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 411
+},{
+  "obf_expr": "(v3 + ((((v4 | v4) | v3) - v4) - (v4 - 1)))",
+  "obf_leng": 16,
+  "result_expr": "(v3 + (((v4 | v3) - v4) - (v4 - 1)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 412
+},{
+  "obf_expr": "- ((v1 - (((v0 - v1) * (v0 + v0)) & (v1 - 1))))",
+  "obf_leng": 17,
+  "result_expr": "- ((v1 - (((v0 - v1) * (2 * v0)) & (v1 - 1))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 5.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 413
+},{
+  "obf_expr": "- ((((v0 + v0) | (v0 + 1)) ^ v0))",
+  "obf_leng": 10,
+  "result_expr": "- ((((2 * v0) | (v0 + 1)) ^ v0))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 414
+},{
+  "obf_expr": "(((v1 ++ v2) /s 1) * (- (1) & (v4 & v1)))",
+  "obf_leng": 12,
+  "result_expr": "(v2 * (v4 & v1))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 415
+},{
+  "obf_expr": "((v0 - 1) ^ (- (((v0 & v4) - (v4 + v0))) & - (1)))",
+  "obf_leng": 17,
+  "result_expr": "((v0 - 1) ^ - (((v0 & v4) - (v4 + v0))))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.44,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 416
+},{
+  "obf_expr": "(((v1 | (v1 & 1)) | ((v1 + 1) | 1)) | ((v0 - v1) - v1))",
+  "obf_leng": 19,
+  "result_expr": "((v1 | ((v1 + 1) | 1)) | ((v0 - v1) - v1))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.11,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 417
+},{
+  "obf_expr": "(((v3 + 1) - ((v3 | v1) | v0)) + (not (v3) | (v1 | v0)))",
+  "obf_leng": 18,
+  "result_expr": "(((v3 + 1) - ((v3 | v1) | v0)) + (not (v3) | (v1 | v0)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 418
+},{
+  "obf_expr": "1",
+  "obf_leng": 1,
+  "result_expr": "1",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 0,
+  "result_var": 0,
+  "id": 419
+},{
+  "obf_expr": "(((- (v2) + v4) ^ (v2 * v4)) - (- ((v4 | (v4 ^ v2))) + v4))",
+  "obf_leng": 18,
+  "result_expr": "(((v4 - v2) ^ (v2 * v4)) - (v4 - (v4 | v2)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 3.13,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 420
+},{
+  "obf_expr": "(((((v1 & v1) - v1) + - ((v1 * v0))) + ((((v1 ++ v1) / v1) - - (v0)) & v0)) + (not (v1) + 1))",
+  "obf_leng": 29,
+  "result_expr": "((((((v1 ++ v1) / v1) + v0) & v0) - (v1 * v0)) - v1)",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 5.76,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 421
+},{
+  "obf_expr": "(v0 | (v0 | ((v0 + v2) + ((v0 + v0) | (1 * v2)))))",
+  "obf_leng": 15,
+  "result_expr": "(v0 | ((v0 + v2) + ((2 * v0) | v2)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 422
+},{
+  "obf_expr": "(v3 ^ (((v1 & v3) & v3) | (v3 & (v1 | not (v3)))))",
+  "obf_leng": 15,
+  "result_expr": "(v3 ^ ((v1 & v3) | (v3 & (v1 | not (v3)))))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 423
+},{
+  "obf_expr": "((v0 * (- ((v3 | v3)) * not (v0))) * ((v0 * v3) ^ ((1 ++ ((v0 - v3) * 1)) / (1 & 1))))",
+  "obf_leng": 27,
+  "result_expr": "- (((v0 * (v3 * not (v0))) * ((v0 * v3) ^ (v0 - v3))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 9.44,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 424
+},{
+  "obf_expr": "(not (1) + v2)",
+  "obf_leng": 5,
+  "result_expr": "(-2 + v2)",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 425
+},{
+  "obf_expr": "((v0 & ((v3 + v2) - (not (v2) + 1))) ^ (v2 * ((v2 * (v2 - v3)) | ((v1 - v1) & 1))))",
+  "obf_leng": 28,
+  "result_expr": "((v0 & ((v3 + v2) + v2)) ^ (v2 * (v2 * (v2 - v3))))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 3.81,
+  "obf_var": 4,
+  "result_var": 3,
+  "id": 426
+},{
+  "obf_expr": "not ((1 * (((v2 | v1) * v2) | v1)))",
+  "obf_leng": 11,
+  "result_expr": "not ((((v2 | v1) * v2) | v1))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 427
+},{
+  "obf_expr": "(not (not (v1)) * (v4 ^ (v1 ^ (- (v1) - v1))))",
+  "obf_leng": 15,
+  "result_expr": "(v1 * (v4 ^ (v1 ^ - ((2 * v1)))))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.59,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 428
+},{
+  "obf_expr": "(((v2 ^ v1) * (v3 - ((v3 ++ v3) / v3))) + ((((v2 - v3) * 1) - ((1 - v1) + (v1 & v3))) ^ (v2 & v2)))",
+  "obf_leng": 33,
+  "result_expr": "(((v2 ^ v1) * (v3 - ((v3 ++ v3) / v3))) + (((v2 - v3) - ((1 - v1) + (v1 & v3))) ^ v2))",
+  "result_leng": 29,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 429
+},{
+  "obf_expr": "((v3 + (v4 | v3)) | (((v3 * 1) - v4) ^ v3))",
+  "obf_leng": 14,
+  "result_expr": "((v3 + (v4 | v3)) | ((v3 - v4) ^ v3))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 2.78,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 430
+},{
+  "obf_expr": "((not (v2) | (v1 - v2)) + 1)",
+  "obf_leng": 10,
+  "result_expr": "((not (v2) | (v1 - v2)) + 1)",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.39,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 431
+},{
+  "obf_expr": "(- (v0) | (not ((v0 | (v4 * v0))) & (v1 * - (v4))))",
+  "obf_leng": 15,
+  "result_expr": "(- (v0) | (not ((v0 | (v4 * v0))) & - ((v1 * v4))))",
+  "result_leng": 15,
+  "success": "yes",
+  "time": 0.46,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 432
+},{
+  "obf_expr": "not (((not ((v1 + v0)) ^ v0) & ((v1 * ((v1 ++ v0) / 1)) - 1)))",
+  "obf_leng": 20,
+  "result_expr": "not (((not ((v1 + v0)) ^ v0) & ((v1 * v0) - 1)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.37,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 433
+},{
+  "obf_expr": "not ((v1 & v4))",
+  "obf_leng": 5,
+  "result_expr": "not ((v1 & v4))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 434
+},{
+  "obf_expr": "((v3 + v3) - ((((1 + v3) + (1 | v0)) | (((v2 - v2) ++ (1 + 1)) / ((v0 ++ v3) /s v0))) + (((1 | v3) & (v0 & v3)) | ((1 | v3) ^ (v3 - v0)))))",
+  "obf_leng": 44,
+  "result_expr": "((2 * v3) - ((((1 + v3) + (1 | v0)) | ((0 ++ 2) / ((v0 ++ v3) /s v0))) + (((1 | v3) & (v0 & v3)) | ((1 | v3) ^ (v3 - v0)))))",
+  "result_leng": 39,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 435
+},{
+  "obf_expr": "(1 & (v1 & (1 ^ v1)))",
+  "obf_leng": 7,
+  "result_expr": "(1 & (v1 & (1 ^ v1)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 436
+},{
+  "obf_expr": "((((((v0 - v3) * v2) - (1 + 1)) ++ (v3 | - ((1 + 1)))) / - (1)) ^ not ((v2 | v0)))",
+  "obf_leng": 27,
+  "result_expr": "((((((v0 - v3) * v2) - 2) ++ (v3 | -2)) / -1) ^ not ((v2 | v0)))",
+  "result_leng": 23,
+  "success": "yes",
+  "time": 0.34,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 437
+},{
+  "obf_expr": "(((v0 & v1) + 1) & (v0 | - ((1 | v0))))",
+  "obf_leng": 12,
+  "result_expr": "(((v0 & v1) + 1) & (v0 | - ((1 | v0))))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.05,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 438
+},{
+  "obf_expr": "(1 + v1)",
+  "obf_leng": 3,
+  "result_expr": "(1 + v1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 439
+},{
+  "obf_expr": "- ((v1 | v0))",
+  "obf_leng": 4,
+  "result_expr": "- ((v1 | v0))",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 440
+},{
+  "obf_expr": "- (((v1 ^ ((v0 ++ (v1 + v0)) /s 1)) * (- (v0) * v0)))",
+  "obf_leng": 15,
+  "result_expr": "((v1 ^ (v1 + v0)) * (v0 * v0))",
+  "result_leng": 9,
+  "success": "yes",
+  "time": 1.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 441
+},{
+  "obf_expr": "(((((v0 ++ (1 & v2)) / v0) | (v4 * v4)) | ((v0 | (v4 + v0)) + not (v4))) ^ (v2 - v2))",
+  "obf_leng": 26,
+  "result_expr": "((((v0 ++ (1 & v2)) / v0) | (v4 * v4)) | ((v0 | (v4 + v0)) + not (v4)))",
+  "result_leng": 21,
+  "success": "yes",
+  "time": 5.43,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 442
+},{
+  "obf_expr": "(- (v3) - ((v0 - ((v0 - 1) & (v0 + v3))) * v0))",
+  "obf_leng": 17,
+  "result_expr": "- ((v3 + ((v0 - ((v0 - 1) & (v0 + v3))) * v0)))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 2.32,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 443
+},{
+  "obf_expr": "((v3 * v4) | (v3 ^ (((v1 & v1) + v3) + v3)))",
+  "obf_leng": 13,
+  "result_expr": "((v3 * v4) | (v3 ^ ((v1 + v3) + v3)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 1.62,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 444
+},{
+  "obf_expr": "(v4 - (((v1 & not (v3)) + 1) & (((v3 | v0) | (v2 | v4)) | (v1 | ((v2 ++ v4) / v4)))))",
+  "obf_leng": 26,
+  "result_expr": "(v4 - (((v1 & not (v3)) + 1) & (((v3 | v0) | (v2 | v4)) | (v1 | ((v2 ++ v4) / v4)))))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 0.68,
+  "obf_var": 5,
+  "result_var": 5,
+  "id": 445
+},{
+  "obf_expr": "(- (1) - ((v0 * v2) & (((v1 ^ v2) ^ v2) | (v2 * (v1 & v2)))))",
+  "obf_leng": 19,
+  "result_expr": "not (((v0 * v2) & (v1 | (v2 * (v1 & v2)))))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.16,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 446
+},{
+  "obf_expr": "(1 + (v3 * v3))",
+  "obf_leng": 5,
+  "result_expr": "(1 + (v3 * v3))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 447
+},{
+  "obf_expr": "((1 + v2) ^ (v4 - v2))",
+  "obf_leng": 8,
+  "result_expr": "((1 + v2) ^ (v4 - v2))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 448
+},{
+  "obf_expr": "(v1 ^ ((((v1 - v1) | v0) - 1) + ((v0 * (v0 ^ v1)) - (v0 + v1))))",
+  "obf_leng": 22,
+  "result_expr": "(v1 ^ ((v0 - 1) + ((v0 * (v0 ^ v1)) - (v0 + v1))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 0.06,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 449
+},{
+  "obf_expr": "((1 + not (v0)) | ((v4 + v1) + v1))",
+  "obf_leng": 11,
+  "result_expr": "(- (v0) | ((v4 + v1) + v1))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.07,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 450
+},{
+  "obf_expr": "((((1 ++ (- (v3) + 1)) / 1) | ((v2 ++ ((v0 ^ v0) & 1)) / ((v0 ++ v0) / v0))) + ((((v1 * v0) - 1) ^ (v0 ^ (v0 - v0))) - v0))",
+  "obf_leng": 39,
+  "result_expr": "(((1 - v3) | ((v2 ++ 0) / ((v0 ++ v0) / v0))) + ((((v1 * v0) - 1) ^ v0) - v0))",
+  "result_leng": 26,
+  "success": "yes",
+  "time": 5.33,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 451
+},{
+  "obf_expr": "(((v0 + v0) ^ (((v0 - v0) & 1) & (v1 * v0))) + (v0 - v1))",
+  "obf_leng": 19,
+  "result_expr": "((2 * v0) + (v0 - v1))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 452
+},{
+  "obf_expr": "(- (((v0 - v3) * (v0 & v3))) & 1)",
+  "obf_leng": 11,
+  "result_expr": "(- (((v0 - v3) * (v0 & v3))) & 1)",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 453
+},{
+  "obf_expr": "(v3 + ((v4 ^ - (1)) & (v3 | v3)))",
+  "obf_leng": 10,
+  "result_expr": "(v3 + (not (v4) & v3))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 454
+},{
+  "obf_expr": "(((not (v2) ^ v3) ^ (v3 + (v3 - 1))) ^ (((1 ++ v0) /s (v3 & (1 - 1))) ^ v2))",
+  "obf_leng": 25,
+  "result_expr": "(((not (v2) ^ v3) ^ (v3 + (v3 - 1))) ^ (((1 ++ v0) /s 0) ^ v2))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.32,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 455
+},{
+  "obf_expr": "((((v2 + (v0 + v2)) ^ ((v1 & v4) | v0)) ^ (((1 | v0) | - (v1)) + ((1 + v2) | (v1 & v4)))) & (((v4 ^ v2) - ((v0 - v2) - (1 & v0))) * ((v4 & v2) - - ((v0 & v2)))))",
+  "obf_leng": 51,
+  "result_expr": "((((v2 + (v0 + v2)) ^ ((v1 & v4) | v0)) ^ (((1 | v0) | - (v1)) + ((1 + v2) | (v1 & v4)))) & (((v4 ^ v2) - ((v0 - v2) - (1 & v0))) * ((v4 & v2) + (v0 & v2))))",
+  "result_leng": 49,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 456
+},{
+  "obf_expr": "(((v0 | (v3 - (v0 | v3))) | ((1 - 1) | (v0 & 1))) + ((v0 ^ (v3 | v0)) * (v0 & v0)))",
+  "obf_leng": 27,
+  "result_expr": "(((v0 | (v3 - (v0 | v3))) | (v0 & 1)) + ((v0 ^ (v3 | v0)) * v0))",
+  "result_leng": 20,
+  "success": "yes",
+  "time": 0.45,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 457
+},{
+  "obf_expr": "(((1 - v2) - 1) - ((v4 ^ v0) + (v4 + 1)))",
+  "obf_leng": 16,
+  "result_expr": "- ((v2 + ((v4 ^ v0) + (v4 + 1))))",
+  "result_leng": 10,
+  "success": "yes",
+  "time": 0.21,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 458
+},{
+  "obf_expr": "((v1 & (v4 ^ (v4 & v1))) ^ (((v4 + v4) & v4) | (v2 - v4)))",
+  "obf_leng": 18,
+  "result_expr": "((v1 & (v4 ^ (v4 & v1))) ^ (((2 * v4) & v4) | (v2 - v4)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.44,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 459
+},{
+  "obf_expr": "((v4 - (v4 | v3)) * ((v3 * (1 | 1)) + (v4 * ((v3 + v4) - v3))))",
+  "obf_leng": 21,
+  "result_expr": "((v4 - (v4 | v3)) * (v3 + (v4 * ((v3 + v4) - v3))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 45.85,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 460
+},{
+  "obf_expr": "(((((v2 + 1) - (v3 | v0)) - ((v3 - v2) + (v0 ^ v3))) + ((v3 ^ (v3 - v2)) - ((1 ^ v3) ^ (v2 - v3)))) - ((((v3 * v3) | (v3 | v0)) - ((v1 + v3) ^ (v3 + v3))) | (((v0 ^ v1) - (v2 + v0)) & ((v0 ^ v2) - - (v0)))))",
+  "obf_leng": 70,
+  "result_expr": "(((((v2 + 1) - (v3 | v0)) - ((v3 - v2) + (v0 ^ v3))) + ((v3 ^ (v3 - v2)) - ((1 ^ v3) ^ (v2 - v3)))) - ((((v3 * v3) | (v3 | v0)) - ((v1 + v3) ^ (2 * v3))) | (((v0 ^ v1) - (v2 + v0)) & ((v0 ^ v2) + v0))))",
+  "result_leng": 68,
+  "success": "no",
+  "time": 60.05,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 461
+},{
+  "obf_expr": "not (((((1 & v0) - (v1 + 1)) & (v1 + v1)) + not (v1)))",
+  "obf_leng": 18,
+  "result_expr": "not (((((1 & v0) - (v1 + 1)) & (2 * v1)) + not (v1)))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.26,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 462
+},{
+  "obf_expr": "((v4 * 1) + (v0 ^ (v4 + ((v0 & v4) | v4))))",
+  "obf_leng": 13,
+  "result_expr": "(v4 + (v0 ^ (2 * v4)))",
+  "result_leng": 7,
+  "success": "yes",
+  "time": 0.74,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 463
+},{
+  "obf_expr": "((((v1 - 1) & v0) * ((v2 * (1 + v2)) - ((v2 + v2) & 1))) & not (((v2 ^ 1) ^ (- (1) & (1 ^ v2)))))",
+  "obf_leng": 32,
+  "result_expr": "(((v1 - 1) & v0) * (v2 * (1 + v2)))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 0.22,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 464
+},{
+  "obf_expr": "(((v2 - not (v2)) & (- (v2) - (v0 + v2))) ^ (1 * ((1 * v0) & 1)))",
+  "obf_leng": 22,
+  "result_expr": "(((v2 - not (v2)) & - ((v2 + (v0 + v2)))) ^ (v0 & 1))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 20.97,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 465
+},{
+  "obf_expr": "- ((1 + (not ((v1 ^ v0)) ^ (- (v1) + (v1 ^ v0)))))",
+  "obf_leng": 15,
+  "result_expr": "not ((not ((v1 ^ v0)) ^ ((v1 ^ v0) - v1)))",
+  "result_leng": 14,
+  "success": "yes",
+  "time": 0.5,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 466
+},{
+  "obf_expr": "(1 * (v0 ^ v0))",
+  "obf_leng": 5,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 467
+},{
+  "obf_expr": "- ((v0 & v1))",
+  "obf_leng": 4,
+  "result_expr": "- ((v0 & v1))",
+  "result_leng": 4,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 468
+},{
+  "obf_expr": "((v4 + (v2 ^ ((v1 | v1) + (v4 + v4)))) + not (v4))",
+  "obf_leng": 15,
+  "result_expr": "((v4 + (v2 ^ (v1 + (2 * v4)))) + not (v4))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.53,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 469
+},{
+  "obf_expr": "(v0 & (((1 | (1 * 1)) + (((v0 ++ v0) /s 1) | (v2 & 1))) - ((v2 & v0) | (v0 | v2))))",
+  "obf_leng": 26,
+  "result_expr": "(v0 & ((1 + (v0 | (v2 & 1))) - ((v2 & v0) | (v0 | v2))))",
+  "result_leng": 18,
+  "success": "yes",
+  "time": 0.15,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 470
+},{
+  "obf_expr": "- (((((v4 & v1) & (1 ^ v2)) & ((v1 & v2) + (v1 + v1))) - (((v2 | 1) + (v1 + v1)) & (1 | v1))))",
+  "obf_leng": 29,
+  "result_expr": "- (((((v4 & v1) & (1 ^ v2)) & ((v1 & v2) + (2 * v1))) - (((v2 | 1) + (2 * v1)) & (1 | v1))))",
+  "result_leng": 29,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 471
+},{
+  "obf_expr": "(v4 | v3)",
+  "obf_leng": 3,
+  "result_expr": "(v4 | v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 472
+},{
+  "obf_expr": "(((not (v0) ^ (v0 * 1)) & ((- (v0) * (v0 ^ v4)) + (- (v3) * (v0 ^ v4)))) * 1)",
+  "obf_leng": 23,
+  "result_expr": "- (((v3 * (v0 ^ v4)) + (v0 * (v0 ^ v4))))",
+  "result_leng": 12,
+  "success": "yes",
+  "time": 1.87,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 473
+},{
+  "obf_expr": "((1 - (((v0 - 1) + (v0 * v0)) | (- (v2) * (v2 - v0)))) + ((v0 ++ (1 ^ 1)) / (not (1) & 1)))",
+  "obf_leng": 31,
+  "result_expr": "- ((((v0 - 1) + (v0 * v0)) | - ((v2 * (v2 - v0)))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 24.96,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 474
+},{
+  "obf_expr": "((not ((v0 & v4)) & (v4 | (v3 ^ (v0 | v4)))) + (v3 + (v0 * v0)))",
+  "obf_leng": 19,
+  "result_expr": "((not ((v0 & v4)) & (v4 | (v3 ^ (v0 | v4)))) + (v3 + (v0 * v0)))",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.36,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 475
+},{
+  "obf_expr": "(((v0 ^ (v4 | (v4 | v4))) | ((- (v0) + v0) | (1 * (v1 - v4)))) & ((((v4 * v0) * 1) & v1) * v4))",
+  "obf_leng": 29,
+  "result_expr": "(((v0 ^ v4) | (v1 - v4)) & (((v4 * v0) & v1) * v4))",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.75,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 476
+},{
+  "obf_expr": "(v0 - v0)",
+  "obf_leng": 4,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 0,
+  "id": 477
+},{
+  "obf_expr": "(not (((((v1 ++ v2) /s v4) * (v4 * v3)) & - (v3))) & ((((v4 ++ (v1 * v3)) / (1 + v3)) + (((v2 ++ v2) / v1) & 1)) & (v4 & (v3 | ((1 ++ v3) / v4)))))",
+  "obf_leng": 42,
+  "result_expr": "(not (((((v1 ++ v2) /s v4) * (v4 * v3)) & - (v3))) & ((((v4 ++ (v1 * v3)) / (1 + v3)) + (((v2 ++ v2) / v1) & 1)) & (v4 & (v3 | ((1 ++ v3) / v4)))))",
+  "result_leng": 42,
+  "success": "no",
+  "time": 60.03,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 478
+},{
+  "obf_expr": "(v3 ^ v1)",
+  "obf_leng": 3,
+  "result_expr": "(v3 ^ v1)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 479
+},{
+  "obf_expr": "(((((v0 & v1) + v0) | ((v2 * v0) | (v0 & v0))) + - (1)) ^ (((1 ^ v0) | - ((1 | v0))) & ((v1 - 1) + v1)))",
+  "obf_leng": 32,
+  "result_expr": "(((((v0 & v1) + v0) | ((v2 * v0) | v0)) - 1) ^ (((1 ^ v0) | - ((1 | v0))) & ((v1 - 1) + v1)))",
+  "result_leng": 30,
+  "success": "yes",
+  "time": 37.85,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 480
+},{
+  "obf_expr": "(v0 + (not ((v1 * v1)) + - (v0)))",
+  "obf_leng": 10,
+  "result_expr": "not ((v1 * v1))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 481
+},{
+  "obf_expr": "(1 + (((v3 + 1) * v3) ^ (not (v1) * 1)))",
+  "obf_leng": 13,
+  "result_expr": "(1 + (((v3 + 1) * v3) ^ not (v1)))",
+  "result_leng": 11,
+  "success": "yes",
+  "time": 28.51,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 482
+},{
+  "obf_expr": "(((v1 & v3) + ((v3 * v1) & (v1 * v3))) - ((v2 + (v1 * v1)) + (((v1 ++ (v3 | v1)) /s 1) + not (v2))))",
+  "obf_leng": 30,
+  "result_expr": "(((v1 & v3) + (v3 * v1)) - ((v2 + (v1 * v1)) + ((v3 | v1) + not (v2))))",
+  "result_leng": 22,
+  "success": "yes",
+  "time": 1.5,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 483
+},{
+  "obf_expr": "- (1)",
+  "obf_leng": 2,
+  "result_expr": "-1",
+  "result_leng": 2,
+  "success": "yes",
+  "time": 0.1,
+  "obf_var": 0,
+  "result_var": 0,
+  "id": 484
+},{
+  "obf_expr": "((- (((v0 & v2) | (1 + 1))) + ((v0 | 1) | ((v1 ++ (v1 * v0)) / v1))) ^ ((((v1 & v2) | (v0 + v0)) | (((v2 + v1) ++ (v1 - v0)) / ((v1 ++ v2) / v1))) & ((not (v1) - v2) + ((v2 + v1) * (1 | v2)))))",
+  "obf_leng": 58,
+  "result_expr": "((((v0 | 1) | ((v1 ++ (v1 * v0)) / v1)) - ((v0 & v2) | 2)) ^ ((((v1 & v2) | (2 * v0)) | (((v2 + v1) ++ (v1 - v0)) / ((v1 ++ v2) / v1))) & ((not (v1) - v2) + ((v2 + v1) * (1 | v2)))))",
+  "result_leng": 56,
+  "success": "no",
+  "time": 60.04,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 485
+},{
+  "obf_expr": "(v3 ^ (v1 ^ (- ((1 - v3)) | not (v3))))",
+  "obf_leng": 13,
+  "result_expr": "(v3 ^ (v1 ^ (- ((1 - v3)) | not (v3))))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.08,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 486
+},{
+  "obf_expr": "(((((v2 & v1) - v1) - 1) | (((v2 * 1) - v1) & v1)) - v1)",
+  "obf_leng": 21,
+  "result_expr": "(((((v2 & v1) - v1) - 1) | ((v2 - v1) & v1)) - v1)",
+  "result_leng": 19,
+  "success": "yes",
+  "time": 0.62,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 487
+},{
+  "obf_expr": "not (v3)",
+  "obf_leng": 3,
+  "result_expr": "not (v3)",
+  "result_leng": 3,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 488
+},{
+  "obf_expr": "((((((v2 ++ 1) / v1) & (v1 * v3)) - (v1 ^ not (1))) | (((v3 | 1) ^ (v0 | v1)) * ((v1 + 1) ^ (v0 + 1)))) & ((v1 * (v0 * v3)) ^ (((1 ^ v3) * (1 + v0)) ^ (((v0 | v1) ++ (v0 - v2)) /s (v3 & 1)))))",
+  "obf_leng": 59,
+  "result_expr": "((((((v2 ++ 1) / v1) & (v1 * v3)) - (v1 ^ -2)) | (((v3 | 1) ^ (v0 | v1)) * ((v1 + 1) ^ (v0 + 1)))) & ((v1 * (v0 * v3)) ^ (((1 ^ v3) * (1 + v0)) ^ (((v0 | v1) ++ (v0 - v2)) /s (v3 & 1)))))",
+  "result_leng": 58,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 489
+},{
+  "obf_expr": "(((1 & v0) ^ ((v0 - (v0 | 1)) - v0)) - v0)",
+  "obf_leng": 16,
+  "result_expr": "(((1 & v0) ^ ((v0 - (v0 | 1)) - v0)) - v0)",
+  "result_leng": 16,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 490
+},{
+  "obf_expr": "((- (1) & not ((v3 - 1))) & ((v0 & v3) - 1))",
+  "obf_leng": 16,
+  "result_expr": "(not ((v3 - 1)) & ((v0 & v3) - 1))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 3.53,
+  "obf_var": 2,
+  "result_var": 2,
+  "id": 491
+},{
+  "obf_expr": "((((v1 + (v4 * v4)) * ((v0 + 1) + (v1 * v0))) * v0) + (v0 - (- ((v0 * v1)) + (v1 - (v1 + 1)))))",
+  "obf_leng": 30,
+  "result_expr": "((((v1 + (v4 * v4)) * ((v0 + 1) + (v1 * v0))) * v0) + (v0 - ((v1 - (v1 + 1)) - (v0 * v1))))",
+  "result_leng": 30,
+  "success": "yes",
+  "time": 42.74,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 492
+},{
+  "obf_expr": "(((- ((1 ^ v3)) ^ ((v3 + v1) | - (v2))) & (((v2 | v1) + (v1 | v3)) + (- (v2) | (v1 ^ v0)))) | (((v0 ++ ((1 | v1) * v0)) / 1) & (((v3 + v0) | (v2 * v2)) + ((v1 - 1) * (v1 - v0)))))",
+  "obf_leng": 54,
+  "result_expr": "(((- ((1 ^ v3)) ^ ((v3 + v1) | - (v2))) & (((v2 | v1) + (v1 | v3)) + (- (v2) | (v1 ^ v0)))) | (((1 | v1) * v0) & (((v3 + v0) | (v2 * v2)) + ((v1 - 1) * (v1 - v0)))))",
+  "result_leng": 50,
+  "success": "no",
+  "time": 60.08,
+  "obf_var": 4,
+  "result_var": 4,
+  "id": 493
+},{
+  "obf_expr": "((v0 ++ ((v0 + v0) & 1)) /s (v0 | not (1)))",
+  "obf_leng": 13,
+  "result_expr": "((v0 ++ 0) /s (v0 | -2))",
+  "result_leng": 8,
+  "success": "yes",
+  "time": 0.03,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 494
+},{
+  "obf_expr": "(1 ^ 1)",
+  "obf_leng": 3,
+  "result_expr": "0",
+  "result_leng": 1,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 0,
+  "result_var": 0,
+  "id": 495
+},{
+  "obf_expr": "(v4 - ((v4 + 1) + ((1 * (v0 - 1)) | (((v2 ++ v4) / 1) + not (v0)))))",
+  "obf_leng": 23,
+  "result_expr": "(v4 - ((v4 + 1) + ((v0 - 1) | (v4 + not (v0)))))",
+  "result_leng": 17,
+  "success": "yes",
+  "time": 9.82,
+  "obf_var": 3,
+  "result_var": 2,
+  "id": 496
+},{
+  "obf_expr": "(((v2 | v2) + (v2 * (v2 + v2))) - ((v1 ^ v1) | (v2 - 1)))",
+  "obf_leng": 19,
+  "result_expr": "((v2 + (v2 * (2 * v2))) - (v2 - 1))",
+  "result_leng": 13,
+  "success": "yes",
+  "time": 0.12,
+  "obf_var": 2,
+  "result_var": 1,
+  "id": 497
+},{
+  "obf_expr": "- ((v0 - 1))",
+  "obf_leng": 5,
+  "result_expr": "- ((v0 - 1))",
+  "result_leng": 5,
+  "success": "yes",
+  "time": 0.04,
+  "obf_var": 1,
+  "result_var": 1,
+  "id": 498
+},{
+  "obf_expr": "(((((v2 + v1) & (v0 + v0)) ^ (v1 ^ v1)) * ((v0 + v2) + (v1 | (v0 & 1)))) & ((((v0 ++ - (v0)) / (v2 | v1)) | v0) | (((v0 | v2) * (v2 - 1)) ^ not ((v2 - 1)))))",
+  "obf_leng": 48,
+  "result_expr": "((((v2 + v1) & (2 * v0)) * ((v0 + v2) + (v1 | (v0 & 1)))) & ((((v0 ++ - (v0)) / (v2 | v1)) | v0) | (((v0 | v2) * (v2 - 1)) ^ not ((v2 - 1)))))",
+  "result_leng": 44,
+  "success": "no",
+  "time": 60.06,
+  "obf_var": 3,
+  "result_var": 3,
+  "id": 499
+}
+]

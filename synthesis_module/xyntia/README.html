@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Artifacts</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header>
+<h1 class="title">Artifacts</h1>
+</header>
+<p>All scripts can be found in <code>/home/user/Documents/xyntia_benchmarks/</code>.</p>
+<h1 id="usage">Usage</h1>
+<h2 id="synthesizing-expressions-from-sampling-files">Synthesizing expressions from sampling files</h2>
+<p>To synthesize an expression from a sampling file, execute the following command:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="ex">./xyntia.sh</span> [-opset <span class="op">&lt;</span>opset<span class="op">&gt;</span>] [-time <span class="op">&lt;</span>time<span class="op">&gt;</span>] [-heur <span class="op">&lt;</span>heur<span class="op">&gt;</span>] <span class="op">&lt;</span>file<span class="op">&gt;</span></a></code></pre></div>
+<p>where:</p>
+<ul>
+<li><em>opset</em> is the set of operators considered among <code>mba</code>, <code>expr</code>, <code>full</code> (default expr). Other sets of operators are available (<code>mbaite</code>, <code>mbashift</code>) but they are specific to some experiments (see below);</li>
+<li><em>time</em> is the time budget of the synthesis in seconds (default: 60s);</li>
+<li><em>heur</em> is the abbreviation for the search heuristic to be used (see below) and defaults to <em>ils</em>;</li>
+<li><em>file</em> is the sampling file containing observed I/O behaviors. See the section <strong>Sampling</strong> to generate one.</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<colgroup>
+<col  class="org-left" />
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">
+heuristic
+</th>
+<th scope="col" class="org-left">
+abbreviation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">
+Iterated Local Search
+</td>
+<td class="org-left">
+ils
+</td>
+</tr>
+<tr>
+<td class="org-left">
+Hill Climbing
+</td>
+<td class="org-left">
+hc
+</td>
+</tr>
+<tr>
+<td class="org-left">
+Random Walk
+</td>
+<td class="org-left">
+rw
+</td>
+</tr>
+<tr>
+<td class="org-left">
+Simulated Annealing
+</td>
+<td class="org-left">
+sa
+</td>
+</tr>
+<tr>
+<td class="org-left">
+Metropolis-Hastings
+</td>
+<td class="org-left">
+mh
+</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sampling">Sampling</h2>
+<p>To generate a sampling file for a given expression, execute:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="ex">python3</span> ./sample.py --expr <span class="st">&quot;&lt;expr&gt;&quot;</span> <span class="op">&gt;</span> output.json</a></code></pre></div>
+<p>Note that <em>&lt;expr&gt;</em> must be a python expression. Moreover, variables must be named v0, v1, v2 and so on up to v5. Here is an example:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="ex">python3</span> ./sample.py --expr <span class="st">&quot;v0 + v1&quot;</span> <span class="op">&gt;</span> output.json</a></code></pre></div>
+<h2 id="replaying-xyntia-benchmarks">Replaying Xyntia benchmarks</h2>
+<p>The script bench.py is given to replay the experiments over the different datasets. If the <code>--fast</code> option is setted, bench.py will not check results with Z3. Thus, only the success rate and mean quality will be computed (not the equivalence range). It enables to save time.</p>
+<p>To replay results from Figure 5 :</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="ex">timeout</span> = 1 <span class="co"># choose your timeout</span></a>
+<a class="sourceLine" id="mycode-2" title="2"></a>
+<a class="sourceLine" id="mycode-3" title="3"><span class="ex">python3</span> ./sample.py --bench ./datasets/b2</a>
+<a class="sourceLine" id="mycode-4" title="4"><span class="ex">python3</span> ./bench.py --bench ./datasets/b2 --opset expr --timeout <span class="va">$timeout</span></a></code></pre></div>
+<p>To replay results from Figure 8:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="va">bp=</span><span class="st">&quot;bp1&quot;</span> <span class="co"># choose the dataset among bp1, bp2 and bp3</span></a>
+<a class="sourceLine" id="mycode-2" title="2"><span class="ex">timeout</span> = 60 <span class="co"># choose your timeout</span></a>
+<a class="sourceLine" id="mycode-3" title="3"></a>
+<a class="sourceLine" id="mycode-4" title="4"><span class="ex">python3</span> ./sample.py --bench ./datasets/<span class="va">$bp</span></a>
+<a class="sourceLine" id="mycode-5" title="5"><span class="ex">python3</span> ./bench.py --bench ./datasets/<span class="va">$bp</span> --opset expr --timeout <span class="va">$timeout</span></a></code></pre></div>
+<p>In section 8, we propose to merge handlers through <em>if-then-else</em> constructs. Thus, we distingish 4 scenarios:</p>
+<ul>
+<li><em>Utopian</em> where Xyntia infers expressions on the perfect grammar (MBA-ITE) and samples inputs uniformly accross branches;</li>
+<li><em>MBA-ITE</em> where Xyntia infers expressions on the perfect grammar (MBA-ITE) but does not sample inputs uniformly accross branches;</li>
+<li><em>MBA-SHIFT</em> where Xyntia infers expressions on the MBA-Shift grammar (which is expressive enough to handle <em>if-then-else</em> construct) and does not sample inputs uniformly accross branches;</li>
+<li><em>Default</em> where Xyntia is launched in default mode.</li>
+</ul>
+<p>Recall that in all the scenario, we consider that the grammar contains interesting constants.</p>
+<p>To replay results according to the different scenarios as in Figure 10:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode numberSource bash numberLines"><code class="sourceCode bash"><a class="sourceLine" id="mycode-1" title="1"><span class="va">merged=</span><span class="st">&quot;merged1&quot;</span> <span class="co"># choose the dataset among merged1, merged2, merged3, merged4, merged5</span></a>
+<a class="sourceLine" id="mycode-2" title="2"><span class="ex">timeout</span> = 60 <span class="co"># choose your timeout</span></a>
+<a class="sourceLine" id="mycode-3" title="3"></a>
+<a class="sourceLine" id="mycode-4" title="4"><span class="co">## Utopian</span></a>
+<a class="sourceLine" id="mycode-5" title="5"><span class="ex">python3</span> ./sample.py --bench ./datasets/<span class="va">$merged</span> --ite</a>
+<a class="sourceLine" id="mycode-6" title="6"><span class="ex">python3</span> ./bench.py --bench ./datasets/<span class="va">$merged</span> --opset mbaite --timeout <span class="va">$timeout</span> --utopconsts</a>
+<a class="sourceLine" id="mycode-7" title="7"></a>
+<a class="sourceLine" id="mycode-8" title="8"><span class="co">## MBA-ITE</span></a>
+<a class="sourceLine" id="mycode-9" title="9"><span class="ex">python3</span> ./sample.py --bench ./datasets/<span class="va">$merged</span></a>
+<a class="sourceLine" id="mycode-10" title="10"><span class="ex">python3</span> ./bench.py --bench ./datasets/<span class="va">$merged</span> --opset mbaite --timeout <span class="va">$timeout</span> --utopconsts</a>
+<a class="sourceLine" id="mycode-11" title="11"></a>
+<a class="sourceLine" id="mycode-12" title="12"><span class="co">## MBA-SHIFT</span></a>
+<a class="sourceLine" id="mycode-13" title="13"><span class="ex">python3</span> ./sample.py --bench ./datasets/<span class="va">$merged</span></a>
+<a class="sourceLine" id="mycode-14" title="14"><span class="ex">python3</span> ./bench.py --bench ./datasets/<span class="va">$merged</span> --opset mbashift --timeout <span class="va">$timeout</span> --utopconsts</a>
+<a class="sourceLine" id="mycode-15" title="15"></a>
+<a class="sourceLine" id="mycode-16" title="16"><span class="co">## Default</span></a>
+<a class="sourceLine" id="mycode-17" title="17"><span class="ex">python3</span> ./sample.py --bench ./datasets/<span class="va">$merged</span></a>
+<a class="sourceLine" id="mycode-18" title="18"><span class="ex">python3</span> ./bench.py --bench ./datasets/<span class="va">$merged</span> --opset expr --timeout <span class="va">$timeout</span> --utopconsts</a></code></pre></div>
+</body>
+</html>

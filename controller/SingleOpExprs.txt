@@ -1,0 +1,12 @@
+trace50_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x8, 32)), 32)
+    SE:@32[EBP + 0x8]
+trace123_0:ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xFFFFFFD4, 32)), 8)
+    SE:@8[EBP + 0xFFFFFFD4]
+trace282_0:ExprMem(ExprInt(0xFEA030, 32), 32)
+    SE:@32[0xFEA030]
+trace306_0:ExprMem(ExprInt(0xFEA15C, 32), 32)
+    SE:@32[0xFEA15C]
+trace315_0:ExprMem(ExprInt(0xFEA158, 32), 32)
+    SE:@32[0xFEA158]
+trace460_0:ExprMem(ExprId('ESI', 32), 32)
+    SE:@32[ESI]

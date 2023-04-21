@@ -1,0 +1,192 @@
+[
+{
+  "module": "msynth-synth",
+  "obf_expr": "(((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e)) & ((b + -e + -((b | (e ^ 0xFFFFFFFF)) + (b | (e ^ 0xFFFFFFFF))) + -0x2) ^ 0xFFFFFFFF)) + b + -e + -((b | (e ^ 0xFFFFFFFF)) + (b | (e ^ 0xFFFFFFFF))) + -0x2",
+  "obf_leng": 63,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 42.77,
+  "id": 0
+},{
+  "module": "msynth-synth",
+  "obf_expr": "d + -((((a ^ 0xFFFFFFFF) + 0x1) | 0x1) + (((a ^ 0xFFFFFFFF) + 0x1) & 0x1)) + -((d | (((((a ^ 0xFFFFFFFF) + 0x1) | 0x1) + (((a ^ 0xFFFFFFFF) + 0x1) & 0x1)) ^ 0xFFFFFFFF)) << 0x1) + -0x2",
+  "obf_leng": 44,
+  "obf_var": 2,
+  "result_expr": "d ^ (a * 0xFFFFFFFE + -(a ^ 0xFFFFFFFF))",
+  "result_leng": 10,
+  "result_var": 2,
+  "time": 9.7,
+  "id": 1
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((d | (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF)) << 0x1) + -(d ^ (((e & e) * (e | e) + (e & (e ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & e) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 56,
+  "obf_var": 2,
+  "result_expr": "d + -(e * e)",
+  "result_leng": 6,
+  "result_var": 2,
+  "time": 3.48,
+  "id": 2
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e) + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 47.02,
+  "id": 3
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(a & (((((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) ^ 0xFFFFFFFF)) + (((c + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((c + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)",
+  "obf_leng": 43,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 46.14,
+  "id": 4
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(((d & e) * (d | e) + (d & (e ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & e)) & (((d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF)) + (d & 0x2) * (d | 0x2) + (d & (0x2 ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0x2)",
+  "obf_leng": 61,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 47.69,
+  "id": 5
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -(((e | 0x2) + -(e & 0x2)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 34,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 47.86,
+  "id": 6
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(e & 0xFFFFFFFC) * (e | 0xFFFFFFFC) + (e & (0xFFFFFFFC ^ 0xFFFFFFFF)) * ((e ^ 0xFFFFFFFF) & 0xFFFFFFFC)",
+  "obf_leng": 19,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 51.39,
+  "id": 7
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + -(((c + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1 + -(0xFFFFFFFE ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 40,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 48.28,
+  "id": 8
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((((d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d)) ^ 0xFFFFFFFF) | ((((d ^ 0xFFFFFFFF) + 0x1) ^ 0x2) + ((((d ^ 0xFFFFFFFF) + 0x1) & 0x2) << 0x1))) + (d & d) * (d | d) + (d & (d ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & d) + 0x1",
+  "obf_leng": 61,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 48.06,
+  "id": 9
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(((((d + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) | ((a & (d ^ 0xFFFFFFFF)) + d)) + -(((((d + -0x1) ^ 0xFFFFFFFF) ^ (0x2 ^ 0xFFFFFFFF)) + ((((d + -0x1) ^ 0xFFFFFFFF) | 0x2) << 0x1) + 0x1) & ((a & (d ^ 0xFFFFFFFF)) + d))",
+  "obf_leng": 64,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 51.87,
+  "id": 10
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((a + -(b ^ 0xFFFFFFFF) + -0x1) | (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF)) + ((a + -(b ^ 0xFFFFFFFF) + -0x1) & (((a & a) * (a | a) + (a & (a ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & a) + -0x1) ^ 0xFFFFFFFF))",
+  "obf_leng": 69,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 45.97,
+  "id": 11
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(a & b) * (a | b) + (a & (b ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & b) + -(((a + -0x1) ^ 0xFFFFFFFF) ^ 0xFFFFFFFF) + -0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 40,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 54.95,
+  "id": 12
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(((b + -(c ^ 0xFFFFFFFF) + -0x1) | (a + b + 0x1 + ((-a + -0x1) | (-b + -0x1)))) << 0x1) + -((b + -(c ^ 0xFFFFFFFF) + -0x1) ^ (a + b + 0x1 + ((-a + -0x1) | (-b + -0x1))))",
+  "obf_leng": 58,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 46.38,
+  "id": 13
+},{
+  "module": "msynth-synth",
+  "obf_expr": "b + -(((a & 0x2) * (a | 0x2) + (a & (0x2 ^ 0xFFFFFFFF)) * ((a ^ 0xFFFFFFFF) & 0x2)) ^ 0xFFFFFFFF) + -0x1 + -(0x2 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 35,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 56.86,
+  "id": 14
+},{
+  "module": "msynth-synth",
+  "obf_expr": "b + -(((d & 0xFFFFFFFD) * (d | 0xFFFFFFFD) + (d & (0xFFFFFFFD ^ 0xFFFFFFFF)) * ((d ^ 0xFFFFFFFF) & 0xFFFFFFFD)) ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 49.94,
+  "id": 15
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(((((a + -0x1) ^ 0xFFFFFFFF) ^ 0x2) + ((((a + -0x1) ^ 0xFFFFFFFF) & 0x2) << 0x1)) & (0x3 ^ 0xFFFFFFFF)) + 0x3",
+  "obf_leng": 25,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 54.82,
+  "id": 16
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(((d ^ 0xFFFFFFFF) + 0x1) ^ 0x5) + (((d ^ 0xFFFFFFFF) + 0x1) & 0x5) + (((d ^ 0xFFFFFFFF) + 0x1) & 0x5)",
+  "obf_leng": 23,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 55.5,
+  "id": 17
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(b & d) * (b | d) + (b & (d ^ 0xFFFFFFFF)) * ((b ^ 0xFFFFFFFF) & d) + -(0x4 ^ 0xFFFFFFFF) + -0x1",
+  "obf_leng": 27,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 79.57,
+  "id": 18
+},
