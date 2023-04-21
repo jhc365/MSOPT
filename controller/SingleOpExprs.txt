@@ -76,8 +76,11 @@ trace3394_0:ExprOp('==', ExprId('EBX', 32), ExprInt(0x1, 32))
 trace31526_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x2, 32))
     SE:@32[EBP + 0xA4] & 0x2
 
-trace31703_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x2, 32))
-    SE:@32[EBP + 0xC] & @32[EBP + 0xA4] & 0x2
+trace31999_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 0, 8)
+    SE:(EBP + 0xA4)[0:8]
+
+trace32339_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0xCC, 32)), 0, 8)
+    SE:(EBP + 0xCC)[0:8]
 
 trace32390_0:ExprMem(ExprId('EBX', 32), 8)
     SE:@8[EBX]
@@ -97,6 +100,9 @@ trace32995_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0xDF, 8))
 trace32998_0:ExprOp('==', ExprMem(ExprId('ECX', 32), 8), ExprInt(0x71, 8))
     SE:@8[ECX] == 0x71
 
+trace33669_0:ExprSlice(ExprId('EDX', 32), 0, 8)
+    SE:EDX[0:8]
+
 trace34109_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0x82, 8))
     SE:@8[ESI] == 0x82
 
@@ -109,6 +115,9 @@ trace34113_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0xDF, 8))
 trace34165_0:ExprMem(ExprId('EAX', 32), 8)
     SE:@8[EAX]
 
+trace34312_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0x90, 32)), 0, 8)
+    SE:(EBP + 0x90)[0:8]
+
 trace34364_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0x82, 8))
     SE:@8[EAX] == 0x82
 
@@ -120,6 +129,12 @@ trace34368_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0xDF, 8))
 
 trace34371_0:ExprOp('==', ExprMem(ExprId('EAX', 32), 8), ExprInt(0x71, 8))
     SE:@8[EAX] == 0x71
+
+trace34418_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 0, 8)
+    SE:(EBP + 0xC)[0:8]
+
+trace34877_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0x5D, 32)), 0, 8)
+    SE:(EBP + 0x5D)[0:8]
 
 trace35335_0:ExprOp('&', ExprMem(ExprId('EAX', 32), 32), ExprInt(0x2, 32))
     SE:@32[EAX] & 0x2
@@ -139,6 +154,9 @@ trace35794_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0xDF, 8))
 trace35817_0:ExprOp('==', ExprMem(ExprId('EDI', 32), 8), ExprInt(0x71, 8))
     SE:@8[EDI] == 0x71
 
+trace36192_0:ExprSlice(ExprOp('+', ExprId('EBP', 32), ExprInt(0x89, 32)), 0, 8)
+    SE:(EBP + 0x89)[0:8]
+
 trace38301_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0x82, 8))
     SE:@8[EDX] == 0x82
 
@@ -148,11 +166,17 @@ trace38303_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0x6E, 8))
 trace38305_0:ExprOp('==', ExprMem(ExprId('EDX', 32), 8), ExprInt(0xDF, 8))
     SE:@8[EDX] == 0xDF
 
+trace41225_0:ExprSlice(ExprOp('^', ExprId('EDX', 32), ExprInt(0x7FFFFF63, 32)), 0, 8)
+    SE:(EDX ^ 0x7FFFFF63)[0:8]
+
 trace41632_0:ExprMem(ExprOp('+', ExprId('ECX', 32), ExprOp('&', ExprId('EDX', 32), ExprInt(0xFFFF, 32))), 8)
     SE:@8[ECX + (EDX & 0xFFFF)]
 
 trace42041_0:ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x69, 32)), 32), ExprOp('&', ExprOp('^', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32)), ExprCompose(ExprMem(ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x90, 32)), 32), 16), ExprInt(0x0, 16)), ExprInt(0x2CA266B, 32)), ExprInt(0xFFFF, 32))), 8)
     SE:@8[@32[EBP + 0x69] + (((@32[EBP + 0xC] & @32[EBP + 0xA4]) ^ {@16[@32[EBP + 0x90]] 0 16, 0x0 16 32} ^ 0x2CA266B) & 0xFFFF)]
+
+trace42653_0:ExprSlice(ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xCC, 32)), 32), ExprInt(0x91C210C, 32)), 0, 8)
+    SE:(@32[EBP + 0xCC] | 0x91C210C)[0:8]
 
 trace42720_0:ExprOp('==', ExprMem(ExprId('ESI', 32), 8), ExprInt(0x71, 8))
     SE:@8[ESI] == 0x71

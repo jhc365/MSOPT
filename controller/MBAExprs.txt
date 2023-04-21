@@ -19,6 +19,9 @@ trace960_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI
 trace966_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFF0175B0, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprInt(0xFE8A84, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFF0175B0, 32)), ExprInt(0xFE8A84, 32)), 31, 32)
     SE:((((ESI + 0x34) ^ (ESI + 0xFF0175B0)) & ((ESI + 0x34) ^ 0xFE8A84)) ^ (ESI + 0x34) ^ (ESI + 0xFF0175B0) ^ 0xFE8A84)[31:32]
 
+trace31703_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xC, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x2, 32))
+    SE:@32[EBP + 0xC] & @32[EBP + 0xA4] & 0x2
+
 trace32011_0:ExprOp('&', ExprOp('^', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x4D55621B, 32)), ExprInt(0x44E12A2A, 32)), ExprInt(0x2, 32))
     SE:((@32[EBP + 0xA4] & 0x4D55621B) ^ 0x44E12A2A) & 0x2
 
@@ -78,9 +81,6 @@ trace41762_0:ExprOp('&', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP
 
 trace42074_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x4CFBC22C, 32)), ExprInt(0x2, 32))
     SE:(@32[EBP + 0xA4] + 0x4CFBC22C) & 0x2
-
-trace42653_0:ExprSlice(ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xCC, 32)), 32), ExprInt(0x91C210C, 32)), 0, 8)
-    SE:(@32[EBP + 0xCC] | 0x91C210C)[0:8]
 
 trace43298_0:ExprOp('&', ExprOp('+', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA4, 32)), 32), ExprInt(0x195AE237, 32)), ExprInt(0xAF0E7D0D, 32)), ExprInt(0x2, 32))
     SE:((@32[EBP + 0xA4] & 0x195AE237) + 0xAF0E7D0D) & 0x2
