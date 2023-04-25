@@ -1,0 +1,12 @@
+[
+{
+  "module": "msynth-synth",
+  "obf_expr": "a + 0xFFFFFFF9",
+  "obf_leng": 3,
+  "obf_var": 1,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 48.65,
+  "id": "161_0"
+},
