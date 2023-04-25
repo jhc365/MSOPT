@@ -1,11 +1,11 @@
-import re
-from miasm.expression.expression import *
+from .MSOPT_main import *
 
 def parseObfusFile(filename):
     f = open(filename, 'r')
     txt = f.read()
 
-    return txt.splitlines()
+    p = re.compile("trace(.+):(.+)")
+    return p.findall(txt)
 
 def insertInt(n):
     m = n.group()
@@ -35,58 +35,50 @@ def preprocess(expr:str)->str:
 
 
 def string2ExprOp_list(strings, size = 32):
-    a = ExprId('a', size)
-    b = ExprId('b', size)
-    c = ExprId('c', size)
-    d = ExprId('d', size)
-    e = ExprId('e', size)
-    const_1 = ExprInt(1, size)
-    const_2 = ExprInt(2, size)
+    # a = ExprId('a', size)
+    # b = ExprId('b', size)
+    # c = ExprId('c', size)
+    # d = ExprId('d', size)
+    # e = ExprId('e', size)
+    # const_1 = ExprInt(1, size)
+    # const_2 = ExprInt(2, size)
+
+    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'a+')
+    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'a+')
+    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'a+')
+    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'a+')
+
+    simpOracle = SimplificationOracle.load_from_file("./../../msynth/oracle.pickle")
+
+    print(__file__)
+    print(os.path.realpath(__file__))
+    print(os.path.abspath(__file__))
 
     output_vector = []
     for s in strings:
-        outcode = eval(preprocess(s))
-        yield outcode, s
+        raw = s
+        outcode = eval(raw)
+        if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):  # not singleVar만 통과
+            if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
+                if not check_outputOracle_homogeneous(outcode, homogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
+                    c2xParser = cond2xyntiaExpr()#xyntia 포맷에 맞게 번역 위한 클래스
+                    newExpr = c2xParser.visitAndReplace(outcode)# 번역
+
+                    yield strings[s], newExpr, "vm_xyntia"  # homge 아닌 mba 샘플만 반환
+
+    singleOpfile.close()
+    f_mba.close()
+    f_nmba.close()
+    homogeneousfile.close()
     #     output_vector.append(outcode)
     # return output_vector
 
 def get_miasm_Obfus_fromFile(filename, size = 32):
     stringExpr = parseObfusFile(filename)
-    return string2ExprOp_list(stringExpr, size=size)
-
-def replace(m):
-    n = m.group()
-    if n =='a':
-        return "v0"
-    elif n == 'b':
-        return "v1"
-    elif n == 'c':
-        return "v2"
-    elif n == 'd':
-        return "v3"
-    elif n == 'e':
-        return "v4"
-    elif n == 'f':
-        return "v5"
-    elif n == 'g':
-        return "v6"
-    return "fail"
-
-def preprocess_tigress_for_xyntia(filename, size = 32):
-    stringExpr = parseObfusFile(filename)
-    replaced_exprs = []
-    for s in stringExpr:
-        expr = re.sub(r'\b[abcde]\b', replace, s)
-        # s = s.replace('a','v0')
-        # s = s.replace('b','v1')
-        # s = s.replace('c','v2')
-        # s = s.replace('d','v3')
-        # s = s.replace('e','v4')
-        # s = s.replace("UL", "")
-        replaced_exprs.append(expr)
-    with open("../raw_data/For_xyntia/tigress2xyntia.ob", 'w') as f:
-        for r in replaced_exprs:
-            f.write(r)
-            f.write("\n")
+    string_dict = {}
+    for id, value in stringExpr:
+        if value not in string_dict:
+            string_dict[value] = id
+    return string2ExprOp_list(string_dict, size=size)
 
 # preprocess_tigress_for_xyntia("../raw_data/Tigress/tigress_dataset.shuf.test.ob")

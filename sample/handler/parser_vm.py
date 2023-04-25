@@ -1,6 +1,6 @@
 import re
 
-from .MSOPT_SingleVarAndMBAFinder import string2ExprOp_list_with_MSOPT_classify
+from .MSOPT_main import string2ExprOp_list_with_MSOPT_classify
 
 from miasm.expression.expression import ExprId, ExprInt, ExprOp, ExprMem, ExprSlice, ExprCompose
 
@@ -23,6 +23,7 @@ def string2ExprOp_list(strings, size = 32):#not used in MSOPT
     output_vector = []
     for s in strings:
         raw = s
+        print(raw)
         outcode = eval(raw)
         yield strings[s],outcode,"vm"
     #     output_vector.append(outcode)

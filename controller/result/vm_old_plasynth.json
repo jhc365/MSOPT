@@ -7,7 +7,7 @@
   "result_expr": "(@32[EAX + EBP + 0xFFFFFFE0] + 0xFFFFFFF9)[31:32] == ((@32[EAX + EBP + 0xFFFFFFE0] ^ (@32[EAX + EBP + 0xFFFFFFE0] + 0xFFFFFFF9)) & (@32[EAX + EBP + 0xFFFFFFE0] ^ 0x7))[31:32]",
   "result_leng": 3,
   "result_var": 3,
-  "time": 0.09,
+  "time": 0.11,
   "id": "161_0"
 },{
   "module": "msynth-simp",
@@ -27,7 +27,7 @@
   "result_expr": "((((((ESI + 0x24) ^ (ESI + 0xFF0175A0)) & ((ESI + 0x24) ^ 0xFE8A84)) ^ (ESI + 0x24)) ^ (ESI + 0xFF0175A0)) ^ 0xFE8A84)[31:32]",
   "result_leng": 1,
   "result_var": 1,
-  "time": 0.02,
+  "time": 0.03,
   "id": "894_0"
 },{
   "module": "msynth-simp",
@@ -47,7 +47,7 @@
   "result_expr": "((((((ESI + 0x2C) ^ (ESI + 0xFF0175A8)) & ((ESI + 0x2C) ^ 0xFE8A84)) ^ (ESI + 0x2C)) ^ (ESI + 0xFF0175A8)) ^ 0xFE8A84)[31:32]",
   "result_leng": 1,
   "result_var": 1,
-  "time": 0.02,
+  "time": 0.03,
   "id": "954_0"
 },{
   "module": "msynth-simp",
@@ -57,7 +57,7 @@
   "result_expr": "((((((ESI + 0x30) ^ (ESI + 0xFF0175AC)) & ((ESI + 0x30) ^ 0xFE8A84)) ^ (ESI + 0x30)) ^ (ESI + 0xFF0175AC)) ^ 0xFE8A84)[31:32]",
   "result_leng": 1,
   "result_var": 1,
-  "time": 0.03,
+  "time": 0.04,
   "id": "960_0"
 },{
   "module": "msynth-simp",
@@ -77,7 +77,7 @@
   "result_expr": "(@32[EBP + 0xC] & @32[EBP + 0xA4]) & 0x2",
   "result_leng": 5,
   "result_var": 3,
-  "time": 0.14,
+  "time": 0.16,
   "id": "31703_0"
 },{
   "module": "msynth-simp",
@@ -97,7 +97,7 @@
   "result_expr": "(((-(@32[EBP + 0xC] ^ @32[EBP + 0xA4]) + {@16[@32[EBP + 0x90] + 0x2] 0 16, 0x0 16 32} + 0x92FB368E) & 0xFFFF) + -@32[EBP + 0x45])[0:8]",
   "result_leng": 1,
   "result_var": 6,
-  "time": 0.4,
+  "time": 0.41,
   "id": "32220_0"
 },{
   "module": "msynth-simp",
@@ -187,7 +187,7 @@
   "result_expr": "((@32[EBP + 0xA4] & (@32[EBP + 0xC] | ((EBX + @32[EBP + 0xC]) ^ 0x7B26C1A4))) & 0xA)[0:8]",
   "result_leng": 1,
   "result_var": 4,
-  "time": 0.14,
+  "time": 0.16,
   "id": "37399_0"
 },{
   "module": "msynth-simp",
@@ -197,7 +197,7 @@
   "result_expr": "(EBP + (ESI & 0xFFFF) + -EBX + 0x40)[0:8]",
   "result_leng": 1,
   "result_var": 3,
-  "time": 0.04,
+  "time": 0.03,
   "id": "37893_0"
 },{
   "module": "msynth-simp",
@@ -207,7 +207,7 @@
   "result_expr": "(-@32[EBP + 0xA4]) & 0x2",
   "result_leng": 4,
   "result_var": 2,
-  "time": 0.02,
+  "time": 0.01,
   "id": "39098_0"
 },{
   "module": "msynth-simp",
@@ -217,7 +217,7 @@
   "result_expr": "(@32[EBP + 0xA4] + @32[EBP + 0xC] + 0xFFFFFFFF) & 0x2",
   "result_leng": 7,
   "result_var": 3,
-  "time": 0.02,
+  "time": 0.01,
   "id": "39235_0"
 },{
   "module": "msynth-simp",

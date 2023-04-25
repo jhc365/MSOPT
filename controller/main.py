@@ -6,8 +6,8 @@ from synthesis_module.module_handlers.msynth_simplifier import Msynth_simp
 from get_sample import get_sample
 from openpyxl import Workbook
 
-modules = [Msynth_simp()]
-# modules = [Msynth_synth()]
+# modules = [Msynth_simp()]
+modules = [Msynth_synth()]
 # modules = [Xyntia()]
 # modules = [Msynth_synth(), Xyntia(),Msynth_simp()]
 # modules = [Xyntia(),Msynth_synth(),Msynth_simp()]
@@ -211,19 +211,22 @@ def infinite_run(sample_type):
 
 
 
-def run(synthesis_module_type, sample_type):
+def run(synthesis_module_type, sample_type, outfileName):
     # filename = "./mbablast_compare/%s_brute.json" % (sample_type)
     # filename = "./mbablast_compare/plasynth_luby_%s_timeout_xyntia5_msynth1360(score10)_simp15_0313.json" % (sample_type)
-    filename = "./result/%s_old_plasynth.json" % (sample_type)
+    filename = outfileName
     # filename = "./result_0124_finaltest/%s_%s_try2.json" % (synthesis_module_type, sample_type)
     run_PLASynth(samples=samples,outfile=filename)
 
 if __name__ == "__main__":
     # pass
     synthesis_module_type = "plasynth" # don't modify
-    sample_type = "vm" # select sample type {diff, qsynth, tigress, vm ,other}
+    sample_type = "vm_xyntia" # select sample type {diff, qsynth, tigress, vm, vm_xyntia ,other}
 
     samples = get_sample(sample_type)
     # infinite_run(sample_type)
-    run(synthesis_module_type, sample_type)
+    run(synthesis_module_type, sample_type, "./result/%s_old_firstrun.json" % (sample_type))#1st run
+
+    #2nd run via 1st simplification(or synthesis)
+    run(synthesis_module_type, sample_type, "./result/%s_final.json" % (sample_type))
 

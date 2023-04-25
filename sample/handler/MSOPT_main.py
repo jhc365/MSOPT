@@ -108,16 +108,15 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
     const_2 = ExprInt(2, size)
     # output_dict = {}
 
-    singleOpfile = open('SingleOpExprs.txt', 'w+')
-    f_mba = open('MBAExprs.txt', 'w+')
-    f_nmba = open('NoneMBAExprs.txt', 'w+')
-    homogeneousfile = open('homogeneous_MBA_Exprs.txt', 'w+')
+    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'a+')
+    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'a+')
+    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'a+')
+    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'a+')
 
-    print(__file__)
-    print(os.path.realpath(__file__))
-    print(os.path.abspath(__file__))
+
 
     simpOracle = SimplificationOracle.load_from_file("./../../msynth/oracle.pickle")
+
 
     for s in strings:
         raw = s
@@ -126,4 +125,74 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
             if check_MBA_and_writefiles(outcode, raw, strings[s],f_mba, f_nmba, 32): #MBA만 통과
                 if not check_outputOracle_homogeneous(outcode, homogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
                         yield strings[s],outcode,"vm" #homge 아닌 mba 샘플만 반환
+
+    singleOpfile.close()
+    f_mba.close()
+    f_nmba.close()
+    homogeneousfile.close()
     # return output_dict
+
+
+class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로 변환
+    #mem, compose는 무조건 하나의 변수로 보며, slice는 삭제, id는 a , b, c 형태로 이름만 바꾸어 줌
+    #varDict 딕셔너리로 mem 내부 expr이나 exprid 이름 같을 경우 같은 변수 할당(ex) 같은 expr 내에서 eax는 a, esi는 b를 항상 할당 받음)
+
+    def __init__(self):
+        self.varList = ['a', 'b', 'c', 'd', 'e']
+        self.varNum = 0
+        self.varDict = {} # [expr] : variable 형태
+
+    def visitAndReplace(self, expr): #재귀적으로 자식 방문 후 mem, id를 변수로 재할당
+        if expr.is_int() or expr.is_loc():
+            return expr
+
+        elif expr.is_id() : #id는 a 부터 e 까지 변수 할당
+            if str(expr.name) in self.varDict.keys():
+                return ExprId(self.varDict[expr.name], expr.size)
+            self.varDict[str(expr.name)] = self.varList[self.varNum]#딕셔너리에 현재 expr과 변수 할당
+            self.varNum += 1 #새로운 변수가 현재 expr에 할당되었으므로 신규 변수 커서 +1
+            return ExprId(self.varDict[str(expr.name)], expr.size)
+        # elif expr.is_assign():
+        #     ret = visitAndReplace(expr)##assign cond 내 사용 예 없음
+        #     if ret:
+        #         return ret
+        #     src = visitAndReplace(expr)
+        #     if ret:
+        #         return ret
+        # elif expr.is_cond(): ##cond cond.txt 내 사용 예 없음
+        #     ret = visitAndReplace(expr)
+        #     if ret:
+        #         return ret
+        #     ret = visitAndReplace(expr)
+        #     if ret:
+        #         return ret
+        #     ret = visitAndReplace(expr)
+        #     if ret:
+        #         return ret
+        elif expr.is_mem(): #mem은 내부 다 버리고 변수 id로 대체
+            if str(expr.ptr) in self.varDict.keys():
+                return ExprId(self.varDict[str(expr.ptr)], expr.size)
+
+            self.varDict[str(expr.ptr)] = self.varList[self.varNum]  # 딕셔너리에 현재 expr과 변수 할당
+            self.varNum += 1
+
+            return ExprId(self.varDict[str(expr.ptr)], expr.size)
+        elif expr.is_slice(): #slice는 slice 껍데기 제거해버리기
+            return self.visitAndReplace(expr.arg)
+
+        elif expr.is_op():#자식 노드로 접근
+            if expr.op == "==":#xyntia는 == 연산 불가, 과감히 좌변만 남기고 우변은 버림
+                return self.visitAndReplace(expr.args[0])
+
+            args = [self.visitAndReplace(arg) for arg in expr.args]
+            return ExprOp(expr.op, *args)
+
+        elif expr.is_compose(): # 날리고 변수 하나로 취급, id 반환
+            if str(expr) in self.varDict.keys():#이미 딕셔너리에 있는 변수 expr일 경우
+                return ExprId(self.varDict[str(expr)], expr.size)
+            self.varDict[str(expr)] = self.varList[self.varNum]#딕셔너리에 현재 expr과 변수 할당
+            self.varNum += 1
+            return ExprId(self.varDict[str(expr)], expr.size)
+
+        else:
+            raise TypeError("Visitor can only take Expr")

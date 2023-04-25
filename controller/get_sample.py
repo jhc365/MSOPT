@@ -26,9 +26,9 @@ def get_mbablast_sample(size:int):
     return mbablast("/home/plas/work/msynth_test/synthesis_module/mba-blast/dataset/dataset2_32bit.txt")
 
 def get_vm_sample(size:int):
-    return vm("/home/jhc/plas/work/PLASynth/sample/raw_data/VM/cond.txt")
+    return vm("../sample/raw_data/VM/cond.txt")
 def get_vm_xyntia_sample(size:int):
-    return vm_xyntia("/home/jhc/plas/work/PLASynth/sample/raw_data/VM_DiffFormat/MBA_cond_asDiffFormat.txt")
+    return vm_xyntia("../sample/raw_data/VM/cond.txt")
 
 
 def get_sample(sample_type:str, size=32)->list:
