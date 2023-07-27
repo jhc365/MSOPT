@@ -40,3 +40,10 @@ cond.txt mba 손번역
 ////////////////////////////
 MSOPT 깃헙 따로 만듬
 지금까지 mba 분류 기능등은 sample/handler에 새 파일로 구현
+
+
+/////////////////////////
+230727
+Egg 관련 prefix 파서와 oracle checker 추가
+egg_PrefixParser.py(prefix 파서): obfuscated.c -> 입력파일, infix2prefix.txt -> prefix 출력
+oraclechecker.py(oracle checker) : expr1, expr2에 infix 수식 문자열 저장 -> 각각 I/O 오라클 출력 및 두 expr 값 서로 비교 (서로 다를경우 (I/O 불일치) ne 츨력)
