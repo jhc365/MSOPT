@@ -1,0 +1,318 @@
+trace159_0:ExprOp('==', ExprSlice(ExprOp('+', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprInt(0xFFFFFFF9, 32)), 31, 32), ExprSlice(ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprInt(0xFFFFFFF9, 32))), ExprOp('^', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprInt(0x7, 32))), 31, 32))
+    SE:(@32[EAX + EBP + 0xFFFFFFE0] + 0xFFFFFFF9)[31:32] == ((@32[EAX + EBP + 0xFFFFFFE0] ^ (@32[EAX + EBP + 0xFFFFFFE0] + 0xFFFFFFF9)) & (@32[EAX + EBP + 0xFFFFFFE0] ^ 0x7))[31:32]
+
+trace177_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFE0, 32)), 32), ExprInt(0x200, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFE0] & 0x200
+
+trace185_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x100000, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFF0] & 0x100000
+
+trace194_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprId('ECX', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x8000000, 32))
+    SE:@32[EBP + ECX + 0xFFFFFFF0] & 0x8000000
+
+trace199_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprId('EBP', 32), ExprInt(0xFFFFFFF0, 32)), 32), ExprInt(0x10000000, 32))
+    SE:@32[EAX + EBP + 0xFFFFFFF0] & 0x10000000
+
+trace221_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xFFFFFFF8, 32)), 32), ExprInt(0x20, 32))
+    SE:@32[EBP + 0xFFFFFFF8] & 0x20
+
+trace538_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885C0, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885C0, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x38) ^ (ESI + 0xFEC885C0)) & ((ESI + 0x38) ^ 0x1377A78)) ^ (ESI + 0x38) ^ (ESI + 0xFEC885C0) ^ 0x1377A78)[31:32]
+
+trace891_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x24, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885AC, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x24, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x24, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885AC, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x24) ^ (ESI + 0xFEC885AC)) & ((ESI + 0x24) ^ 0x1377A78)) ^ (ESI + 0x24) ^ (ESI + 0xFEC885AC) ^ 0x1377A78)[31:32]
+
+trace945_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x28, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B0, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x28, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x28, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B0, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x28) ^ (ESI + 0xFEC885B0)) & ((ESI + 0x28) ^ 0x1377A78)) ^ (ESI + 0x28) ^ (ESI + 0xFEC885B0) ^ 0x1377A78)[31:32]
+
+trace951_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B4, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B4, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x2C) ^ (ESI + 0xFEC885B4)) & ((ESI + 0x2C) ^ 0x1377A78)) ^ (ESI + 0x2C) ^ (ESI + 0xFEC885B4) ^ 0x1377A78)[31:32]
+
+trace957_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B8, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885B8, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x30) ^ (ESI + 0xFEC885B8)) & ((ESI + 0x30) ^ 0x1377A78)) ^ (ESI + 0x30) ^ (ESI + 0xFEC885B8) ^ 0x1377A78)[31:32]
+
+trace963_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885BC, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprInt(0x1377A78, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC885BC, 32)), ExprInt(0x1377A78, 32)), 31, 32)
+    SE:((((ESI + 0x34) ^ (ESI + 0xFEC885BC)) & ((ESI + 0x34) ^ 0x1377A78)) ^ (ESI + 0x34) ^ (ESI + 0xFEC885BC) ^ 0x1377A78)[31:32]
+
+trace41424_0:ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x2, 32))
+    SE:@32[EBP + 0x13] & 0x2
+
+trace42090_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprId('EDX', 32)), ExprInt(0x10C45DD1, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -EDX + 0x10C45DD1) & 0x2
+
+trace42219_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ @32[EBP + 0x81]) & 0x2
+
+trace42244_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x17AAE562, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ 0x17AAE562) & 0x2
+
+trace42428_0:ExprOp('&', ExprOp('+', ExprId('ECX', 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x222994AB, 32)), ExprInt(0x2, 32))
+    SE:(ECX + @32[EBP + 0x13] + 0x222994AB) & 0x2
+
+trace42447_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x42468E94, 32)), ExprInt(0x51150245, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + 0x42468E94) ^ 0x51150245) & 0x2
+
+trace43282_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x74C0777E, 32)), ExprInt(0x30680E0A, 32)), ExprInt(0x99591CD4, 32)), ExprInt(0x4D810E0, 32)), ExprInt(0x2, 32))
+    SE:((((@32[EBP + 0x13] + 0x74C0777E) & 0x30680E0A) + 0x99591CD4) ^ 0x4D810E0) & 0x2
+
+trace43297_0:ExprOp('&', ExprOp('+', ExprOp('^', ExprOp('+', ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x74C0777E, 32)), ExprInt(0x30680E0A, 32)), ExprInt(0x99591CD4, 32)), ExprInt(0x4D810E0, 32)), ExprInt(0x175F856F, 32)), ExprInt(0x2, 32))
+    SE:(((((@32[EBP + 0x13] + 0x74C0777E) & 0x30680E0A) + 0x99591CD4) ^ 0x4D810E0) + 0x175F856F) & 0x2
+
+trace44233_0:ExprSlice(ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprId('EDI', 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x71, 32)), 32)), ExprInt(0xAB90D4C2, 32)), ExprInt(0x189B5D17, 32)), 0, 8)
+    SE:(@32[EBP + 0x81] ^ (EDI + -@32[EBP + 0x71] + 0xAB90D4C2) ^ 0x189B5D17)[0:8]
+
+trace44246_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x13, 32)), 32)), ExprInt(0x55CAF3E5, 32)), ExprInt(0xF2EF4344, 32))), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | (((@32[EBP + 0x81] + @32[ECX + 0x13]) & 0x55CAF3E5) + 0xF2EF4344)) & 0x2
+
+trace44477_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xEA25D633, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0xEA25D633) & 0x2
+
+trace44575_0:ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xB3, 32)), 32), ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('-', ExprMem(ExprId('EBX', 32), 32))), ExprCompose(ExprMem(ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), 16), ExprInt(0x0, 16))), ExprInt(0xFFFF, 32))), 8)
+    SE:@8[@32[EBP + 0xB3] + (((@32[EBP + 0x81] + -@32[EBX]) ^ {@16[@32[EBP + 0xA0]] 0 16, 0x0 16 32}) & 0xFFFF)]
+
+trace44616_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('&', ExprOp('^', ExprMem(ExprId('ECX', 32), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprInt(0x5A8A6997, 32)), ExprInt(0xD1F21189, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + ((@32[ECX] ^ @32[EBP + 0x81]) & 0x5A8A6997) + 0xD1F21189) & 0x2
+
+trace44704_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x4AA4046B, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x4AA4046B) & 0x2
+
+trace44829_0:ExprSlice(ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x7D, 32)), 32), ExprInt(0x69066E0C, 32)), 0, 8)
+    SE:(@32[EBP + 0x7D] ^ 0x69066E0C)[0:8]
+
+trace44912_0:ExprSlice(ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x71, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x17, 32)), 32), ExprInt(0x79459AB2, 32)), ExprInt(0x3986B467, 32)), ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x75, 32)), 32), ExprInt(0xF89F890, 32))), 0, 8)
+    SE:((@32[EBP + 0x71] ^ (@32[EBP + 0x17] + 0x79459AB2) ^ 0x3986B467) + (@32[EBP + 0x75] ^ 0xF89F890))[0:8]
+
+trace45154_0:ExprOp('&', ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0xA392BD28, 32))), ExprInt(0x6ACD5DDD, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0xA392BD28)) + 0x6ACD5DDD) & 0x2
+
+trace45507_0:ExprOp('&', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xCCB04CF0, 32)), ExprInt(0x16DF033, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + 0xCCB04CF0) | 0x16DF033) & 0x2
+
+trace45797_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x697650BF, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | 0x697650BF) & 0x2
+
+trace45814_0:ExprOp('&', ExprOp('^', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x697650BF, 32)), ExprInt(0xE4B8820, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] | 0x697650BF) ^ 0xE4B8820) & 0x2
+
+trace46372_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x3296526D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x3296526D) & 0x2
+
+trace46534_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EAX', 32), ExprInt(0x81, 32)), 32)), ExprInt(0x10C45DD1, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -@32[EAX + 0x81] + 0x10C45DD1) & 0x2
+
+trace47822_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x2DD270EF, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ 0x2DD270EF) & 0x2
+
+trace47995_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0xA41DF7CF, 32)), ExprInt(0x4CF57825, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + @32[EBP + 0x81] + 0xA41DF7CF) ^ 0x4CF57825) & 0x2
+
+trace48083_0:ExprSlice(ExprOp('&', ExprOp('+', ExprId('EBP', 32), ExprInt(0x17, 32)), ExprOp('+', ExprOp('*', ExprId('EAX', 32), ExprInt(0x2, 32)), ExprOp('-', ExprOp('^', ExprOp('+', ExprId('EBP', 32), ExprOp('&', ExprId('EBX', 32), ExprInt(0xFFFF, 32))), ExprInt(0x491A8E1B, 32))))), 0, 8)
+    SE:((EBP + 0x17) & (EAX * 0x2 + -((EBP + (EBX & 0xFFFF)) ^ 0x491A8E1B)))[0:8]
+
+trace48283_0:ExprSlice(ExprOp('+', ExprOp('*', ExprOp('+', ExprOp('*', ExprOp('&', ExprOp('^', ExprId('ECX', 32), ExprOp('+', ExprOp('^', ExprOp('&', ExprId('EAX', 32), ExprOp('^', ExprId('EDX', 32), ExprInt(0x1C, 32))), ExprInt(0x34, 32)), ExprInt(0xFFFFFC00, 32))), ExprInt(0x400, 32)), ExprInt(0x2, 32)), ExprOp('-', ExprId('ECX', 32)), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprOp('&', ExprOp('+', ExprId('EAX', 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32))), ExprInt(0xFFFF, 32))), 32))), ExprInt(0x2, 32)), ExprInt(0x2, 32)), 0, 8)
+    SE:((((ECX ^ (((EAX & (EDX ^ 0x1C)) ^ 0x34) + 0xFFFFFC00)) & 0x400) * 0x2 + -ECX + -@32[EBP + ((EAX + @32[EBP + 0x13] + -@32[EBP + 0x81]) & 0xFFFF)]) * 0x2 + 0x2)[0:8]
+
+trace48666_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x570C8B12, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x570C8B12) & 0x2
+
+trace49541_0:ExprSlice(ExprOp('^', ExprOp('+', ExprId('EBP', 32), ExprInt(0x71, 32)), ExprOp('+', ExprOp('&', ExprId('ESI', 32), ExprInt(0xFFFF, 32)), ExprOp('*', ExprOp('|', ExprId('EBX', 32), ExprInt(0x28, 32)), ExprInt(0xFFFFFFFE, 32)), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x71, 32)), 32)), ExprInt(0x849A7CBC, 32))), 0, 8)
+    SE:((EBP + 0x71) ^ ((ESI & 0xFFFF) + (EBX | 0x28) * 0xFFFFFFFE + -@32[EBP + 0x71] + 0x849A7CBC))[0:8]
+
+trace49816_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x18C79F3B, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | 0x18C79F3B) & 0x2
+
+trace49942_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x4C3CFB78, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ 0x4C3CFB78) & 0x2
+
+trace50444_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprCompose(ExprMem(ExprId('EDI', 32), 16), ExprInt(0x0, 16)), ExprInt(0xB7891A98, 32)))), ExprInt(0xB83B688D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + (@32[EBP + 0x13] | (@32[EBP + 0x81] & (@32[EBP + 0x81] + {@16[EDI] 0 16, 0x0 16 32} + 0xB7891A98))) + 0xB83B688D) & 0x2
+
+trace50701_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x42BA20BC, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ 0x42BA20BC) & 0x2
+
+trace50708_0:ExprSlice(ExprOp('+', ExprOp('&', ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), ExprOp('+', ExprOp('^', ExprId('ECX', 32), ExprOp('|', ExprOp('+', ExprId('EBX', 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32))), ExprOp('+', ExprOp('&', ExprOp('+', ExprId('ESI', 32), ExprInt(0xFFFFFFC0, 32)), ExprOp('^', ExprId('EBX', 32), ExprInt(0x400, 32))), ExprOp('-', ExprId('ECX', 32))))), ExprInt(0xFFFFFFFE, 32))), ExprInt(0x80000000, 32)), 0, 8)
+    SE:(((EBP + 0x81) & ((ECX ^ ((EBX + -@32[EBP + 0x13]) | (((ESI + 0xFFFFFFC0) & (EBX ^ 0x400)) + -ECX))) + 0xFFFFFFFE)) + 0x80000000)[0:8]
+
+trace50739_0:ExprSlice(ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x17, 32)), 32), ExprOp('+', ExprOp('^', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32)), ExprCompose(ExprMem(ExprId('EDX', 32), 8), ExprInt(0x0, 24)))), ExprInt(0x74B899B, 32)), ExprInt(0x28B2D7A6, 32))), 0, 8)
+    SE:(@32[EBP + 0x17] | (((@32[EBP + 0x81] | (-@32[EBP + 0x13] + {@8[EDX] 0 8, 0x0 8 32})) ^ 0x74B899B) + 0x28B2D7A6))[0:8]
+
+trace51093_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprInt(0xFA240416, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -@32[EBP + 0x81] + 0xFA240416) & 0x2
+
+trace51433_0:ExprSlice(ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x17, 32)), 32), ExprInt(0x7B15BB64, 32)), 0, 8)
+    SE:(@32[EBP + 0x17] | 0x7B15BB64)[0:8]
+
+trace51553_0:ExprSlice(ExprOp('+', ExprOp('-', ExprId('EAX', 32)), ExprOp('-', ExprOp('&', ExprId('EDI', 32), ExprInt(0xFFFF, 32))), ExprOp('-', ExprOp('|', ExprId('EDX', 32), ExprInt(0x7FFFFFFF, 32))), ExprOp('|', ExprOp('^', ExprId('ESI', 32), ExprInt(0x1, 32)), ExprInt(0x400, 32)), ExprInt(0xFFFF0000, 32)), 0, 8)
+    SE:(-EAX + -(EDI & 0xFFFF) + -(EDX | 0x7FFFFFFF) + ((ESI ^ 0x1) | 0x400) + 0xFFFF0000)[0:8]
+
+trace51573_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x37F577D2, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | 0x37F577D2) & 0x2
+
+trace51588_0:ExprOp('&', ExprOp('^', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x37F577D2, 32)), ExprInt(0x697AAB5A, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] | 0x37F577D2) ^ 0x697AAB5A) & 0x2
+
+trace52480_0:ExprOp('&', ExprOp('+', ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x3296526D, 32)), ExprInt(0xFF81B0D, 32)), ExprInt(0x93EE3BCC, 32)), ExprInt(0x2, 32))
+    SE:(((@32[EBP + 0x13] + 0x3296526D) & 0xFF81B0D) + 0x93EE3BCC) & 0x2
+
+trace52609_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprCompose(ExprMem(ExprId('EDI', 32), 16), ExprInt(0x0, 16))), ExprInt(0xB83B688D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + (@32[EBP + 0x13] | {@16[EDI] 0 16, 0x0 16 32}) + 0xB83B688D) & 0x2
+
+trace53130_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBX', 32), ExprInt(0x81, 32)), 32), ExprInt(0xD22A276F, 32)), ExprInt(0x4CF57825, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + @32[EBX + 0x81] + 0xD22A276F) ^ 0x4CF57825) & 0x2
+
+trace54081_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xF86FD7E, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | 0xF86FD7E) & 0x2
+
+trace54099_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x3FD67104, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x3FD67104) & 0x2
+
+trace54119_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xF86FD7E, 32)), ExprInt(0x3FD67104, 32)), ExprInt(0x3058E377, 32)), ExprInt(0x2, 32))
+    SE:(((@32[EBP + 0x13] | 0xF86FD7E) + 0x3FD67104) ^ 0x3058E377) & 0x2
+
+trace54146_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x3058E377, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ 0x3058E377) & 0x2
+
+trace54286_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32)), ExprInt(0x6222F3FA, 32)), ExprInt(0x46B10D7F, 32))), ExprInt(0x29884BBA, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -((@32[EBP + 0x81] + -@32[EBP + 0x13] + 0x6222F3FA) & 0x46B10D7F) + 0x29884BBA) & 0x2
+
+trace55755_0:ExprOp('&', ExprOp('+', ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x2DD270EF, 32)), ExprInt(0x757B4F1E, 32)), ExprInt(0xB3F0EDF2, 32)), ExprInt(0x2, 32))
+    SE:(((@32[EBP + 0x13] ^ 0x2DD270EF) & 0x757B4F1E) + 0xB3F0EDF2) & 0x2
+
+trace55770_0:ExprOp('&', ExprOp('+', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x757B4F1E, 32)), ExprInt(0xB3F0EDF2, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] & 0x757B4F1E) + 0xB3F0EDF2) & 0x2
+
+trace56010_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x89F79FE8, 32))), ExprInt(0x9255E3FF, 32)), ExprInt(0x2722B4A7, 32))), ExprInt(0x7761896D, 32)), ExprOp('-', ExprOp('|', ExprOp('&', ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x89F79FE8, 32))), ExprInt(0x9255E3FF, 32)), ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x89F79FE8, 32))), ExprInt(0x9255E3FF, 32)), ExprInt(0x2722B4A7, 32))), ExprInt(0x25400821, 32)), ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x89F79FE8, 32))), ExprInt(0x9255E3FF, 32)), ExprInt(0x2722B4A7, 32))), ExprInt(0x7761896D, 32))))), ExprInt(0x63963A86, 32)), ExprInt(0x2, 32))
+    SE:((((@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x7761896D) + -((((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) & (@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x25400821) | ((@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x7761896D))) ^ 0x63963A86) & 0x2
+
+trace56097_0:ExprSlice(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xB3, 32)), 32), ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprCompose(ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), ExprInt(0x3, 32)), 16), ExprInt(0x0, 16)), ExprInt(0x6550B061, 32)), ExprInt(0xFFFF, 32))), 0, 8)
+    SE:(@32[EBP + 0xB3] + ((@32[EBP + 0x81] ^ {@16[@32[EBP + 0xA0] + 0x3] 0 16, 0x0 16 32} ^ 0x6550B061) & 0xFFFF))[0:8]
+
+trace56619_0:ExprSlice(ExprOp('&', ExprOp('+', ExprId('EBP', 32), ExprInt(0x7D, 32)), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('-', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprCompose(ExprMem(ExprId('ECX', 32), 16), ExprInt(0x0, 16))), ExprInt(0x5BEA9860, 32))))), 0, 8)
+    SE:((EBP + 0x7D) & (@32[EBP + 0x13] + @32[EBP + 0x81] + -((@32[EBP + 0x81] + {@16[ECX] 0 16, 0x0 16 32}) ^ 0x5BEA9860)))[0:8]
+
+trace56921_0:ExprSlice(ExprOp('^', ExprOp('&', ExprId('ESI', 32), ExprInt(0xFFFF, 32)), ExprOp('+', ExprId('EBX', 32), ExprInt(0x80, 32)), ExprInt(0x7FFFFFFF, 32)), 0, 8)
+    SE:((ESI & 0xFFFF) ^ (EBX + 0x80) ^ 0x7FFFFFFF)[0:8]
+
+trace57663_0:ExprOp('&', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x9BF82ABD, 32)), ExprInt(0x12FF0215, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + 0x9BF82ABD) | 0x12FF0215) & 0x2
+
+trace58137_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('-', ExprOp('^', ExprId('EDI', 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x4087E161, 32))))), ExprInt(0xB83B688D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + (@32[EBP + 0x13] | (@32[EBP + 0x81] + -(EDI ^ @32[EBP + 0x81] ^ 0x4087E161))) + 0xB83B688D) & 0x2
+
+trace59136_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x111CCA55, 32))), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | (@32[EBP + 0x81] + 0x111CCA55)) & 0x2
+
+trace60439_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x5FCD08B, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x5FCD08B) & 0x2
+
+trace61770_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('*', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x2, 32)), ExprInt(0xD22A276F, 32)), ExprInt(0x4CF57825, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x81] + @32[EBP + 0x13] * 0x2 + 0xD22A276F) ^ 0x4CF57825) & 0x2
+
+trace61982_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprMem(ExprOp('+', ExprId('EBX', 32), ExprInt(0x13, 32)), 32)), ExprInt(0xB83B688D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + (@32[EBP + 0x81] | @32[EBX + 0x13]) + 0xB83B688D) & 0x2
+
+trace62491_0:ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0x38B0F265, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] ^ @32[EBP + 0x81] ^ 0x38B0F265) & 0x2
+
+trace64468_0:ExprSlice(ExprOp('+', ExprId('EBX', 32), ExprOp('&', ExprOp('+', ExprId('EDI', 32), ExprInt(0x7536FBE3, 32)), ExprInt(0xFFFF, 32))), 0, 8)
+    SE:(EBX + ((EDI + 0x7536FBE3) & 0xFFFF))[0:8]
+
+trace64880_0:ExprSlice(ExprOp('|', ExprOp('+', ExprOp('^', ExprOp('|', ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), ExprOp('+', ExprOp('^', ExprOp('*', ExprOp('+', ExprOp('^', ExprId('EDI', 32), ExprInt(0x400, 32)), ExprInt(0xFFFFFF80, 32)), ExprInt(0x2, 32)), ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32))), ExprInt(0x40, 32))), ExprInt(0x80, 32)), ExprInt(0xFFFFFFFE, 32)), ExprInt(0xFFFF, 32)), 0, 8)
+    SE:(((((EBP + 0x81) | (((((EDI ^ 0x400) + 0xFFFFFF80) * 0x2) ^ (EBP + 0x81)) + 0x40)) ^ 0x80) + 0xFFFFFFFE) | 0xFFFF)[0:8]
+
+trace66085_0:ExprSlice(ExprOp('^', ExprOp('+', ExprOp('|', ExprId('EBX', 32), ExprMem(ExprOp('+', ExprId('EAX', 32), ExprOp('&', ExprId('ESI', 32), ExprInt(0xFFFF, 32))), 32), ExprInt(0x1C, 32)), ExprInt(0x800, 32)), ExprInt(0x4, 32)), 0, 8)
+    SE:(((EBX | @32[EAX + (ESI & 0xFFFF)] | 0x1C) + 0x800) ^ 0x4)[0:8]
+
+trace66771_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprCompose(ExprMem(ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), 16), ExprInt(0x0, 16))), ExprInt(0x19269191, 32))), ExprInt(0xB83B688D, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + (@32[EBP + 0x13] | @32[EBP + 0x81] | ((@32[EBP + 0x81] ^ {@16[@32[EBP + 0xA0]] 0 16, 0x0 16 32}) + 0x19269191)) + 0xB83B688D) & 0x2
+
+trace67243_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x69BE2184, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x69BE2184) & 0x2
+
+trace68039_0:ExprSlice(ExprOp('+', ExprId('EAX', 32), ExprOp('|', ExprId('EAX', 32), ExprOp('+', ExprOp('|', ExprOp('&', ExprId('EBX', 32), ExprInt(0x80, 32)), ExprInt(0xFFFF, 32)), ExprInt(0x2, 32)))), 0, 8)
+    SE:(EAX + (EAX | (((EBX & 0x80) | 0xFFFF) + 0x2)))[0:8]
+
+trace68251_0:ExprSlice(ExprOp('&', ExprOp('+', ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprCompose(ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), ExprInt(0x1, 32)), 16), ExprInt(0x0, 16)), ExprInt(0x611FF275, 32)), ExprInt(0xFFFF, 32)), 0, 8)
+    SE:((-@32[EBP + 0x81] + {@16[@32[EBP + 0xA0] + 0x1] 0 16, 0x0 16 32} + 0x611FF275) & 0xFFFF)[0:8]
+
+trace68978_0:ExprOp('*', ExprSlice(ExprOp('^', ExprOp('+', ExprId('EDI', 32), ExprOp('-', ExprOp('&', ExprOp('+', ExprId('EAX', 32), ExprOp('^', ExprId('ESI', 32), ExprInt(0xFFFF, 32)), ExprInt(0x81, 32)), ExprOp('+', ExprId('EBX', 32), ExprInt(0xFFFF, 32)))), ExprInt(0x80, 32)), ExprInt(0x40, 32)), 0, 8), ExprInt(0x2, 8))
+    SE:((EDI + -((EAX + (ESI ^ 0xFFFF) + 0x81) & (EBX + 0xFFFF)) + 0x80) ^ 0x40)[0:8] * 0x2
+
+trace69565_0:ExprSlice(ExprOp('&', ExprOp('+', ExprId('EBP', 32), ExprInt(0x7D, 32)), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32))), 0, 8)
+    SE:((EBP + 0x7D) & (@32[EBP + 0x13] + @32[EBP + 0x81]))[0:8]
+
+trace69677_0:ExprSlice(ExprOp('|', ExprMem(ExprOp('+', ExprId('ESI', 32), ExprOp('&', ExprOp('+', ExprOp('^', ExprId('ECX', 32), ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprInt(0xEFC578B1, 32)), ExprInt(0xFFFF, 32))), 32), ExprInt(0x400, 32)), 0, 8)
+    SE:(@32[ESI + (((ECX ^ @32[EBP + 0x81]) + 0xEFC578B1) & 0xFFFF)] | 0x400)[0:8]
+
+trace70274_0:ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x6B040C3, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] | 0x6B040C3) & 0x2
+
+trace70285_0:ExprOp('&', ExprOp('^', ExprOp('&', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x6B040C3, 32)), ExprInt(0x6FA0FCA, 32)), ExprInt(0x3A754F6F, 32)), ExprInt(0x2, 32))
+    SE:(((@32[EBP + 0x13] | 0x6B040C3) & 0x6FA0FCA) ^ 0x3A754F6F) & 0x2
+
+trace70374_0:ExprSlice(ExprOp('+', ExprId('EBX', 32), ExprOp('&', ExprOp('^', ExprOp('+', ExprId('EDX', 32), ExprOp('-', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x81, 32)), 32))), ExprInt(0x4637397F, 32)), ExprInt(0xFFFF, 32))), 0, 8)
+    SE:(EBX + (((EDX + -@32[ECX + 0x81]) ^ 0x4637397F) & 0xFFFF))[0:8]
+
+trace70388_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprMem(ExprId('EDI', 32), 32)), ExprInt(0xDEAAFD86, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -@32[EDI] + 0xDEAAFD86) & 0x2
+
+trace70951_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x5AD3AFD4, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x5AD3AFD4) & 0x2
+
+trace71880_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprInt(0xD2B1799, 32)), ExprOp('+', ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x51150245, 32)), ExprInt(0xBFC33250, 32)), ExprInt(0x1A916228, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x81] + 0xD2B1799) ^ ((@32[EBP + 0x13] ^ 0x51150245) + 0xBFC33250) ^ 0x1A916228) & 0x2
+
+trace72229_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('-', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprId('EDI', 32), ExprInt(0xB7891A98, 32)))), ExprInt(0xFA240416, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + -(@32[EBP + 0x81] & (EDI + 0xB7891A98)) + 0xFA240416) & 0x2
+
+trace72553_0:ExprOp('&', ExprOp('^', ExprOp('+', ExprOp('*', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x2, 32)), ExprCompose(ExprMem(ExprId('EDI', 32), 16), ExprInt(0x0, 16)), ExprInt(0xD22A276F, 32)), ExprInt(0x4CF57825, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] * 0x2 + {@16[EDI] 0 16, 0x0 16 32} + 0xD22A276F) ^ 0x4CF57825) & 0x2
+
+trace72769_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x58B4E88F, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0x58B4E88F) & 0x2
+
+trace73290_0:ExprOp('&', ExprOp('|', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x27D75FA6, 32)), ExprInt(0x388D8257, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] & 0x27D75FA6) | 0x388D8257) & 0x2
+
+trace78039_0:ExprSlice(ExprOp('+', ExprId('EDX', 32), ExprOp('&', ExprId('ESI', 32), ExprInt(0xFFFF, 32))), 0, 8)
+    SE:(EDX + (ESI & 0xFFFF))[0:8]
+
+trace78419_0:ExprOp('==', ExprOp('>>', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprCompose(ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), ExprInt(0x8, 32)), 16), ExprInt(0x0, 16))), 32), ExprInt(0x80, 32)), ExprInt(0x7, 32)), ExprOp('>>', ExprOp('&', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprCompose(ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), ExprInt(0x8, 32)), 16), ExprInt(0x0, 16))), 32), ExprInt(0x800, 32)), ExprInt(0xB, 32)))
+    SE:((@32[EBP + {@16[@32[EBP + 0xA0] + 0x8] 0 16, 0x0 16 32}] & 0x80) >> 0x7) == ((@32[EBP + {@16[@32[EBP + 0xA0] + 0x8] 0 16, 0x0 16 32}] & 0x800) >> 0xB)
+
+trace78964_0:ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xB3, 32)), 32), ExprOp('&', ExprOp('+', ExprCompose(ExprMem(ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0xA0, 32)), 32), ExprInt(0x1, 32)), 16), ExprInt(0x0, 16)), ExprInt(0xEF182457, 32)), ExprInt(0xFFFF, 32))), 8)
+    SE:@8[@32[EBP + 0xB3] + (({@16[@32[EBP + 0xA0] + 0x1] 0 16, 0x0 16 32} + 0xEF182457) & 0xFFFF)]
+
+trace81390_0:ExprOp('&', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xB33AD418, 32)), ExprInt(0x2, 32))
+    SE:(@32[EBP + 0x13] + 0xB33AD418) & 0x2
+
+trace81405_0:ExprOp('&', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0x7DFC7452, 32)), ExprInt(0x446EC3B0, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + 0x7DFC7452) | 0x446EC3B0) & 0x2
+
+trace82569_0:ExprSlice(ExprOp('+', ExprOp('^', ExprOp('&', ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), ExprOp('+', ExprMem(ExprId('EDX', 32), 32), ExprInt(0xA, 32))), ExprInt(0xFFFF, 32)), ExprInt(0x4, 32)), 0, 8)
+    SE:((((EBP + 0x81) & (@32[EDX] + 0xA)) ^ 0xFFFF) + 0x4)[0:8]
+
+trace83599_0:ExprOp('&', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xE62AF804, 32)), ExprOp('^', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprOp('-', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32)), ExprCompose(ExprMem(ExprId('EBX', 32), 16), ExprInt(0x0, 16)), ExprInt(0x611FF275, 32)))), ExprInt(0x2AE0BD3E, 32)), ExprInt(0x1A58B25A, 32))), ExprInt(0x33826AAE, 32)), ExprInt(0x2, 32))
+    SE:((@32[EBP + 0x13] + ((((@32[EBP + 0x13] + 0xE62AF804) | (@32[EBP + 0x81] ^ (-@32[EBP + 0x81] + {@16[EBX] 0 16, 0x0 16 32} + 0x611FF275))) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) & 0x2
+
+trace83636_0:ExprOp('&', ExprOp('+', ExprOp('&', ExprOp('+', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xE62AF804, 32))), ExprInt(0x2AE0BD3E, 32)), ExprOp('|', ExprOp('+', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xE62AF804, 32))), ExprInt(0x2AE0BD3E, 32)), ExprInt(0x1A58B25A, 32))), ExprInt(0x33826AAE, 32)), ExprInt(0x2CE88228, 32)), ExprInt(0x16BF0999, 32)), ExprInt(0x23A83AA4, 32)), ExprInt(0xDA865281, 32)), ExprOp('|', ExprOp('+', ExprOp('|', ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprOp('|', ExprOp('+', ExprOp('|', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x81, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('EBP', 32), ExprInt(0x13, 32)), 32), ExprInt(0xE62AF804, 32))), ExprInt(0x2AE0BD3E, 32)), ExprInt(0x1A58B25A, 32))), ExprInt(0x33826AAE, 32)), ExprInt(0x2CE88228, 32)), ExprInt(0x16BF0999, 32)), ExprInt(0x2, 32))
+    SE:((((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) & ((((@32[EBP + 0x13] + (((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) + 0x2CE88228) | 0x16BF0999) & 0x23A83AA4) + 0xDA865281) & ((((@32[EBP + 0x13] + (((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) + 0x2CE88228) | 0x16BF0999) & 0x2
+
+trace84553_0:ExprOp('==', ExprSlice(ExprOp('+', ExprOp('-', ExprMem(ExprId('EBX', 32), 32)), ExprInt(0x1, 32)), 31, 32), ExprSlice(ExprOp('&', ExprOp('^', ExprMem(ExprId('EBX', 32), 32), ExprInt(0x1, 32)), ExprOp('^', ExprOp('+', ExprOp('-', ExprMem(ExprId('EBX', 32), 32)), ExprInt(0x1, 32)), ExprInt(0x1, 32))), 31, 32))
+    SE:(-@32[EBX] + 0x1)[31:32] == ((@32[EBX] ^ 0x1) & ((-@32[EBX] + 0x1) ^ 0x1))[31:32]
+
+trace84605_0:ExprOp('==', ExprOp('|', ExprOp('==', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprInt(0xE, 32)), ExprSlice(ExprOp('^', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprOp('&', ExprOp('^', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprOp('+', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprInt(0xFFFFFFF2, 32))), ExprOp('^', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprInt(0xE, 32))), ExprOp('+', ExprMem(ExprOp('+', ExprId('ECX', 32), ExprInt(0x74, 32)), 32), ExprInt(0xFFFFFFF2, 32)), ExprInt(0xE, 32)), 31, 32)), ExprInt(0x1, 1))
+    SE:((@32[ECX + 0x74] == 0xE) | (@32[ECX + 0x74] ^ ((@32[ECX + 0x74] ^ (@32[ECX + 0x74] + 0xFFFFFFF2)) & (@32[ECX + 0x74] ^ 0xE)) ^ (@32[ECX + 0x74] + 0xFFFFFFF2) ^ 0xE)[31:32]) == 0x1
+
+trace84714_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882B4, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprInt(0x1377D84, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x38, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882B4, 32)), ExprInt(0x1377D84, 32)), 31, 32)
+    SE:((((ESI + 0x38) ^ (ESI + 0xFEC882B4)) & ((ESI + 0x38) ^ 0x1377D84)) ^ (ESI + 0x38) ^ (ESI + 0xFEC882B4) ^ 0x1377D84)[31:32]
+
+trace85053_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882A8, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprInt(0x1377D84, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x2C, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882A8, 32)), ExprInt(0x1377D84, 32)), 31, 32)
+    SE:((((ESI + 0x2C) ^ (ESI + 0xFEC882A8)) & ((ESI + 0x2C) ^ 0x1377D84)) ^ (ESI + 0x2C) ^ (ESI + 0xFEC882A8) ^ 0x1377D84)[31:32]
+
+trace85119_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882AC, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprInt(0x1377D84, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x30, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882AC, 32)), ExprInt(0x1377D84, 32)), 31, 32)
+    SE:((((ESI + 0x30) ^ (ESI + 0xFEC882AC)) & ((ESI + 0x30) ^ 0x1377D84)) ^ (ESI + 0x30) ^ (ESI + 0xFEC882AC) ^ 0x1377D84)[31:32]
+
+trace85125_0:ExprSlice(ExprOp('^', ExprOp('&', ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882B0, 32))), ExprOp('^', ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprInt(0x1377D84, 32))), ExprOp('+', ExprId('ESI', 32), ExprInt(0x34, 32)), ExprOp('+', ExprId('ESI', 32), ExprInt(0xFEC882B0, 32)), ExprInt(0x1377D84, 32)), 31, 32)
+    SE:((((ESI + 0x34) ^ (ESI + 0xFEC882B0)) & ((ESI + 0x34) ^ 0x1377D84)) ^ (ESI + 0x34) ^ (ESI + 0xFEC882B0) ^ 0x1377D84)[31:32]
+

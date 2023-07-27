@@ -1,0 +1,73 @@
+[
+{
+  "module": "xyntia",
+  "obf_expr": "((-(a ^ b) + c + 0x92FB368E) & 0xFFFF) + -d",
+  "obf_leng": 13,
+  "obf_var": 4,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 21.48,
+  "id": "32220_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "a + (((b | (b ^ c)) + d + 0xF50090FA) & 0xFFFF)",
+  "obf_leng": 13,
+  "obf_var": 4,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 21.43,
+  "id": "33540_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "(a + 0xA4) ^ (((a + 0xA4) | (b ^ c ^ 0x2)) + 0x1)",
+  "obf_leng": 15,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.61,
+  "id": "33871_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "((a & 0x1FB02109) | 0x644CDB3C) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 1,
+  "result_expr": "(((1 | v0) + 1) & 1)",
+  "result_leng": 7,
+  "result_var": 1,
+  "time": 0.05,
+  "id": "41130_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "(a + ((-b + c) & 0xFFFF)) ^ 0x73E74793",
+  "obf_leng": 10,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 20.66,
+  "id": "41717_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "((a + -(b & 0x52021A25)) | 0x288323FE) & 0x2",
+  "obf_leng": 10,
+  "obf_var": 2,
+  "result_expr": "2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.05,
+  "id": "41762_0"
+},{
+  "module": "xyntia",
+  "obf_expr": "(a | 0x3B894E06) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 1,
+  "result_expr": "2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.05,
+  "id": "44734_0"
+}
+]

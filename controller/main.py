@@ -6,8 +6,8 @@ from synthesis_module.module_handlers.msynth_simplifier import Msynth_simp
 from get_sample import get_sample
 from openpyxl import Workbook
 
-# modules = [Msynth_simp()]
-modules = [Msynth_synth()]
+modules = [Msynth_simp()]
+# modules = [Msynth_synth()]
 # modules = [Xyntia()]
 # modules = [Msynth_synth(), Xyntia(),Msynth_simp()]
 # modules = [Xyntia(),Msynth_synth(),Msynth_simp()]
@@ -92,6 +92,7 @@ def run_PLASynth(samples, outfile,outfile_excel=""):
         start_time = time.time()
 
         print(i)
+        print(expr)
 
         # run each synthesis module=
         #######################################################
@@ -199,11 +200,11 @@ def run_PLASynth(samples, outfile,outfile_excel=""):
     # print(f"percentage : {(semantic_count/succ_count)*100} %")
     # write_wb.save(outfile_excel)
 
-def infinite_run(sample_type):
+def infinite_run(sample_type, module_type):
     succ_ids = [i for i in range(500)]
     count = 0
     while succ_ids:
-        filename = "./result/infinite_run/[plasynth-synth-infinite]%s_diffvector_score40_%d.json" % (sample_type,count)
+        filename = "./result/infinite_run/%s/[plasynth-synth-infinite]%s_diffvector_score40_%d.json" % (module_type, sample_type, count)
         sample = get_sample(sample_type)
         run_PLASynth(samples=sample, outfile=filename)
         count += 1
@@ -221,12 +222,15 @@ def run(synthesis_module_type, sample_type, outfileName):
 if __name__ == "__main__":
     # pass
     synthesis_module_type = "plasynth" # don't modify
-    sample_type = "vm_xyntia" # select sample type {diff, qsynth, tigress, vm, vm_xyntia ,other}
+    sample_type = "qsynth" # select sample type {diff, qsynth, tigress, vm, vm_xyntia ,other}
 
     samples = get_sample(sample_type)
-    # infinite_run(sample_type)
-    run(synthesis_module_type, sample_type, "./result/%s_old_firstrun.json" % (sample_type))#1st run
+    module_type = "msynth" # select msynth, xyntia
 
-    #2nd run via 1st simplification(or synthesis)
-    run(synthesis_module_type, sample_type, "./result/%s_final.json" % (sample_type))
-
+    #check module label before run
+    # do not use infi-run for msynth-simp
+    # it's for xyntia, msynth-synth
+    # infinite_run(sample_type, module_type)
+    run(synthesis_module_type, sample_type, "./result/%s_old_simp.json" % (sample_type))#1st run
+    #run(synthesis_module_type, sample_type, "./result/%s_old_synth.json" % (sample_type))#1st run
+    #run(synthesis_module_type, sample_type, "./result/%s_old_xyntia.json" % (sample_type))#1st run

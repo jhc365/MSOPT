@@ -43,10 +43,12 @@ def string2ExprOp_list(strings, size = 32):
     # const_1 = ExprInt(1, size)
     # const_2 = ExprInt(2, size)
 
-    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'a+')
-    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'a+')
-    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'a+')
-    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'a+')
+    withoutDuplfile = open('./MSOPTIntermediateFiles/withoutDup.txt', 'w+')
+    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'w+')
+    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'w+')
+    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'w+')
+    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'w+')
+    nothomogeneousfile = open('./MSOPTIntermediateFiles/nothomogeneous_MBA_Exprs.txt', 'w+')
 
     simpOracle = SimplificationOracle.load_from_file("./../../msynth/oracle.pickle")
 
@@ -58,18 +60,27 @@ def string2ExprOp_list(strings, size = 32):
     for s in strings:
         raw = s
         outcode = eval(raw)
+
+        # 중복 제외 파일 저장
+        str1 = "trace%s:%s\n" % (strings[s], str(outcode))
+        str2 = "    SE:%s\n" % (str(raw))
+        withoutDuplfile.write(str1)
+        withoutDuplfile.write(str2)
+        withoutDuplfile.write("\n")
+
         if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):  # not singleVar만 통과
             if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
-                if not check_outputOracle_homogeneous(outcode, homogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
+                if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
                     c2xParser = cond2xyntiaExpr()#xyntia 포맷에 맞게 번역 위한 클래스
                     newExpr = c2xParser.visitAndReplace(outcode)# 번역
 
-                    yield strings[s], newExpr, "vm_xyntia"  # homge 아닌 mba 샘플만 반환
+                    yield strings[s], newExpr, "vm_xyntia"  # homge mba 샘플만 반환
 
     singleOpfile.close()
     f_mba.close()
     f_nmba.close()
     homogeneousfile.close()
+    nothomogeneousfile.close()
     #     output_vector.append(outcode)
     # return output_vector
 

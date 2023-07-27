@@ -1,0 +1,313 @@
+[
+{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x81] ^ (EDI + -@32[EBP + 0x71] + 0xAB90D4C2) ^ 0x189B5D17)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "((@32[EBP + 0x81] ^ (EDI + -@32[EBP + 0x71] + 0xAB90D4C2)) ^ 0x189B5D17)[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.16,
+  "id": "44233_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x71] ^ (@32[EBP + 0x17] + 0x79459AB2) ^ 0x3986B467) + (@32[EBP + 0x75] ^ 0xF89F890))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "(((@32[EBP + 0x71] ^ (@32[EBP + 0x17] + 0x79459AB2)) ^ 0x3986B467) + (@32[EBP + 0x75] ^ 0xF89F890))[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.19,
+  "id": "44912_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x13] + 0xCCB04CF0) | 0x16DF033) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "45507_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x13] | 0x697650BF) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "45797_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x13] | 0x697650BF) ^ 0xE4B8820) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "45814_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((((ECX ^ (((EAX & (EDX ^ 0x1C)) ^ 0x34) + 0xFFFFFC00)) & 0x400) * 0x2 + -ECX + -@32[EBP + ((EAX + @32[EBP + 0x13] + -@32[EBP + 0x81]) & 0xFFFF)]) * 0x2 + 0x2)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 7,
+  "result_expr": "((((ECX ^ (((EAX & (EDX ^ 0x1C)) ^ 0x34) + 0xFFFFFC00)) & 0x400) * 0x2 + -ECX + -@32[EBP + ((EAX + @32[EBP + 0x13] + -@32[EBP + 0x81]) & 0xFFFF)]) * 0x2 + 0x2)[0:8]",
+  "result_leng": 1,
+  "result_var": 7,
+  "time": 0.39,
+  "id": "48283_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((EBP + 0x71) ^ ((ESI & 0xFFFF) + (EBX | 0x28) * 0xFFFFFFFE + -@32[EBP + 0x71] + 0x849A7CBC))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "((EBP + 0x71) ^ ((ESI & 0xFFFF) + (EBX | 0x28) * 0xFFFFFFFE + -@32[EBP + 0x71] + 0x849A7CBC))[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.11,
+  "id": "49541_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x13] | 0x18C79F3B) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "49816_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x17] | (((@32[EBP + 0x81] | (-@32[EBP + 0x13] + {@8[EDX] 0 8, 0x0 8 32})) ^ 0x74B899B) + 0x28B2D7A6))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 6,
+  "result_expr": "(@32[EBP + 0x17] | (((@32[EBP + 0x81] | (-@32[EBP + 0x13] + {@8[EDX] 0 8, 0x0 8 32})) ^ 0x74B899B) + 0x28B2D7A6))[0:8]",
+  "result_leng": 1,
+  "result_var": 6,
+  "time": 0.32,
+  "id": "50739_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(-EAX + -(EDI & 0xFFFF) + -(EDX | 0x7FFFFFFF) + ((ESI ^ 0x1) | 0x400) + 0xFFFF0000)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "(-EAX + -(EDI & 0xFFFF) + -(EDX | 0x7FFFFFFF) + ((ESI ^ 0x1) | 0x400) + 0xFFFF0000)[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.06,
+  "id": "51553_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x13] | 0x37F577D2) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "51573_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x13] | 0x37F577D2) ^ 0x697AAB5A) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "51588_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(((@32[EBP + 0x13] + 0x3296526D) & 0xFF81B0D) + 0x93EE3BCC) & 0x2",
+  "obf_leng": 9,
+  "obf_var": 2,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "52480_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x13] | 0xF86FD7E) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "54081_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(((@32[EBP + 0x13] | 0xF86FD7E) + 0x3FD67104) ^ 0x3058E377) & 0x2",
+  "obf_leng": 9,
+  "obf_var": 2,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "54119_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((((@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x7761896D) + -((((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) & (@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x25400821) | ((@32[EBP + 0x13] ^ (((@32[EBP + 0x13] ^ (@32[EBP + 0x81] + 0x89F79FE8)) + 0x9255E3FF) | 0x2722B4A7)) & 0x7761896D))) ^ 0x63963A86) & 0x2",
+  "obf_leng": 54,
+  "obf_var": 3,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.02,
+  "id": "56010_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((ESI & 0xFFFF) ^ (EBX + 0x80) ^ 0x7FFFFFFF)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 2,
+  "result_expr": "(((ESI & 0xFFFF) ^ (EBX + 0x80)) ^ 0x7FFFFFFF)[0:8]",
+  "result_leng": 1,
+  "result_var": 2,
+  "time": 0.01,
+  "id": "56921_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(EBX + ((EDI + 0x7536FBE3) & 0xFFFF))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 2,
+  "result_expr": "(EBX + ((EDI + 0x7536FBE3) & 0xFFFF))[0:8]",
+  "result_leng": 1,
+  "result_var": 2,
+  "time": 0.01,
+  "id": "64468_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(((((EBP + 0x81) | (((((EDI ^ 0x400) + 0xFFFFFF80) * 0x2) ^ (EBP + 0x81)) + 0x40)) ^ 0x80) + 0xFFFFFFFE) | 0xFFFF)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 2,
+  "result_expr": "(((((EBP + 0x81) | (((((EDI ^ 0x400) + 0xFFFFFF80) * 0x2) ^ (EBP + 0x81)) + 0x40)) ^ 0x80) + 0xFFFFFFFE) | 0xFFFF)[0:8]",
+  "result_leng": 1,
+  "result_var": 2,
+  "time": 0.05,
+  "id": "64880_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(((EBX | @32[EAX + (ESI & 0xFFFF)] | 0x1C) + 0x800) ^ 0x4)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "((((EBX | @32[EAX + (ESI & 0xFFFF)]) | 0x1C) + 0x800) ^ 0x4)[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.1,
+  "id": "66085_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(EAX + (EAX | (((EBX & 0x80) | 0xFFFF) + 0x2)))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 2,
+  "result_expr": "(EAX + (EAX | 0x10001))[0:8]",
+  "result_leng": 1,
+  "result_var": 1,
+  "time": 0.04,
+  "id": "68039_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((-@32[EBP + 0x81] + {@16[@32[EBP + 0xA0] + 0x1] 0 16, 0x0 16 32} + 0x611FF275) & 0xFFFF)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "((-@32[EBP + 0x81] + {@16[@32[EBP + 0xA0] + 0x1] 0 16, 0x0 16 32} + 0x611FF275) & 0xFFFF)[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.27,
+  "id": "68251_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((EDI + -((EAX + (ESI ^ 0xFFFF) + 0x81) & (EBX + 0xFFFF)) + 0x80) ^ 0x40)[0:8] * 0x2",
+  "obf_leng": 3,
+  "obf_var": 4,
+  "result_expr": "((EDI + -((EAX + (ESI ^ 0xFFFF) + 0x81) & (EBX + 0xFFFF)) + 0x80) ^ 0x40)[0:8] * 0x2",
+  "result_leng": 3,
+  "result_var": 4,
+  "time": 0.06,
+  "id": "68978_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(@32[EBP + 0x13] | 0x6B040C3) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "70274_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(((@32[EBP + 0x13] | 0x6B040C3) & 0x6FA0FCA) ^ 0x3A754F6F) & 0x2",
+  "obf_leng": 9,
+  "obf_var": 2,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "70285_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(EBX + (((EDX + -@32[ECX + 0x81]) ^ 0x4637397F) & 0xFFFF))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "(EBX + (((EDX + -@32[ECX + 0x81]) ^ 0x4637397F) & 0xFFFF))[0:8]",
+  "result_leng": 1,
+  "result_var": 4,
+  "time": 0.1,
+  "id": "70374_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x13] & 0x27D75FA6) | 0x388D8257) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.01,
+  "id": "73290_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "(EDX + (ESI & 0xFFFF))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 2,
+  "result_expr": "(EDX + (ESI & 0xFFFF))[0:8]",
+  "result_leng": 1,
+  "result_var": 2,
+  "time": 0.02,
+  "id": "78039_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((((EBP + 0x81) & (@32[EDX] + 0xA)) ^ 0xFFFF) + 0x4)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 3,
+  "result_expr": "((((EBP + 0x81) & (@32[EDX] + 0xA)) ^ 0xFFFF) + 0x4)[0:8]",
+  "result_leng": 1,
+  "result_var": 3,
+  "time": 0.07,
+  "id": "82569_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((@32[EBP + 0x13] + ((((@32[EBP + 0x13] + 0xE62AF804) | (@32[EBP + 0x81] ^ (-@32[EBP + 0x81] + {@16[EBX] 0 16, 0x0 16 32} + 0x611FF275))) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) & 0x2",
+  "obf_leng": 24,
+  "obf_var": 5,
+  "result_expr": "0x2",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.02,
+  "id": "83599_0"
+},{
+  "module": "msynth-simp",
+  "obf_expr": "((((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) & ((((@32[EBP + 0x13] + (((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) + 0x2CE88228) | 0x16BF0999) & 0x23A83AA4) + 0xDA865281) & ((((@32[EBP + 0x13] + (((@32[EBP + 0x81] | (@32[EBP + 0x13] + 0xE62AF804)) + 0x2AE0BD3E) | 0x1A58B25A)) | 0x33826AAE) + 0x2CE88228) | 0x16BF0999) & 0x2",
+  "obf_leng": 49,
+  "obf_var": 3,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.03,
+  "id": "83636_0"
+}
+]

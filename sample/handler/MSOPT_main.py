@@ -5,7 +5,7 @@ import numpy as np
 from msynth.simplification.oracle import SimplificationOracle
 from msynth.simplification.ast import AbstractSyntaxTreeTranslator
 from msynth.utils.unification import gen_unification_dict
-from miasm.expression.expression import Expr, ExprId, ExprInt, ExprOp, ExprMem, ExprSlice, ExprCompose, is_expr
+from miasm.expression.expression import Expr, ExprId, ExprInt, ExprOp, ExprMem, ExprSlice, ExprCompose, is_expr, ExprCond
 
 def check_single_variable_expression(expr, rawexpr, id, singleOpfile) -> bool:
     #expr을 받아 메모리 변수 혹은 레지스터 하나만으로 이루어진 expr인지 검사
@@ -57,8 +57,8 @@ def check_MBA_and_writefiles(expr, rawexpr, id, f_mba, f_nmba , size = 32) -> bo
     #expr이 MBA인지 판별
     #MBA 여부에 따라 다른 파일에 write, MBA만 반환
 
-    p1 = re.compile("[\+\-\*\/\<\>\^]") # arithmetic and bits ops
-    p2 = re.compile("[\&\|]") # boolean ops
+    p1 = re.compile("[\+\-\*\/\<\>]") # arithmetic and bits ops
+    p2 = re.compile("[\&\|\^]") # boolean ops
 
     if (len(p1.findall(str(expr))) != 0) & (len(p2.findall(str(expr))) != 0):
         str1 = "trace%s:%s\n" % (id, str(rawexpr))
@@ -77,7 +77,7 @@ def check_MBA_and_writefiles(expr, rawexpr, id, f_mba, f_nmba , size = 32) -> bo
 
         return False
 
-def check_outputOracle_homogeneous(expr : Expr, homogeneousfile, simpOracle): #out 오라클 homogeneous한지 검사
+def check_outputOracle_homogeneous(expr : Expr, id, homogeneousfile, nothomogeneousfile, simpOracle): #out 오라클 homogeneous한지 검사
     ast = AbstractSyntaxTreeTranslator().from_expr(expr)
     unification_dict = gen_unification_dict(ast)
     exprAst = ast.replace_expr(unification_dict)
@@ -85,16 +85,21 @@ def check_outputOracle_homogeneous(expr : Expr, homogeneousfile, simpOracle): #o
     output_oracle = simpOracle.get_outputs(exprAst)
 
 
-    if (len(np.nonzero(output_oracle)) == len(output_oracle)) | (len(np.nonzero(output_oracle)) == 0) : #NZ혹은 N
+    if (len(np.nonzero(output_oracle)[0]) == len(output_oracle)) | (len(np.nonzero(output_oracle)[0]) == 0) : #NZ혹은 Z
         str1 = "trace%s:%s\n" % (id, str(expr))
         str2 = "    SE:%s\n" % (str(expr))
         homogeneousfile.write(str1)
         homogeneousfile.write(str2)
         homogeneousfile.write("\n")
 
-        return True  # homogen , Opaque. 파일로 출력하고 PLASynth로 보내지 x
+        return True  # homogen , Opaque 의심. 파일로 출력하고 PLASynth로 보냄
     else:#not homogen
-        return False  # not homogen Opaque 아님 PLASynth로 보냄
+        str1 = "trace%s:%s\n" % (id, str(expr))
+        str2 = "    SE:%s\n" % (str(expr))
+        nothomogeneousfile.write(str1)
+        nothomogeneousfile.write(str2)
+        nothomogeneousfile.write("\n")
+        return False  # not homogen Opaque 아님. 파일 출력 및 PLASynth로 보내지 않음
 
 
 def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
@@ -108,10 +113,12 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
     const_2 = ExprInt(2, size)
     # output_dict = {}
 
-    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'a+')
-    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'a+')
-    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'a+')
-    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'a+')
+    withoutDuplfile = open('./MSOPTIntermediateFiles/withoutDup.txt', 'w+')
+    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'w+')
+    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'w+')
+    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'w+')
+    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'w+')
+    nothomogeneousfile = open('./MSOPTIntermediateFiles/nothomogeneous_MBA_Exprs.txt', 'w+')
 
 
 
@@ -121,15 +128,25 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
     for s in strings:
         raw = s
         outcode = eval(raw)
-        if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile): #not singleVar만 통과
-            if check_MBA_and_writefiles(outcode, raw, strings[s],f_mba, f_nmba, 32): #MBA만 통과
-                if not check_outputOracle_homogeneous(outcode, homogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
-                        yield strings[s],outcode,"vm" #homge 아닌 mba 샘플만 반환
+
+        #중복 제외 파일 저장
+        str1 = "trace%s:%s\n" % (strings[s], str(outcode))
+        str2 = "    SE:%s\n" % (str(raw))
+        withoutDuplfile.write(str1)
+        withoutDuplfile.write(str2)
+        withoutDuplfile.write("\n")
+
+         #not singleVar만 통과
+        if check_MBA_and_writefiles(outcode, raw, strings[s],f_mba, f_nmba, 32):#MBA만 통과
+            if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):#none single var만 통과
+                if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
+                        yield strings[s],outcode,"vm" #homge mba 샘플만 반환
 
     singleOpfile.close()
     f_mba.close()
     f_nmba.close()
     homogeneousfile.close()
+    nothomogeneousfile.close()
     # return output_dict
 
 
@@ -144,7 +161,8 @@ class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로
 
     def visitAndReplace(self, expr): #재귀적으로 자식 방문 후 mem, id를 변수로 재할당
         if expr.is_int() or expr.is_loc():
-            return expr
+            if expr.size != 32 & expr.is_int(): # Int 벡터 사이즈 맞춰줌
+                return ExprInt(expr.arg, 32)
 
         elif expr.is_id() : #id는 a 부터 e 까지 변수 할당
             if str(expr.name) in self.varDict.keys():
@@ -159,7 +177,7 @@ class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로
         #     src = visitAndReplace(expr)
         #     if ret:
         #         return ret
-        # elif expr.is_cond(): ##cond cond.txt 내 사용 예 없음
+        # elif expr.is_cond(): ##cond cond_kcc.txt 내 사용 예 없음
         #     ret = visitAndReplace(expr)
         #     if ret:
         #         return ret

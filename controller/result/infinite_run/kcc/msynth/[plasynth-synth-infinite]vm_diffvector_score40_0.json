@@ -1,0 +1,73 @@
+[
+{
+  "module": "msynth-synth",
+  "obf_expr": "(((-(@32[EBP + 0xC] ^ @32[EBP + 0xA4]) + {@16[@32[EBP + 0x90] + 0x2] 0 16, 0x0 16 32} + 0x92FB368E) & 0xFFFF) + -@32[EBP + 0x45])[0:8]",
+  "obf_leng": 1,
+  "obf_var": 6,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 51.15,
+  "id": "32220_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(@32[EBP + 0x69] + (((@32[EBP + 0xC] | (@32[EBP + 0xC] ^ {@8[@32[EBP + 0x90] + 0x2] 0 8, 0x0 8 32})) + {@16[@32[EBP + 0x90]] 0 16, 0x0 16 32} + 0xF50090FA) & 0xFFFF))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 6,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 49.2,
+  "id": "33540_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((EBP + 0xA4) ^ (((EBP + 0xA4) | (EAX ^ EBX ^ 0x2)) + 0x1))[0:8]",
+  "obf_leng": 1,
+  "obf_var": 3,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 54.12,
+  "id": "33871_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((@32[EBP + 0xA4] & 0x1FB02109) | 0x644CDB3C) & 0x2",
+  "obf_leng": 7,
+  "obf_var": 2,
+  "result_expr": "0x0",
+  "result_leng": 1,
+  "result_var": 0,
+  "time": 0.28,
+  "id": "41130_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((EBP + ((-@32[EBP + 0xA4] + {@16[@32[EBP + 0x90]] 0 16, 0x0 16 32}) & 0xFFFF)) ^ 0x73E74793)[0:8]",
+  "obf_leng": 1,
+  "obf_var": 4,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 49.62,
+  "id": "41717_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "((@32[EBP + 0xA4] + -(@32[EDI + 0xC] & 0x52021A25)) | 0x288323FE) & 0x2",
+  "obf_leng": 10,
+  "obf_var": 4,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 51.22,
+  "id": "41762_0"
+},{
+  "module": "msynth-synth",
+  "obf_expr": "(@32[EBP + 0xA4] | 0x3B894E06) & 0x2",
+  "obf_leng": 5,
+  "obf_var": 2,
+  "result_expr": "FAIL",
+  "result_leng": 9223372036854775807,
+  "result_var": 0,
+  "time": 49.27,
+  "id": "44734_0"
+}
+]

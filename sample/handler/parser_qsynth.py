@@ -22,6 +22,7 @@ def string2ExprOp_list(strings, size = 32):
         raw = s
         s = s.replace("1UL", "const_1")
         s = s.replace("2UL", "const_2")
+        print(s)
         outcode = eval(s)
         yield outcode, raw
     #     output_vector.append(outcode)
