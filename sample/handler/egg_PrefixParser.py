@@ -10,6 +10,13 @@ import re
 def infix2prefix(miasmir:Expr) -> str:
     #exprop (이진 연산자), exprid (변수), exprint(상수) 세 표현식만 사용
 
+
+
+    try: #none miasmir type exception
+        miasmir.is_op
+    except:
+        return miasmir
+
     if miasmir.is_op(): #ExprOp일 경우 - args에 대해 재귀 수행
         if len(miasmir.args) == 1: #unary op 처리 -- egg 입력 전 - 부호 처리 가능
             return "( %s %s )" % (str(miasmir.op), str(infix2prefix(miasmir.args[0])))
@@ -77,14 +84,15 @@ if __name__ == "__main__":
 
 
 
-    with open("obfuscated.c", 'r') as f:
+    with open("obfuscated_CustomEA.c", 'r') as f:
         txt = f.read()
 
         prsr = re.compile("return (.+);")
         exprList = prsr.findall(txt)
         with open('infix2prefix.txt','w') as outfile:
             for exprStr in exprList:
-                outfile.write(getExprStr_dqv(exprStr))
+                print("stringExpr : " + exprStr)
+                outfile.write(str(getExprStr_dqv(exprStr)))
                 outfile.write('\n')
 
 
