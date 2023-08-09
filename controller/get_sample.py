@@ -5,7 +5,7 @@ from sample.handler.parser_others import get_miasm_Obfus_fromFile as other
 from sample.handler.parser_mbablast import get_miasm_Obfus_fromFile as mbablast
 from sample.handler.parser_vm import get_miasm_Obfus_fromFile as vm
 from sample.handler.parser_vm_xyntia import get_miasm_Obfus_fromFile as vm_xyntia
-
+import os
 
 def get_qsynth_sample(size:int):
     return qsynth("../sample/raw_data/QSynth/obfuscated.c")
@@ -31,6 +31,27 @@ def get_vm_xyntia_sample(size:int):
     return vm_xyntia("../sample/raw_data/VM/cond.txt")
 
 
+def get_vm_sample_multiplefiles(size:int):
+    path_dir = "../sample/raw_data/VM/multipleExc"
+    file_list = os.listdir(path_dir)
+    file_list.sort()
+    sample_list = []
+    for target in file_list:
+        sample_list.append(vm("../sample/raw_data/VM/multipleExc/" + target))
+    return sample_list
+
+def get_vm_xyntia_sample_multiplefiles(size:int):
+    path_dir = "../sample/raw_data/VM/multipleExc"
+    file_list = os.listdir(path_dir)
+    file_list.sort()
+    sample_list = []
+    for target in file_list:
+        sample_list.append([vm_xyntia("../sample/raw_data/VM/multipleExc/" + target), target])
+    return sample_list
+
+
+
+
 def get_sample(sample_type:str, size=32)->list:
     if sample_type == "qsynth":
         return get_qsynth_sample(size)
@@ -49,6 +70,10 @@ def get_sample(sample_type:str, size=32)->list:
         # yield get_tigreses_sample(size)
     elif sample_type == "vm_xyntia":
         return get_vm_xyntia_sample(size)
+    elif sample_type == "vm_multiple":
+        return get_vm_sample_multiplefiles(size)
+    elif sample_type == "vm_xyntia_multiple":
+        return get_vm_xyntia_sample_multiplefiles(size)
 
 
 # sample_type = "tigress"

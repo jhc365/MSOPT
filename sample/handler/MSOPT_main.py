@@ -122,7 +122,7 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
 
 
 
-    simpOracle = SimplificationOracle.load_from_file("./../../msynth/oracle.pickle")
+    simpOracle = SimplificationOracle.load_from_file("/home/jhc/Desktop/PycharmProjects/MSOPT/msynth/oracle.pickle")
 
 
     for s in strings:

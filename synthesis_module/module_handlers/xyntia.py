@@ -102,9 +102,9 @@ stack = reversed(stack)
 base = "/".join(stack)
 
 # xyntia_basepath = os.path.join(base, "synthesis_module/xyntia")
-xyntia_basepath = "/home/jhc/PycharmProjects/PLASynth_rev/synthesis_module/xyntia"
+xyntia_basepath = "/home/jhc/Desktop/PycharmProjects/MSOPT/synthesis_module/xyntia"
 # sample = os.path.join(base, "synthesis_module/xyntia/samples/output.json")
-sample = "/home/jhc/PycharmProjects/PLASynth_rev/synthesis_module/xyntia/samples/output.json"
+sample = "/home/jhc/Desktop/PycharmProjects/MSOPT/synthesis_module/xyntia/samples/output.json"
 
 
 class Xyntia(HandlerBase):

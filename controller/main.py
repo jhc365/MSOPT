@@ -1,3 +1,4 @@
+import os
 import time
 import json
 from synthesis_module.module_handlers.xyntia import Xyntia
@@ -6,9 +7,9 @@ from synthesis_module.module_handlers.msynth_simplifier import Msynth_simp
 from get_sample import get_sample
 from openpyxl import Workbook
 
-modules = [Msynth_simp()]
+# modules = [Msynth_simp()]
 # modules = [Msynth_synth()]
-# modules = [Xyntia()]
+modules = [Xyntia()]
 # modules = [Msynth_synth(), Xyntia(),Msynth_simp()]
 # modules = [Xyntia(),Msynth_synth(),Msynth_simp()]
 
@@ -209,9 +210,6 @@ def infinite_run(sample_type, module_type):
         run_PLASynth(samples=sample, outfile=filename)
         count += 1
 
-
-
-
 def run(synthesis_module_type, sample_type, outfileName):
     # filename = "./mbablast_compare/%s_brute.json" % (sample_type)
     # filename = "./mbablast_compare/plasynth_luby_%s_timeout_xyntia5_msynth1360(score10)_simp15_0313.json" % (sample_type)
@@ -219,18 +217,40 @@ def run(synthesis_module_type, sample_type, outfileName):
     # filename = "./result_0124_finaltest/%s_%s_try2.json" % (synthesis_module_type, sample_type)
     run_PLASynth(samples=samples,outfile=filename)
 
+def run_multiplefiles(sample_type, module_type): #synth every files in "sample/vm/multipleExc" directory
+    iter = 20
+    sample_list = get_sample(sample_type)
+
+    for sample in sample_list:
+        infile_name = sample[1]
+        try:
+            os.mkdir("./result/infinite_run/%s/%s" % (module_type, infile_name))
+        except Exception as e:
+            print(e)
+
+        for succ_ids in range(iter):
+            count = 0
+            filename = "./result/infinite_run/%s/%s/[plasynth-synth-infinite]%s_diffvector_score40_%d.json" % (module_type, infile_name, sample_type, count)
+            run_PLASynth(samples=sample[0], outfile=filename)
+            count += 1
+
 if __name__ == "__main__":
     # pass
     synthesis_module_type = "plasynth" # don't modify
-    sample_type = "qsynth" # select sample type {diff, qsynth, tigress, vm, vm_xyntia ,other}
+    sample_type = "vm_xyntia_multiple" # select sample type {diff, qsynth, tigress, vm, vm_xyntia , vm_multiple, vm_xyntia_multiple, other}
 
     samples = get_sample(sample_type)
-    module_type = "msynth" # select msynth, xyntia
+    module_type = "xyntia" # select msynth, xyntia
 
     #check module label before run
     # do not use infi-run for msynth-simp
     # it's for xyntia, msynth-synth
+
+
     # infinite_run(sample_type, module_type)
-    run(synthesis_module_type, sample_type, "./result/%s_old_simp.json" % (sample_type))#1st run
+    #run(synthesis_module_type, sample_type, "./result/%s_old_simp.json" % (sample_type))#1st run
+    run_multiplefiles(sample_type, module_type)
+
+
     #run(synthesis_module_type, sample_type, "./result/%s_old_synth.json" % (sample_type))#1st run
     #run(synthesis_module_type, sample_type, "./result/%s_old_xyntia.json" % (sample_type))#1st run

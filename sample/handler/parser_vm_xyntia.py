@@ -50,7 +50,7 @@ def string2ExprOp_list(strings, size = 32):
     homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'w+')
     nothomogeneousfile = open('./MSOPTIntermediateFiles/nothomogeneous_MBA_Exprs.txt', 'w+')
 
-    simpOracle = SimplificationOracle.load_from_file("./../../msynth/oracle.pickle")
+    simpOracle = SimplificationOracle.load_from_file("/home/jhc/Desktop/PycharmProjects/MSOPT/msynth/oracle.pickle")
 
     print(__file__)
     print(os.path.realpath(__file__))
