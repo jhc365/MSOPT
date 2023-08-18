@@ -37,7 +37,8 @@ def get_vm_sample_multiplefiles(size:int):
     file_list.sort()
     sample_list = []
     for target in file_list:
-        sample_list.append(vm("../sample/raw_data/VM/multipleExc/" + target))
+        print(target)
+        sample_list.append([vm("../sample/raw_data/VM/multipleExc/" + target, fname= target), target])
     return sample_list
 
 def get_vm_xyntia_sample_multiplefiles(size:int):
@@ -46,7 +47,7 @@ def get_vm_xyntia_sample_multiplefiles(size:int):
     file_list.sort()
     sample_list = []
     for target in file_list:
-        sample_list.append([vm_xyntia("../sample/raw_data/VM/multipleExc/" + target), target])
+        sample_list.append([vm_xyntia("../sample/raw_data/VM/multipleExc/" + target, fname=target), target])
     return sample_list
 
 

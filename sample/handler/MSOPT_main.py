@@ -102,7 +102,7 @@ def check_outputOracle_homogeneous(expr : Expr, id, homogeneousfile, nothomogene
         return False  # not homogen Opaque 아님. 파일 출력 및 PLASynth로 보내지 않음
 
 
-def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
+def string2ExprOp_list_with_MSOPT_classify(strings, size = 32,  fname = "expr_"):
     ##exprID 정의는 사용 없음
     a = ExprId('a', size)
     b = ExprId('b', size)
@@ -113,12 +113,19 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
     const_2 = ExprInt(2, size)
     # output_dict = {}
 
-    withoutDuplfile = open('./MSOPTIntermediateFiles/withoutDup.txt', 'w+')
-    singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'w+')
-    f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'w+')
-    f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'w+')
-    homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'w+')
-    nothomogeneousfile = open('./MSOPTIntermediateFiles/nothomogeneous_MBA_Exprs.txt', 'w+')
+    # withoutDuplfile = open('./MSOPTIntermediateFiles/withoutDup.txt', 'w+')
+    # singleOpfile = open('./MSOPTIntermediateFiles/SingleOpExprs.txt', 'w+')
+    # f_mba = open('./MSOPTIntermediateFiles/MBAExprs.txt', 'w+')
+    # f_nmba = open('./MSOPTIntermediateFiles/NoneMBAExprs.txt', 'w+')
+    # homogeneousfile = open('./MSOPTIntermediateFiles/homogeneous_MBA_Exprs.txt', 'w+')
+    # nothomogeneousfile = open('./MSOPTIntermediateFiles/nothomogeneous_MBA_Exprs.txt', 'w+')
+
+    withoutDuplfile = open('./MSOPTIntermediateFiles/' + fname + '_withoutDup.txt', 'w+')
+    singleOpfile = open('./MSOPTIntermediateFiles/' + fname + '_SingleOpExprs.txt', 'w+')
+    f_mba = open('./MSOPTIntermediateFiles/' + fname + '_MBAExprs.txt', 'w+')
+    f_nmba = open('./MSOPTIntermediateFiles/' + fname + '_NoneMBAExprs.txt', 'w+')
+    homogeneousfile = open('./MSOPTIntermediateFiles/' + fname + '_homogeneous_MBA_Exprs.txt', 'w+')
+    nothomogeneousfile = open('./MSOPTIntermediateFiles/' + fname + '_nothomogeneous_MBA_Exprs.txt', 'w+')
 
 
 
@@ -142,6 +149,7 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32):
                 if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
                         yield strings[s],outcode,"vm" #homge mba 샘플만 반환
 
+    withoutDuplfile.close()
     singleOpfile.close()
     f_mba.close()
     f_nmba.close()
@@ -164,12 +172,13 @@ class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로
             if expr.size != 32 & expr.is_int(): # Int 벡터 사이즈 맞춰줌
                 return ExprInt(expr.arg, 32)
 
+
         elif expr.is_id() : #id는 a 부터 e 까지 변수 할당
             if str(expr.name) in self.varDict.keys():
-                return ExprId(self.varDict[expr.name], expr.size)
+                return ExprId(self.varDict[expr.name], 32) # make exprid 32bit
             self.varDict[str(expr.name)] = self.varList[self.varNum]#딕셔너리에 현재 expr과 변수 할당
             self.varNum += 1 #새로운 변수가 현재 expr에 할당되었으므로 신규 변수 커서 +1
-            return ExprId(self.varDict[str(expr.name)], expr.size)
+            return ExprId(self.varDict[str(expr.name)], 32) #make exprid 32bit
         # elif expr.is_assign():
         #     ret = visitAndReplace(expr)##assign cond 내 사용 예 없음
         #     if ret:
@@ -189,12 +198,12 @@ class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로
         #         return ret
         elif expr.is_mem(): #mem은 내부 다 버리고 변수 id로 대체
             if str(expr.ptr) in self.varDict.keys():
-                return ExprId(self.varDict[str(expr.ptr)], expr.size)
+                return ExprId(self.varDict[str(expr.ptr)], 32) #make size 32bits
 
             self.varDict[str(expr.ptr)] = self.varList[self.varNum]  # 딕셔너리에 현재 expr과 변수 할당
             self.varNum += 1
 
-            return ExprId(self.varDict[str(expr.ptr)], expr.size)
+            return ExprId(self.varDict[str(expr.ptr)], 32) #make size 32bits
         elif expr.is_slice(): #slice는 slice 껍데기 제거해버리기
             return self.visitAndReplace(expr.arg)
 

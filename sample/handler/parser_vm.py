@@ -9,6 +9,7 @@ def parseObfusFile(filename):
     txt = f.read()
 
     p = re.compile("trace(.+):(.+)")
+    f.close()
     return p.findall(txt)
 
 def string2ExprOp_list(strings, size = 32):#not used in MSOPT
@@ -23,19 +24,18 @@ def string2ExprOp_list(strings, size = 32):#not used in MSOPT
     output_vector = []
     for s in strings:
         raw = s
-        print(raw)
         outcode = eval(raw)
         yield strings[s],outcode,"vm"
     #     output_vector.append(outcode)
     # return output_vector
 
-def get_miasm_Obfus_fromFile(filename, size = 32):
+def get_miasm_Obfus_fromFile(filename, size = 32,  fname = "expr_"):
     stringExpr = parseObfusFile(filename)
     string_dict = {}
     for id,value in stringExpr:
         if value not in string_dict:
             string_dict[value] = id
-    return string2ExprOp_list_with_MSOPT_classify(string_dict, size=size)
+    return string2ExprOp_list_with_MSOPT_classify(strings = string_dict, size=size, fname = fname)
 
 
 

@@ -7,9 +7,17 @@ from synthesis_module.module_handlers.msynth_simplifier import Msynth_simp
 from get_sample import get_sample
 from openpyxl import Workbook
 
+from sample.handler.parser_qsynth import get_miasm_Obfus_fromFile as qsynth
+from sample.handler.parser_tigress import get_miasm_Obfus_fromFile as tigress
+from sample.handler.parser_difficulty import get_miasm_Obfus_fromFile as diff
+from sample.handler.parser_others import get_miasm_Obfus_fromFile as other
+from sample.handler.parser_mbablast import get_miasm_Obfus_fromFile as mbablast
+from sample.handler.parser_vm import get_miasm_Obfus_fromFile as vm
+from sample.handler.parser_vm_xyntia import get_miasm_Obfus_fromFile as vm_xyntia
+
 # modules = [Msynth_simp()]
-# modules = [Msynth_synth()]
-modules = [Xyntia()]
+modules = [Msynth_synth()]
+# modules = [Xyntia()]
 # modules = [Msynth_synth(), Xyntia(),Msynth_simp()]
 # modules = [Xyntia(),Msynth_synth(),Msynth_simp()]
 
@@ -91,7 +99,6 @@ def run_PLASynth(samples, outfile,outfile_excel=""):
         obf_leng = expr.length()
         # obf_leng = 3
         start_time = time.time()
-
         print(i)
         print(expr)
 
@@ -218,29 +225,36 @@ def run(synthesis_module_type, sample_type, outfileName):
     run_PLASynth(samples=samples,outfile=filename)
 
 def run_multiplefiles(sample_type, module_type): #synth every files in "sample/vm/multipleExc" directory
-    iter = 20
-    sample_list = get_sample(sample_type)
+    iter = 3
+    sample_list = get_sample(sample_type) #list - [[vm_xyntia("../sample/raw_data/VM/multipleExc/" + target), target], ...]
 
-    for sample in sample_list:
-        infile_name = sample[1]
+    path_dir = "../sample/raw_data/VM/multipleExc"
+    file_list = os.listdir(path_dir)
+    file_list.sort()
+
+    for sample_name in file_list:
+        print("synthesizing " + sample_name)
         try:
-            os.mkdir("./result/infinite_run/%s/%s" % (module_type, infile_name))
+            os.mkdir("./result/infinite_run/%s/%s" % (module_type, sample_name))
         except Exception as e:
             print(e)
 
-        for succ_ids in range(iter):
-            count = 0
-            filename = "./result/infinite_run/%s/%s/[plasynth-synth-infinite]%s_diffvector_score40_%d.json" % (module_type, infile_name, sample_type, count)
-            run_PLASynth(samples=sample[0], outfile=filename)
-            count += 1
+        for count in range(iter):
+            if module_type == "xyntia":
+                samples = vm_xyntia("../sample/raw_data/VM/multipleExc/" + sample_name)
+            else:
+                samples = vm("../sample/raw_data/VM/multipleExc/" + sample_name)
+            filename = "./result/infinite_run/%s/%s/[plasynth-synth-infinite]%s_iter%d.json" % (module_type, sample_name, sample_type, count)
+            run_PLASynth(samples=samples, outfile=filename)
+
 
 if __name__ == "__main__":
     # pass
     synthesis_module_type = "plasynth" # don't modify
-    sample_type = "vm_xyntia_multiple" # select sample type {diff, qsynth, tigress, vm, vm_xyntia , vm_multiple, vm_xyntia_multiple, other}
+    sample_type = "vm_multiple" # select sample type {diff, qsynth, tigress, vm, vm_xyntia , vm_multiple, vm_xyntia_multiple, other}
 
     samples = get_sample(sample_type)
-    module_type = "xyntia" # select msynth, xyntia
+    module_type = "msynth" # select msynth, xyntia, msynthSimp
 
     #check module label before run
     # do not use infi-run for msynth-simp
@@ -248,7 +262,7 @@ if __name__ == "__main__":
 
 
     # infinite_run(sample_type, module_type)
-    #run(synthesis_module_type, sample_type, "./result/%s_old_simp.json" % (sample_type))#1st run
+    # run(synthesis_module_type, sample_type, "./result/%s_old_simp.json" % (sample_type))#1st run
     run_multiplefiles(sample_type, module_type)
 
 
