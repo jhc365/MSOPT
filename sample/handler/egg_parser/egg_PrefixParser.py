@@ -34,7 +34,7 @@ def negationProcess(expr):
 
 
 if __name__ == "__main__":
-    inpFileName = "pldi_dataset_poly_MBA.txt"
+    inpFileName = "floki.c"
     outFileName = inpFileName + "_prefix.txt"
     infixFileName = inpFileName + "_infix.txt"
     inpFileDir = "egg_original/" + inpFileName
@@ -43,6 +43,6 @@ if __name__ == "__main__":
 
     #qsynth_data(inpFileDir, outFileDir, infixFileDir)
     #tigress_data(inpFileDir, outFileDir, infixFileDir)
-    MBABlaster_data(inpFileDir, outFileDir, infixFileDir)
-    # loki_data(inpFileDir, outFileDir, infixFileDir)
+    # MBABlaster_data(inpFileDir, outFileDir, infixFileDir)
+    loki_data(inpFileDir, outFileDir, infixFileDir)
     # syntia_data(inpFileDir, outFileDir, infixFileDir)

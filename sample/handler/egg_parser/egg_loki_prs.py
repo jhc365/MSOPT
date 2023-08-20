@@ -26,7 +26,7 @@ def loki_data(inpFileName, outFileName, inpFileDir):
         with open(outFileName, 'w') as outfile:
             for exprStr in exprList:
                 print("stringExpr : " + exprStr)
-                # outExpr = getExprStr_loki(exprStr)
+                outExpr = getExprStr_loki(exprStr, 64)
                 outfile.write(str(exprStr))
                 outfile.write('\n')
                 inpf.write(exprStr)
@@ -42,12 +42,29 @@ def getExprStr_loki(strExpr:Expr, size = 32) :#difficulty, qsynth, vm 형식 대
     c = ExprId('c', size)
     d = ExprId('d', size)
     e = ExprId('e', size)
+
+    #heterogeneous with other form
+
+    const_0 = ExprInt(0, size)
     const_1 = ExprInt(1, size)
     const_2 = ExprInt(2, size)
+    const_0xffffffffffffffff = ExprInt(0xffffffffffffffff, size) ##note: need to be automated
+    const_0xfffffffffffffffe = ExprInt(0xfffffffffffffffe, size)
 
+    strExpr = strExpr.replace(" 1)", " const_1)")##note: not sure the difference of '1' and '1UL'
+    strExpr = strExpr.replace(" 2)", " const_2)")
+
+    strExpr = strExpr.replace("0UL", "const_0")
     strExpr = strExpr.replace("1UL", "const_1")
     strExpr = strExpr.replace("2UL", "const_2")
+    strExpr = strExpr.replace("0xffffffffffffffffUL", "const_0xffffffffffffffff") ### need to be automated
+    strExpr = strExpr.replace("0xfffffffffffffffeUL", "const_0xfffffffffffffffe")
     strExpr = strExpr.replace("UL", "")
+    strExpr = strExpr.replace("(uint64_t )", "")
+
+    strExpr = strExpr.replace("var1", "a")
+    strExpr = strExpr.replace("var2", "b")
+    strExpr = strExpr.replace("var3", "c")
     miasmir = eval(strExpr)
 
     print(miasmir)
