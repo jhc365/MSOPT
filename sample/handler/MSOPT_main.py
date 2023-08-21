@@ -21,6 +21,8 @@ def check_single_variable_expression(expr, rawexpr, id, singleOpfile) -> bool:
     elif expr.is_op(): #exprOp 로 완전 단일은 x
         # single op일 경우(@32[...] == 0x....)
         #(양 변이 모두 MEM,ID,INT 등 단일 변수, 상수일 경우 arg 1,2 모두 mem, id, int일 경우 none mba로 판단)
+        if len(expr.args) == 1: # - () 등 unary op
+            return check_single_variable_expression(expr.arg[0], rawexpr, id, singleOpfile)
 
         if (expr.args[0].is_mem() | expr.args[0].is_id() | expr.args[0].is_int()) & \
                 (expr.args[1].is_mem() | expr.args[1].is_id() | expr.args[1].is_int()) & (len(expr.args) < 3):
@@ -32,7 +34,7 @@ def check_single_variable_expression(expr, rawexpr, id, singleOpfile) -> bool:
             return True
 
     elif expr.is_slice():#expr_slice일 경우 - exprSlice(arg, start, end) 형태
-        # arg가 mem, id, int일 경우 none mba로 판단
+        # arg가 mem, id, int일 경우 none mba(singleVar)로 판단
         if (expr.arg.is_mem() | expr.arg.is_id() | expr.arg.is_int()):
             str1 = "trace%s:%s\n" % (id, str(rawexpr))
             str2 = "    SE:%s\n" % (str(expr))
@@ -41,7 +43,11 @@ def check_single_variable_expression(expr, rawexpr, id, singleOpfile) -> bool:
             singleOpfile.write("\n")
             return True
         elif expr.arg.is_op(): #expr_slice 내부가 exprop일 경우
-            # 위 exprOp MBA 판별 반복
+            # 위 exprOp singleVar 판별 반복
+
+            if len(expr.arg.args) == 1:  # - () 등 unary op
+                return check_single_variable_expression(expr.arg.args[0], rawexpr, id, singleOpfile)
+
             if (expr.arg.args[0].is_mem() | expr.arg.args[0].is_id() | expr.arg.args[0].is_int()) & \
                     (expr.arg.args[1].is_mem() | expr.arg.args[1].is_id() | expr.arg.args[1].is_int()) & (len(expr.arg.args) < 3):
                 str1 = "trace%s:%s\n" % (id, str(rawexpr))
@@ -176,8 +182,10 @@ class cond2xyntiaExpr(): #SE 수식을 a, b ... 변수 사용하는 수식으로
         elif expr.is_id() : #id는 a 부터 e 까지 변수 할당
             if str(expr.name) in self.varDict.keys():
                 return ExprId(self.varDict[expr.name], 32) # make exprid 32bit
+            assert self.varNum < 5, "varNumErr"
             self.varDict[str(expr.name)] = self.varList[self.varNum]#딕셔너리에 현재 expr과 변수 할당
             self.varNum += 1 #새로운 변수가 현재 expr에 할당되었으므로 신규 변수 커서 +1
+
             return ExprId(self.varDict[str(expr.name)], 32) #make exprid 32bit
         # elif expr.is_assign():
         #     ret = visitAndReplace(expr)##assign cond 내 사용 예 없음

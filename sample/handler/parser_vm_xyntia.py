@@ -42,6 +42,7 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
     e = ExprId('e', size)
     const_1 = ExprInt(1, size)
     const_2 = ExprInt(2, size)
+    print(fname)
 
     withoutDuplfile = open('./MSOPTIntermediateFiles/' + fname + '_withoutDup.txt', 'w+')
     singleOpfile = open('./MSOPTIntermediateFiles/'+ fname +'_SingleOpExprs.txt', 'w+')
@@ -49,6 +50,7 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
     f_nmba = open('./MSOPTIntermediateFiles/' + fname + '_NoneMBAExprs.txt', 'w+')
     homogeneousfile = open('./MSOPTIntermediateFiles/' + fname+ '_homogeneous_MBA_Exprs.txt', 'w+')
     nothomogeneousfile = open('./MSOPTIntermediateFiles/' + fname + '_nothomogeneous_MBA_Exprs.txt', 'w+')
+    varNumErrfile = open('./MSOPTIntermediateFiles/' + fname + '_varNumErr_Exprs.txt', 'w+')
 
     simpOracle = SimplificationOracle.load_from_file("/home/jhc/Desktop/PycharmProjects/MSOPT/msynth/oracle.pickle")
 
@@ -68,7 +70,13 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
             if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
                 if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
                     c2xParser = cond2xyntiaExpr()#xyntia 포맷에 맞게 번역 위한 클래스
-                    newExpr = c2xParser.visitAndReplace(outcode)# 번역
+                    try:
+                        newExpr = c2xParser.visitAndReplace(outcode)# 번역
+                    except AssertionError as e: #식의 변수 개수가 5를 초과
+                        varNumErrfile.write(str1)
+                        varNumErrfile.write(str2)
+                        varNumErrfile.write('\n')
+                        continue
                     yield strings[s], newExpr, "vm_xyntia"  # homge mba 샘플만 반환
     withoutDuplfile.close()
     singleOpfile.close()
@@ -76,6 +84,7 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
     f_nmba.close()
     homogeneousfile.close()
     nothomogeneousfile.close()
+    varNumErrfile.close()
     #     output_vector.append(outcode)
     # return output_vector
 
