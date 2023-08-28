@@ -77,6 +77,11 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
                         varNumErrfile.write(str2)
                         varNumErrfile.write('\n')
                         continue
+                    except TypeError as e: # ExprCond가 들어옴
+                        varNumErrfile.write(str1)
+                        varNumErrfile.write(str2)
+                        varNumErrfile.write('\n')
+                        continue
                     yield strings[s], newExpr, "vm_xyntia"  # homge mba 샘플만 반환
     withoutDuplfile.close()
     singleOpfile.close()

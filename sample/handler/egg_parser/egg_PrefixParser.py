@@ -6,7 +6,6 @@ from egg_syntia_prs import syntia_data
 from egg_MBABlast_Solver_prs import MBABlaster_data
 from egg_qsynth_prs import qsynth_data
 from egg_Xyntia_prs import xyntia_data
-from parse16 import hex_data
 
 
 import re

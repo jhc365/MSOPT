@@ -26,6 +26,8 @@ def xyntia_data(inpFileName, outFileName, inpFileDir):
 
             inpf.close()
 
+const_8 = 0
+
 def getExprStr_xb(strExpr:Expr, size = 32) :#xyntia, mbablast 형식 대상
     ##mbablast는 포맷을 찾지 못해서 실험 못해봄
     #일반적인 MBA 형식 수식만 가능
@@ -50,6 +52,7 @@ def getExprStr_xb(strExpr:Expr, size = 32) :#xyntia, mbablast 형식 대상
         globals()["const_{}".format(str(int(hexN, 16)))] = ExprInt(int(hexN, 16), size)
 
     print(decExpr)
+    print(const_8)
 
     miasmir = eval(decExpr)
 
