@@ -12,7 +12,7 @@ def xyntia_data(inpFileName, outFileName, inpFileDir):
             for exprStr in exprList:
                 print("stringExpr : " + exprStr)
 
-                miasmir, outExpr = getExprStr_xb(exprStr)
+                decExpr, miasmir, outExpr = getExprStr_xb(exprStr)
                 outExprStr = str(outExpr)
                 outExprStr = outExprStr.replace('v0', 'a')
                 outExprStr = outExprStr.replace('v1', 'b')
@@ -21,12 +21,11 @@ def xyntia_data(inpFileName, outFileName, inpFileDir):
                 outExprStr = outExprStr.replace('v4', 'e')
                 outfile.write(outExprStr)
                 outfile.write('\n')
-                inpf.write(str(miasmir))
+                inpf.write(str(decExpr))
                 inpf.write('\n')
 
             inpf.close()
 
-const_8 = 0
 
 def getExprStr_xb(strExpr:Expr, size = 32) :#xyntia, mbablast 형식 대상
     ##mbablast는 포맷을 찾지 못해서 실험 못해봄
@@ -42,21 +41,21 @@ def getExprStr_xb(strExpr:Expr, size = 32) :#xyntia, mbablast 형식 대상
 
     prsr = re.compile("0x[\w]+")
     hexList = prsr.findall(strExpr)
-    hexList = set(hexList)
+    hexList.sort(key=len, reverse=True)
 
     decExpr = strExpr
     for hexN in hexList:
+        hext2IntN = int(hexN, 16)
+        constStr = "const_"+str(hext2IntN)
         print(hexN)
-        print(int(hexN, 16))
-        decExpr = decExpr.replace(hexN, "const_{}".format(str(int(hexN, 16))))
-        globals()["const_{}".format(str(int(hexN, 16)))] = ExprInt(int(hexN, 16), size)
-
-    print(decExpr)
-    print(const_8)
+        print(constStr)
+        decExpr = decExpr.replace(hexN, constStr)
+        print(decExpr)
+        globals()[constStr] = ExprInt(hext2IntN, size)
 
     miasmir = eval(decExpr)
 
     print(miasmir)
     parsedExpr = infix2prefix(miasmir)
     print(parsedExpr)
-    return miasmir, parsedExpr
+    return decExpr, miasmir, parsedExpr

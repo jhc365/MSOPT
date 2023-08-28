@@ -35,7 +35,7 @@ def negationProcess(expr): #negation to {var} XOR 0xFFFFFFFF
 
 
 if __name__ == "__main__":
-    inpFileName = "CV_ex1_dr.txt"
+    inpFileName = "CV_ex1_dw.txt"
     outFileName = inpFileName + "_prefix.txt"
     infixFileName = inpFileName + "_infix.txt"
     inpFileDir = "egg_original/" + inpFileName
