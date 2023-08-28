@@ -48,6 +48,10 @@ class HandlerBase():
         print(f1)
         print(f2)
 
-        solver.add(translator_z3.from_expr(
+        try:
+            solver.add(translator_z3.from_expr(
             f1) != translator_z3.from_expr(f2))
-        return solver.check() == unsat
+            return solver.check() == unsat
+        except:
+            return False
+

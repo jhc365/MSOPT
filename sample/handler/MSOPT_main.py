@@ -150,8 +150,8 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32,  fname = "expr_")
         withoutDuplfile.write("\n")
 
          #not singleVar만 통과
-        if check_MBA_and_writefiles(outcode, raw, strings[s],f_mba, f_nmba, 32):#MBA만 통과
-            if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):#none single var만 통과
+        if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):  # not singleVar만 통과
+            if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
                 if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
                         yield strings[s],outcode,"vm" #homge mba 샘플만 반환
 

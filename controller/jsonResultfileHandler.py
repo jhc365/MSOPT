@@ -1,7 +1,7 @@
 import json
 
 
-def soltResultJson(sample_type, id):#json output 파일을 합성 결과 수식의 길이에 따라 정렬 #파일 갯수에 따라 호출부에서 반복 필요(EXPR 하나마다 반복(id) 1 증가)
+def sortResultJson(sample_type, id):#json output 파일을 합성 결과 수식의 길이에 따라 정렬 #파일 갯수에 따라 호출부에서 반복 필요(EXPR 하나마다 반복(id) 1 증가)
     jsonList = []
     iter= 0
     while 1:
@@ -56,4 +56,4 @@ def find_success(filename):#합성 성공한 데이터만 추림
 
 
 for i in range(0,35):
-    soltResultJson("xyntia", i)
+    sortResultJson("xyntia", i)

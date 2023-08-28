@@ -11,7 +11,7 @@ def tigress_data(inpFileName, outFileName, inpFileDir):
         with open(outFileName, 'w') as outfile:
             for exprStr in exprList:
                 print("stringExpr : " + exprStr)
-                miasmir, outExpr = getExprStr_tigress(exprStr)
+                miasmir, outExpr = getExprStr_tigress(exprStr, 64)
                 outfile.write(str(outExpr))
                 outfile.write('\n')
                 inpf.write(str(miasmir))

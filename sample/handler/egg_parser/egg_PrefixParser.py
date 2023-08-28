@@ -5,6 +5,8 @@ from egg_loki_prs import loki_data
 from egg_syntia_prs import syntia_data
 from egg_MBABlast_Solver_prs import MBABlaster_data
 from egg_qsynth_prs import qsynth_data
+from egg_Xyntia_prs import xyntia_data
+from parse16 import hex_data
 
 
 import re
@@ -15,7 +17,7 @@ import re
 ##exprCompose의 경우 추가 할 수는 있어 보이나 활용성이 부족해 보임 (단순 composition 연산)
 
 
-def negationProcess(expr):
+def negationProcess(expr): #negation to {var} XOR 0xFFFFFFFF
     # pattern1 = r'\(\^ [a-zA-Z0-9_]+ 4294967295)'
     # pattern2 = r'\(\^  4294967295)'
 
@@ -34,7 +36,7 @@ def negationProcess(expr):
 
 
 if __name__ == "__main__":
-    inpFileName = "floki.c"
+    inpFileName = "CV_ex1_dr.txt"
     outFileName = inpFileName + "_prefix.txt"
     infixFileName = inpFileName + "_infix.txt"
     inpFileDir = "egg_original/" + inpFileName
@@ -44,5 +46,6 @@ if __name__ == "__main__":
     #qsynth_data(inpFileDir, outFileDir, infixFileDir)
     #tigress_data(inpFileDir, outFileDir, infixFileDir)
     # MBABlaster_data(inpFileDir, outFileDir, infixFileDir)
-    loki_data(inpFileDir, outFileDir, infixFileDir)
-    # syntia_data(inpFileDir, outFileDir, infixFileDir)
+    #loki_data(inpFileDir, outFileDir, infixFileDir)
+    #syntia_data(inpFileDir, outFileDir, infixFileDir)
+    xyntia_data(inpFileDir, outFileDir, infixFileDir)
