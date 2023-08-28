@@ -1,47 +1,50 @@
 import json
 import os
 
-def sortResultJson(sample_type, id):#json output 파일을 합성 결과 수식의 길이에 따라 정렬 #파일 갯수에 따라 호출부에서 반복 필요(EXPR 하나마다 반복(id) 1 증가)
+def sortResultJson(sample_type, logFName, id): #json output 파일을 합성 결과 수식의 길이에 따라 정렬 #파일 갯수에 따라 호출부에서 반복 필요(EXPR 하나마다 반복(id) 1 증가)
     jsonList = []
-    iter= 0
+    iter = 0
 
-    path_dir = "./synth/%s"%(sample_type)
-    file_list = os.scandir(path_dir)
-    file_list.sort()
+    while 1:
+        try:
+            filename = (path_dir + str(logFName) +
+                        "/[plasynth-synth-infinite]vm_%s_multiple_iter%d.json" % (sample_type, iter))  # for xyntia
+            # filename = "./result/infinite_run/%s/[plasynth-synth-infinite]vm_diffvector_score40_%d.json" % (sample_type, iter) #for msynth
+            print(filename)
+            iter += 1
+            print(iter)
 
-    out_dir = "sorted/%s"%(sample_type)
+            with open(filename, 'r') as f:
+                data = json.load(f)
 
-    for logFName in file_list:
-        while 1:
+                if len(jsonList) == 0:
+                    jsonList.append(data[id])
+                    continue
+
+                isInserted = False
+
+                for i in range(len(jsonList)):
+                    if data[id]["result_leng"] < jsonList[i]["result_leng"]:
+                        jsonList.insert(i, data[id])
+                        isInserted = True
+                        break
+
+                if not isInserted:
+                    jsonList.insert(-1, data[id])
             try:
-                filename = path_dir + str(logFName) + "[plasynth-synth-infinite]%s_iter_%d.json" % (sample_type, iter)  # for xyntia
-                # filename = "./result/infinite_run/%s/[plasynth-synth-infinite]vm_diffvector_score40_%d.json" % (sample_type, iter) #for msynth
-                print(filename)
-                iter += 1
-                print(iter)
+                os.mkdir("./result/infinite_run/classifyById/%s" % (sample_type))
+            except Exception as e:
+                print(e)
+            try:
+                os.mkdir("./result/infinite_run/classifyById/%s/%s" % (sample_type, logFName))
+            except Exception as e:
+                print(e)
+            newJson = open("./result/infinite_run/classifyById/%s/%s/id%d.json"
+                           % (sample_type,logFName, id), 'w')
+            json.dump(jsonList, newJson, indent=2)
 
-                with open(filename, 'r') as f:
-                    data = json.load(f)
-
-                    if len(jsonList) == 0:
-                        jsonList.append(data[id])
-                        continue
-
-                    isInserted = False
-
-                    for i in range(len(jsonList)):
-                        if data[id]["result_leng"] < jsonList[i]["result_leng"]:
-                            jsonList.insert(i, data[id])
-                            isInserted = True
-                            break
-
-                    if not isInserted:
-                        jsonList.insert(-1, data[id])
-            except:
-                break
-
-        newJson = open("./result/infinite_run/%s_classifyById/id%d.json" % (sample_type, id + 1), 'w')
-        json.dump(jsonList, newJson, indent=2)
+        except Exception as e:
+            break
 
 
 
@@ -65,5 +68,13 @@ def find_success(filename):#합성 성공한 데이터만 추림
                 failureFile.write("      original:{%s}\n" % (jdata["obf_expr"]))
 
 
-for i in range(0,35):
-    sortResultJson("vm_xyntia_multiple", i)
+
+sample_type = "xyntia"
+
+path_dir = "./result/infinite_run/%s/"%(sample_type)
+file_list = os.listdir(path_dir)
+file_list.sort()
+
+for fn in file_list:
+    for i in range(0, 40):
+        sortResultJson("xyntia", fn , i)
