@@ -92,7 +92,7 @@ def check_outputOracle_homogeneous(expr : Expr, rawexpr, id, homogeneousfile, no
 
 
     if (len(np.nonzero(output_oracle)[0]) == len(output_oracle)) | (len(np.nonzero(output_oracle)[0]) == 0) : #NZ혹은 Z
-        str1 = "trace%s:%s\n" % (id, str(expr))
+        str1 = "trace%s:%s\n" % (id, str(rawexpr))
         str2 = "    SE:%s\n" % (str(expr))
         homogeneousfile.write(str1)
         homogeneousfile.write(str2)

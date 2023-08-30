@@ -68,7 +68,7 @@ def string2ExprOp_list(strings, size = 32, fname = "expr_"):
 
         if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):  # not singleVar만 통과
             if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
-                if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
+                if check_outputOracle_homogeneous(outcode, raw, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):  # mba 샘플 homoge 아닌지 검사
                     c2xParser = cond2xyntiaExpr()#xyntia 포맷에 맞게 번역 위한 클래스
                     try:
                         newExpr = c2xParser.visitAndReplace(outcode)# 번역
