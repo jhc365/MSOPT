@@ -83,7 +83,7 @@ def check_MBA_and_writefiles(expr, rawexpr, id, f_mba, f_nmba , size = 32) -> bo
 
         return False
 
-def check_outputOracle_homogeneous(expr : Expr, id, homogeneousfile, nothomogeneousfile, simpOracle): #out 오라클 homogeneous한지 검사
+def check_outputOracle_homogeneous(expr : Expr, rawexpr, id, homogeneousfile, nothomogeneousfile, simpOracle): #out 오라클 homogeneous한지 검사
     ast = AbstractSyntaxTreeTranslator().from_expr(expr)
     unification_dict = gen_unification_dict(ast)
     exprAst = ast.replace_expr(unification_dict)
@@ -152,7 +152,7 @@ def string2ExprOp_list_with_MSOPT_classify(strings, size = 32,  fname = "expr_")
          #not singleVar만 통과
         if not check_single_variable_expression(outcode, raw, strings[s], singleOpfile):  # not singleVar만 통과
             if check_MBA_and_writefiles(outcode, raw, strings[s], f_mba, f_nmba, 32):  # MBA만 통과
-                if check_outputOracle_homogeneous(outcode, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
+                if check_outputOracle_homogeneous(outcode, raw, strings[s], homogeneousfile, nothomogeneousfile, simpOracle):#mba 샘플 homoge 아닌지 검사
                         yield strings[s],outcode,"vm" #homge mba 샘플만 반환
 
     withoutDuplfile.close()
